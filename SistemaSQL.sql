@@ -384,15 +384,7 @@ END //
 DELIMITER ;
 
 
--- Função para conferência de estoque
-CREATE OR REPLACE VIEW vendaestoque AS
-(SELECT
-pedido AS venda,
-CONCAT(produto.codigo, ' - ', produto.descricao) AS produto,
-quantidade AS solicitada,
-SaldoEstoque(produto) AS disponivel
-FROM venda_produto
-INNER JOIN produto ON produto.codigo = venda_produto.produto);
+
 
 
 -- === Vendas ===========================================================
@@ -440,6 +432,16 @@ CREATE TABLE venda_produto (
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
 );
+
+-- Função para conferência de estoque
+CREATE OR REPLACE VIEW vendaestoque AS
+(SELECT
+pedido AS venda,
+CONCAT(produto.codigo, ' - ', produto.descricao) AS produto,
+quantidade AS solicitada,
+SaldoEstoque(produto) AS disponivel
+FROM venda_produto
+INNER JOIN produto ON produto.codigo = venda_produto.produto);
 
 -- Função para implantar venda e conseguir ID
 DELIMITER //

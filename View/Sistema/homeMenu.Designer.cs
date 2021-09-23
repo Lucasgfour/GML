@@ -40,14 +40,19 @@ namespace GM.View.Sistema
 			this.btnFProduto = new System.Windows.Forms.Button();
 			this.btnFEstoque = new System.Windows.Forms.Button();
 			this.TabFinanceiro = new System.Windows.Forms.TabPage();
+			this.btnFCreditoConsulta = new System.Windows.Forms.Button();
+			this.btnFCustoConsulta = new System.Windows.Forms.Button();
+			this.btnFCadastroCusto = new System.Windows.Forms.Button();
 			this.btnFContasReceber = new System.Windows.Forms.Button();
 			this.btnFContasPagar = new System.Windows.Forms.Button();
 			this.TabDiversos = new System.Windows.Forms.TabPage();
+			this.btnFCondicaoConsulta = new System.Windows.Forms.Button();
 			this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
 			this.TabControle.SuspendLayout();
 			this.TabVendaCompra.SuspendLayout();
 			this.TabProduto.SuspendLayout();
 			this.TabFinanceiro.SuspendLayout();
+			this.TabDiversos.SuspendLayout();
 			this.SuspendLayout();
 			// 
 			// btnFBalcao
@@ -207,6 +212,9 @@ namespace GM.View.Sistema
 			// 
 			// TabFinanceiro
 			// 
+			this.TabFinanceiro.Controls.Add(this.btnFCreditoConsulta);
+			this.TabFinanceiro.Controls.Add(this.btnFCustoConsulta);
+			this.TabFinanceiro.Controls.Add(this.btnFCadastroCusto);
 			this.TabFinanceiro.Controls.Add(this.btnFContasReceber);
 			this.TabFinanceiro.Controls.Add(this.btnFContasPagar);
 			this.TabFinanceiro.Location = new System.Drawing.Point(4, 22);
@@ -216,6 +224,63 @@ namespace GM.View.Sistema
 			this.TabFinanceiro.TabIndex = 2;
 			this.TabFinanceiro.Text = "Financeiro";
 			this.TabFinanceiro.UseVisualStyleBackColor = true;
+			// 
+			// btnFCreditoConsulta
+			// 
+			this.btnFCreditoConsulta.BackColor = System.Drawing.Color.Silver;
+			this.btnFCreditoConsulta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnFCreditoConsulta.FlatAppearance.BorderSize = 0;
+			this.btnFCreditoConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnFCreditoConsulta.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFCreditoConsulta.ForeColor = System.Drawing.Color.White;
+			this.btnFCreditoConsulta.Image = ((System.Drawing.Image)(resources.GetObject("btnFCreditoConsulta.Image")));
+			this.btnFCreditoConsulta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnFCreditoConsulta.Location = new System.Drawing.Point(580, 6);
+			this.btnFCreditoConsulta.Name = "btnFCreditoConsulta";
+			this.btnFCreditoConsulta.Size = new System.Drawing.Size(137, 87);
+			this.btnFCreditoConsulta.TabIndex = 6;
+			this.btnFCreditoConsulta.Text = "Crédito de\r\nClientes/Fornecedores";
+			this.btnFCreditoConsulta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnFCreditoConsulta.UseVisualStyleBackColor = false;
+			this.btnFCreditoConsulta.Click += new System.EventHandler(this.cliqueCreditoConsulta);
+			// 
+			// btnFCustoConsulta
+			// 
+			this.btnFCustoConsulta.BackColor = System.Drawing.Color.Silver;
+			this.btnFCustoConsulta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnFCustoConsulta.FlatAppearance.BorderSize = 0;
+			this.btnFCustoConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnFCustoConsulta.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFCustoConsulta.ForeColor = System.Drawing.Color.White;
+			this.btnFCustoConsulta.Image = ((System.Drawing.Image)(resources.GetObject("btnFCustoConsulta.Image")));
+			this.btnFCustoConsulta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnFCustoConsulta.Location = new System.Drawing.Point(437, 6);
+			this.btnFCustoConsulta.Name = "btnFCustoConsulta";
+			this.btnFCustoConsulta.Size = new System.Drawing.Size(137, 87);
+			this.btnFCustoConsulta.TabIndex = 5;
+			this.btnFCustoConsulta.Text = "Consulta de\r\nCusto/Despesa";
+			this.btnFCustoConsulta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnFCustoConsulta.UseVisualStyleBackColor = false;
+			this.btnFCustoConsulta.Click += new System.EventHandler(this.cliqueCustoConsulta);
+			// 
+			// btnFCadastroCusto
+			// 
+			this.btnFCadastroCusto.BackColor = System.Drawing.Color.Silver;
+			this.btnFCadastroCusto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnFCadastroCusto.FlatAppearance.BorderSize = 0;
+			this.btnFCadastroCusto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnFCadastroCusto.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFCadastroCusto.ForeColor = System.Drawing.Color.White;
+			this.btnFCadastroCusto.Image = ((System.Drawing.Image)(resources.GetObject("btnFCadastroCusto.Image")));
+			this.btnFCadastroCusto.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnFCadastroCusto.Location = new System.Drawing.Point(294, 6);
+			this.btnFCadastroCusto.Name = "btnFCadastroCusto";
+			this.btnFCadastroCusto.Size = new System.Drawing.Size(137, 87);
+			this.btnFCadastroCusto.TabIndex = 4;
+			this.btnFCadastroCusto.Text = "Cadastro de\r\nCusto/Despesa";
+			this.btnFCadastroCusto.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnFCadastroCusto.UseVisualStyleBackColor = false;
+			this.btnFCadastroCusto.Click += new System.EventHandler(this.cliqueCustoCadastro);
 			// 
 			// btnFContasReceber
 			// 
@@ -257,6 +322,7 @@ namespace GM.View.Sistema
 			// 
 			// TabDiversos
 			// 
+			this.TabDiversos.Controls.Add(this.btnFCondicaoConsulta);
 			this.TabDiversos.Location = new System.Drawing.Point(4, 22);
 			this.TabDiversos.Name = "TabDiversos";
 			this.TabDiversos.Padding = new System.Windows.Forms.Padding(3);
@@ -264,6 +330,25 @@ namespace GM.View.Sistema
 			this.TabDiversos.TabIndex = 3;
 			this.TabDiversos.Text = "Diversos";
 			this.TabDiversos.UseVisualStyleBackColor = true;
+			// 
+			// btnFCondicaoConsulta
+			// 
+			this.btnFCondicaoConsulta.BackColor = System.Drawing.Color.Silver;
+			this.btnFCondicaoConsulta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnFCondicaoConsulta.FlatAppearance.BorderSize = 0;
+			this.btnFCondicaoConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnFCondicaoConsulta.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFCondicaoConsulta.ForeColor = System.Drawing.Color.White;
+			this.btnFCondicaoConsulta.Image = ((System.Drawing.Image)(resources.GetObject("btnFCondicaoConsulta.Image")));
+			this.btnFCondicaoConsulta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnFCondicaoConsulta.Location = new System.Drawing.Point(8, 6);
+			this.btnFCondicaoConsulta.Name = "btnFCondicaoConsulta";
+			this.btnFCondicaoConsulta.Size = new System.Drawing.Size(137, 87);
+			this.btnFCondicaoConsulta.TabIndex = 3;
+			this.btnFCondicaoConsulta.Text = "Consulta de Condições de Pagamento";
+			this.btnFCondicaoConsulta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnFCondicaoConsulta.UseVisualStyleBackColor = false;
+			this.btnFCondicaoConsulta.Click += new System.EventHandler(this.cliqueCondicaoConsulta);
 			// 
 			// materialTabSelector1
 			// 
@@ -293,8 +378,13 @@ namespace GM.View.Sistema
 			this.TabVendaCompra.ResumeLayout(false);
 			this.TabProduto.ResumeLayout(false);
 			this.TabFinanceiro.ResumeLayout(false);
+			this.TabDiversos.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Button btnFCondicaoConsulta;
+		private System.Windows.Forms.Button btnFCreditoConsulta;
+		private System.Windows.Forms.Button btnFCustoConsulta;
+		private System.Windows.Forms.Button btnFCadastroCusto;
 		private System.Windows.Forms.Button btnFContasPagar;
 		private System.Windows.Forms.Button btnFContasReceber;
 		private System.Windows.Forms.Button btnFFamilia;

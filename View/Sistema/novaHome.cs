@@ -24,7 +24,6 @@ namespace GM.View.Sistema {
 		
 		private CSVenda csvenda;
 		private CDVenda cdvenda;
-		private CDBalcao cdbalcao;
 		private CSCredito cscred;
 		
 		private CSCompra cscompra;

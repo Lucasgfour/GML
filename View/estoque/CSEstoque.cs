@@ -14,8 +14,6 @@ namespace GM.View.estoque {
 		private Produto produto;
 		private ObjectDao<Produto> pDao = new ObjectDao<Produto>();
 		
-		private Decimal saldo;
-		
 		private LinkedList<Estoque> movimento;
 		private ObjectDao<Estoque> mDao = new ObjectDao<Estoque>();
 		

@@ -5,8 +5,11 @@ using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
+using GM.Model;
 using GM.View.compra;
+using GM.View.condicao;
 using GM.View.contas;
+using GM.View.custo;
 using GM.View.estoque;
 using GM.View.produto;
 using GM.View.venda;
@@ -53,6 +56,10 @@ namespace GM.View.Sistema {
 		private CSFamilia familiaConsulta;
 		private CSPagar pagarConsulta;
 		private CSPagar receberConsulta;
+		private CDCusto custoCadastro;
+		private CSCusto custoConsulta;
+		private CSCredito creditoConsulta;
+		private CSCondicao condicaoConsulta;
 	// ========================================
 		
 		void cliqueVendaBalcao(object sender, EventArgs e) {
@@ -140,6 +147,53 @@ namespace GM.View.Sistema {
 			} catch (Exception) {
 				receberConsulta = new CSPagar(1);
 				receberConsulta.Show();
+			}
+		}
+		
+		void cliqueCustoCadastro(object sender, EventArgs e) {
+			try {
+				custoCadastro.WindowState = FormWindowState.Minimized;
+				custoCadastro.WindowState = FormWindowState.Normal;
+				custoCadastro.Show();
+			} catch (Exception) {
+				custoCadastro = new CDCusto();
+				custoCadastro.Show();
+			}
+		}
+	
+		void cliqueCustoConsulta(object sender, EventArgs e) {
+			try {
+				custoConsulta.WindowState = FormWindowState.Minimized;
+				custoConsulta.WindowState = FormWindowState.Normal;
+				custoConsulta.Show();
+			} catch (Exception) {
+				Resultado resCusto = new ObjectDao<Custo>().consultar("SELECT * FROM custo LIMIT 1");
+				if(resCusto.condicao) {
+					custoConsulta = new CSCusto(resCusto.converter<Custo>().codigo);
+					custoConsulta.Show();
+				}
+			}
+		}
+		
+		void cliqueCreditoConsulta(object sender, EventArgs e) {
+			try {
+				creditoConsulta.WindowState = FormWindowState.Minimized;
+				creditoConsulta.WindowState = FormWindowState.Normal;
+				creditoConsulta.Show();
+			} catch (Exception) {
+				creditoConsulta = new CSCredito();
+				creditoConsulta.Show();
+			}
+		}
+		
+		void cliqueCondicaoConsulta(object sender, EventArgs e) {
+			try {
+				condicaoConsulta.WindowState = FormWindowState.Minimized;
+				condicaoConsulta.WindowState = FormWindowState.Normal;
+				condicaoConsulta.Show();
+			} catch (Exception) {
+				condicaoConsulta = new CSCondicao();
+				condicaoConsulta.Show();
 			}
 		}
 	}
