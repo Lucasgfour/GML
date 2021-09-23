@@ -1,0 +1,97 @@
+﻿<html>
+	<head>
+		<title>Estoque - Movimentação de Estoque</title>
+		<meta charset="utf-8" />
+		<link rel="stylesheet" href="materialize.css"/>
+		<script src="chart.js"></script>
+
+		<script>
+			const obj = JSON.parse('{"titulo":"Estoque - Movimentação de Estoque","tipo":"bar","labels":["Dia 14","Dia 15","Dia 28"],"labData":["Entrada","Saida"],"dados":[[12,0,0],[23,3,4]]}');
+
+			function gerarDataSet() {
+				var saida = []
+				var pos = 0;
+				obj.dados.forEach(num => {
+					var cores = gerarCores()
+					saida.push({
+						label: obj.labData[pos],
+						fill: true,
+						backgroundColor: cores,
+						borderColor: 'rgb(255,255,255)',
+						pointBackgroundColor: cores,
+						pointBorderColor: '#fff',
+						pointHoverBackgroundColor: '#fff',
+						pointHoverBorderColor: cores,
+						data: num
+					});
+					pos++;
+				});
+				return saida;
+			}
+
+			function gerarCores() {
+				var saida;
+				if(obj.tipo == 'pie') {
+					saida = [];
+					obj.dados[0].forEach(num => {
+						saida.push('#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0'));
+					});
+				} else {
+					saida = '#' + Math.floor(Math.random() * 0x1000000).toString(16).padStart(6, '0');
+				}
+				return saida;
+			}
+		</script>
+	</head>
+	<body class="">
+		<div class="row">
+    			<div class="col s12">
+				<div class="card-panel">
+					<div class="row">
+
+						<!-- Titulo -->
+						<div class="col s12">
+							<h5 class="center-align" id="txtTitulo">Estoque - Movimentação de Estoque</h5>
+						</div>
+
+						<!-- Chart -->
+						<div class="col s12">
+							<canvas id="gmChart"></canvas>
+						</div>
+
+					</div>
+				</div>
+			</div>
+		</div>
+		<script>
+        
+			document.getElementById("txtTitulo").innerHTML = obj.titulo;
+
+
+			const data = {
+				labels: obj.labels,
+				datasets: gerarDataSet()
+			};
+
+			const config = {
+				type: obj.tipo,
+				data: data,
+				options: {
+					elements: {
+						line: {
+							borderWidth: 3
+						}
+					}
+				}
+			};
+
+			var myChart = new Chart(
+				document.getElementById('gmChart'),
+				config
+			);
+
+	
+			// 
+		</script>
+	</body>
+</html>

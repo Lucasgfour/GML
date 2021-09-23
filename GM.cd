@@ -1,0 +1,513 @@
+﻿<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<ClassDiagram Zoom="1" MajorVersion="1" MinorVersion="1" MembersFormat="FullSignature">
+  <Class Name="GM.View.caixa.CDCaixa" Collapsed="False">
+    <Position X="0.5" Y="4.4" Width="2.009049" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Home" Collapsed="False">
+    <Position X="0.5" Y="9.9" Width="2.160998" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.compra.CDCompra" Collapsed="False">
+    <Position X="0.5" Y="16.1" Width="2.223141" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Contas" Collapsed="False">
+    <Position X="0.5" Y="27.3" Width="1.680045" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Movi_Contas" Collapsed="False">
+    <Position X="0.5" Y="30.8" Width="1.749225" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.custo.CSCusto" Collapsed="False">
+    <Position X="0.5" Y="32.9" Width="1.946798" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Relatorio" Collapsed="False">
+    <Position X="0.5" Y="40.4" Width="1.471701" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Relatorio_Parametro" Collapsed="False">
+    <Position X="0.5" Y="42.5" Width="1.625763" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.relatorio" Collapsed="False">
+    <Position X="0.5" Y="44.6" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.relatorio.CDRelatorio" Collapsed="False">
+    <Position X="0.5" Y="46.5" Width="2.841085" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.relatorio.DGParametro" Collapsed="False">
+    <Position X="0.5" Y="53.6" Width="2.140588" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.relatorio.CSRelatorio" Collapsed="False">
+    <Position X="0.5" Y="57.1" Width="2.144025" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.relatorio.GRTela" Collapsed="False">
+    <Position X="0.5" Y="62.6" Width="1.78443" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.custo.PQCusto" Collapsed="False">
+    <Position X="0.5" Y="65.1" Width="2.091657" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.Sistema.CTUsuario" Collapsed="False">
+    <Position X="0.5" Y="71" Width="1.908395" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.caixa.zMVCaixa" Collapsed="False">
+    <Position X="0.5" Y="73.3" Width="1.78443" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Venda" Collapsed="False">
+    <Position X="0.5" Y="76.4" Width="1.806696" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Venda_Produto" Collapsed="False">
+    <Position X="0.5" Y="79.2" Width="1.561344" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.vendaestoque" Collapsed="False">
+    <Position X="0.5" Y="81.3" Width="1.505861" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Caixa" Collapsed="False">
+    <Position X="0.5" Y="83.3" Width="1.459669" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.custo.CDCusto" Collapsed="False">
+    <Position X="0.5" Y="86.3" Width="2.204611" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.LMSListView" Collapsed="False">
+    <Position X="0.5" Y="95.4" Width="1.833791" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Compra" Collapsed="False">
+    <Position X="0.5" Y="97.1" Width="1.572248" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Compra_item" Collapsed="False">
+    <Position X="0.5" Y="0.5" Width="1.561344" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.IDUsuario" Collapsed="False">
+    <Position X="0.5" Y="101.9" Width="2.229694" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Condicao" Collapsed="False">
+    <Position X="0.5" Y="106.2" Width="1.97924" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Custo" Collapsed="False">
+    <Position X="0.5" Y="108.5" Width="1.522565" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.MainForm" Collapsed="False">
+    <Position X="0.5" Y="111.4" Width="1.78443" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Model.Atende" Collapsed="False">
+    <Position X="0.5" Y="114.1" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Model.AuxiliarDao" Collapsed="False">
+    <Position X="0.5" Y="116.3" Width="2.198288" />
+    <Compartments />
+  </Class>
+  <Class Name="GM.View.produto.CDFamilia" Collapsed="False">
+    <Position X="0.5" Y="117.3" Width="2.009049" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.compra.CSCompra" Collapsed="False">
+    <Position X="0.5" Y="121.6" Width="2.059484" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Estoque" Collapsed="False">
+    <Position X="0.5" Y="131" Width="1.561344" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Familia" Collapsed="False">
+    <Position X="0.5" Y="133.7" Width="1.37153" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.estoque.CSEstoque" Collapsed="False">
+    <Position X="0.5" Y="135.4" Width="2.255368" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.compra.PQCompra" Collapsed="False">
+    <Position X="0.5" Y="142.4" Width="2.091657" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.Sistema.PQCidade" Collapsed="False">
+    <Position X="0.5" Y="147.9" Width="2.091657" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.produto.CDProduto" Collapsed="False">
+    <Position X="0.5" Y="152.3" Width="2.009049" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.condicao.CDCondicao" Collapsed="False">
+    <Position X="0.5" Y="158.3" Width="2.028654" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.pessoa.ATCompra" Collapsed="False">
+    <Position X="0.5" Y="164.5" Width="1.939762" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Ferramentas" Collapsed="False">
+    <Position X="0.5" Y="171.8" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.venda.ATVenda" Collapsed="False">
+    <Position X="0.5" Y="174.9" Width="1.939762" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.produto.CSFamilia" Collapsed="False">
+    <Position X="0.5" Y="182.3" Width="2.059484" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Financeiro" Collapsed="False">
+    <Position X="0.5" Y="187.1" Width="2.230285" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Pesquisa" Collapsed="False">
+    <Position X="0.5" Y="188.6" Width="2.198288" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.condicao.CSCondicao" Collapsed="False">
+    <Position X="0.5" Y="190.9" Width="2.212291" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Pessoa" Collapsed="False">
+    <Position X="0.5" Y="195.6" Width="1.471701" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Endereco" Collapsed="False">
+    <Position X="0.5" Y="0.5" Width="1.220495" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.zEndereco" Collapsed="False">
+    <Position X="0.5" Y="2.6" Width="1.70569" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Cidade" Collapsed="False">
+    <Position X="0.5" Y="198.3" Width="1.169362" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.pessoa.CDEndereco" Collapsed="False">
+    <Position X="0.5" Y="200" Width="2.059484" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Produto" Collapsed="False">
+    <Position X="0.5" Y="206" Width="1.459992" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.produto.CSProduto" Collapsed="False">
+    <Position X="0.5" Y="208.6" Width="2.059752" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Sede" Collapsed="False">
+    <Position X="0.5" Y="213.5" Width="1.358371" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Tela" Collapsed="False">
+    <Position X="0.5" Y="215.6" Width="1.23446" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Controller.Usuario" Collapsed="False">
+    <Position X="0.5" Y="217.6" Width="1.2582" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.venda.CDBalcao" Collapsed="False">
+    <Position X="0.5" Y="220.2" Width="2.248976" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.pessoa.CDPessoa" Collapsed="False">
+    <Position X="0.5" Y="228.7" Width="2.078659" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.contas.CDMovimento" Collapsed="False">
+    <Position X="0.5" Y="236.9" Width="2.266754" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.pessoa.PQEndereco" Collapsed="False">
+    <Position X="0.5" Y="242.5" Width="2.292804" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.caixa.CSCaixa" Collapsed="False">
+    <Position X="0.5" Y="247.6" Width="2.059484" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Model.Comando" Collapsed="False">
+    <Position X="0.5" Y="252.6" Width="3.069626" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.produto.PQProduto" Collapsed="False">
+    <Position X="0.5" Y="256.7" Width="2.091657" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.contas.CSConta" Collapsed="False">
+    <Position X="0.5" Y="261.9" Width="2.677536" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Model.Conexao" Collapsed="False">
+    <Position X="0.5" Y="269.8" Width="2.078498" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.venda.CDBalcao2" Collapsed="False">
+    <Position X="0.5" Y="272.3" Width="2.324977" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.pessoa.PQPessoa" Collapsed="False">
+    <Position X="0.5" Y="277.8" Width="2.091657" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.contas.CSPagar" Collapsed="False">
+    <Position X="0.5" Y="283" Width="2.059484" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Model.ObjectDao" Collapsed="False">
+    <Position X="0.5" Y="289.2" Width="1.85173" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.venda.CDVenda" Collapsed="False">
+    <Position X="0.5" Y="293.6" Width="2.449855" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Model.Resultado" Collapsed="False">
+    <Position X="0.5" Y="306.3" Width="1.59988" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Model.Periodo" Collapsed="False">
+    <Position X="0.5" Y="308.9" Width="1.360197" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.venda.CSVenda" Collapsed="False">
+    <Position X="0.5" Y="310.4" Width="2.059484" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Preferencias" Collapsed="False">
+    <Position X="0.5" Y="319.8" Width="1.98402" />
+    <Compartments>
+      <Compartment Name="Properties" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.View.venda.PQVenda" Collapsed="False">
+    <Position X="0.5" Y="321.8" Width="2.091657" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+      <Compartment Name="Fields" Collapsed="False" />
+    </Compartments>
+  </Class>
+  <Class Name="GM.Program" Collapsed="False">
+    <Position X="0.5" Y="327.3" Width="1.444186" />
+    <Compartments>
+      <Compartment Name="Methods" Collapsed="False" />
+    </Compartments>
+  </Class>
+</ClassDiagram>

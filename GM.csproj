@@ -1,0 +1,502 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003" DefaultTargets="Build">
+  <PropertyGroup>
+    <ProjectGuid>{20D25423-1E7C-40BB-A4D6-9D0DD2BFE7E7}</ProjectGuid>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <OutputType>WinExe</OutputType>
+    <RootNamespace>GM</RootNamespace>
+    <AssemblyName>GM</AssemblyName>
+    <TargetFrameworkVersion>v4.5.1</TargetFrameworkVersion>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <StartupObject>GM.Program</StartupObject>
+    <NoWin32Manifest>False</NoWin32Manifest>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <Prefer32Bit>True</Prefer32Bit>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Debug' ">
+    <OutputPath>bin\Debug\</OutputPath>
+    <DebugSymbols>True</DebugSymbols>
+    <DebugType>Full</DebugType>
+    <Optimize>False</Optimize>
+    <CheckForOverflowUnderflow>True</CheckForOverflowUnderflow>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)' == 'Release' ">
+    <OutputPath>bin\Release\</OutputPath>
+    <DebugSymbols>False</DebugSymbols>
+    <DebugType>None</DebugType>
+    <Optimize>True</Optimize>
+    <CheckForOverflowUnderflow>False</CheckForOverflowUnderflow>
+    <DefineConstants>TRACE</DefineConstants>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="MaterialSkin">
+      <HintPath>..\..\LMS\LMS\bin\Debug\MaterialSkin.dll</HintPath>
+    </Reference>
+    <Reference Include="MetroSet UI">
+      <HintPath>..\..\LMS\LMS\bin\Debug\MetroSet UI.dll</HintPath>
+    </Reference>
+    <Reference Include="MySql.Data">
+      <HintPath>..\..\..\Downloads\lib\net452\MySql.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json">
+      <HintPath>..\..\..\Downloads\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="ReaLTaiizor">
+      <HintPath>..\..\LMS\LMS\bin\Debug\ReaLTaiizor.dll</HintPath>
+    </Reference>
+    <Reference Include="SunnyUI.Plus">
+      <HintPath>..\..\LMS\LMS\bin\Debug\SunnyUI.Plus.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Core">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.DataSetExtensions">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Xml.Linq">
+      <RequiredTargetFramework>3.5</RequiredTargetFramework>
+    </Reference>
+    <Reference Include="Ubiety.Dns.Core">
+      <HintPath>..\..\..\Downloads\lib\net452\Ubiety.Dns.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Zstandard.Net">
+      <HintPath>..\..\..\Downloads\lib\net452\Zstandard.Net.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Componentes\TextBox.cs" />
+    <Compile Include="Controller\Caixa.cs" />
+    <Compile Include="Controller\Componentes.cs" />
+    <Compile Include="Controller\Compra.cs" />
+    <Compile Include="Controller\Condicao.cs" />
+    <Compile Include="Controller\Contas.cs" />
+    <Compile Include="Controller\Custo.cs" />
+    <Compile Include="Controller\Estoque.cs" />
+    <Compile Include="Controller\Familia.cs" />
+    <Compile Include="Controller\Ferramentas.cs" />
+    <Compile Include="Controller\Financeiro.cs" />
+    <Compile Include="Controller\Objetos.cs" />
+    <Compile Include="Controller\Pesquisa.cs" />
+    <Compile Include="Controller\Pessoa.cs" />
+    <Compile Include="Controller\Produto.cs" />
+    <Compile Include="Controller\Relatorio.cs" />
+    <Compile Include="Controller\Sede.cs" />
+    <Compile Include="Controller\Tela.cs" />
+    <Compile Include="Controller\Usuario.cs" />
+    <Compile Include="Controller\Venda.cs" />
+    <Compile Include="Home.cs" />
+    <Compile Include="Home.Designer.cs">
+      <DependentUpon>Home.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Model\Atender.cs" />
+    <Compile Include="Model\Comando.cs" />
+    <Compile Include="Model\Conexao.cs" />
+    <Compile Include="Model\ObjectDao.cs" />
+    <Compile Include="Model\Resultado.cs" />
+    <Compile Include="Preferencias.Designer.cs">
+      <DependentUpon>Preferencias.settings</DependentUpon>
+      <AutoGen>True</AutoGen>
+    </Compile>
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="View\caixa\CDCaixa.cs" />
+    <Compile Include="View\caixa\CDCaixa.Designer.cs">
+      <DependentUpon>CDCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\caixa\CSCaixa.cs" />
+    <Compile Include="View\caixa\CSCaixa.Designer.cs">
+      <DependentUpon>CSCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\caixa\zMVCaixa.cs" />
+    <Compile Include="View\caixa\zMVCaixa.Designer.cs">
+      <DependentUpon>zMVCaixa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\compra\CDCompra.cs" />
+    <Compile Include="View\compra\CDCompra.Designer.cs">
+      <DependentUpon>CDCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\compra\CSCompra.cs" />
+    <Compile Include="View\compra\CSCompra.Designer.cs">
+      <DependentUpon>CSCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\compra\PQCompra.cs" />
+    <Compile Include="View\compra\PQCompra.Designer.cs">
+      <DependentUpon>PQCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\condicao\CDCondicao.cs" />
+    <Compile Include="View\condicao\CDCondicao.Designer.cs">
+      <DependentUpon>CDCondicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\condicao\CSCondicao.cs" />
+    <Compile Include="View\condicao\CSCondicao.Designer.cs">
+      <DependentUpon>CSCondicao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\contas\CDMovimento.cs" />
+    <Compile Include="View\contas\CDMovimento.Designer.cs">
+      <DependentUpon>CDMovimento.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\contas\CSConta.cs" />
+    <Compile Include="View\contas\CSConta.Designer.cs">
+      <DependentUpon>CSConta.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\contas\CSCredito.cs" />
+    <Compile Include="View\contas\CSCredito.Designer.cs">
+      <DependentUpon>CSCredito.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\contas\CSPagar.cs" />
+    <Compile Include="View\contas\CSPagar.Designer.cs">
+      <DependentUpon>CSPagar.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\custo\CDCusto.cs" />
+    <Compile Include="View\custo\CDCusto.Designer.cs">
+      <DependentUpon>CDCusto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\custo\CDCustoCategoria.cs" />
+    <Compile Include="View\custo\CDCustoCategoria.Designer.cs">
+      <DependentUpon>CDCustoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\custo\CSCusto.cs" />
+    <Compile Include="View\custo\CSCusto.Designer.cs">
+      <DependentUpon>CSCusto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\custo\CSCustoCategoria.cs" />
+    <Compile Include="View\custo\CSCustoCategoria.Designer.cs">
+      <DependentUpon>CSCustoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\custo\PQCusto.cs" />
+    <Compile Include="View\custo\PQCusto.Designer.cs">
+      <DependentUpon>PQCusto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\custo\PQCustoCategoria.cs" />
+    <Compile Include="View\custo\PQCustoCategoria.Designer.cs">
+      <DependentUpon>PQCustoCategoria.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\estoque\CSEstoque.cs" />
+    <Compile Include="View\estoque\CSEstoque.Designer.cs">
+      <DependentUpon>CSEstoque.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\pessoa\ATCompra.cs" />
+    <Compile Include="View\pessoa\ATCompra.Designer.cs">
+      <DependentUpon>ATCompra.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\pessoa\CDEndereco.cs" />
+    <Compile Include="View\pessoa\CDEndereco.Designer.cs">
+      <DependentUpon>CDEndereco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\pessoa\CDPessoa.cs" />
+    <Compile Include="View\pessoa\CDPessoa.Designer.cs">
+      <DependentUpon>CDPessoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\pessoa\PQEndereco.cs" />
+    <Compile Include="View\pessoa\PQEndereco.Designer.cs">
+      <DependentUpon>PQEndereco.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\pessoa\PQPessoa.cs" />
+    <Compile Include="View\pessoa\PQPessoa.Designer.cs">
+      <DependentUpon>PQPessoa.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\produto\CDFamilia.cs" />
+    <Compile Include="View\produto\CDFamilia.Designer.cs">
+      <DependentUpon>CDFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\produto\CDProduto.cs" />
+    <Compile Include="View\produto\CDProduto.Designer.cs">
+      <DependentUpon>CDProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\produto\CSFamilia.cs" />
+    <Compile Include="View\produto\CSFamilia.Designer.cs">
+      <DependentUpon>CSFamilia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\produto\CSProduto.cs" />
+    <Compile Include="View\produto\CSProduto.Designer.cs">
+      <DependentUpon>CSProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\produto\PQProduto.cs" />
+    <Compile Include="View\produto\PQProduto.Designer.cs">
+      <DependentUpon>PQProduto.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\relatorio\CDRelatorio.cs" />
+    <Compile Include="View\relatorio\CDRelatorio.Designer.cs">
+      <DependentUpon>CDRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\relatorio\CSRelatorio.cs" />
+    <Compile Include="View\relatorio\CSRelatorio.Designer.cs">
+      <DependentUpon>CSRelatorio.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\relatorio\DGParametro.cs" />
+    <Compile Include="View\relatorio\DGParametro.Designer.cs">
+      <DependentUpon>DGParametro.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\relatorio\GRGrafico.cs" />
+    <Compile Include="View\relatorio\GRGrafico.Designer.cs">
+      <DependentUpon>GRGrafico.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\relatorio\GRTela.cs" />
+    <Compile Include="View\relatorio\GRTela.Designer.cs">
+      <DependentUpon>GRTela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\CDTela.cs" />
+    <Compile Include="View\Sistema\CDTela.Designer.cs">
+      <DependentUpon>CDTela.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\CDUsuario.cs" />
+    <Compile Include="View\Sistema\CDUsuario.Designer.cs">
+      <DependentUpon>CDUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\CFUsuario.cs" />
+    <Compile Include="View\Sistema\CFUsuario.Designer.cs">
+      <DependentUpon>CFUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\CTModulo.cs" />
+    <Compile Include="View\Sistema\CTModulo.Designer.cs">
+      <DependentUpon>CTModulo.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\CTUsuario.cs" />
+    <Compile Include="View\Sistema\CTUsuario.Designer.cs">
+      <DependentUpon>CTUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\homeMenu.cs" />
+    <Compile Include="View\Sistema\homeMenu.Designer.cs">
+      <DependentUpon>homeMenu.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\IDUsuario.cs" />
+    <Compile Include="View\Sistema\IDUsuario.Designer.cs">
+      <DependentUpon>IDUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\novaHome.cs" />
+    <Compile Include="View\Sistema\novaHome.Designer.cs">
+      <DependentUpon>novaHome.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\PQCidade.cs" />
+    <Compile Include="View\Sistema\PQCidade.Designer.cs">
+      <DependentUpon>PQCidade.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\venda\ATVenda.cs" />
+    <Compile Include="View\venda\ATVenda.Designer.cs">
+      <DependentUpon>ATVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\venda\CDBalcao.cs" />
+    <Compile Include="View\venda\CDBalcao.Designer.cs">
+      <DependentUpon>CDBalcao.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\venda\CDBalcao2.cs" />
+    <Compile Include="View\venda\CDBalcao2.Designer.cs">
+      <DependentUpon>CDBalcao2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\venda\CDVenda.cs" />
+    <Compile Include="View\venda\CDVenda.Designer.cs">
+      <DependentUpon>CDVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\venda\CFFuncionario.cs" />
+    <Compile Include="View\venda\CFFuncionario.Designer.cs">
+      <DependentUpon>CFFuncionario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\venda\CSVenda.cs" />
+    <Compile Include="View\venda\CSVenda.Designer.cs">
+      <DependentUpon>CSVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\venda\PQVenda.cs" />
+    <Compile Include="View\venda\PQVenda.Designer.cs">
+      <DependentUpon>PQVenda.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\venda\selectSede.cs" />
+    <Compile Include="View\venda\selectSede.Designer.cs">
+      <DependentUpon>selectSede.cs</DependentUpon>
+    </Compile>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="app.config" />
+    <None Include="Preferencias.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Preferencias.Designer.cs</LastGenOutput>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="Model" />
+    <Folder Include="Controller" />
+    <Folder Include="Componentes" />
+    <Folder Include="View" />
+    <Folder Include="View\caixa" />
+    <Folder Include="View\estoque" />
+    <Folder Include="View\compra" />
+    <Folder Include="View\condicao" />
+    <Folder Include="View\contas" />
+    <Folder Include="View\custo" />
+    <Folder Include="View\relatorio" />
+    <Folder Include="View\venda" />
+    <Folder Include="View\pessoa" />
+    <Folder Include="View\produto" />
+    <Folder Include="View\Sistema" />
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="Home.resx">
+      <DependentUpon>Home.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\caixa\CDCaixa.resx">
+      <DependentUpon>CDCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\caixa\CSCaixa.resx">
+      <DependentUpon>CSCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\caixa\zMVCaixa.resx">
+      <DependentUpon>zMVCaixa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\compra\CDCompra.resx">
+      <DependentUpon>CDCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\compra\CSCompra.resx">
+      <DependentUpon>CSCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\compra\PQCompra.resx">
+      <DependentUpon>PQCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\condicao\CDCondicao.resx">
+      <DependentUpon>CDCondicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\condicao\CSCondicao.resx">
+      <DependentUpon>CSCondicao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\contas\CDMovimento.resx">
+      <DependentUpon>CDMovimento.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\contas\CSConta.resx">
+      <DependentUpon>CSConta.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\contas\CSCredito.resx">
+      <DependentUpon>CSCredito.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\contas\CSPagar.resx">
+      <DependentUpon>CSPagar.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\custo\CDCusto.resx">
+      <DependentUpon>CDCusto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\custo\CDCustoCategoria.resx">
+      <DependentUpon>CDCustoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\custo\CSCusto.resx">
+      <DependentUpon>CSCusto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\custo\CSCustoCategoria.resx">
+      <DependentUpon>CSCustoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\custo\PQCusto.resx">
+      <DependentUpon>PQCusto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\custo\PQCustoCategoria.resx">
+      <DependentUpon>PQCustoCategoria.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\estoque\CSEstoque.resx">
+      <DependentUpon>CSEstoque.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\pessoa\ATCompra.resx">
+      <DependentUpon>ATCompra.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\pessoa\CDEndereco.resx">
+      <DependentUpon>CDEndereco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\pessoa\CDPessoa.resx">
+      <DependentUpon>CDPessoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\pessoa\PQEndereco.resx">
+      <DependentUpon>PQEndereco.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\pessoa\PQPessoa.resx">
+      <DependentUpon>PQPessoa.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\produto\CDFamilia.resx">
+      <DependentUpon>CDFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\produto\CDProduto.resx">
+      <DependentUpon>CDProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\produto\CSFamilia.resx">
+      <DependentUpon>CSFamilia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\produto\CSProduto.resx">
+      <DependentUpon>CSProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\produto\PQProduto.resx">
+      <DependentUpon>PQProduto.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\relatorio\CDRelatorio.resx">
+      <DependentUpon>CDRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\relatorio\CSRelatorio.resx">
+      <DependentUpon>CSRelatorio.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\relatorio\DGParametro.resx">
+      <DependentUpon>DGParametro.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\relatorio\GRGrafico.resx">
+      <DependentUpon>GRGrafico.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\relatorio\GRTela.resx">
+      <DependentUpon>GRTela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\CDTela.resx">
+      <DependentUpon>CDTela.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\CDUsuario.resx">
+      <DependentUpon>CDUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\CFUsuario.resx">
+      <DependentUpon>CFUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\CTModulo.resx">
+      <DependentUpon>CTModulo.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\CTUsuario.resx">
+      <DependentUpon>CTUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\homeMenu.resx">
+      <DependentUpon>homeMenu.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\IDUsuario.resx">
+      <DependentUpon>IDUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\novaHome.resx">
+      <DependentUpon>novaHome.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\PQCidade.resx">
+      <DependentUpon>PQCidade.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\venda\ATVenda.resx">
+      <DependentUpon>ATVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\venda\CDBalcao.resx">
+      <DependentUpon>CDBalcao.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\venda\CDBalcao2.resx">
+      <DependentUpon>CDBalcao2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\venda\CDVenda.resx">
+      <DependentUpon>CDVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\venda\CFFuncionario.resx">
+      <DependentUpon>CFFuncionario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\venda\CSVenda.resx">
+      <DependentUpon>CSVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\venda\PQVenda.resx">
+      <DependentUpon>PQVenda.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\venda\selectSede.resx">
+      <DependentUpon>selectSede.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="GM.cd" />
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
