@@ -102,5 +102,13 @@ namespace GM.View.relatorio {
 				Controller.relatorio.gerarGrafico(this.relato);
 			}
 		}
+		
+		void UiSymbolButton1Click(object sender, EventArgs e) {
+			if(relato == null) {
+				MessageBox.Show("Nenhum relatório selecionado.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+			} else {
+				Controller.relatorio.gerarPDF(this.relato);
+			}
+		}
 	}
 }

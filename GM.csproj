@@ -11,6 +11,7 @@
     <AppDesignerFolder>Properties</AppDesignerFolder>
     <StartupObject>GM.Program</StartupObject>
     <NoWin32Manifest>False</NoWin32Manifest>
+    <ApplicationIcon>Icones\Logo.ico</ApplicationIcon>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Platform)' == 'AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -33,6 +34,12 @@
     <DefineConstants>TRACE</DefineConstants>
   </PropertyGroup>
   <ItemGroup>
+    <Reference Include="HtmlRenderer">
+      <HintPath>bin\Debug\HtmlRenderer.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlRenderer.PdfSharp">
+      <HintPath>bin\Debug\HtmlRenderer.PdfSharp.dll</HintPath>
+    </Reference>
     <Reference Include="MaterialSkin">
       <HintPath>..\..\LMS\LMS\bin\Debug\MaterialSkin.dll</HintPath>
     </Reference>
@@ -44,6 +51,18 @@
     </Reference>
     <Reference Include="Newtonsoft.Json">
       <HintPath>..\..\..\Downloads\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp">
+      <HintPath>bin\net20\PdfSharp.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting">
+      <HintPath>bin\net20\PdfSharp.Charting.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.Charting.resources">
+      <HintPath>bin\net20\PdfSharp.Charting.resources.dll</HintPath>
+    </Reference>
+    <Reference Include="PdfSharp.resources">
+      <HintPath>bin\net20\PdfSharp.resources.dll</HintPath>
     </Reference>
     <Reference Include="ReaLTaiizor">
       <HintPath>..\..\LMS\LMS\bin\Debug\ReaLTaiizor.dll</HintPath>
@@ -244,6 +263,14 @@
     <Compile Include="View\relatorio\GRTela.Designer.cs">
       <DependentUpon>GRTela.cs</DependentUpon>
     </Compile>
+    <Compile Include="View\relatorio\programado\CDProgramado.cs" />
+    <Compile Include="View\relatorio\programado\CDProgramado.Designer.cs">
+      <DependentUpon>CDProgramado.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\relatorio\programado\CSProgramado.cs" />
+    <Compile Include="View\relatorio\programado\CSProgramado.Designer.cs">
+      <DependentUpon>CSProgramado.cs</DependentUpon>
+    </Compile>
     <Compile Include="View\Sistema\CDTela.cs" />
     <Compile Include="View\Sistema\CDTela.Designer.cs">
       <DependentUpon>CDTela.cs</DependentUpon>
@@ -251,6 +278,10 @@
     <Compile Include="View\Sistema\CDUsuario.cs" />
     <Compile Include="View\Sistema\CDUsuario.Designer.cs">
       <DependentUpon>CDUsuario.cs</DependentUpon>
+    </Compile>
+    <Compile Include="View\Sistema\CFConexao.cs" />
+    <Compile Include="View\Sistema\CFConexao.Designer.cs">
+      <DependentUpon>CFConexao.cs</DependentUpon>
     </Compile>
     <Compile Include="View\Sistema\CFUsuario.cs" />
     <Compile Include="View\Sistema\CFUsuario.Designer.cs">
@@ -332,6 +363,7 @@
     <Folder Include="View\contas" />
     <Folder Include="View\custo" />
     <Folder Include="View\relatorio" />
+    <Folder Include="View\relatorio\programado" />
     <Folder Include="View\venda" />
     <Folder Include="View\pessoa" />
     <Folder Include="View\produto" />
@@ -443,11 +475,20 @@
     <EmbeddedResource Include="View\relatorio\GRTela.resx">
       <DependentUpon>GRTela.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="View\relatorio\programado\CDProgramado.resx">
+      <DependentUpon>CDProgramado.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\relatorio\programado\CSProgramado.resx">
+      <DependentUpon>CSProgramado.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="View\Sistema\CDTela.resx">
       <DependentUpon>CDTela.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Sistema\CDUsuario.resx">
       <DependentUpon>CDUsuario.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="View\Sistema\CFConexao.resx">
+      <DependentUpon>CFConexao.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Sistema\CFUsuario.resx">
       <DependentUpon>CFUsuario.cs</DependentUpon>

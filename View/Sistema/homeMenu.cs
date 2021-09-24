@@ -11,7 +11,9 @@ using GM.View.condicao;
 using GM.View.contas;
 using GM.View.custo;
 using GM.View.estoque;
+using GM.View.pessoa;
 using GM.View.produto;
+using GM.View.relatorio;
 using GM.View.venda;
 using MaterialSkin;
 using MaterialSkin.Controls;
@@ -34,7 +36,7 @@ namespace GM.View.Sistema {
 		}
 		
 		private void atualizarVisual() {
-			this.Text = "GML - Olá, seja bem-vindo " + Ferramentas.sessao.nome;
+			this.Text = "GML - " + Ferramentas.sessao.nome;
 			foreach (TabPage tb in TabControle.TabPages) {
 				foreach (Control ct in tb.Controls.OfType<Button>()) {
 					if(ct.Name.Contains("btnF")) {
@@ -60,6 +62,10 @@ namespace GM.View.Sistema {
 		private CSCusto custoConsulta;
 		private CSCredito creditoConsulta;
 		private CSCondicao condicaoConsulta;
+		private CSRelatorio relatorioConsulta;
+		private CDPessoa pessoaConsulta;
+		private CTModulo permissaoUsuario;
+		private CTUsuario usuarioControl;
 	// ========================================
 		
 		void cliqueVendaBalcao(object sender, EventArgs e) {
@@ -196,9 +202,55 @@ namespace GM.View.Sistema {
 				condicaoConsulta.Show();
 			}
 		}
+		
+		
+		void cliquePessoaConsulta(object sender, EventArgs e) {
+			try {
+				pessoaConsulta.WindowState = FormWindowState.Minimized;
+				pessoaConsulta.WindowState = FormWindowState.Normal;
+				pessoaConsulta.Show();
+			} catch (Exception) {
+				pessoaConsulta = new CDPessoa();
+				pessoaConsulta.Show();
+			}
+		}
+		
+		void cliqueUsuarioControle(object sender, EventArgs e) {
+			try {
+				usuarioControl.WindowState = FormWindowState.Minimized;
+				usuarioControl.WindowState = FormWindowState.Normal;
+				usuarioControl.Show();
+			} catch (Exception) {
+				usuarioControl = new CTUsuario();
+				usuarioControl.Show();
+			}
+		}
+		
+		void cliquePermissaoControle(object sender, EventArgs e) {
+			try {
+				permissaoUsuario.WindowState = FormWindowState.Minimized;
+				permissaoUsuario.WindowState = FormWindowState.Normal;
+				permissaoUsuario.Show();
+			} catch (Exception) {
+				permissaoUsuario = new CTModulo();
+				permissaoUsuario.Show();
+			}
+		}
+		
+		void cliqueRelatorioConsulta(object sender, EventArgs e) {
+			try {
+				relatorioConsulta.WindowState = FormWindowState.Minimized;
+				relatorioConsulta.WindowState = FormWindowState.Normal;
+				relatorioConsulta.Show();
+			} catch (Exception) {
+				relatorioConsulta = new CSRelatorio();
+				relatorioConsulta.Show();
+			}
+		}
+		
+		void cliqueRelatorioProgramado(object sender, EventArgs e) {
+			
+		}
 	}
-	
-	
-	
-	
+		
 }

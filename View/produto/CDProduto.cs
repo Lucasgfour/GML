@@ -81,7 +81,8 @@ namespace GM.View.produto {
 							txtCodigo.Text = "";
 							txtDescricao.Text = "";	
 							txtValor.Text = "";
-							txtCodBarra.Text = "";							
+							txtCodBarra.Text = "";
+							txtDescricao.Focus();
 						} else {
 							this.Close();
 						}

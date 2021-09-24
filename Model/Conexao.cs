@@ -17,7 +17,7 @@ namespace GM.Model {
         }
 
         public Resultado openConexao() {
-            return openConexao("localhost", "root", "", "gm");
+            return openConexao(Preferencias.Default.Srv_IP, Preferencias.Default.Srv_User, Preferencias.Default.Srv_Senha, Preferencias.Default.Srv_Banco);
         }
 
         public MySqlConnection getConexao() {

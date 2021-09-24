@@ -130,7 +130,7 @@ namespace GM.View
 			this.MaximizeBox = false;
 			this.Name = "IDUsuario";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "GM - Entrar";
+			this.Text = "GML - Entrar";
 			this.Load += new System.EventHandler(this.Arranque);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.IDUsuarioKeyDown);
 			this.ResumeLayout(false);

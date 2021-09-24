@@ -25,6 +25,54 @@ namespace GM {
 		
 		[global::System.Configuration.UserScopedSettingAttribute()]
 		[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+		[global::System.Configuration.DefaultSettingValueAttribute("gm")]
+		public string Srv_Banco {
+			get {
+				return ((string)(this["Srv_Banco"]));
+			}
+			set {
+				this["Srv_Banco"] = value;
+			}
+		}
+		
+		[global::System.Configuration.UserScopedSettingAttribute()]
+		[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+		[global::System.Configuration.DefaultSettingValueAttribute("localhost")]
+		public string Srv_IP {
+			get {
+				return ((string)(this["Srv_IP"]));
+			}
+			set {
+				this["Srv_IP"] = value;
+			}
+		}
+		
+		[global::System.Configuration.UserScopedSettingAttribute()]
+		[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+		[global::System.Configuration.DefaultSettingValueAttribute("")]
+		public string Srv_Senha {
+			get {
+				return ((string)(this["Srv_Senha"]));
+			}
+			set {
+				this["Srv_Senha"] = value;
+			}
+		}
+		
+		[global::System.Configuration.UserScopedSettingAttribute()]
+		[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
+		[global::System.Configuration.DefaultSettingValueAttribute("root")]
+		public string Srv_User {
+			get {
+				return ((string)(this["Srv_User"]));
+			}
+			set {
+				this["Srv_User"] = value;
+			}
+		}
+		
+		[global::System.Configuration.UserScopedSettingAttribute()]
+		[global::System.Diagnostics.DebuggerNonUserCodeAttribute()]
 		[global::System.Configuration.DefaultSettingValueAttribute("")]
 		public string Usr_last_login {
 			get {

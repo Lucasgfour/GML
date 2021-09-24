@@ -4,6 +4,18 @@
     <Profile Name="(Default)" />
   </Profiles>
   <Settings>
+    <Setting Name="Srv_Banco" Type="System.String" Scope="User" Roaming="false">
+      <Value Profile="(Default)">gm</Value>
+    </Setting>
+    <Setting Name="Srv_IP" Type="System.String" Scope="User" Roaming="false">
+      <Value Profile="(Default)">localhost</Value>
+    </Setting>
+    <Setting Name="Srv_Senha" Type="System.String" Scope="User" Roaming="false">
+      <Value Profile="(Default)" />
+    </Setting>
+    <Setting Name="Srv_User" Type="System.String" Scope="User" Roaming="false">
+      <Value Profile="(Default)">root</Value>
+    </Setting>
     <Setting Name="Usr_last_login" Type="System.String" Scope="User" Roaming="false">
       <Value Profile="(Default)" />
     </Setting>

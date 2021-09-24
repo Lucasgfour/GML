@@ -34,6 +34,9 @@ namespace GM.View {
 			con.fecharConexao();
 			if(!res.condicao) {
 				MessageBox.Show("Não foi possível estabelecer a conexão com o banco de dados : " + res.mensagem, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				if(MessageBox.Show("Deseja configurar a conexão ?", "Configurar Conexão", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+					if(new CFConexao().ShowDialog() == DialogResult.OK) { }
+				}
 				Application.Exit();
 			} else {
 				if(!Preferencias.Default.Usr_last_login.Trim().Equals("")) {

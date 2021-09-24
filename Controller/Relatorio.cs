@@ -8,6 +8,9 @@ using System.Windows.Forms;
 using GM.Model;
 using GM.View.relatorio;
 using Newtonsoft.Json;
+using PdfSharp;
+using TheArtOfDev.HtmlRenderer.Core;
+using TheArtOfDev.HtmlRenderer.PdfSharp;
 
 namespace GM.Controller {
 	
@@ -40,6 +43,20 @@ namespace GM.Controller {
 				return "ERRO";
 			}
 		}
+	}
+	
+	public class Relatorio_Programado {
+		
+		public int codigo {get; set;}
+		public String email {get; set;}
+		public int relatorio {get; set;}
+		public String nome {get; set;}
+		public DateTime ultimo {get; set;}
+		public int tipo {get; set;} // 0 - Diário / 1 - Semanal / 2 - Mensal
+		
+		
+		
+		// SELECT * FROM relatorio_programado WHERE (tipo = 0 AND ultimo < '2021-09-24') OR (tipo = 1 AND ultimo < '2021-09-18') OR (tipo = 2 AND ultimo < '2021-09-23');		
 	}
 	
 	public static class relatorio {
@@ -109,6 +126,58 @@ namespace GM.Controller {
 				GRGrafico gr = new GRGrafico(dt.converter<DataTable>(), a.descricao);
 				gr.ShowDialog();
 			}
+		}
+		
+		public static string gerarPDF(Relatorio a) {
+			Resultado dt = gerarDataTable(a);
+			if(!dt.condicao) {
+				MessageBox.Show("Erro ao gerar relatório : " + dt.mensagem, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return "";
+			} else if(!File.Exists(Application.StartupPath + "\\Relatorio\\PDF\\Modelo.html")) {
+				MessageBox.Show("Arquivo modelo de relatório WEB não encontrado, contate o administrador do sistema.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+				return "";
+			} else {
+				String pagina = File.ReadAllText(Application.StartupPath + "\\Relatorio\\PDF\\Modelo.html");
+				DataTable dados = dt.converter<DataTable>();
+				
+				String tabela = "<thead><tr>";
+				foreach (DataColumn coluna in dados.Columns) {
+					tabela = tabela + "<th>" + coluna.ColumnName + "</th>";
+				}
+				tabela = tabela + "</tr></thead><tbody>";
+				
+				foreach (DataRow linha in dados.Rows) {
+					tabela = tabela + "<tr>";
+					foreach (DataColumn coluna in dados.Columns) {
+						tabela = tabela + "<td>" + linha[coluna.ColumnName].ToString() + "</td>"; 
+					}
+					tabela = tabela + "</tr>";
+				}
+				
+				pagina = pagina.Replace("@titulo", a.descricao);
+				pagina = pagina.Replace("@dados", tabela);
+				
+				Byte[] arquivo = PdfSharpConvert(pagina);
+				
+				try {
+					String nome = "Relatorio_Codigo" + a.codigo.ToString() + "_" + DateTime.Now.ToString("dd_MM_yyyy_hh_mm_ss") + ".pdf";
+					File.WriteAllBytes(Application.StartupPath + "\\Relatorio\\PDF\\" + nome, arquivo);
+					return Application.StartupPath + "\\Relatorio\\PDF\\" + nome;
+				} catch (Exception eSalvar) {
+					MessageBox.Show("Erro ao salvar arquivo : " + eSalvar.Message, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					return "";
+				}
+			}
+		}
+		
+		private static Byte[] PdfSharpConvert(String html) {
+		    Byte[] res = null;
+		    using (MemoryStream ms = new MemoryStream()) {
+	    		var pdf = PdfGenerator.GeneratePdf(html, PageSize.A4);
+		        pdf.Save(ms);
+		        res = ms.ToArray();
+		    }
+		    return res;
 		}
 		
 		public static void gerarWeb(Relatorio a) {

@@ -46,6 +46,11 @@ namespace GM.View.Sistema
 			this.btnFContasReceber = new System.Windows.Forms.Button();
 			this.btnFContasPagar = new System.Windows.Forms.Button();
 			this.TabDiversos = new System.Windows.Forms.TabPage();
+			this.btnFRelatorioProgramados = new System.Windows.Forms.Button();
+			this.btnFRelatoriosConsulta = new System.Windows.Forms.Button();
+			this.btnFUsuarioPermissao = new System.Windows.Forms.Button();
+			this.btnFUsuarioControle = new System.Windows.Forms.Button();
+			this.btnFPessoaConsulta = new System.Windows.Forms.Button();
 			this.btnFCondicaoConsulta = new System.Windows.Forms.Button();
 			this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
 			this.TabControle.SuspendLayout();
@@ -86,7 +91,7 @@ namespace GM.View.Sistema
 			this.TabControle.MouseState = MaterialSkin.MouseState.HOVER;
 			this.TabControle.Name = "TabControle";
 			this.TabControle.SelectedIndex = 0;
-			this.TabControle.Size = new System.Drawing.Size(786, 394);
+			this.TabControle.Size = new System.Drawing.Size(724, 394);
 			this.TabControle.TabIndex = 2;
 			// 
 			// TabVendaCompra
@@ -97,7 +102,7 @@ namespace GM.View.Sistema
 			this.TabVendaCompra.Location = new System.Drawing.Point(4, 22);
 			this.TabVendaCompra.Name = "TabVendaCompra";
 			this.TabVendaCompra.Padding = new System.Windows.Forms.Padding(3);
-			this.TabVendaCompra.Size = new System.Drawing.Size(778, 368);
+			this.TabVendaCompra.Size = new System.Drawing.Size(716, 368);
 			this.TabVendaCompra.TabIndex = 0;
 			this.TabVendaCompra.Text = "Vendas e Compras";
 			this.TabVendaCompra.UseVisualStyleBackColor = true;
@@ -148,7 +153,7 @@ namespace GM.View.Sistema
 			this.TabProduto.Location = new System.Drawing.Point(4, 22);
 			this.TabProduto.Name = "TabProduto";
 			this.TabProduto.Padding = new System.Windows.Forms.Padding(3);
-			this.TabProduto.Size = new System.Drawing.Size(778, 368);
+			this.TabProduto.Size = new System.Drawing.Size(716, 368);
 			this.TabProduto.TabIndex = 1;
 			this.TabProduto.Text = "Produtos e Estoque";
 			this.TabProduto.UseVisualStyleBackColor = true;
@@ -220,7 +225,7 @@ namespace GM.View.Sistema
 			this.TabFinanceiro.Location = new System.Drawing.Point(4, 22);
 			this.TabFinanceiro.Name = "TabFinanceiro";
 			this.TabFinanceiro.Padding = new System.Windows.Forms.Padding(3);
-			this.TabFinanceiro.Size = new System.Drawing.Size(778, 368);
+			this.TabFinanceiro.Size = new System.Drawing.Size(716, 368);
 			this.TabFinanceiro.TabIndex = 2;
 			this.TabFinanceiro.Text = "Financeiro";
 			this.TabFinanceiro.UseVisualStyleBackColor = true;
@@ -266,6 +271,7 @@ namespace GM.View.Sistema
 			// btnFCadastroCusto
 			// 
 			this.btnFCadastroCusto.BackColor = System.Drawing.Color.Silver;
+			this.btnFCadastroCusto.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
 			this.btnFCadastroCusto.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.btnFCadastroCusto.FlatAppearance.BorderSize = 0;
 			this.btnFCadastroCusto.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
@@ -322,14 +328,114 @@ namespace GM.View.Sistema
 			// 
 			// TabDiversos
 			// 
+			this.TabDiversos.Controls.Add(this.btnFRelatorioProgramados);
+			this.TabDiversos.Controls.Add(this.btnFRelatoriosConsulta);
+			this.TabDiversos.Controls.Add(this.btnFUsuarioPermissao);
+			this.TabDiversos.Controls.Add(this.btnFUsuarioControle);
+			this.TabDiversos.Controls.Add(this.btnFPessoaConsulta);
 			this.TabDiversos.Controls.Add(this.btnFCondicaoConsulta);
 			this.TabDiversos.Location = new System.Drawing.Point(4, 22);
 			this.TabDiversos.Name = "TabDiversos";
 			this.TabDiversos.Padding = new System.Windows.Forms.Padding(3);
-			this.TabDiversos.Size = new System.Drawing.Size(778, 368);
+			this.TabDiversos.Size = new System.Drawing.Size(716, 368);
 			this.TabDiversos.TabIndex = 3;
 			this.TabDiversos.Text = "Diversos";
 			this.TabDiversos.UseVisualStyleBackColor = true;
+			// 
+			// btnFRelatorioProgramados
+			// 
+			this.btnFRelatorioProgramados.BackColor = System.Drawing.Color.Silver;
+			this.btnFRelatorioProgramados.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnFRelatorioProgramados.FlatAppearance.BorderSize = 0;
+			this.btnFRelatorioProgramados.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnFRelatorioProgramados.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFRelatorioProgramados.ForeColor = System.Drawing.Color.White;
+			this.btnFRelatorioProgramados.Image = ((System.Drawing.Image)(resources.GetObject("btnFRelatorioProgramados.Image")));
+			this.btnFRelatorioProgramados.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnFRelatorioProgramados.Location = new System.Drawing.Point(8, 99);
+			this.btnFRelatorioProgramados.Name = "btnFRelatorioProgramados";
+			this.btnFRelatorioProgramados.Size = new System.Drawing.Size(137, 87);
+			this.btnFRelatorioProgramados.TabIndex = 8;
+			this.btnFRelatorioProgramados.Text = "Relatórios Programados";
+			this.btnFRelatorioProgramados.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnFRelatorioProgramados.UseVisualStyleBackColor = false;
+			this.btnFRelatorioProgramados.Click += new System.EventHandler(this.cliqueRelatorioProgramado);
+			// 
+			// btnFRelatoriosConsulta
+			// 
+			this.btnFRelatoriosConsulta.BackColor = System.Drawing.Color.Silver;
+			this.btnFRelatoriosConsulta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnFRelatoriosConsulta.FlatAppearance.BorderSize = 0;
+			this.btnFRelatoriosConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnFRelatoriosConsulta.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFRelatoriosConsulta.ForeColor = System.Drawing.Color.White;
+			this.btnFRelatoriosConsulta.Image = ((System.Drawing.Image)(resources.GetObject("btnFRelatoriosConsulta.Image")));
+			this.btnFRelatoriosConsulta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnFRelatoriosConsulta.Location = new System.Drawing.Point(580, 6);
+			this.btnFRelatoriosConsulta.Name = "btnFRelatoriosConsulta";
+			this.btnFRelatoriosConsulta.Size = new System.Drawing.Size(137, 87);
+			this.btnFRelatoriosConsulta.TabIndex = 7;
+			this.btnFRelatoriosConsulta.Text = "Relatórios";
+			this.btnFRelatoriosConsulta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnFRelatoriosConsulta.UseVisualStyleBackColor = false;
+			this.btnFRelatoriosConsulta.Click += new System.EventHandler(this.cliqueRelatorioConsulta);
+			// 
+			// btnFUsuarioPermissao
+			// 
+			this.btnFUsuarioPermissao.BackColor = System.Drawing.Color.Silver;
+			this.btnFUsuarioPermissao.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnFUsuarioPermissao.FlatAppearance.BorderSize = 0;
+			this.btnFUsuarioPermissao.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnFUsuarioPermissao.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFUsuarioPermissao.ForeColor = System.Drawing.Color.White;
+			this.btnFUsuarioPermissao.Image = ((System.Drawing.Image)(resources.GetObject("btnFUsuarioPermissao.Image")));
+			this.btnFUsuarioPermissao.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnFUsuarioPermissao.Location = new System.Drawing.Point(437, 6);
+			this.btnFUsuarioPermissao.Name = "btnFUsuarioPermissao";
+			this.btnFUsuarioPermissao.Size = new System.Drawing.Size(137, 87);
+			this.btnFUsuarioPermissao.TabIndex = 6;
+			this.btnFUsuarioPermissao.Text = "Controle de Permissões";
+			this.btnFUsuarioPermissao.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnFUsuarioPermissao.UseVisualStyleBackColor = false;
+			this.btnFUsuarioPermissao.Click += new System.EventHandler(this.cliquePermissaoControle);
+			// 
+			// btnFUsuarioControle
+			// 
+			this.btnFUsuarioControle.BackColor = System.Drawing.Color.Silver;
+			this.btnFUsuarioControle.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnFUsuarioControle.FlatAppearance.BorderSize = 0;
+			this.btnFUsuarioControle.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnFUsuarioControle.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFUsuarioControle.ForeColor = System.Drawing.Color.White;
+			this.btnFUsuarioControle.Image = ((System.Drawing.Image)(resources.GetObject("btnFUsuarioControle.Image")));
+			this.btnFUsuarioControle.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnFUsuarioControle.Location = new System.Drawing.Point(294, 6);
+			this.btnFUsuarioControle.Name = "btnFUsuarioControle";
+			this.btnFUsuarioControle.Size = new System.Drawing.Size(137, 87);
+			this.btnFUsuarioControle.TabIndex = 5;
+			this.btnFUsuarioControle.Text = "Controle de \r\nUsuários";
+			this.btnFUsuarioControle.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnFUsuarioControle.UseVisualStyleBackColor = false;
+			this.btnFUsuarioControle.Click += new System.EventHandler(this.cliqueUsuarioControle);
+			// 
+			// btnFPessoaConsulta
+			// 
+			this.btnFPessoaConsulta.BackColor = System.Drawing.Color.Silver;
+			this.btnFPessoaConsulta.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnFPessoaConsulta.FlatAppearance.BorderSize = 0;
+			this.btnFPessoaConsulta.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnFPessoaConsulta.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFPessoaConsulta.ForeColor = System.Drawing.Color.White;
+			this.btnFPessoaConsulta.Image = ((System.Drawing.Image)(resources.GetObject("btnFPessoaConsulta.Image")));
+			this.btnFPessoaConsulta.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnFPessoaConsulta.Location = new System.Drawing.Point(151, 6);
+			this.btnFPessoaConsulta.Name = "btnFPessoaConsulta";
+			this.btnFPessoaConsulta.Size = new System.Drawing.Size(137, 87);
+			this.btnFPessoaConsulta.TabIndex = 4;
+			this.btnFPessoaConsulta.Text = "Consulta de Clientes e Fornecedores";
+			this.btnFPessoaConsulta.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnFPessoaConsulta.UseVisualStyleBackColor = false;
+			this.btnFPessoaConsulta.Click += new System.EventHandler(this.cliquePessoaConsulta);
 			// 
 			// btnFCondicaoConsulta
 			// 
@@ -365,12 +471,12 @@ namespace GM.View.Sistema
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(786, 495);
+			this.ClientSize = new System.Drawing.Size(724, 495);
 			this.Controls.Add(this.materialTabSelector1);
 			this.Controls.Add(this.TabControle);
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "homeMenu";
-			this.Sizable = false;
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "GML - Gestão";
 			this.Load += new System.EventHandler(this.arranqueFormulario);
@@ -381,6 +487,11 @@ namespace GM.View.Sistema
 			this.TabDiversos.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Button btnFRelatorioProgramados;
+		private System.Windows.Forms.Button btnFUsuarioPermissao;
+		private System.Windows.Forms.Button btnFRelatoriosConsulta;
+		private System.Windows.Forms.Button btnFUsuarioControle;
+		private System.Windows.Forms.Button btnFPessoaConsulta;
 		private System.Windows.Forms.Button btnFCondicaoConsulta;
 		private System.Windows.Forms.Button btnFCreditoConsulta;
 		private System.Windows.Forms.Button btnFCustoConsulta;
