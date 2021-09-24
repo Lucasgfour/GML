@@ -498,6 +498,4 @@ CREATE TABLE relatorio_programado (
 		FOREIGN KEY (relatorio) REFERENCES relatorio(codigo)
 		ON DELETE CASCADE
 		ON UPDATE CASCADE
-	
-
-)
+);

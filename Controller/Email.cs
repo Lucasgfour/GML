@@ -30,7 +30,7 @@ namespace GM.Controller {
             client.Credentials = credentials;
             try {
                 var mail = new MailMessage(this.usuario, recipient.Trim());
-                mail.Subject = subject;
+                mail.Subject = subject + " - " + DateTime.Today.ToString("dd/MM/yyyy");
                 mail.Body = "GML Sistemas - Relatório entregue !";
             	mail.BodyEncoding = System.Text.Encoding.UTF8;
             	FileStream fl = new FileStream(anexo, FileMode.Open);

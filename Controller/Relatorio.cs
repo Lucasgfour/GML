@@ -63,7 +63,7 @@ namespace GM.Controller {
 	public static class relatorio {
 		
 		public static Resultado getRelatorio() {
-			Comando com = new Comando("SELECT A.codigo, A.nome, A.email, B.comando FROM relatorio_programado AS A INNER JOIN relatorio AS B ON B.codigo = A.relatorio WHERE (tipo = 0 AND ultimo < CURRENT_TIMESTAMP()) OR (tipo = 1 AND ultimo < (CURRENT_TIMESTAMP() - 6)) OR (tipo = 2 AND ultimo < (CURRENT_TIMESTAMP() - 29))");
+			Comando com = new Comando("SELECT A.codigo, A.nome, A.email, B.comando FROM relatorio_programado AS A INNER JOIN relatorio AS B ON B.codigo = A.relatorio WHERE (tipo = 0 AND ultimo <= ADDDATE(CURRENT_TIMESTAMP(), -1)) OR (tipo = 1 AND ultimo < ADDDATE(CURRENT_TIMESTAMP(), -6)) OR (tipo = 2 AND ultimo < ADDDATE(CURRENT_TIMESTAMP(), -29));");
 			return com.consultarToDataTable();
 		}
 		

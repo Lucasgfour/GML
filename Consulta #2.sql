@@ -49,4 +49,6 @@ SELECT SaldoEstoque(1);
 
 SELECT * FROM estoque ORDER BY dtmov, codigo ASC;
 
-SELECT A.codigo, A.nome, B.comando FROM relatorio_programado AS A INNER JOIN relatorio AS B ON A.codigo = B.relatorio WHERE (tipo = 0 AND ultimo < '2021-09-24') OR (tipo = 1 AND ultimo < '2021-09-18') OR (tipo = 2 AND ultimo < '2021-09-23');		
+SELECT ADDDATE(CURRENT_TIMESTAMP(), -1);
+
+SELECT A.codigo, A.nome, A.email, B.comando FROM relatorio_programado AS A INNER JOIN relatorio AS B ON B.codigo = A.relatorio WHERE (tipo = 0 AND ultimo <= ADDDATE(CURRENT_TIMESTAMP(), -1)) OR (tipo = 1 AND ultimo < ADDDATE(CURRENT_TIMESTAMP(), -6)) OR (tipo = 2 AND ultimo < ADDDATE(CURRENT_TIMESTAMP(), -29));		

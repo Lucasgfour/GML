@@ -72,6 +72,12 @@ namespace GM.View.Sistema {
 								Email em = new Email(lin[1].ToString(), lin[2].ToString(), gerarPDF);
 								Resultado resEmail = em.SendMail(em.email, em.assunto, em.anexo);
 								log = log + "Linha :" + lin[0].ToString() + " - " + resEmail.mensagem + Environment.NewLine;
+								if(resEmail.condicao) {
+									Comando comFinal = new Comando("UPDATE relatorio_programado SET ultimo = @ultimo WHERE codigo = @codigo");
+									comFinal.addParametro("@ultimo", DateTime.Today);
+									comFinal.addParametro("@codigo", int.Parse(lin[0].ToString()));
+									comFinal.executar();
+								}
 							}
 							
 							
@@ -85,9 +91,9 @@ namespace GM.View.Sistema {
 			File.WriteAllText(Application.StartupPath + "\\programados.log", log, System.Text.Encoding.UTF8);
 		}
 		
-	// === Botões para abrir telas ================================================================
+		// === Botões para abrir telas ================================================================
 	
-	// === Telas ==============================
+		// === Telas ==============================
 		private selectSede vendaBalcao;	
 		private CSVenda vendaConsulta;
 		private CSCompra compraConsulta;
@@ -105,7 +111,7 @@ namespace GM.View.Sistema {
 		private CTModulo permissaoUsuario;
 		private CTUsuario usuarioControl;
 		private CSProgramado programadoConsulta;
-	// ========================================
+		// ========================================
 		
 		void cliqueVendaBalcao(object sender, EventArgs e) {
 			try {
@@ -299,6 +305,24 @@ namespace GM.View.Sistema {
 		}
 		
 		
+		bool confirmaSair = true;
+		void sairSistema(object sender, FormClosingEventArgs e) {
+			if(confirmaSair) {
+				if(MessageBox.Show("Tem certeza que deseja sair ?", "Confirmação", MessageBoxButtons.YesNo, MessageBoxIcon.Question) == DialogResult.Yes) {
+					confirmaSair = false;
+				} else {
+					e.Cancel = true;
+				}
+			}
+		}
+		
+		void fecharSistema(object sender, FormClosedEventArgs e) {
+			Application.Exit();
+		}
+		
+		void cliqueUsuarioConfigura(object sender, EventArgs e) {
+			new CFUsuario().ShowDialog();
+		}
 	}
 		
 }

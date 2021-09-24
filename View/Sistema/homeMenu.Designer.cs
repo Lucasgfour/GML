@@ -54,6 +54,7 @@ namespace GM.View.Sistema
 			this.btnFCondicaoConsulta = new System.Windows.Forms.Button();
 			this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
 			this.bwkRelatorio = new System.ComponentModel.BackgroundWorker();
+			this.btnFUsuarioConfigura = new System.Windows.Forms.Button();
 			this.TabControle.SuspendLayout();
 			this.TabVendaCompra.SuspendLayout();
 			this.TabProduto.SuspendLayout();
@@ -329,6 +330,7 @@ namespace GM.View.Sistema
 			// 
 			// TabDiversos
 			// 
+			this.TabDiversos.Controls.Add(this.btnFUsuarioConfigura);
 			this.TabDiversos.Controls.Add(this.btnFRelatorioProgramados);
 			this.TabDiversos.Controls.Add(this.btnFRelatoriosConsulta);
 			this.TabDiversos.Controls.Add(this.btnFUsuarioPermissao);
@@ -472,6 +474,25 @@ namespace GM.View.Sistema
 			// 
 			this.bwkRelatorio.DoWork += new System.ComponentModel.DoWorkEventHandler(this.ProcessoProgramado);
 			// 
+			// btnFUsuarioConfigura
+			// 
+			this.btnFUsuarioConfigura.BackColor = System.Drawing.Color.Silver;
+			this.btnFUsuarioConfigura.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnFUsuarioConfigura.FlatAppearance.BorderSize = 0;
+			this.btnFUsuarioConfigura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnFUsuarioConfigura.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFUsuarioConfigura.ForeColor = System.Drawing.Color.White;
+			this.btnFUsuarioConfigura.Image = ((System.Drawing.Image)(resources.GetObject("btnFUsuarioConfigura.Image")));
+			this.btnFUsuarioConfigura.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnFUsuarioConfigura.Location = new System.Drawing.Point(151, 99);
+			this.btnFUsuarioConfigura.Name = "btnFUsuarioConfigura";
+			this.btnFUsuarioConfigura.Size = new System.Drawing.Size(137, 87);
+			this.btnFUsuarioConfigura.TabIndex = 9;
+			this.btnFUsuarioConfigura.Text = "Configurações Meu Usuário";
+			this.btnFUsuarioConfigura.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnFUsuarioConfigura.UseVisualStyleBackColor = false;
+			this.btnFUsuarioConfigura.Click += new System.EventHandler(this.cliqueUsuarioConfigura);
+			// 
 			// homeMenu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -484,6 +505,8 @@ namespace GM.View.Sistema
 			this.Name = "homeMenu";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "GML - Gestão";
+			this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.sairSistema);
+			this.FormClosed += new System.Windows.Forms.FormClosedEventHandler(this.fecharSistema);
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.TabControle.ResumeLayout(false);
 			this.TabVendaCompra.ResumeLayout(false);
@@ -492,6 +515,7 @@ namespace GM.View.Sistema
 			this.TabDiversos.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Button btnFUsuarioConfigura;
 		private System.ComponentModel.BackgroundWorker bwkRelatorio;
 		private System.Windows.Forms.Button btnFRelatorioProgramados;
 		private System.Windows.Forms.Button btnFUsuarioPermissao;
