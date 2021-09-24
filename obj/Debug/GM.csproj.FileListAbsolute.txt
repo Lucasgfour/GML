@@ -192,3 +192,8 @@ C:\Users\credecob01\Documents\GitHub\GML\obj\Debug\GM.pdb
 C:\Users\credecob01\Documents\GitHub\GML\obj\Debug\GM.View.Sistema.CFConexao.resources
 C:\Users\credecob01\Documents\GitHub\GML\bin\Debug\PdfSharp.xml
 C:\Users\credecob01\Documents\GitHub\GML\bin\Debug\PdfSharp.Charting.xml
+C:\Users\lucas\Documents\GitHub\GML\obj\Debug\GM.View.relatorio.programado.CDProgramado.resources
+C:\Users\lucas\Documents\GitHub\GML\obj\Debug\GM.View.relatorio.programado.CSProgramado.resources
+C:\Users\lucas\Documents\GitHub\GML\obj\Debug\GM.View.Sistema.CFConexao.resources
+C:\Users\lucas\Documents\GitHub\GML\bin\Debug\PdfSharp.xml
+C:\Users\lucas\Documents\GitHub\GML\bin\Debug\PdfSharp.Charting.xml

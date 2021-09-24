@@ -48,3 +48,5 @@ SELECT SUM(valor) FROM movi_contas WHERE conta = 14;
 SELECT SaldoEstoque(1);
 
 SELECT * FROM estoque ORDER BY dtmov, codigo ASC;
+
+SELECT A.codigo, A.nome, B.comando FROM relatorio_programado AS A INNER JOIN relatorio AS B ON A.codigo = B.relatorio WHERE (tipo = 0 AND ultimo < '2021-09-24') OR (tipo = 1 AND ultimo < '2021-09-18') OR (tipo = 2 AND ultimo < '2021-09-23');		

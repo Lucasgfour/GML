@@ -485,3 +485,19 @@ BEGIN
 	RETURN LAST_INSERT_ID();
 END //
 DELIMITER ;
+
+CREATE TABLE relatorio_programado (
+	codigo INT AUTO_INCREMENT,
+	nome VARCHAR(32) NOT NULL,
+	email VARCHAR(50) NOT NULL,
+	relatorio INT NOT NULL,
+	tipo INT NOT NULL,
+	ultimo DATE NOT NULL,
+	PRIMARY KEY(codigo),
+	CONSTRAINT FKRelatorioProgramado
+		FOREIGN KEY (relatorio) REFERENCES relatorio(codigo)
+		ON DELETE CASCADE
+		ON UPDATE CASCADE
+	
+
+)

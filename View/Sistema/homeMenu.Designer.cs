@@ -53,6 +53,7 @@ namespace GM.View.Sistema
 			this.btnFPessoaConsulta = new System.Windows.Forms.Button();
 			this.btnFCondicaoConsulta = new System.Windows.Forms.Button();
 			this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
+			this.bwkRelatorio = new System.ComponentModel.BackgroundWorker();
 			this.TabControle.SuspendLayout();
 			this.TabVendaCompra.SuspendLayout();
 			this.TabProduto.SuspendLayout();
@@ -467,6 +468,10 @@ namespace GM.View.Sistema
 			this.materialTabSelector1.TabIndex = 2;
 			this.materialTabSelector1.Text = "materialTabSelector1";
 			// 
+			// bwkRelatorio
+			// 
+			this.bwkRelatorio.DoWork += new System.ComponentModel.DoWorkEventHandler(this.ProcessoProgramado);
+			// 
 			// homeMenu
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -487,6 +492,7 @@ namespace GM.View.Sistema
 			this.TabDiversos.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
+		private System.ComponentModel.BackgroundWorker bwkRelatorio;
 		private System.Windows.Forms.Button btnFRelatorioProgramados;
 		private System.Windows.Forms.Button btnFUsuarioPermissao;
 		private System.Windows.Forms.Button btnFRelatoriosConsulta;

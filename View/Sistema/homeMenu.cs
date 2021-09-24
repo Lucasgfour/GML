@@ -1,9 +1,12 @@
 ﻿
 using System;
 using System.Collections.Generic;
+using System.Data;
 using System.Drawing;
+using System.IO;
 using System.Linq;
 using System.Windows.Forms;
+using System.Net.Mail;
 using GM.Controller;
 using GM.Model;
 using GM.View.compra;
@@ -14,6 +17,7 @@ using GM.View.estoque;
 using GM.View.pessoa;
 using GM.View.produto;
 using GM.View.relatorio;
+using GM.View.relatorio.programado;
 using GM.View.venda;
 using MaterialSkin;
 using MaterialSkin.Controls;
@@ -33,6 +37,7 @@ namespace GM.View.Sistema {
 		
 		void arranqueFormulario(object sender, EventArgs e) {
 			atualizarVisual();
+			bwkRelatorio.RunWorkerAsync();
 		}
 		
 		private void atualizarVisual() {
@@ -45,6 +50,39 @@ namespace GM.View.Sistema {
 					} 
 				}
 			}
+		}
+		
+		void ProcessoProgramado(object sender, System.ComponentModel.DoWorkEventArgs e) {
+			String log = "= " + DateTime.Now.ToString("dd/MM/yyyy hh:mm:ss") + Environment.NewLine;
+			Resultado res = Controller.relatorio.getRelatorio();
+			if(!res.condicao) {
+				log = log + "Erro Externo : " + res.mensagem + Environment.NewLine;
+			} else {
+				DataTable dados = res.converter<DataTable>();
+				
+				foreach (DataRow lin in dados.Rows) {
+					Comando com = new Comando(lin[3].ToString());
+					Resultado resDados = com.consultarToDataTable();
+					if(!resDados.condicao) {
+						log = log + "erro Linha :" + lin[0].ToString() + " - " + resDados.mensagem + Environment.NewLine;
+					} else {
+						try {
+							String gerarPDF = Controller.relatorio.gerarPDF(resDados.converter<DataTable>());
+							if(!gerarPDF.Equals("")) {
+								Email em = new Email(lin[1].ToString(), lin[2].ToString(), gerarPDF);
+								Resultado resEmail = em.SendMail(em.email, em.assunto, em.anexo);
+								log = log + "Linha :" + lin[0].ToString() + " - " + resEmail.mensagem + Environment.NewLine;
+							}
+							
+							
+						} catch (Exception erro) {
+							log = log + "erro Linha :" + lin[0].ToString() + " - " + erro.Message + Environment.NewLine;
+						}
+					}
+				}
+			}
+			
+			File.WriteAllText(Application.StartupPath + "\\programados.log", log, System.Text.Encoding.UTF8);
 		}
 		
 	// === Botões para abrir telas ================================================================
@@ -66,6 +104,7 @@ namespace GM.View.Sistema {
 		private CDPessoa pessoaConsulta;
 		private CTModulo permissaoUsuario;
 		private CTUsuario usuarioControl;
+		private CSProgramado programadoConsulta;
 	// ========================================
 		
 		void cliqueVendaBalcao(object sender, EventArgs e) {
@@ -249,8 +288,17 @@ namespace GM.View.Sistema {
 		}
 		
 		void cliqueRelatorioProgramado(object sender, EventArgs e) {
-			
+			try {
+				programadoConsulta.WindowState = FormWindowState.Minimized;
+				programadoConsulta.WindowState = FormWindowState.Normal;
+				programadoConsulta.Show();
+			} catch (Exception) {
+				programadoConsulta = new CSProgramado();
+				programadoConsulta.Show();
+			}	
 		}
+		
+		
 	}
 		
 }

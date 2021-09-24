@@ -99,6 +99,7 @@
     <Compile Include="Controller\Condicao.cs" />
     <Compile Include="Controller\Contas.cs" />
     <Compile Include="Controller\Custo.cs" />
+    <Compile Include="Controller\Email.cs" />
     <Compile Include="Controller\Estoque.cs" />
     <Compile Include="Controller\Familia.cs" />
     <Compile Include="Controller\Ferramentas.cs" />

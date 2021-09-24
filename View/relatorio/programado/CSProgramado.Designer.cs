@@ -82,6 +82,7 @@ namespace GM.View.relatorio.programado
 			this.btnAdicionar.TabIndex = 6;
 			this.btnAdicionar.Text = "ADICIONAR";
 			this.btnAdicionar.UseVisualStyleBackColor = true;
+			this.btnAdicionar.Click += new System.EventHandler(this.cliqueAdicionar);
 			// 
 			// btnEditar
 			// 
@@ -94,6 +95,7 @@ namespace GM.View.relatorio.programado
 			this.btnEditar.TabIndex = 7;
 			this.btnEditar.Text = "EDITAR";
 			this.btnEditar.UseVisualStyleBackColor = true;
+			this.btnEditar.Click += new System.EventHandler(this.cliqueEditar);
 			// 
 			// btnRemover
 			// 
@@ -106,6 +108,7 @@ namespace GM.View.relatorio.programado
 			this.btnRemover.TabIndex = 8;
 			this.btnRemover.Text = "REMOVER";
 			this.btnRemover.UseVisualStyleBackColor = true;
+			this.btnRemover.Click += new System.EventHandler(this.cliqueRemover);
 			// 
 			// CSProgramado
 			// 

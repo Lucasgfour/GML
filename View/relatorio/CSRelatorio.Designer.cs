@@ -41,7 +41,6 @@ namespace GM.View.relatorio
 			this.btnRemover = new Sunny.UI.UISymbolButton();
 			this.btnEditar = new Sunny.UI.UISymbolButton();
 			this.btnNovo = new Sunny.UI.UISymbolButton();
-			this.uiSymbolButton1 = new Sunny.UI.UISymbolButton();
 			this.gpxSelecionado.SuspendLayout();
 			this.gpxFerramentas.SuspendLayout();
 			this.SuspendLayout();
@@ -69,7 +68,6 @@ namespace GM.View.relatorio
 			// 
 			// gpxSelecionado
 			// 
-			this.gpxSelecionado.Controls.Add(this.uiSymbolButton1);
 			this.gpxSelecionado.Controls.Add(this.gerarGrafico);
 			this.gpxSelecionado.Controls.Add(this.gerarWeb);
 			this.gpxSelecionado.Controls.Add(this.gerarTabela);
@@ -212,20 +210,6 @@ namespace GM.View.relatorio
 			this.btnNovo.Text = "Novo";
 			this.btnNovo.Click += new System.EventHandler(this.cliqueNovo);
 			// 
-			// uiSymbolButton1
-			// 
-			this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.uiSymbolButton1.Location = new System.Drawing.Point(134, 276);
-			this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
-			this.uiSymbolButton1.Name = "uiSymbolButton1";
-			this.uiSymbolButton1.Size = new System.Drawing.Size(144, 29);
-			this.uiSymbolButton1.SymbolSize = 0;
-			this.uiSymbolButton1.TabIndex = 26;
-			this.uiSymbolButton1.Text = " Gerar em teste";
-			this.uiSymbolButton1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-			this.uiSymbolButton1.Click += new System.EventHandler(this.UiSymbolButton1Click);
-			// 
 			// CSRelatorio
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
@@ -245,7 +229,6 @@ namespace GM.View.relatorio
 			this.gpxFerramentas.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
-		private Sunny.UI.UISymbolButton uiSymbolButton1;
 		private Sunny.UI.UISymbolButton gerarTabela;
 		private Sunny.UI.UISymbolButton gerarWeb;
 		private Sunny.UI.UISymbolButton gerarGrafico;

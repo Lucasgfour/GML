@@ -24,6 +24,14 @@ namespace GM.View.relatorio.programado {
     		materialSkinManager.AddFormToManage(this);
 		}
 		
+		
+		public CDProgramado(Relatorio_Programado p) {
+			this.programado = p;
+			InitializeComponent();
+			var materialSkinManager = MaterialSkinManager.Instance;
+    		materialSkinManager.AddFormToManage(this);
+		}
+		
 		void arranqueFormulario(object sender, EventArgs e) {
 			preencherConsulta();
 			if(programado.codigo > 0) {
@@ -54,7 +62,7 @@ namespace GM.View.relatorio.programado {
 		}
 		
 		private void salvar() {
-			if(txtAssunto.Text = "") {
+			if(txtAssunto.Text.Equals("")) {
 				MessageBox.Show("Assunto inválido !", "Inválido", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			} else if(txtEmail.Text.Equals("") || !txtEmail.Text.Contains("@")) {
 				MessageBox.Show("Formato de e-mail inválido !", "E-mail inválido", MessageBoxButtons.OK, MessageBoxIcon.Exclamation);
@@ -72,7 +80,7 @@ namespace GM.View.relatorio.programado {
 					resSalvar = pDao.inserir(programado);
 				}
 				
-				if(resSalvar.condicao) {
+				if(!resSalvar.condicao) {
 					MessageBox.Show(resSalvar.mensagem, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				} else {
 					this.DialogResult = DialogResult.OK;

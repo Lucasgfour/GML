@@ -56,10 +56,16 @@ namespace GM.Controller {
 		
 		
 		
+		
 		// SELECT * FROM relatorio_programado WHERE (tipo = 0 AND ultimo < '2021-09-24') OR (tipo = 1 AND ultimo < '2021-09-18') OR (tipo = 2 AND ultimo < '2021-09-23');		
 	}
 	
 	public static class relatorio {
+		
+		public static Resultado getRelatorio() {
+			Comando com = new Comando("SELECT A.codigo, A.nome, A.email, B.comando FROM relatorio_programado AS A INNER JOIN relatorio AS B ON B.codigo = A.relatorio WHERE (tipo = 0 AND ultimo < CURRENT_TIMESTAMP()) OR (tipo = 1 AND ultimo < (CURRENT_TIMESTAMP() - 6)) OR (tipo = 2 AND ultimo < (CURRENT_TIMESTAMP() - 29))");
+			return com.consultarToDataTable();
+		}
 		
 		public static Resultado gerarDataTable(Relatorio a) {
 			Resultado saida = new Resultado(false, "Não gerado");
@@ -128,17 +134,11 @@ namespace GM.Controller {
 			}
 		}
 		
-		public static string gerarPDF(Relatorio a) {
-			Resultado dt = gerarDataTable(a);
-			if(!dt.condicao) {
-				MessageBox.Show("Erro ao gerar relatório : " + dt.mensagem, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
-				return "";
-			} else if(!File.Exists(Application.StartupPath + "\\Relatorio\\PDF\\Modelo.html")) {
-				MessageBox.Show("Arquivo modelo de relatório WEB não encontrado, contate o administrador do sistema.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
+		public static string gerarPDF(DataTable dados) {
+			if(!File.Exists(Application.StartupPath + "\\Relatorio\\PDF\\Modelo.html")) {
 				return "";
 			} else {
 				String pagina = File.ReadAllText(Application.StartupPath + "\\Relatorio\\PDF\\Modelo.html");
-				DataTable dados = dt.converter<DataTable>();
 				
 				String tabela = "<thead><tr>";
 				foreach (DataColumn coluna in dados.Columns) {
@@ -154,13 +154,13 @@ namespace GM.Controller {
 					tabela = tabela + "</tr>";
 				}
 				
-				pagina = pagina.Replace("@titulo", a.descricao);
+				pagina = pagina.Replace("@titulo", "PDF");
 				pagina = pagina.Replace("@dados", tabela);
 				
 				Byte[] arquivo = PdfSharpConvert(pagina);
 				
 				try {
-					String nome = "Relatorio_Codigo" + a.codigo.ToString() + "_" + DateTime.Now.ToString("dd_MM_yyyy_hh_mm_ss") + ".pdf";
+					String nome = "Relatorio_Codigo_" + DateTime.Now.ToString("dd_MM_yyyy_hh_mm_ss") + ".pdf";
 					File.WriteAllBytes(Application.StartupPath + "\\Relatorio\\PDF\\" + nome, arquivo);
 					return Application.StartupPath + "\\Relatorio\\PDF\\" + nome;
 				} catch (Exception eSalvar) {
