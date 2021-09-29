@@ -120,7 +120,7 @@ namespace GM.View.custo {
 				MessageBox.Show("Favor inserir um valor válido.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
 			} else {
 				DateTime data = DateTime.Parse(txtVencimento.Text);
-				decimal valor = decimal.Parse(txtParcVencimento.Text);
+				float valor = float.Parse(txtParcVencimento.Text);
 				
 				if(data < DateTime.Today) {
 					MessageBox.Show("Atenção ! Data de vencimento é inferior a Hoje, favor verificar.", "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Warning);
@@ -175,12 +175,12 @@ namespace GM.View.custo {
 				custo.emissao = DateTime.Parse(txtEmissao.Text);
 				custo.observacao = txtObservacao.Text;
 				custo.tipo = cbxTipo.SelectedIndex;
-				custo.valor = decimal.Parse(txtValor.Text);
+				custo.valor = float.Parse(txtValor.Text);
 				custo.pessoa = int.Parse(txtCodigoFornecedor.Text);
 				custo.sede = sedes.ElementAt(cbxLoja.SelectedIndex).codigo;
 				
 				// Criação das Parcelas
-				decimal totalParcela = 0;
+				float totalParcela = 0;
 				int parcela = 1;
 				pagamentos = new LinkedList<Contas>();
 				foreach (ListViewItem itm in listaPagamento.Items) {
@@ -192,7 +192,7 @@ namespace GM.View.custo {
 					nova.sequencia = parcela;
 					parcela += 1;
 					nova.tipo = 0;
-					nova.valor = decimal.Parse(itm.SubItems[1].Text);
+					nova.valor = float.Parse(itm.SubItems[1].Text);
 					nova.vencimento = DateTime.Parse(itm.SubItems[0].Text);
 					pagamentos.AddLast(nova);
 					totalParcela += nova.valor;

@@ -20,8 +20,8 @@ namespace GM.Controller {
 		public int codigo {get; set;}
 		public int compra {get; set;}
 		public int produto {get; set;}
-		public decimal quantidade {get; set;}
-		public decimal preco {get; set;}
+		public float quantidade {get; set;}
+		public float preco {get; set;}
 		
 	}
 }

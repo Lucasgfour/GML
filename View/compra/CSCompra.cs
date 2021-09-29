@@ -50,7 +50,7 @@ namespace GM.View.compra {
 				txtObservacoes.Text = compra.observacao;
 				
 				listaProdutos.Items.Clear();
-				decimal total = 0;
+				float total = 0;
 				
 				Comando schProdutos = new Comando("SELECT quantidade AS Quantidade, descricao AS Nome, A.preco AS Preço, (quantidade * A.preco) AS Total  FROM compra_item AS A INNER JOIN produto AS B ON B.codigo = A.produto AND A.compra = @pedido");
 				schProdutos.addParametro("@pedido", compra.codigo);
@@ -61,11 +61,11 @@ namespace GM.View.compra {
 					itens = resProdutos.converter<DataTable>();
 					foreach (DataRow linha in itens.Rows) {
 						ListViewItem itm = new ListViewItem();
-						itm.Text =  decimal.Parse(linha[0].ToString()).ToString("n3");
+						itm.Text =  float.Parse(linha[0].ToString()).ToString("n3");
 						itm.SubItems.Add(linha[1].ToString());
-						itm.SubItems.Add("R$ " + String.Format("{0:N}", decimal.Parse(linha[2].ToString())));
-						itm.SubItems.Add("R$ " + String.Format("{0:N}", decimal.Parse(linha[3].ToString())));
-						total += decimal.Parse(linha[3].ToString());
+						itm.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(linha[2].ToString())));
+						itm.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(linha[3].ToString())));
+						total += float.Parse(linha[3].ToString());
 						listaProdutos.Items.Add(itm);
 					}
 					

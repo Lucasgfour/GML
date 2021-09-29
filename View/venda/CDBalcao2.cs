@@ -16,7 +16,7 @@ namespace GM.View.venda {
 		
 		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
-		decimal total = 0;
+		float total = 0;
 		
 		private LinkedList<Venda_Produto> itens;
 		private LinkedList<Contas> contas;
@@ -61,7 +61,7 @@ namespace GM.View.venda {
 			Ferramentas.maskMoney(txtTroco);
 			if(!txtTroco.Text.Equals("")) {
 				try {
-					decimal troco = decimal.Parse(txtTroco.Text);
+					float troco = float.Parse(txtTroco.Text);
 					troco = troco - total;
 					if(troco < 0) {
 						labTroco.Text = "R$ 0,00";

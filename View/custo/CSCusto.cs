@@ -77,8 +77,8 @@ namespace GM.View.custo {
 						itm.Text = dt[0].ToString().PadLeft(6, '0');
 						itm.SubItems.Add(dt[1].ToString());
 						itm.SubItems.Add(DateTime.Parse(dt[2].ToString()).ToString("dd/MM/yyyy"));
-						itm.SubItems.Add("R$ " + String.Format("{0:N}", decimal.Parse(dt[3].ToString())));
-						itm.SubItems.Add("R$ " + String.Format("{0:N}", decimal.Parse(dt[4].ToString())));
+						itm.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(dt[3].ToString())));
+						itm.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(dt[4].ToString())));
 						listaParcelas.Items.Add(itm);
 					}
 				}

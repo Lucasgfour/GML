@@ -9,7 +9,7 @@ namespace GM.View.contas {
 	public partial class CDMovimento : Form {
 		
 		private Contas conta;
-		private Decimal saldo = 0;
+		private float saldo = 0;
 		private ObjectDao<Movi_Contas> mvDao = new ObjectDao<Movi_Contas>();
 		
 		public CDMovimento(Contas conta) {
@@ -23,7 +23,7 @@ namespace GM.View.contas {
 			} else {
 				Resultado resSaldo = new Comando("SELECT SUM(valor) FROM movi_contas WHERE conta = " + conta.codigo.ToString()).consultarValor();
 				if(resSaldo.condicao) {
-					saldo = decimal.Parse(resSaldo.resultado.ToString());
+					saldo = float.Parse(resSaldo.resultado.ToString());
 				}
 				
 				if(saldo == 0) {
@@ -45,7 +45,7 @@ namespace GM.View.contas {
 					MessageBox.Show("Favor informar a descrição da movimentação.", "Descrição", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				} else if(txtValor.Text.Equals("")) {
 					MessageBox.Show("Favor informar o valor da movimentação.", "Valor", MessageBoxButtons.OK, MessageBoxIcon.Information);
-				} else if(decimal.Parse(txtValor.Text) <= 0) {
+				} else if(float.Parse(txtValor.Text) <= 0) {
 					MessageBox.Show("Valor da movimentação deve ser susperior a R$ 0,00.", "Valor", MessageBoxButtons.OK, MessageBoxIcon.Information);
 				} else {
 					
@@ -55,9 +55,9 @@ namespace GM.View.contas {
 					mv.descricao = txtDescricao.Text;
 					
 					if(cbxTipo.SelectedIndex == 0) {
-						mv.valor = decimal.Parse(txtValor.Text);
+						mv.valor = float.Parse(txtValor.Text);
 					} else {
-						mv.valor = decimal.Parse(txtValor.Text) * -1;
+						mv.valor = float.Parse(txtValor.Text) * -1;
 					}
 					
 					if((mv.valor * -1) > saldo && cbxTipo.SelectedIndex == 1) {

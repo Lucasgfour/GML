@@ -28,7 +28,7 @@ namespace GM.Controller {
 		
 		public int relatorio {get; set;}
 		public String parametro {get; set;}
-		public int tipo {get; set;} // 0 - String, 1 - Int, 2 - Decimal, 3 - Date
+		public int tipo {get; set;} // 0 - String, 1 - Int, 2 - float, 3 - Date
 		
 		public String tipoToString() {
 			if(tipo == 0) {
@@ -36,7 +36,7 @@ namespace GM.Controller {
 			} else if(tipo == 1) {
 				return "INTEIRO";
 			} else if(tipo == 2) {
-				return "DECIMAL";
+				return "float";
 			} else if(tipo == 3) {
 				return "DATA";
 			} else {
@@ -90,7 +90,7 @@ namespace GM.Controller {
 						} else if(par.tipo == 1) {
 							vlr = int.Parse(dg.getValor());
 						} else if(par.tipo == 2) {
-							vlr = decimal.Parse(dg.getValor());
+							vlr = float.Parse(dg.getValor());
 						} else if(par.tipo == 3) {
 							vlr = DateTime.Parse(dg.getValor());
 						}

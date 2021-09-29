@@ -13,7 +13,7 @@ namespace GM.View.contas {
 		private Contas conta;
 		private LinkedList<Movi_Contas> movimentacoes;
 		private LinkedList<Contas> relacao;
-		private Decimal saldo;
+		private float saldo;
 		
 		private ObjectDao<Contas> cDao = new ObjectDao<Contas>();
 		private ObjectDao<Movi_Contas> mDao = new ObjectDao<Movi_Contas>();

@@ -127,10 +127,6 @@ C:\Users\lucas\Documents\GitHub\GML\obj\Debug\GM.pdb
 C:\Users\credecob01\Documents\GitHub\GML\bin\Debug\GM.exe.config
 C:\Users\credecob01\Documents\GitHub\GML\bin\Debug\GM.exe
 C:\Users\credecob01\Documents\GitHub\GML\bin\Debug\GM.pdb
-C:\Users\credecob01\Documents\GitHub\GML\bin\Debug\MySql.Data.dll
-C:\Users\credecob01\Documents\GitHub\GML\bin\Debug\Newtonsoft.Json.dll
-C:\Users\credecob01\Documents\GitHub\GML\bin\Debug\Ubiety.Dns.Core.dll
-C:\Users\credecob01\Documents\GitHub\GML\bin\Debug\Zstandard.Net.dll
 C:\Users\credecob01\Documents\GitHub\GML\bin\Debug\MySql.Data.xml
 C:\Users\credecob01\Documents\GitHub\GML\bin\Debug\Newtonsoft.Json.xml
 C:\Users\credecob01\Documents\GitHub\GML\obj\Debug\GM.csprojResolveAssemblyReference.cache

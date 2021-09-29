@@ -22,8 +22,8 @@ namespace GM.Controller {
 		public int codigo {get; set;}
 		public int pedido {get; set;}
 		public int produto {get; set;}
-		public decimal quantidade {get; set;}
-		public decimal valor {get; set;}
+		public float quantidade {get; set;}
+		public float valor {get; set;}
 		
 	}
 	
@@ -31,8 +31,8 @@ namespace GM.Controller {
 		
 		public int venda {get; set;}
 		public String produto {get; set;}
-		public decimal solicitada {get; set;}
-		public decimal disponivel {get; set;}
+		public float solicitada {get; set;}
+		public float disponivel {get; set;}
 		
 	}
 }

@@ -55,7 +55,7 @@ namespace GM.View.relatorio {
 					int.Parse(txtParametro.Text);
 					this.DialogResult = DialogResult.OK;
 				} else if(parametro.tipo == 2) {
-					decimal.Parse(txtParametro.Text);
+					float.Parse(txtParametro.Text);
 					this.DialogResult = DialogResult.OK;
 				} else if(parametro.tipo == 3) {
 					DateTime.Parse(txtParametro.Text);

@@ -9,10 +9,10 @@ namespace GM.View.caixa {
 	public partial class zMVCaixa : UserControl {
 		
 		public Caixa caixa;
-		public decimal saldo;
+		public float saldo;
 		public bool sim;
 			
-		public zMVCaixa(Caixa caixa, decimal saldo, bool sim) {
+		public zMVCaixa(Caixa caixa, float saldo, bool sim) {
 			this.caixa = caixa;
 			this.saldo = saldo;
 			this.sim = sim;

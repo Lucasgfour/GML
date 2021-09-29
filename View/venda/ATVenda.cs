@@ -10,7 +10,7 @@ using GM.Model;
 namespace GM.View.venda {
 	public partial class ATVenda : Form {
 		
-		decimal total = 0;
+		float total = 0;
 		
 		private ObjectDao<Venda> vDao = new ObjectDao<Venda>();
 		
@@ -59,11 +59,11 @@ namespace GM.View.venda {
 					itens = resProdutos.converter<DataTable>();
 					foreach (DataRow linha in itens.Rows) {
 						ListViewItem itm = new ListViewItem();
-						itm.Text =  decimal.Parse(linha[0].ToString()).ToString("n3");
+						itm.Text =  float.Parse(linha[0].ToString()).ToString("n3");
 						itm.SubItems.Add(linha[1].ToString());
-						itm.SubItems.Add("R$ " + String.Format("{0:N}", decimal.Parse(linha[2].ToString())));
-						itm.SubItems.Add("R$ " + String.Format("{0:N}", decimal.Parse(linha[3].ToString())));
-						total +=  (decimal.Parse(linha[0].ToString()) * decimal.Parse(linha[2].ToString()));
+						itm.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(linha[2].ToString())));
+						itm.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(linha[3].ToString())));
+						total +=  (float.Parse(linha[0].ToString()) * float.Parse(linha[2].ToString()));
 						listaProdutos.Items.Add(itm);
 					}
 					

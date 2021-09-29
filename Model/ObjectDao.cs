@@ -79,7 +79,11 @@ namespace GM.Model
                if(!(campo.Name.ToLower().Equals(this.primary) && this.AutoIncrement)) {
                     Campos = Campos + campo.Name.ToLower() + ", ";
                     Parametros = Parametros + "@" + campo.Name.ToLower() + ", ";
-                    comando.addParametro("@" + campo.Name.ToLower(), campo.GetValue(Obj));
+                    if(campo.PropertyType.ToString().Equals("System.float")) {
+                    	comando.addParametro("@" + campo.Name.ToLower(), float.Parse(campo.GetValue(Obj).ToString()));
+                    } else {
+                    	comando.addParametro("@" + campo.Name.ToLower(), campo.GetValue(Obj));
+                    }
                 }
             }
             
@@ -98,7 +102,11 @@ namespace GM.Model
             foreach (PropertyInfo campo in getCampos()) {
                 if (!(campo.Name.ToLower().Equals(this.primary) && this.AutoIncrement)) {
                     Campos = Campos + campo.Name.ToLower() + " = @" + campo.Name.ToLower() + ", ";
-                    comando.addParametro("@" + campo.Name.ToLower(), campo.GetValue(obj));
+                    if(campo.PropertyType.ToString().Equals("System.float")) {
+                    	comando.addParametro("@" + campo.Name.ToLower(), float.Parse(campo.GetValue(obj).ToString()));
+                    } else {
+                    	comando.addParametro("@" + campo.Name.ToLower(), campo.GetValue(obj));
+                    }
                 }
             }
 

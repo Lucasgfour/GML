@@ -159,7 +159,7 @@ namespace GM.Model
 
         // === Abrir Conexão com banco ===============================
         private void openConexao() {
-            con = new Conexao("localhost", "root", "", this.banco);
+            con = new Conexao(Preferencias.Default.Srv_IP, Preferencias.Default.Srv_User, Preferencias.Default.Srv_Senha, Preferencias.Default.Srv_Banco);
         }
 
         // ==== Criar nova instancia do objeto a ser preenchido ========

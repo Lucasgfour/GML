@@ -50,8 +50,8 @@ namespace GM.View.contas {
 						foreach (DataRow dt in dados.Rows) {
 							ListViewItem lv = new ListViewItem();
 							lv.Text = DateTime.Parse(dt[1].ToString()).ToString("dd/MM/yyyy");
-							lv.SubItems.Add("R$ " + String.Format("{0:N}", decimal.Parse(dt[2].ToString())));
-							lv.SubItems.Add("R$ " + String.Format("{0:N}", decimal.Parse(dt[3].ToString())));
+							lv.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(dt[2].ToString())));
+							lv.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(dt[3].ToString())));
 							lv.SubItems.Add(dt[6].ToString());
 							listaMovimento.Items.Add(lv);
 						}

@@ -11,7 +11,7 @@ namespace GM.Controller {
 		public int tipo {get; set;} // 0 - Custo / 1 - Despesa
 		public String descricao {get; set;}
 		public String observacao {get; set;}
-		public decimal valor {get; set;}
+		public float valor {get; set;}
 		public DateTime emissao {get; set;}
 		public int categoria {get; set;}
 		

@@ -75,16 +75,16 @@ namespace GM.View.contas {
 						itm.Text = linha[0].ToString().PadLeft(6, '0');
 						itm.SubItems.Add(DateTime.Parse(linha[1].ToString()).ToString("dd/MM/yyyy"));
 						itm.SubItems.Add(DateTime.Parse(linha[2].ToString()).ToString("dd/MM/yyyy"));
-						itm.SubItems.Add("R$ " + String.Format("{0:N}", decimal.Parse(linha[3].ToString())));
-						itm.SubItems.Add("R$ " + String.Format("{0:N}", decimal.Parse(linha[4].ToString())));
+						itm.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(linha[3].ToString())));
+						itm.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(linha[4].ToString())));
 						itm.SubItems.Add(linha[5].ToString());
 						itm.SubItems.Add(linha[6].ToString());
 						
-						if(DateTime.Parse(linha[2].ToString()) < DateTime.Today && decimal.Parse(linha[4].ToString()) > 0) {
+						if(DateTime.Parse(linha[2].ToString()) < DateTime.Today && float.Parse(linha[4].ToString()) > 0) {
 							itm.BackColor = Color.Salmon;
-						} else if(DateTime.Parse(linha[2].ToString()) == DateTime.Today && decimal.Parse(linha[4].ToString()) > 0) {
+						} else if(DateTime.Parse(linha[2].ToString()) == DateTime.Today && float.Parse(linha[4].ToString()) > 0) {
 							itm.BackColor = Color.Yellow;
-						} else if(decimal.Parse(linha[4].ToString()) == 0) {
+						} else if(float.Parse(linha[4].ToString()) == 0) {
 							itm.BackColor = Color.LightGreen;
 						}
 						

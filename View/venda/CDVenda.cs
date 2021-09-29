@@ -141,7 +141,7 @@ namespace GM.View.venda {
 		// Função para atualizar dinamicamente os dados do pedido enquato o usuário vai fazendo alterações
 		private void atualizarInfo() {
 			try {
-				decimal vlrTotal = 0;
+				float vlrTotal = 0;
 				foreach (Venda_Produto vp in produtos) {
 					vlrTotal += (vp.quantidade * vp.valor);
 				}
@@ -244,8 +244,8 @@ namespace GM.View.venda {
 			try {
 				if(cbxProduto.SelectedIndex > -1) {
 					Produto pd = prod.ElementAt(cbxProduto.SelectedIndex);
-					decimal quantidade = decimal.Parse(txtQuantidade.Text);
-					decimal valor = decimal.Parse(txtPreco.Text);
+					float quantidade = float.Parse(txtQuantidade.Text);
+					float valor = float.Parse(txtPreco.Text);
 					if(quantidade == 0 || valor == 0) {
 						MessageBox.Show("Quantidade/Valor não podem ser R$ 0,00 !", "Valor R$ 0,00", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 					} else {

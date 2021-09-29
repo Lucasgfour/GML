@@ -106,10 +106,6 @@ C:\Users\credecob01\Documents\GitHub\GML\bin\Release\GM.exe.config
 C:\Users\credecob01\Documents\GitHub\GML\bin\Release\GM.exe
 C:\Users\credecob01\Documents\GitHub\GML\bin\Release\HtmlRenderer.dll
 C:\Users\credecob01\Documents\GitHub\GML\bin\Release\HtmlRenderer.PdfSharp.dll
-C:\Users\credecob01\Documents\GitHub\GML\bin\Release\MySql.Data.dll
-C:\Users\credecob01\Documents\GitHub\GML\bin\Release\Newtonsoft.Json.dll
-C:\Users\credecob01\Documents\GitHub\GML\bin\Release\Ubiety.Dns.Core.dll
-C:\Users\credecob01\Documents\GitHub\GML\bin\Release\Zstandard.Net.dll
 C:\Users\credecob01\Documents\GitHub\GML\bin\Release\MySql.Data.xml
 C:\Users\credecob01\Documents\GitHub\GML\bin\Release\Newtonsoft.Json.xml
 C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.exe

@@ -10,7 +10,7 @@ namespace GM.Controller {
 		public DateTime vencimento {get; set;}
 		public int tipo {get; set;} // 0 - Pagar / 1 - Receber / 3 - Crédito
 		public int sede {get; set;}
-		public decimal valor {get; set;}
+		public float valor {get; set;}
 		public int sequencia {get; set;}
 		public int pessoa {get; set;}
 		
@@ -19,7 +19,7 @@ namespace GM.Controller {
 		
 		public Contas() { }
 
-		public Contas(DateTime emissao, DateTime vencimento, int tipo, int sede, decimal valor, int sequencia, int pessoa, String refe_nome, int refe_cod) {
+		public Contas(DateTime emissao, DateTime vencimento, int tipo, int sede, float valor, int sequencia, int pessoa, String refe_nome, int refe_cod) {
 			this.emissao = emissao;
 			this.vencimento = vencimento;
 			this.tipo = tipo;
@@ -38,7 +38,7 @@ namespace GM.Controller {
 		public DateTime dtmovimento {get; set;}
 		public String descricao {get; set;}
 		public int conta {get; set;}
-		public decimal valor{get; set;}
+		public float valor{get; set;}
 		
 	}
 	

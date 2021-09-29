@@ -134,7 +134,7 @@ namespace GM.View.compra {
 		
 		// ======================== DEFININDO MASCARAS ====================================
 		
-		void maskdecimal(object sender, EventArgs e) {
+		void maskfloat(object sender, EventArgs e) {
 			Ferramentas.maskMoney((TextBox) sender);
 		}
 		
@@ -181,8 +181,8 @@ namespace GM.View.compra {
 		// ======================================================================================================
 		// = Funções de Atualização
 		
-		private decimal getValorTotal() {
-			decimal t = 0;
+		private float getValorTotal() {
+			float t = 0;
 			foreach (Compra_item c in itens) {
 				t += (c.quantidade * c.preco);
 			}
@@ -198,8 +198,8 @@ namespace GM.View.compra {
 		
 		void adicionarProdutoClique(object sender, EventArgs e) {
 			try {
-				decimal quant = decimal.Parse(txtQuantidade.Text);
-				decimal valor = decimal.Parse(txtPreco.Text);
+				float quant = float.Parse(txtQuantidade.Text);
+				float valor = float.Parse(txtPreco.Text);
 				Produto p = produtos.ElementAt(txtProduto.SelectedIndex);
 				int codigoProd = p.codigo;
 				if(quant < 1) {

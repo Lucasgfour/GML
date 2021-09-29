@@ -185,7 +185,7 @@ namespace GM.View.relatorio
 			this.cbxTipo.Items.AddRange(new object[] {
 									"TEXTO",
 									"NÚMERO INTEIRO",
-									"NÚMERO DECIMAL",
+									"NÚMERO float",
 									"DATA"});
 			this.cbxTipo.Location = new System.Drawing.Point(306, 55);
 			this.cbxTipo.Name = "cbxTipo";

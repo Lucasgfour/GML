@@ -10,14 +10,14 @@ namespace GM.Controller {
 		public DateTime dtcaixa {get; set;}
 		public String descricao {get; set;}
 		public int tipo {get; set;} // 0 - Débito / 1 - Crédito
-		public decimal valor {get; set;}
+		public float valor {get; set;}
 		
 		public int sede {get; set;}
 		
 		public String refe_nome {get; set;}
 		public String refe_cod {get; set;}
 		
-		public zMVCaixa ToMov(decimal saldo, bool sim) {
+		public zMVCaixa ToMov(float saldo, bool sim) {
 			zMVCaixa mv = new zMVCaixa(this, saldo, sim);
 			mv.Dock = DockStyle.Top;
 			return mv;

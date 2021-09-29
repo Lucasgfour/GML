@@ -42,7 +42,7 @@ namespace GM.View.caixa {
 		}
 		
 		public void listar() {
-	        decimal saldo = getCredito() - getDebito();
+	        float saldo = getCredito() - getDebito();
 			DateTime dia = caixas.ElementAt(0).dtcaixa;
 			addDia(dia);
 			bool sim = true;
@@ -63,7 +63,7 @@ namespace GM.View.caixa {
 			fecharDia(saldo);
 		}
 		
-		public decimal getCredito() {
+		public float getCredito() {
 			Comando com = new Comando("SELECT valor FROM caixa WHERE sede = @sede AND tipo = 1 AND dtcaixa < @dt");
 			com.addParametro("@sede", sedes.ElementAt(cbxSede.SelectedIndex).codigo);
 			com.addParametro("@dt", txtDatai.Value);
@@ -71,11 +71,11 @@ namespace GM.View.caixa {
 			if(!res.condicao) {
 				return 0;
 			} else {
-				return decimal.Parse(((DataTable)res.resultado).Rows[0][0].ToString());
+				return float.Parse(((DataTable)res.resultado).Rows[0][0].ToString());
 			}
 		}
 		
-		public decimal getDebito() {
+		public float getDebito() {
 			Comando com = new Comando("SELECT valor FROM caixa WHERE sede = @sede AND tipo = 0 AND dtcaixa < @dt");
 			com.addParametro("@sede", sedes.ElementAt(cbxSede.SelectedIndex).codigo);
 			com.addParametro("@dt", txtDatai.Value);
@@ -83,7 +83,7 @@ namespace GM.View.caixa {
 			if(!res.condicao) {
 				return 0;
 			} else {
-				return decimal.Parse(((DataTable)res.resultado).Rows[0][0].ToString());
+				return float.Parse(((DataTable)res.resultado).Rows[0][0].ToString());
 			}
 		}
 		
@@ -99,7 +99,7 @@ namespace GM.View.caixa {
 			a.BringToFront();
 		}
 		
-		public void fecharDia(decimal saldo) {
+		public void fecharDia(float saldo) {
 			Label a = new Label();
 			a.Text = "SALDO DO DIA : ";
 			if(saldo < 0) {

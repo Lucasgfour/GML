@@ -126,7 +126,7 @@ namespace GM.View.venda {
 		}
 		
 		private void atualizarDados() {
-			decimal total = 0;
+			float total = 0;
 			foreach (Venda_Produto iten in itens) {
 				total += (iten.quantidade * iten.valor);
 			}
@@ -147,8 +147,8 @@ namespace GM.View.venda {
 		
 		private void addProduto() {
 			try {
-				decimal quantidade = decimal.Parse(txtQuantidade.Text);
-				decimal valor = decimal.Parse(txtPreco.Text);
+				float quantidade = float.Parse(txtQuantidade.Text);
+				float valor = float.Parse(txtPreco.Text);
 				Produto produto = produtos.ElementAt(cbxProdutoCodigo.SelectedIndex);
 				
 				if(quantidade == 0) {

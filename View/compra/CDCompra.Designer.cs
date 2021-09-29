@@ -303,7 +303,7 @@ namespace GM.View.compra
 			this.txtPreco.Name = "txtPreco";
 			this.txtPreco.Size = new System.Drawing.Size(72, 23);
 			this.txtPreco.TabIndex = 6;
-			this.txtPreco.TextChanged += new System.EventHandler(this.maskdecimal);
+			this.txtPreco.TextChanged += new System.EventHandler(this.maskfloat);
 			this.txtPreco.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pressEnterProduto);
 			// 
 			// labPreco

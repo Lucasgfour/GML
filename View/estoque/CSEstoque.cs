@@ -69,7 +69,7 @@ namespace GM.View.estoque {
 			
 			Resultado bscSaldo = new Comando("SELECT SaldoEstoque(" + produto.codigo.ToString() + ")").consultarValor();
 			if(bscSaldo.condicao) {
-				txtSaldo.Text = bscSaldo.converter<decimal>().ToString("n3");
+				txtSaldo.Text = bscSaldo.converter<float>().ToString("n3");
 			} else {
 				txtSaldo.Text = "0,000";
 				MessageBox.Show("Não foi possível localizar o saldo do produto, motivo : " + bscSaldo.mensagem, "Erro", MessageBoxButtons.OK,MessageBoxIcon.Warning);

@@ -63,7 +63,7 @@ namespace GM.View.produto {
 					produto.cod_cliente = txtCodigo.Text;
 					produto.descricao = txtDescricao.Text;
 					produto.unidade = txtUnidade.Text;
-					produto.preco = decimal.Parse(txtValor.Text);
+					produto.preco = float.Parse(txtValor.Text);
 					produto.situacao = cbxSituacao.SelectedIndex;
 					produto.familia = familias.ElementAt(cbxFamilia.SelectedIndex).codigo;
 					produto.cod_barra = txtCodBarra.Text;

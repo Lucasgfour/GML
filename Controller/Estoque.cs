@@ -9,7 +9,7 @@ namespace GM.Controller {
 		public DateTime dtmov{get; set;}
 		public int sede {get; set;}
 		public int produto {get; set;}
-		public decimal quantidade {get; set;}
+		public float quantidade {get; set;}
 		public int tipo {get; set;} // 0 - Saída e 1 - Entrada
 		
 		public String refe_nome {get; set;}

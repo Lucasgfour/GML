@@ -55,7 +55,7 @@ namespace GM.View.caixa {
 			if(txtValor.Text.Equals("")) {
 				MessageBox.Show("Favor informar o valor da movimentação !", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				txtValor.Focus();
-			} else if(decimal.Parse(txtValor.Text) == 0) {
+			} else if(float.Parse(txtValor.Text) == 0) {
 				MessageBox.Show("Valor deve ser superior a 0.", "Erro", MessageBoxButtons.OK, MessageBoxIcon.Warning);
 				txtValor.Focus();
 			} else {
@@ -70,7 +70,7 @@ namespace GM.View.caixa {
 						cx.tipo = 0;	
 					}
 					
-					cx.valor = decimal.Parse(txtValor.Text);
+					cx.valor = float.Parse(txtValor.Text);
 					cx.refe_nome = "MANUAL";
 					cx.refe_cod = "0";
 					
