@@ -4,20 +4,26 @@ using System.Drawing;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.produto {
-	public partial class CDFamilia : Form {
+	public partial class CDFamilia : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private ObjectDao<Familia> fDao = new ObjectDao<Familia>();
 		private Familia fam = new Familia();
 		
 		public CDFamilia() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		public CDFamilia(Familia fam) {
 			this.fam = fam;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		public void salvar() {

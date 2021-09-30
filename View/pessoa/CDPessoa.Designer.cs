@@ -29,6 +29,7 @@ namespace GM.View.pessoa
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDPessoa));
 			this.btnVoltar = new Sunny.UI.UISymbolButton();
 			this.btnProximo = new Sunny.UI.UISymbolButton();
 			this.btnNovo = new Sunny.UI.UISymbolButton();
@@ -61,7 +62,7 @@ namespace GM.View.pessoa
 			this.btnVoltar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(123)))), ((int)(((byte)(129)))));
 			this.btnVoltar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(123)))), ((int)(((byte)(129)))));
 			this.btnVoltar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnVoltar.Location = new System.Drawing.Point(12, 12);
+			this.btnVoltar.Location = new System.Drawing.Point(12, 77);
 			this.btnVoltar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnVoltar.Name = "btnVoltar";
 			this.btnVoltar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
@@ -69,7 +70,7 @@ namespace GM.View.pessoa
 			this.btnVoltar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(160)))), ((int)(((byte)(165)))));
 			this.btnVoltar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(123)))), ((int)(((byte)(129)))));
 			this.btnVoltar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(123)))), ((int)(((byte)(129)))));
-			this.btnVoltar.Size = new System.Drawing.Size(37, 29);
+			this.btnVoltar.Size = new System.Drawing.Size(37, 33);
 			this.btnVoltar.Style = Sunny.UI.UIStyle.Gray;
 			this.btnVoltar.Symbol = 61536;
 			this.btnVoltar.TabIndex = 0;
@@ -83,7 +84,7 @@ namespace GM.View.pessoa
 			this.btnProximo.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(123)))), ((int)(((byte)(129)))));
 			this.btnProximo.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(123)))), ((int)(((byte)(129)))));
 			this.btnProximo.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnProximo.Location = new System.Drawing.Point(50, 12);
+			this.btnProximo.Location = new System.Drawing.Point(50, 77);
 			this.btnProximo.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnProximo.Name = "btnProximo";
 			this.btnProximo.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
@@ -91,7 +92,7 @@ namespace GM.View.pessoa
 			this.btnProximo.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(158)))), ((int)(((byte)(160)))), ((int)(((byte)(165)))));
 			this.btnProximo.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(123)))), ((int)(((byte)(129)))));
 			this.btnProximo.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(121)))), ((int)(((byte)(123)))), ((int)(((byte)(129)))));
-			this.btnProximo.Size = new System.Drawing.Size(37, 29);
+			this.btnProximo.Size = new System.Drawing.Size(37, 33);
 			this.btnProximo.Style = Sunny.UI.UIStyle.Gray;
 			this.btnProximo.Symbol = 61537;
 			this.btnProximo.TabIndex = 1;
@@ -101,11 +102,11 @@ namespace GM.View.pessoa
 			// 
 			this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnNovo.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnNovo.Location = new System.Drawing.Point(93, 12);
+			this.btnNovo.Location = new System.Drawing.Point(93, 77);
 			this.btnNovo.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnNovo.Name = "btnNovo";
 			this.btnNovo.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnNovo.Size = new System.Drawing.Size(37, 29);
+			this.btnNovo.Size = new System.Drawing.Size(37, 33);
 			this.btnNovo.Symbol = 61543;
 			this.btnNovo.TabIndex = 2;
 			this.btnNovo.Click += new System.EventHandler(this.novoClique);
@@ -114,11 +115,11 @@ namespace GM.View.pessoa
 			// 
 			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(131, 12);
+			this.btnEditar.Location = new System.Drawing.Point(131, 77);
 			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEditar.Name = "btnEditar";
 			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnEditar.Size = new System.Drawing.Size(37, 29);
+			this.btnEditar.Size = new System.Drawing.Size(37, 33);
 			this.btnEditar.Symbol = 61508;
 			this.btnEditar.TabIndex = 3;
 			this.btnEditar.Click += new System.EventHandler(this.editarClique);
@@ -127,11 +128,11 @@ namespace GM.View.pessoa
 			// 
 			this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnDeletar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnDeletar.Location = new System.Drawing.Point(169, 12);
+			this.btnDeletar.Location = new System.Drawing.Point(169, 77);
 			this.btnDeletar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnDeletar.Name = "btnDeletar";
 			this.btnDeletar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnDeletar.Size = new System.Drawing.Size(37, 29);
+			this.btnDeletar.Size = new System.Drawing.Size(37, 33);
 			this.btnDeletar.Symbol = 61944;
 			this.btnDeletar.TabIndex = 4;
 			// 
@@ -143,7 +144,7 @@ namespace GM.View.pessoa
 			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(212, 12);
+			this.btnSalvar.Location = new System.Drawing.Point(212, 77);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
 			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
@@ -151,7 +152,7 @@ namespace GM.View.pessoa
 			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.Size = new System.Drawing.Size(37, 29);
+			this.btnSalvar.Size = new System.Drawing.Size(37, 33);
 			this.btnSalvar.Style = Sunny.UI.UIStyle.Green;
 			this.btnSalvar.TabIndex = 12;
 			this.btnSalvar.Click += new System.EventHandler(this.salvarClique);
@@ -164,7 +165,7 @@ namespace GM.View.pessoa
 			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(251, 12);
+			this.btnCancelar.Location = new System.Drawing.Point(251, 77);
 			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnCancelar.Name = "btnCancelar";
 			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
@@ -172,7 +173,7 @@ namespace GM.View.pessoa
 			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.Size = new System.Drawing.Size(37, 29);
+			this.btnCancelar.Size = new System.Drawing.Size(37, 33);
 			this.btnCancelar.Style = Sunny.UI.UIStyle.Red;
 			this.btnCancelar.Symbol = 61453;
 			this.btnCancelar.TabIndex = 13;
@@ -182,11 +183,11 @@ namespace GM.View.pessoa
 			// 
 			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnPesquisar.Location = new System.Drawing.Point(294, 12);
+			this.btnPesquisar.Location = new System.Drawing.Point(294, 77);
 			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnPesquisar.Name = "btnPesquisar";
 			this.btnPesquisar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnPesquisar.Size = new System.Drawing.Size(74, 29);
+			this.btnPesquisar.Size = new System.Drawing.Size(74, 33);
 			this.btnPesquisar.Symbol = 61442;
 			this.btnPesquisar.TabIndex = 5;
 			this.btnPesquisar.Click += new System.EventHandler(this.pesquisarClique);
@@ -194,20 +195,21 @@ namespace GM.View.pessoa
 			// txtCodigo
 			// 
 			this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtCodigo.Location = new System.Drawing.Point(91, 60);
+			this.txtCodigo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtCodigo.Location = new System.Drawing.Point(91, 125);
 			this.txtCodigo.MaxLength = 70;
 			this.txtCodigo.Name = "txtCodigo";
 			this.txtCodigo.ReadOnly = true;
-			this.txtCodigo.Size = new System.Drawing.Size(98, 20);
+			this.txtCodigo.Size = new System.Drawing.Size(98, 23);
 			this.txtCodigo.TabIndex = 26;
 			this.txtCodigo.TabStop = false;
 			// 
 			// labCodigo
 			// 
 			this.labCodigo.BackColor = System.Drawing.Color.Transparent;
-			this.labCodigo.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.labCodigo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labCodigo.Location = new System.Drawing.Point(12, 60);
+			this.labCodigo.Location = new System.Drawing.Point(12, 125);
 			this.labCodigo.Name = "labCodigo";
 			this.labCodigo.Size = new System.Drawing.Size(73, 20);
 			this.labCodigo.TabIndex = 31;
@@ -217,22 +219,23 @@ namespace GM.View.pessoa
 			// cbxTipo
 			// 
 			this.cbxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbxTipo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cbxTipo.FormattingEnabled = true;
 			this.cbxTipo.Items.AddRange(new object[] {
 									"Cliente",
 									"Fornecedor",
 									"Ambos"});
-			this.cbxTipo.Location = new System.Drawing.Point(91, 112);
+			this.cbxTipo.Location = new System.Drawing.Point(91, 183);
 			this.cbxTipo.Name = "cbxTipo";
-			this.cbxTipo.Size = new System.Drawing.Size(121, 21);
+			this.cbxTipo.Size = new System.Drawing.Size(121, 23);
 			this.cbxTipo.TabIndex = 7;
 			// 
 			// labTipo
 			// 
 			this.labTipo.BackColor = System.Drawing.Color.Transparent;
-			this.labTipo.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.labTipo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labTipo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labTipo.Location = new System.Drawing.Point(12, 112);
+			this.labTipo.Location = new System.Drawing.Point(12, 183);
 			this.labTipo.Name = "labTipo";
 			this.labTipo.Size = new System.Drawing.Size(73, 21);
 			this.labTipo.TabIndex = 30;
@@ -242,18 +245,19 @@ namespace GM.View.pessoa
 			// txtNome
 			// 
 			this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtNome.Location = new System.Drawing.Point(91, 86);
+			this.txtNome.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtNome.Location = new System.Drawing.Point(91, 154);
 			this.txtNome.MaxLength = 70;
 			this.txtNome.Name = "txtNome";
-			this.txtNome.Size = new System.Drawing.Size(277, 20);
+			this.txtNome.Size = new System.Drawing.Size(277, 23);
 			this.txtNome.TabIndex = 6;
 			// 
 			// labNome
 			// 
 			this.labNome.BackColor = System.Drawing.Color.Transparent;
-			this.labNome.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.labNome.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labNome.Location = new System.Drawing.Point(12, 86);
+			this.labNome.Location = new System.Drawing.Point(12, 154);
 			this.labNome.Name = "labNome";
 			this.labNome.Size = new System.Drawing.Size(73, 20);
 			this.labNome.TabIndex = 29;
@@ -263,7 +267,8 @@ namespace GM.View.pessoa
 			// txtContato
 			// 
 			this.txtContato.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtContato.Location = new System.Drawing.Point(91, 165);
+			this.txtContato.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtContato.Location = new System.Drawing.Point(91, 241);
 			this.txtContato.MaxLength = 50;
 			this.txtContato.Multiline = true;
 			this.txtContato.Name = "txtContato";
@@ -273,9 +278,9 @@ namespace GM.View.pessoa
 			// labContato
 			// 
 			this.labContato.BackColor = System.Drawing.Color.Transparent;
-			this.labContato.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.labContato.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labContato.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labContato.Location = new System.Drawing.Point(12, 163);
+			this.labContato.Location = new System.Drawing.Point(12, 239);
 			this.labContato.Name = "labContato";
 			this.labContato.Size = new System.Drawing.Size(73, 20);
 			this.labContato.TabIndex = 33;
@@ -285,20 +290,20 @@ namespace GM.View.pessoa
 			// txtDocumento
 			// 
 			this.txtDocumento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
-			this.txtDocumento.Location = new System.Drawing.Point(157, 139);
+			this.txtDocumento.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtDocumento.Location = new System.Drawing.Point(157, 212);
 			this.txtDocumento.MaxLength = 70;
 			this.txtDocumento.Name = "txtDocumento";
-			this.txtDocumento.Size = new System.Drawing.Size(160, 20);
+			this.txtDocumento.Size = new System.Drawing.Size(160, 23);
 			this.txtDocumento.TabIndex = 9;
 			this.txtDocumento.TextChanged += new System.EventHandler(this.maskDocumento);
 			// 
 			// labDocumento
 			// 
 			this.labDocumento.BackColor = System.Drawing.Color.Transparent;
-			this.labDocumento.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.labDocumento.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labDocumento.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labDocumento.Location = new System.Drawing.Point(12, 140);
+			this.labDocumento.Location = new System.Drawing.Point(12, 213);
 			this.labDocumento.Name = "labDocumento";
 			this.labDocumento.Size = new System.Drawing.Size(73, 20);
 			this.labDocumento.TabIndex = 35;
@@ -308,7 +313,8 @@ namespace GM.View.pessoa
 			// txtObservacao
 			// 
 			this.txtObservacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtObservacao.Location = new System.Drawing.Point(91, 214);
+			this.txtObservacao.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtObservacao.Location = new System.Drawing.Point(91, 290);
 			this.txtObservacao.MaxLength = 200;
 			this.txtObservacao.Multiline = true;
 			this.txtObservacao.Name = "txtObservacao";
@@ -318,9 +324,9 @@ namespace GM.View.pessoa
 			// labObservacao
 			// 
 			this.labObservacao.BackColor = System.Drawing.Color.Transparent;
-			this.labObservacao.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.labObservacao.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labObservacao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labObservacao.Location = new System.Drawing.Point(5, 212);
+			this.labObservacao.Location = new System.Drawing.Point(5, 288);
 			this.labObservacao.Name = "labObservacao";
 			this.labObservacao.Size = new System.Drawing.Size(80, 20);
 			this.labObservacao.TabIndex = 37;
@@ -330,25 +336,25 @@ namespace GM.View.pessoa
 			// cbxDocumento
 			// 
 			this.cbxDocumento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbxDocumento.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.25F);
+			this.cbxDocumento.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cbxDocumento.FormattingEnabled = true;
 			this.cbxDocumento.Items.AddRange(new object[] {
 									"CPF",
 									"CNPJ"});
-			this.cbxDocumento.Location = new System.Drawing.Point(91, 139);
+			this.cbxDocumento.Location = new System.Drawing.Point(91, 212);
 			this.cbxDocumento.Name = "cbxDocumento";
-			this.cbxDocumento.Size = new System.Drawing.Size(60, 21);
+			this.cbxDocumento.Size = new System.Drawing.Size(60, 23);
 			this.cbxDocumento.TabIndex = 8;
 			// 
 			// btnEndereco
 			// 
 			this.btnEndereco.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnEndereco.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEndereco.Location = new System.Drawing.Point(195, 60);
+			this.btnEndereco.Location = new System.Drawing.Point(195, 125);
 			this.btnEndereco.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEndereco.Name = "btnEndereco";
 			this.btnEndereco.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnEndereco.Size = new System.Drawing.Size(173, 20);
+			this.btnEndereco.Size = new System.Drawing.Size(173, 23);
 			this.btnEndereco.Symbol = 61649;
 			this.btnEndereco.TabIndex = 38;
 			this.btnEndereco.Text = "Endereço(s)";
@@ -358,7 +364,7 @@ namespace GM.View.pessoa
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(390, 281);
+			this.ClientSize = new System.Drawing.Size(382, 355);
 			this.Controls.Add(this.btnEndereco);
 			this.Controls.Add(this.cbxDocumento);
 			this.Controls.Add(this.txtObservacao);
@@ -381,7 +387,7 @@ namespace GM.View.pessoa
 			this.Controls.Add(this.btnNovo);
 			this.Controls.Add(this.btnProximo);
 			this.Controls.Add(this.btnVoltar);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CDPessoa";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

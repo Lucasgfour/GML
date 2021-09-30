@@ -29,6 +29,7 @@ namespace GM.View.custo
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CSCustoCategoria));
 			this.listaCategoria = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -45,7 +46,7 @@ namespace GM.View.custo
 			this.listaCategoria.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.listaCategoria.FullRowSelect = true;
 			this.listaCategoria.GridLines = true;
-			this.listaCategoria.Location = new System.Drawing.Point(12, 44);
+			this.listaCategoria.Location = new System.Drawing.Point(12, 111);
 			this.listaCategoria.Name = "listaCategoria";
 			this.listaCategoria.Size = new System.Drawing.Size(363, 324);
 			this.listaCategoria.TabIndex = 20;
@@ -66,9 +67,10 @@ namespace GM.View.custo
 			// 
 			this.btnAdicionar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnAdicionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnAdicionar.Location = new System.Drawing.Point(12, 9);
+			this.btnAdicionar.Location = new System.Drawing.Point(12, 76);
 			this.btnAdicionar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnAdicionar.Name = "btnAdicionar";
+			this.btnAdicionar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnAdicionar.Size = new System.Drawing.Size(123, 29);
 			this.btnAdicionar.Symbol = 61543;
 			this.btnAdicionar.TabIndex = 27;
@@ -79,9 +81,10 @@ namespace GM.View.custo
 			// 
 			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(141, 9);
+			this.btnEditar.Location = new System.Drawing.Point(141, 76);
 			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEditar.Name = "btnEditar";
+			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnEditar.Size = new System.Drawing.Size(101, 29);
 			this.btnEditar.Symbol = 61508;
 			this.btnEditar.TabIndex = 28;
@@ -92,9 +95,10 @@ namespace GM.View.custo
 			// 
 			this.btnRemover.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnRemover.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnRemover.Location = new System.Drawing.Point(248, 9);
+			this.btnRemover.Location = new System.Drawing.Point(248, 76);
 			this.btnRemover.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnRemover.Name = "btnRemover";
+			this.btnRemover.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnRemover.Size = new System.Drawing.Size(127, 29);
 			this.btnRemover.Symbol = 61453;
 			this.btnRemover.TabIndex = 29;
@@ -105,12 +109,12 @@ namespace GM.View.custo
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(387, 380);
+			this.ClientSize = new System.Drawing.Size(387, 447);
 			this.Controls.Add(this.btnRemover);
 			this.Controls.Add(this.btnEditar);
 			this.Controls.Add(this.btnAdicionar);
 			this.Controls.Add(this.listaCategoria);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CSCustoCategoria";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

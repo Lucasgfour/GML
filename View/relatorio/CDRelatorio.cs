@@ -6,9 +6,13 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.relatorio {
-	public partial class CDRelatorio : Form {
+	public partial class CDRelatorio : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private Relatorio relatorio = new Relatorio();
 		private LinkedList<Relatorio_Parametro> parametros = new LinkedList<Relatorio_Parametro>();
@@ -19,11 +23,13 @@ namespace GM.View.relatorio {
 		
 		public CDRelatorio() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		public CDRelatorio(int codigo) {
 			this.codigo = codigo;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 
 		void arranqueFormulario(object sender, EventArgs e) {

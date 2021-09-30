@@ -3,15 +3,21 @@ using System;
 using System.Drawing;
 using System.Windows.Forms;
 using GM.Controller;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.relatorio {
-	public partial class DGParametro : Form {
+	public partial class DGParametro : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private Relatorio_Parametro parametro;
 		
 		public DGParametro(Relatorio_Parametro parametro) {
 			this.parametro = parametro;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
+
 		}
 		
 		void arranqueFormulario(object sender, EventArgs e) {

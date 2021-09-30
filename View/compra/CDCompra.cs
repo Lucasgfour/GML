@@ -6,9 +6,13 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.compra {
-	public partial class CDCompra : Form {
+	public partial class CDCompra : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		// Atributos
 		private LinkedList<Produto> produtos = new LinkedList<Produto>();
@@ -25,11 +29,15 @@ namespace GM.View.compra {
 		// Construtor
 		public CDCompra() {
 			InitializeComponent();
+			var materialSkinManager = MaterialSkinManager.Instance;
+    		materialSkinManager.AddFormToManage(this);
 		}
 		
 		public CDCompra(Compra compra) {
 			this.compra = compra;
 			InitializeComponent();
+			var materialSkinManager = MaterialSkinManager.Instance;
+    		materialSkinManager.AddFormToManage(this);
 		}
 		
 		// Evento LOAD

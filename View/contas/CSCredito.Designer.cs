@@ -29,6 +29,7 @@ namespace GM.View.contas
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CSCredito));
 			this.btnAbrir = new Sunny.UI.UISymbolButton();
 			this.txtFornecedor = new System.Windows.Forms.TextBox();
 			this.txtCodigo = new System.Windows.Forms.TextBox();
@@ -44,7 +45,7 @@ namespace GM.View.contas
 			// 
 			this.btnAbrir.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnAbrir.Location = new System.Drawing.Point(187, 9);
+			this.btnAbrir.Location = new System.Drawing.Point(187, 70);
 			this.btnAbrir.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnAbrir.Name = "btnAbrir";
 			this.btnAbrir.Radius = 0;
@@ -57,7 +58,7 @@ namespace GM.View.contas
 			// txtFornecedor
 			// 
 			this.txtFornecedor.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.txtFornecedor.Location = new System.Drawing.Point(241, 9);
+			this.txtFornecedor.Location = new System.Drawing.Point(241, 70);
 			this.txtFornecedor.MaxLength = 50;
 			this.txtFornecedor.Name = "txtFornecedor";
 			this.txtFornecedor.ReadOnly = true;
@@ -67,7 +68,7 @@ namespace GM.View.contas
 			// 
 			// txtCodigo
 			// 
-			this.txtCodigo.Location = new System.Drawing.Point(135, 9);
+			this.txtCodigo.Location = new System.Drawing.Point(135, 70);
 			this.txtCodigo.MaxLength = 50;
 			this.txtCodigo.Name = "txtCodigo";
 			this.txtCodigo.Size = new System.Drawing.Size(52, 23);
@@ -78,7 +79,8 @@ namespace GM.View.contas
 			// 
 			// labProduto
 			// 
-			this.labProduto.Location = new System.Drawing.Point(12, 9);
+			this.labProduto.BackColor = System.Drawing.Color.Transparent;
+			this.labProduto.Location = new System.Drawing.Point(12, 70);
 			this.labProduto.Name = "labProduto";
 			this.labProduto.Size = new System.Drawing.Size(117, 23);
 			this.labProduto.TabIndex = 34;
@@ -94,7 +96,7 @@ namespace GM.View.contas
 									this.Col04});
 			this.listaMovimento.FullRowSelect = true;
 			this.listaMovimento.GridLines = true;
-			this.listaMovimento.Location = new System.Drawing.Point(12, 39);
+			this.listaMovimento.Location = new System.Drawing.Point(12, 100);
 			this.listaMovimento.MultiSelect = false;
 			this.listaMovimento.Name = "listaMovimento";
 			this.listaMovimento.Size = new System.Drawing.Size(490, 367);
@@ -127,14 +129,14 @@ namespace GM.View.contas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(514, 418);
+			this.ClientSize = new System.Drawing.Size(514, 479);
 			this.Controls.Add(this.listaMovimento);
 			this.Controls.Add(this.btnAbrir);
 			this.Controls.Add(this.txtFornecedor);
 			this.Controls.Add(this.txtCodigo);
 			this.Controls.Add(this.labProduto);
 			this.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CSCredito";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

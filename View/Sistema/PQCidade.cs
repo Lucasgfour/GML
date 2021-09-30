@@ -6,9 +6,13 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.Sistema {
-	public partial class PQCidade : Form {
+	public partial class PQCidade : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private LinkedList<Cidade> cidades = new LinkedList<Cidade>();
 		private ObjectDao<Cidade> cDao = new ObjectDao<Cidade>();
@@ -16,6 +20,7 @@ namespace GM.View.Sistema {
 		
 		public PQCidade() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void arranque(object sender, EventArgs e) {

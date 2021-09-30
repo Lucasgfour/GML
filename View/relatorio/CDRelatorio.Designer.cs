@@ -29,6 +29,7 @@ namespace GM.View.relatorio
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDRelatorio));
 			this.txtDescricao = new System.Windows.Forms.TextBox();
 			this.labDescricao = new System.Windows.Forms.Label();
 			this.txtObservação = new System.Windows.Forms.TextBox();
@@ -57,7 +58,7 @@ namespace GM.View.relatorio
 			// 
 			this.txtDescricao.BackColor = System.Drawing.Color.White;
 			this.txtDescricao.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtDescricao.Location = new System.Drawing.Point(108, 9);
+			this.txtDescricao.Location = new System.Drawing.Point(108, 72);
 			this.txtDescricao.MaxLength = 70;
 			this.txtDescricao.Name = "txtDescricao";
 			this.txtDescricao.Size = new System.Drawing.Size(594, 25);
@@ -65,8 +66,9 @@ namespace GM.View.relatorio
 			// 
 			// labDescricao
 			// 
+			this.labDescricao.BackColor = System.Drawing.Color.Transparent;
 			this.labDescricao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labDescricao.Location = new System.Drawing.Point(12, 9);
+			this.labDescricao.Location = new System.Drawing.Point(12, 72);
 			this.labDescricao.Name = "labDescricao";
 			this.labDescricao.Size = new System.Drawing.Size(90, 25);
 			this.labDescricao.TabIndex = 19;
@@ -77,7 +79,7 @@ namespace GM.View.relatorio
 			// 
 			this.txtObservação.BackColor = System.Drawing.Color.White;
 			this.txtObservação.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtObservação.Location = new System.Drawing.Point(108, 40);
+			this.txtObservação.Location = new System.Drawing.Point(108, 103);
 			this.txtObservação.MaxLength = 70;
 			this.txtObservação.Multiline = true;
 			this.txtObservação.Name = "txtObservação";
@@ -86,8 +88,9 @@ namespace GM.View.relatorio
 			// 
 			// labObservacao
 			// 
+			this.labObservacao.BackColor = System.Drawing.Color.Transparent;
 			this.labObservacao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labObservacao.Location = new System.Drawing.Point(12, 40);
+			this.labObservacao.Location = new System.Drawing.Point(12, 103);
 			this.labObservacao.Name = "labObservacao";
 			this.labObservacao.Size = new System.Drawing.Size(90, 25);
 			this.labObservacao.TabIndex = 21;
@@ -96,8 +99,9 @@ namespace GM.View.relatorio
 			// 
 			// gpxComando
 			// 
+			this.gpxComando.BackColor = System.Drawing.Color.Transparent;
 			this.gpxComando.Controls.Add(this.txtComando);
-			this.gpxComando.Location = new System.Drawing.Point(12, 106);
+			this.gpxComando.Location = new System.Drawing.Point(12, 169);
 			this.gpxComando.Name = "gpxComando";
 			this.gpxComando.Size = new System.Drawing.Size(690, 286);
 			this.gpxComando.TabIndex = 201;
@@ -117,6 +121,7 @@ namespace GM.View.relatorio
 			// 
 			// gpxParametro
 			// 
+			this.gpxParametro.BackColor = System.Drawing.Color.Transparent;
 			this.gpxParametro.Controls.Add(this.btnRemover);
 			this.gpxParametro.Controls.Add(this.btnAdicionar);
 			this.gpxParametro.Controls.Add(this.cbxTipo);
@@ -124,7 +129,7 @@ namespace GM.View.relatorio
 			this.gpxParametro.Controls.Add(this.txtParametro);
 			this.gpxParametro.Controls.Add(this.listaParametro);
 			this.gpxParametro.Controls.Add(this.labParametro);
-			this.gpxParametro.Location = new System.Drawing.Point(12, 398);
+			this.gpxParametro.Location = new System.Drawing.Point(12, 461);
 			this.gpxParametro.Name = "gpxParametro";
 			this.gpxParametro.Size = new System.Drawing.Size(466, 215);
 			this.gpxParametro.TabIndex = 202;
@@ -257,9 +262,10 @@ namespace GM.View.relatorio
 			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(484, 584);
+			this.btnCancelar.Location = new System.Drawing.Point(484, 647);
 			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -279,9 +285,10 @@ namespace GM.View.relatorio
 			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(591, 584);
+			this.btnSalvar.Location = new System.Drawing.Point(591, 647);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
+			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -309,15 +316,16 @@ namespace GM.View.relatorio
 									"Nível 8",
 									"Nível 9",
 									"Nível 10"});
-			this.cbxNivel.Location = new System.Drawing.Point(517, 453);
+			this.cbxNivel.Location = new System.Drawing.Point(517, 516);
 			this.cbxNivel.Name = "cbxNivel";
 			this.cbxNivel.Size = new System.Drawing.Size(154, 25);
 			this.cbxNivel.TabIndex = 8;
 			// 
 			// labNivel
 			// 
+			this.labNivel.BackColor = System.Drawing.Color.Transparent;
 			this.labNivel.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labNivel.Location = new System.Drawing.Point(484, 407);
+			this.labNivel.Location = new System.Drawing.Point(484, 470);
 			this.labNivel.Name = "labNivel";
 			this.labNivel.Size = new System.Drawing.Size(218, 40);
 			this.labNivel.TabIndex = 209;
@@ -327,7 +335,7 @@ namespace GM.View.relatorio
 			// CDRelatorio
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			this.ClientSize = new System.Drawing.Size(714, 625);
+			this.ClientSize = new System.Drawing.Size(714, 687);
 			this.Controls.Add(this.cbxNivel);
 			this.Controls.Add(this.labNivel);
 			this.Controls.Add(this.btnCancelar);
@@ -339,7 +347,7 @@ namespace GM.View.relatorio
 			this.Controls.Add(this.txtDescricao);
 			this.Controls.Add(this.labDescricao);
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CDRelatorio";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

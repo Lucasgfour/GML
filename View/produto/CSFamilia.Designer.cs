@@ -29,6 +29,7 @@ namespace GM.View.produto
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CSFamilia));
 			this.listFamilias = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -51,9 +52,9 @@ namespace GM.View.produto
 			this.listFamilias.FullRowSelect = true;
 			this.listFamilias.GridLines = true;
 			this.listFamilias.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.listFamilias.Location = new System.Drawing.Point(12, 47);
+			this.listFamilias.Location = new System.Drawing.Point(12, 114);
 			this.listFamilias.Name = "listFamilias";
-			this.listFamilias.Size = new System.Drawing.Size(491, 403);
+			this.listFamilias.Size = new System.Drawing.Size(572, 408);
 			this.listFamilias.TabIndex = 0;
 			this.listFamilias.UseCompatibleStateImageBehavior = false;
 			this.listFamilias.View = System.Windows.Forms.View.Details;
@@ -77,10 +78,11 @@ namespace GM.View.produto
 			// 
 			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnPesquisar.Location = new System.Drawing.Point(201, 12);
+			this.btnPesquisar.Location = new System.Drawing.Point(232, 74);
 			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnPesquisar.Name = "btnPesquisar";
-			this.btnPesquisar.Size = new System.Drawing.Size(37, 29);
+			this.btnPesquisar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+			this.btnPesquisar.Size = new System.Drawing.Size(43, 33);
 			this.btnPesquisar.Symbol = 61442;
 			this.btnPesquisar.TabIndex = 17;
 			this.btnPesquisar.Click += new System.EventHandler(this.pesquisaClique);
@@ -90,28 +92,29 @@ namespace GM.View.produto
 			this.labSede.BackColor = System.Drawing.Color.Transparent;
 			this.labSede.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.labSede.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labSede.Location = new System.Drawing.Point(12, 17);
+			this.labSede.Location = new System.Drawing.Point(12, 80);
 			this.labSede.Name = "labSede";
-			this.labSede.Size = new System.Drawing.Size(59, 20);
+			this.labSede.Size = new System.Drawing.Size(69, 23);
 			this.labSede.TabIndex = 20;
 			this.labSede.Text = "Pesquisa :";
 			this.labSede.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// txtPesquisa
 			// 
-			this.txtPesquisa.Location = new System.Drawing.Point(77, 17);
+			this.txtPesquisa.Location = new System.Drawing.Point(88, 80);
 			this.txtPesquisa.Name = "txtPesquisa";
-			this.txtPesquisa.Size = new System.Drawing.Size(118, 20);
+			this.txtPesquisa.Size = new System.Drawing.Size(137, 23);
 			this.txtPesquisa.TabIndex = 22;
 			// 
 			// btnAdicionar
 			// 
 			this.btnAdicionar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnAdicionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnAdicionar.Location = new System.Drawing.Point(244, 12);
+			this.btnAdicionar.Location = new System.Drawing.Point(283, 74);
 			this.btnAdicionar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnAdicionar.Name = "btnAdicionar";
-			this.btnAdicionar.Size = new System.Drawing.Size(173, 29);
+			this.btnAdicionar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+			this.btnAdicionar.Size = new System.Drawing.Size(202, 33);
 			this.btnAdicionar.Symbol = 61543;
 			this.btnAdicionar.TabIndex = 23;
 			this.btnAdicionar.Text = "Adicionar";
@@ -121,10 +124,11 @@ namespace GM.View.produto
 			// 
 			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(423, 12);
+			this.btnEditar.Location = new System.Drawing.Point(491, 74);
 			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.Size = new System.Drawing.Size(37, 29);
+			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+			this.btnEditar.Size = new System.Drawing.Size(43, 33);
 			this.btnEditar.Symbol = 61508;
 			this.btnEditar.TabIndex = 24;
 			this.btnEditar.Click += new System.EventHandler(this.editarClique);
@@ -137,14 +141,15 @@ namespace GM.View.produto
 			this.btnDeletar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnDeletar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnDeletar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnDeletar.Location = new System.Drawing.Point(466, 12);
+			this.btnDeletar.Location = new System.Drawing.Point(542, 74);
 			this.btnDeletar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnDeletar.Name = "btnDeletar";
+			this.btnDeletar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnDeletar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnDeletar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnDeletar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnDeletar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnDeletar.Size = new System.Drawing.Size(37, 29);
+			this.btnDeletar.Size = new System.Drawing.Size(43, 33);
 			this.btnDeletar.Style = Sunny.UI.UIStyle.Red;
 			this.btnDeletar.Symbol = 61453;
 			this.btnDeletar.TabIndex = 25;
@@ -152,9 +157,9 @@ namespace GM.View.produto
 			// 
 			// CSFamilia
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(515, 462);
+			this.ClientSize = new System.Drawing.Size(601, 534);
 			this.Controls.Add(this.btnDeletar);
 			this.Controls.Add(this.btnEditar);
 			this.Controls.Add(this.btnAdicionar);
@@ -162,7 +167,8 @@ namespace GM.View.produto
 			this.Controls.Add(this.labSede);
 			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.listFamilias);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CSFamilia";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

@@ -5,9 +5,13 @@ using System.Drawing;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.custo {
-	public partial class PQCusto : Form {
+	public partial class PQCusto : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private DataTable dados;
 		private ObjectDao<Custo> cDao = new ObjectDao<Custo>();
@@ -15,6 +19,7 @@ namespace GM.View.custo {
 		
 		public PQCusto() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void arranqueFormulario(object sender, EventArgs e) {

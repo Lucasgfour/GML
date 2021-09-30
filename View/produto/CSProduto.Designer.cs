@@ -29,6 +29,7 @@ namespace GM.View.produto
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CSProduto));
 			this.listProduto = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -56,10 +57,10 @@ namespace GM.View.produto
 			this.listProduto.FullRowSelect = true;
 			this.listProduto.GridLines = true;
 			this.listProduto.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.listProduto.Location = new System.Drawing.Point(12, 47);
+			this.listProduto.Location = new System.Drawing.Point(16, 115);
 			this.listProduto.MultiSelect = false;
 			this.listProduto.Name = "listProduto";
-			this.listProduto.Size = new System.Drawing.Size(680, 422);
+			this.listProduto.Size = new System.Drawing.Size(793, 448);
 			this.listProduto.TabIndex = 1;
 			this.listProduto.UseCompatibleStateImageBehavior = false;
 			this.listProduto.View = System.Windows.Forms.View.Details;
@@ -98,9 +99,9 @@ namespace GM.View.produto
 			// 
 			// txtPesquisa
 			// 
-			this.txtPesquisa.Location = new System.Drawing.Point(77, 17);
+			this.txtPesquisa.Location = new System.Drawing.Point(92, 81);
 			this.txtPesquisa.Name = "txtPesquisa";
-			this.txtPesquisa.Size = new System.Drawing.Size(118, 20);
+			this.txtPesquisa.Size = new System.Drawing.Size(137, 23);
 			this.txtPesquisa.TabIndex = 25;
 			// 
 			// labSede
@@ -108,9 +109,9 @@ namespace GM.View.produto
 			this.labSede.BackColor = System.Drawing.Color.Transparent;
 			this.labSede.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.labSede.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labSede.Location = new System.Drawing.Point(12, 17);
+			this.labSede.Location = new System.Drawing.Point(16, 81);
 			this.labSede.Name = "labSede";
-			this.labSede.Size = new System.Drawing.Size(59, 20);
+			this.labSede.Size = new System.Drawing.Size(69, 23);
 			this.labSede.TabIndex = 24;
 			this.labSede.Text = "Pesquisa :";
 			this.labSede.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -119,10 +120,11 @@ namespace GM.View.produto
 			// 
 			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnPesquisar.Location = new System.Drawing.Point(201, 12);
+			this.btnPesquisar.Location = new System.Drawing.Point(236, 75);
 			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnPesquisar.Name = "btnPesquisar";
-			this.btnPesquisar.Size = new System.Drawing.Size(37, 29);
+			this.btnPesquisar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+			this.btnPesquisar.Size = new System.Drawing.Size(43, 33);
 			this.btnPesquisar.Symbol = 61442;
 			this.btnPesquisar.TabIndex = 23;
 			this.btnPesquisar.Click += new System.EventHandler(this.pesquisarClique);
@@ -131,10 +133,11 @@ namespace GM.View.produto
 			// 
 			this.btnAdicionar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnAdicionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnAdicionar.Location = new System.Drawing.Point(244, 12);
+			this.btnAdicionar.Location = new System.Drawing.Point(287, 75);
 			this.btnAdicionar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnAdicionar.Name = "btnAdicionar";
-			this.btnAdicionar.Size = new System.Drawing.Size(173, 29);
+			this.btnAdicionar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+			this.btnAdicionar.Size = new System.Drawing.Size(202, 33);
 			this.btnAdicionar.Symbol = 61543;
 			this.btnAdicionar.TabIndex = 26;
 			this.btnAdicionar.Text = "Adicionar";
@@ -144,26 +147,28 @@ namespace GM.View.produto
 			// 
 			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(423, 12);
+			this.btnEditar.Location = new System.Drawing.Point(495, 75);
 			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.Size = new System.Drawing.Size(37, 29);
+			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+			this.btnEditar.Size = new System.Drawing.Size(43, 33);
 			this.btnEditar.Symbol = 61508;
 			this.btnEditar.TabIndex = 27;
 			this.btnEditar.Click += new System.EventHandler(this.editarClique);
 			// 
 			// CSProduto
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(704, 481);
+			this.ClientSize = new System.Drawing.Size(821, 575);
 			this.Controls.Add(this.btnEditar);
 			this.Controls.Add(this.btnAdicionar);
 			this.Controls.Add(this.txtPesquisa);
 			this.Controls.Add(this.labSede);
 			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.listProduto);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CSProduto";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

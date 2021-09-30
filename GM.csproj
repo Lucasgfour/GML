@@ -113,10 +113,6 @@
     <Compile Include="Controller\Tela.cs" />
     <Compile Include="Controller\Usuario.cs" />
     <Compile Include="Controller\Venda.cs" />
-    <Compile Include="Home.cs" />
-    <Compile Include="Home.Designer.cs">
-      <DependentUpon>Home.cs</DependentUpon>
-    </Compile>
     <Compile Include="Model\Atender.cs" />
     <Compile Include="Model\Comando.cs" />
     <Compile Include="Model\Conexao.cs" />
@@ -304,10 +300,6 @@
     <Compile Include="View\Sistema\IDUsuario.Designer.cs">
       <DependentUpon>IDUsuario.cs</DependentUpon>
     </Compile>
-    <Compile Include="View\Sistema\novaHome.cs" />
-    <Compile Include="View\Sistema\novaHome.Designer.cs">
-      <DependentUpon>novaHome.cs</DependentUpon>
-    </Compile>
     <Compile Include="View\Sistema\PQCidade.cs" />
     <Compile Include="View\Sistema\PQCidade.Designer.cs">
       <DependentUpon>PQCidade.cs</DependentUpon>
@@ -371,9 +363,6 @@
     <Folder Include="View\Sistema" />
   </ItemGroup>
   <ItemGroup>
-    <EmbeddedResource Include="Home.resx">
-      <DependentUpon>Home.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="View\caixa\CDCaixa.resx">
       <DependentUpon>CDCaixa.cs</DependentUpon>
     </EmbeddedResource>
@@ -505,9 +494,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="View\Sistema\IDUsuario.resx">
       <DependentUpon>IDUsuario.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="View\Sistema\novaHome.resx">
-      <DependentUpon>novaHome.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="View\Sistema\PQCidade.resx">
       <DependentUpon>PQCidade.cs</DependentUpon>

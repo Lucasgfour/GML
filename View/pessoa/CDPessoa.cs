@@ -4,15 +4,20 @@ using System.Drawing;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.pessoa {
-	public partial class CDPessoa : Form {
+	public partial class CDPessoa : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private ObjectDao<Pessoa> pDao = new ObjectDao<Pessoa>();
 		private Pessoa p;
 		
 		public CDPessoa() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void Arranque(object sender, EventArgs e) {
@@ -90,6 +95,7 @@ namespace GM.View.pessoa {
 			btnEditar.Enabled = !(edicao);
 			btnDeletar.Enabled = !(edicao);
 			btnPesquisar.Enabled = !(edicao);
+			btnEndereco.Enabled = !(edicao);
 			
 			btnSalvar.Enabled = edicao;
 			btnCancelar.Enabled = edicao;

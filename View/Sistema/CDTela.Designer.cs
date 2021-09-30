@@ -29,6 +29,7 @@ namespace GM.View.Sistema
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDTela));
 			this.txtTela = new System.Windows.Forms.TextBox();
 			this.labTela = new System.Windows.Forms.Label();
 			this.labSituacao = new System.Windows.Forms.Label();
@@ -43,7 +44,7 @@ namespace GM.View.Sistema
 			// 
 			this.txtTela.BackColor = System.Drawing.Color.White;
 			this.txtTela.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtTela.Location = new System.Drawing.Point(108, 9);
+			this.txtTela.Location = new System.Drawing.Point(108, 74);
 			this.txtTela.MaxLength = 30;
 			this.txtTela.Name = "txtTela";
 			this.txtTela.Size = new System.Drawing.Size(208, 25);
@@ -51,8 +52,9 @@ namespace GM.View.Sistema
 			// 
 			// labTela
 			// 
+			this.labTela.BackColor = System.Drawing.Color.Transparent;
 			this.labTela.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labTela.Location = new System.Drawing.Point(12, 9);
+			this.labTela.Location = new System.Drawing.Point(12, 74);
 			this.labTela.Name = "labTela";
 			this.labTela.Size = new System.Drawing.Size(90, 25);
 			this.labTela.TabIndex = 23;
@@ -61,8 +63,9 @@ namespace GM.View.Sistema
 			// 
 			// labSituacao
 			// 
+			this.labSituacao.BackColor = System.Drawing.Color.Transparent;
 			this.labSituacao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSituacao.Location = new System.Drawing.Point(12, 40);
+			this.labSituacao.Location = new System.Drawing.Point(12, 105);
 			this.labSituacao.Name = "labSituacao";
 			this.labSituacao.Size = new System.Drawing.Size(90, 25);
 			this.labSituacao.TabIndex = 33;
@@ -77,15 +80,16 @@ namespace GM.View.Sistema
 			this.cbxSituacao.Items.AddRange(new object[] {
 									"Bloqueada",
 									"Ativa"});
-			this.cbxSituacao.Location = new System.Drawing.Point(108, 40);
+			this.cbxSituacao.Location = new System.Drawing.Point(108, 105);
 			this.cbxSituacao.Name = "cbxSituacao";
 			this.cbxSituacao.Size = new System.Drawing.Size(90, 25);
 			this.cbxSituacao.TabIndex = 32;
 			// 
 			// labPermissao
 			// 
+			this.labPermissao.BackColor = System.Drawing.Color.Transparent;
 			this.labPermissao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labPermissao.Location = new System.Drawing.Point(12, 71);
+			this.labPermissao.Location = new System.Drawing.Point(12, 136);
 			this.labPermissao.Name = "labPermissao";
 			this.labPermissao.Size = new System.Drawing.Size(90, 25);
 			this.labPermissao.TabIndex = 35;
@@ -109,7 +113,7 @@ namespace GM.View.Sistema
 									"Nível 8",
 									"Nível 9",
 									"Nível 10"});
-			this.cbxNivel.Location = new System.Drawing.Point(108, 71);
+			this.cbxNivel.Location = new System.Drawing.Point(108, 136);
 			this.cbxNivel.Name = "cbxNivel";
 			this.cbxNivel.Size = new System.Drawing.Size(154, 25);
 			this.cbxNivel.TabIndex = 34;
@@ -122,9 +126,10 @@ namespace GM.View.Sistema
 			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(108, 107);
+			this.btnCancelar.Location = new System.Drawing.Point(108, 172);
 			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -144,9 +149,10 @@ namespace GM.View.Sistema
 			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(205, 107);
+			this.btnSalvar.Location = new System.Drawing.Point(205, 172);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
+			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -160,7 +166,7 @@ namespace GM.View.Sistema
 			// CDTela
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			this.ClientSize = new System.Drawing.Size(328, 148);
+			this.ClientSize = new System.Drawing.Size(328, 217);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnSalvar);
 			this.Controls.Add(this.labPermissao);
@@ -170,7 +176,7 @@ namespace GM.View.Sistema
 			this.Controls.Add(this.txtTela);
 			this.Controls.Add(this.labTela);
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "CDTela";

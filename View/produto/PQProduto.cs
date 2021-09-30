@@ -6,9 +6,13 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.produto {
-	public partial class PQProduto : Form {
+	public partial class PQProduto : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		public Resultado saida = new Resultado(false, "Nenhum registro selecionado.");
 		private ObjectDao<Produto> pDao = new ObjectDao<Produto>();
@@ -16,6 +20,8 @@ namespace GM.View.produto {
 		
 		public PQProduto() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
+
 		}
 		
 		public void pesquisar() {

@@ -29,6 +29,7 @@ namespace GM.View.custo
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDCustoCategoria));
 			this.btnCancelar = new Sunny.UI.UISymbolButton();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
 			this.txtNome = new System.Windows.Forms.TextBox();
@@ -43,7 +44,7 @@ namespace GM.View.custo
 			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(92, 46);
+			this.btnCancelar.Location = new System.Drawing.Point(90, 108);
 			this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnCancelar.Name = "btnCancelar";
@@ -66,7 +67,7 @@ namespace GM.View.custo
 			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(203, 46);
+			this.btnSalvar.Location = new System.Drawing.Point(201, 108);
 			this.btnSalvar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
@@ -82,7 +83,7 @@ namespace GM.View.custo
 			// 
 			// txtNome
 			// 
-			this.txtNome.Location = new System.Drawing.Point(92, 13);
+			this.txtNome.Location = new System.Drawing.Point(90, 75);
 			this.txtNome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txtNome.MaxLength = 32;
 			this.txtNome.Name = "txtNome";
@@ -91,7 +92,8 @@ namespace GM.View.custo
 			// 
 			// labNome
 			// 
-			this.labNome.Location = new System.Drawing.Point(7, 13);
+			this.labNome.BackColor = System.Drawing.Color.Transparent;
+			this.labNome.Location = new System.Drawing.Point(5, 75);
 			this.labNome.Name = "labNome";
 			this.labNome.Size = new System.Drawing.Size(79, 25);
 			this.labNome.TabIndex = 15;
@@ -102,13 +104,13 @@ namespace GM.View.custo
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(342, 86);
+			this.ClientSize = new System.Drawing.Size(342, 149);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnSalvar);
 			this.Controls.Add(this.txtNome);
 			this.Controls.Add(this.labNome);
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.KeyPreview = true;
 			this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.MaximizeBox = false;

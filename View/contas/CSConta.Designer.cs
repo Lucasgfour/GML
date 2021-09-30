@@ -29,6 +29,7 @@ namespace GM.View.contas
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CSConta));
 			this.txtFornecedor = new System.Windows.Forms.TextBox();
 			this.labFornecedor = new System.Windows.Forms.Label();
 			this.txtCodigo = new System.Windows.Forms.TextBox();
@@ -62,7 +63,7 @@ namespace GM.View.contas
 			// 
 			this.txtFornecedor.BackColor = System.Drawing.Color.White;
 			this.txtFornecedor.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtFornecedor.Location = new System.Drawing.Point(305, 9);
+			this.txtFornecedor.Location = new System.Drawing.Point(305, 79);
 			this.txtFornecedor.Name = "txtFornecedor";
 			this.txtFornecedor.ReadOnly = true;
 			this.txtFornecedor.Size = new System.Drawing.Size(257, 25);
@@ -71,8 +72,9 @@ namespace GM.View.contas
 			// 
 			// labFornecedor
 			// 
+			this.labFornecedor.BackColor = System.Drawing.Color.Transparent;
 			this.labFornecedor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labFornecedor.Location = new System.Drawing.Point(209, 9);
+			this.labFornecedor.Location = new System.Drawing.Point(209, 79);
 			this.labFornecedor.Name = "labFornecedor";
 			this.labFornecedor.Size = new System.Drawing.Size(90, 25);
 			this.labFornecedor.TabIndex = 11;
@@ -83,7 +85,7 @@ namespace GM.View.contas
 			// 
 			this.txtCodigo.BackColor = System.Drawing.Color.White;
 			this.txtCodigo.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtCodigo.Location = new System.Drawing.Point(85, 9);
+			this.txtCodigo.Location = new System.Drawing.Point(85, 79);
 			this.txtCodigo.Name = "txtCodigo";
 			this.txtCodigo.Size = new System.Drawing.Size(73, 25);
 			this.txtCodigo.TabIndex = 12;
@@ -91,8 +93,9 @@ namespace GM.View.contas
 			// 
 			// labCodigo
 			// 
+			this.labCodigo.BackColor = System.Drawing.Color.Transparent;
 			this.labCodigo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labCodigo.Location = new System.Drawing.Point(12, 9);
+			this.labCodigo.Location = new System.Drawing.Point(12, 79);
 			this.labCodigo.Name = "labCodigo";
 			this.labCodigo.Size = new System.Drawing.Size(67, 25);
 			this.labCodigo.TabIndex = 13;
@@ -103,7 +106,7 @@ namespace GM.View.contas
 			// 
 			this.btnAbrir.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnAbrir.Location = new System.Drawing.Point(160, 9);
+			this.btnAbrir.Location = new System.Drawing.Point(160, 79);
 			this.btnAbrir.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnAbrir.Name = "btnAbrir";
 			this.btnAbrir.Radius = 0;
@@ -117,7 +120,7 @@ namespace GM.View.contas
 			// 
 			this.btnNovaMovimento.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnNovaMovimento.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnNovaMovimento.Location = new System.Drawing.Point(345, 239);
+			this.btnNovaMovimento.Location = new System.Drawing.Point(345, 309);
 			this.btnNovaMovimento.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnNovaMovimento.Name = "btnNovaMovimento";
 			this.btnNovaMovimento.Radius = 0;
@@ -135,7 +138,7 @@ namespace GM.View.contas
 			// 
 			this.btnAbrirReferencia.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnAbrirReferencia.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnAbrirReferencia.Location = new System.Drawing.Point(345, 271);
+			this.btnAbrirReferencia.Location = new System.Drawing.Point(345, 341);
 			this.btnAbrirReferencia.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnAbrirReferencia.Name = "btnAbrirReferencia";
 			this.btnAbrirReferencia.Radius = 0;
@@ -153,7 +156,7 @@ namespace GM.View.contas
 			// 
 			this.txtReferencia.BackColor = System.Drawing.Color.White;
 			this.txtReferencia.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtReferencia.Location = new System.Drawing.Point(430, 37);
+			this.txtReferencia.Location = new System.Drawing.Point(430, 107);
 			this.txtReferencia.Name = "txtReferencia";
 			this.txtReferencia.ReadOnly = true;
 			this.txtReferencia.Size = new System.Drawing.Size(132, 25);
@@ -162,8 +165,9 @@ namespace GM.View.contas
 			// 
 			// labReferencia
 			// 
+			this.labReferencia.BackColor = System.Drawing.Color.Transparent;
 			this.labReferencia.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labReferencia.Location = new System.Drawing.Point(345, 36);
+			this.labReferencia.Location = new System.Drawing.Point(345, 106);
 			this.labReferencia.Name = "labReferencia";
 			this.labReferencia.Size = new System.Drawing.Size(79, 25);
 			this.labReferencia.TabIndex = 35;
@@ -174,7 +178,7 @@ namespace GM.View.contas
 			// 
 			this.txtVencimento.BackColor = System.Drawing.Color.White;
 			this.txtVencimento.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtVencimento.Location = new System.Drawing.Point(261, 37);
+			this.txtVencimento.Location = new System.Drawing.Point(261, 107);
 			this.txtVencimento.Name = "txtVencimento";
 			this.txtVencimento.ReadOnly = true;
 			this.txtVencimento.Size = new System.Drawing.Size(78, 25);
@@ -183,8 +187,9 @@ namespace GM.View.contas
 			// 
 			// labVencimento
 			// 
+			this.labVencimento.BackColor = System.Drawing.Color.Transparent;
 			this.labVencimento.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labVencimento.Location = new System.Drawing.Point(171, 37);
+			this.labVencimento.Location = new System.Drawing.Point(171, 107);
 			this.labVencimento.Name = "labVencimento";
 			this.labVencimento.Size = new System.Drawing.Size(84, 25);
 			this.labVencimento.TabIndex = 37;
@@ -195,7 +200,7 @@ namespace GM.View.contas
 			// 
 			this.txtEmissao.BackColor = System.Drawing.Color.White;
 			this.txtEmissao.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtEmissao.Location = new System.Drawing.Point(85, 37);
+			this.txtEmissao.Location = new System.Drawing.Point(85, 107);
 			this.txtEmissao.Name = "txtEmissao";
 			this.txtEmissao.ReadOnly = true;
 			this.txtEmissao.Size = new System.Drawing.Size(80, 25);
@@ -204,8 +209,9 @@ namespace GM.View.contas
 			// 
 			// labEmissao
 			// 
+			this.labEmissao.BackColor = System.Drawing.Color.Transparent;
 			this.labEmissao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labEmissao.Location = new System.Drawing.Point(12, 37);
+			this.labEmissao.Location = new System.Drawing.Point(12, 107);
 			this.labEmissao.Name = "labEmissao";
 			this.labEmissao.Size = new System.Drawing.Size(67, 25);
 			this.labEmissao.TabIndex = 39;
@@ -220,7 +226,7 @@ namespace GM.View.contas
 									this.ColMv3});
 			this.listaMovimento.FullRowSelect = true;
 			this.listaMovimento.GridLines = true;
-			this.listaMovimento.Location = new System.Drawing.Point(12, 93);
+			this.listaMovimento.Location = new System.Drawing.Point(12, 163);
 			this.listaMovimento.Name = "listaMovimento";
 			this.listaMovimento.Size = new System.Drawing.Size(550, 143);
 			this.listaMovimento.TabIndex = 40;
@@ -247,7 +253,7 @@ namespace GM.View.contas
 			this.labMovimento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.labMovimento.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.labMovimento.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labMovimento.Location = new System.Drawing.Point(12, 68);
+			this.labMovimento.Location = new System.Drawing.Point(12, 138);
 			this.labMovimento.Name = "labMovimento";
 			this.labMovimento.Size = new System.Drawing.Size(550, 26);
 			this.labMovimento.TabIndex = 41;
@@ -262,7 +268,7 @@ namespace GM.View.contas
 									this.ColRe3});
 			this.listaRelacao.FullRowSelect = true;
 			this.listaRelacao.GridLines = true;
-			this.listaRelacao.Location = new System.Drawing.Point(12, 264);
+			this.listaRelacao.Location = new System.Drawing.Point(12, 334);
 			this.listaRelacao.Name = "listaRelacao";
 			this.listaRelacao.Size = new System.Drawing.Size(327, 116);
 			this.listaRelacao.TabIndex = 42;
@@ -290,7 +296,7 @@ namespace GM.View.contas
 			this.labRelacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.labRelacao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.labRelacao.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labRelacao.Location = new System.Drawing.Point(12, 239);
+			this.labRelacao.Location = new System.Drawing.Point(12, 309);
 			this.labRelacao.Name = "labRelacao";
 			this.labRelacao.Size = new System.Drawing.Size(327, 26);
 			this.labRelacao.TabIndex = 43;
@@ -302,7 +308,7 @@ namespace GM.View.contas
 			this.labSaldo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
 			this.labSaldo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.labSaldo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSaldo.Location = new System.Drawing.Point(345, 330);
+			this.labSaldo.Location = new System.Drawing.Point(345, 400);
 			this.labSaldo.Name = "labSaldo";
 			this.labSaldo.Size = new System.Drawing.Size(217, 26);
 			this.labSaldo.TabIndex = 44;
@@ -314,7 +320,7 @@ namespace GM.View.contas
 			this.txtSaldo.BackColor = System.Drawing.Color.White;
 			this.txtSaldo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtSaldo.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtSaldo.Location = new System.Drawing.Point(345, 355);
+			this.txtSaldo.Location = new System.Drawing.Point(345, 425);
 			this.txtSaldo.Name = "txtSaldo";
 			this.txtSaldo.ReadOnly = true;
 			this.txtSaldo.Size = new System.Drawing.Size(217, 25);
@@ -325,7 +331,7 @@ namespace GM.View.contas
 			// 
 			this.txtSituação.BackColor = System.Drawing.Color.White;
 			this.txtSituação.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtSituação.Location = new System.Drawing.Point(419, 301);
+			this.txtSituação.Location = new System.Drawing.Point(419, 371);
 			this.txtSituação.Name = "txtSituação";
 			this.txtSituação.ReadOnly = true;
 			this.txtSituação.Size = new System.Drawing.Size(143, 25);
@@ -334,8 +340,9 @@ namespace GM.View.contas
 			// 
 			// labSituacao
 			// 
+			this.labSituacao.BackColor = System.Drawing.Color.Transparent;
 			this.labSituacao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSituacao.Location = new System.Drawing.Point(345, 301);
+			this.labSituacao.Location = new System.Drawing.Point(345, 371);
 			this.labSituacao.Name = "labSituacao";
 			this.labSituacao.Size = new System.Drawing.Size(68, 25);
 			this.labSituacao.TabIndex = 47;
@@ -346,7 +353,7 @@ namespace GM.View.contas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(574, 392);
+			this.ClientSize = new System.Drawing.Size(574, 465);
 			this.Controls.Add(this.txtSituação);
 			this.Controls.Add(this.labSituacao);
 			this.Controls.Add(this.txtSaldo);
@@ -369,7 +376,7 @@ namespace GM.View.contas
 			this.Controls.Add(this.labFornecedor);
 			this.Controls.Add(this.labMovimento);
 			this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CSConta";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

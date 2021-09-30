@@ -6,9 +6,13 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.produto {
-	public partial class CDProduto : Form {
+	public partial class CDProduto : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		public LinkedList<Familia> familias;
 		public Produto produto = new Produto();
@@ -16,11 +20,13 @@ namespace GM.View.produto {
 		
 		public CDProduto() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		public CDProduto(Produto p) {
 			this.produto = p;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void Arranque(object sender, EventArgs e) {

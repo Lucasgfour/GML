@@ -6,16 +6,20 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.condicao {
-	public partial class CSCondicao : Form {
+	public partial class CSCondicao : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private ObjectDao<Condicao> cDao = new ObjectDao<Condicao>();
 		private LinkedList<Condicao> condicoes = new LinkedList<Condicao>();
 		
-		
 		public CSCondicao() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		private void pesquisar() {

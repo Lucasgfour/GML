@@ -6,9 +6,13 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.pessoa {
-	public partial class PQPessoa : Form {
+	public partial class PQPessoa : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private ObjectDao<Pessoa> pDao = new ObjectDao<Pessoa>();
 		private LinkedList<Pessoa> pessoas = new LinkedList<Pessoa>();
@@ -24,6 +28,7 @@ namespace GM.View.pessoa {
 				this.tipo = 4;
 			}
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void arranqueFormulario(object sender, EventArgs e) {

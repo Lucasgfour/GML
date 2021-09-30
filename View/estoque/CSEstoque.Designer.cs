@@ -29,6 +29,7 @@ namespace GM.View.estoque
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CSEstoque));
 			this.listaMovimento = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -59,7 +60,7 @@ namespace GM.View.estoque
 									this.Col04});
 			this.listaMovimento.FullRowSelect = true;
 			this.listaMovimento.GridLines = true;
-			this.listaMovimento.Location = new System.Drawing.Point(12, 96);
+			this.listaMovimento.Location = new System.Drawing.Point(12, 165);
 			this.listaMovimento.MultiSelect = false;
 			this.listaMovimento.Name = "listaMovimento";
 			this.listaMovimento.Size = new System.Drawing.Size(397, 390);
@@ -92,7 +93,7 @@ namespace GM.View.estoque
 			// 
 			// txtCodigo
 			// 
-			this.txtCodigo.Location = new System.Drawing.Point(91, 9);
+			this.txtCodigo.Location = new System.Drawing.Point(91, 78);
 			this.txtCodigo.MaxLength = 50;
 			this.txtCodigo.Name = "txtCodigo";
 			this.txtCodigo.Size = new System.Drawing.Size(45, 23);
@@ -102,7 +103,8 @@ namespace GM.View.estoque
 			// 
 			// labProduto
 			// 
-			this.labProduto.Location = new System.Drawing.Point(12, 9);
+			this.labProduto.BackColor = System.Drawing.Color.Transparent;
+			this.labProduto.Location = new System.Drawing.Point(12, 78);
 			this.labProduto.Name = "labProduto";
 			this.labProduto.Size = new System.Drawing.Size(73, 23);
 			this.labProduto.TabIndex = 9;
@@ -112,7 +114,7 @@ namespace GM.View.estoque
 			// txtProduto
 			// 
 			this.txtProduto.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.txtProduto.Location = new System.Drawing.Point(183, 9);
+			this.txtProduto.Location = new System.Drawing.Point(183, 78);
 			this.txtProduto.MaxLength = 50;
 			this.txtProduto.Name = "txtProduto";
 			this.txtProduto.ReadOnly = true;
@@ -124,7 +126,7 @@ namespace GM.View.estoque
 			// 
 			this.btnAbrir.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnAbrir.Location = new System.Drawing.Point(136, 9);
+			this.btnAbrir.Location = new System.Drawing.Point(136, 78);
 			this.btnAbrir.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnAbrir.Name = "btnAbrir";
 			this.btnAbrir.Radius = 0;
@@ -137,7 +139,7 @@ namespace GM.View.estoque
 			// txtUnidade
 			// 
 			this.txtUnidade.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.txtUnidade.Location = new System.Drawing.Point(203, 38);
+			this.txtUnidade.Location = new System.Drawing.Point(203, 107);
 			this.txtUnidade.MaxLength = 50;
 			this.txtUnidade.Name = "txtUnidade";
 			this.txtUnidade.ReadOnly = true;
@@ -147,7 +149,8 @@ namespace GM.View.estoque
 			// 
 			// labSituacao
 			// 
-			this.labSituacao.Location = new System.Drawing.Point(246, 38);
+			this.labSituacao.BackColor = System.Drawing.Color.Transparent;
+			this.labSituacao.Location = new System.Drawing.Point(246, 107);
 			this.labSituacao.Name = "labSituacao";
 			this.labSituacao.Size = new System.Drawing.Size(60, 23);
 			this.labSituacao.TabIndex = 35;
@@ -162,15 +165,16 @@ namespace GM.View.estoque
 			this.cbxSituacao.Items.AddRange(new object[] {
 									"SUSPENSO",
 									"ATIVO"});
-			this.cbxSituacao.Location = new System.Drawing.Point(312, 38);
+			this.cbxSituacao.Location = new System.Drawing.Point(312, 107);
 			this.cbxSituacao.Name = "cbxSituacao";
 			this.cbxSituacao.Size = new System.Drawing.Size(97, 23);
 			this.cbxSituacao.TabIndex = 36;
 			// 
 			// labAte
 			// 
+			this.labAte.BackColor = System.Drawing.Color.Transparent;
 			this.labAte.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labAte.Location = new System.Drawing.Point(183, 66);
+			this.labAte.Location = new System.Drawing.Point(183, 135);
 			this.labAte.Name = "labAte";
 			this.labAte.Size = new System.Drawing.Size(31, 23);
 			this.labAte.TabIndex = 40;
@@ -179,8 +183,9 @@ namespace GM.View.estoque
 			// 
 			// labPeriodo
 			// 
+			this.labPeriodo.BackColor = System.Drawing.Color.Transparent;
 			this.labPeriodo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labPeriodo.Location = new System.Drawing.Point(12, 67);
+			this.labPeriodo.Location = new System.Drawing.Point(12, 136);
 			this.labPeriodo.Name = "labPeriodo";
 			this.labPeriodo.Size = new System.Drawing.Size(73, 23);
 			this.labPeriodo.TabIndex = 39;
@@ -189,7 +194,7 @@ namespace GM.View.estoque
 			// 
 			// txtDtFinal
 			// 
-			this.txtDtFinal.Location = new System.Drawing.Point(220, 67);
+			this.txtDtFinal.Location = new System.Drawing.Point(220, 136);
 			this.txtDtFinal.Name = "txtDtFinal";
 			this.txtDtFinal.Size = new System.Drawing.Size(86, 23);
 			this.txtDtFinal.TabIndex = 38;
@@ -199,7 +204,7 @@ namespace GM.View.estoque
 			// 
 			// txtDtInicio
 			// 
-			this.txtDtInicio.Location = new System.Drawing.Point(91, 67);
+			this.txtDtInicio.Location = new System.Drawing.Point(91, 136);
 			this.txtDtInicio.Name = "txtDtInicio";
 			this.txtDtInicio.Size = new System.Drawing.Size(86, 23);
 			this.txtDtInicio.TabIndex = 37;
@@ -210,7 +215,7 @@ namespace GM.View.estoque
 			// txtSaldo
 			// 
 			this.txtSaldo.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.txtSaldo.Location = new System.Drawing.Point(91, 38);
+			this.txtSaldo.Location = new System.Drawing.Point(91, 107);
 			this.txtSaldo.MaxLength = 50;
 			this.txtSaldo.Name = "txtSaldo";
 			this.txtSaldo.ReadOnly = true;
@@ -220,7 +225,8 @@ namespace GM.View.estoque
 			// 
 			// labSaldo
 			// 
-			this.labSaldo.Location = new System.Drawing.Point(12, 38);
+			this.labSaldo.BackColor = System.Drawing.Color.Transparent;
+			this.labSaldo.Location = new System.Drawing.Point(12, 107);
 			this.labSaldo.Name = "labSaldo";
 			this.labSaldo.Size = new System.Drawing.Size(73, 23);
 			this.labSaldo.TabIndex = 41;
@@ -231,7 +237,7 @@ namespace GM.View.estoque
 			// 
 			this.uiSymbolButton1.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.uiSymbolButton1.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.uiSymbolButton1.Location = new System.Drawing.Point(312, 67);
+			this.uiSymbolButton1.Location = new System.Drawing.Point(312, 136);
 			this.uiSymbolButton1.MinimumSize = new System.Drawing.Size(1, 1);
 			this.uiSymbolButton1.Name = "uiSymbolButton1";
 			this.uiSymbolButton1.Radius = 0;
@@ -246,7 +252,7 @@ namespace GM.View.estoque
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(421, 498);
+			this.ClientSize = new System.Drawing.Size(421, 567);
 			this.Controls.Add(this.uiSymbolButton1);
 			this.Controls.Add(this.txtSaldo);
 			this.Controls.Add(this.labSaldo);
@@ -263,7 +269,7 @@ namespace GM.View.estoque
 			this.Controls.Add(this.labProduto);
 			this.Controls.Add(this.listaMovimento);
 			this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CSEstoque";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

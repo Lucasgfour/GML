@@ -29,6 +29,7 @@ namespace GM.View.custo
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDCusto));
 			this.listaPagamento = new System.Windows.Forms.ListView();
 			this.ColPag2 = new System.Windows.Forms.ColumnHeader();
 			this.ColPag3 = new System.Windows.Forms.ColumnHeader();
@@ -90,6 +91,7 @@ namespace GM.View.custo
 			// 
 			// gpxPagamento
 			// 
+			this.gpxPagamento.BackColor = System.Drawing.Color.Transparent;
 			this.gpxPagamento.Controls.Add(this.btnRemover);
 			this.gpxPagamento.Controls.Add(this.btnAdicionar);
 			this.gpxPagamento.Controls.Add(this.txtParcVencimento);
@@ -97,7 +99,7 @@ namespace GM.View.custo
 			this.gpxPagamento.Controls.Add(this.txtVencimento);
 			this.gpxPagamento.Controls.Add(this.listaPagamento);
 			this.gpxPagamento.Controls.Add(this.labVencimento);
-			this.gpxPagamento.Location = new System.Drawing.Point(10, 182);
+			this.gpxPagamento.Location = new System.Drawing.Point(10, 251);
 			this.gpxPagamento.Name = "gpxPagamento";
 			this.gpxPagamento.Size = new System.Drawing.Size(511, 201);
 			this.gpxPagamento.TabIndex = 1;
@@ -193,7 +195,8 @@ namespace GM.View.custo
 			// 
 			// labDescricao
 			// 
-			this.labDescricao.Location = new System.Drawing.Point(24, 36);
+			this.labDescricao.BackColor = System.Drawing.Color.Transparent;
+			this.labDescricao.Location = new System.Drawing.Point(24, 105);
 			this.labDescricao.Name = "labDescricao";
 			this.labDescricao.Size = new System.Drawing.Size(75, 25);
 			this.labDescricao.TabIndex = 2;
@@ -202,7 +205,7 @@ namespace GM.View.custo
 			// 
 			// txtDescricao
 			// 
-			this.txtDescricao.Location = new System.Drawing.Point(105, 36);
+			this.txtDescricao.Location = new System.Drawing.Point(105, 105);
 			this.txtDescricao.MaxLength = 70;
 			this.txtDescricao.Name = "txtDescricao";
 			this.txtDescricao.Size = new System.Drawing.Size(528, 25);
@@ -210,7 +213,8 @@ namespace GM.View.custo
 			// 
 			// labEmissao
 			// 
-			this.labEmissao.Location = new System.Drawing.Point(446, 67);
+			this.labEmissao.BackColor = System.Drawing.Color.Transparent;
+			this.labEmissao.Location = new System.Drawing.Point(446, 136);
 			this.labEmissao.Name = "labEmissao";
 			this.labEmissao.Size = new System.Drawing.Size(75, 25);
 			this.labEmissao.TabIndex = 4;
@@ -219,7 +223,7 @@ namespace GM.View.custo
 			// 
 			// txtEmissao
 			// 
-			this.txtEmissao.Location = new System.Drawing.Point(527, 67);
+			this.txtEmissao.Location = new System.Drawing.Point(527, 136);
 			this.txtEmissao.MaxLength = 10;
 			this.txtEmissao.Name = "txtEmissao";
 			this.txtEmissao.Size = new System.Drawing.Size(106, 25);
@@ -230,7 +234,8 @@ namespace GM.View.custo
 			// 
 			// labObservacao
 			// 
-			this.labObservacao.Location = new System.Drawing.Point(13, 98);
+			this.labObservacao.BackColor = System.Drawing.Color.Transparent;
+			this.labObservacao.Location = new System.Drawing.Point(13, 167);
 			this.labObservacao.Name = "labObservacao";
 			this.labObservacao.Size = new System.Drawing.Size(86, 25);
 			this.labObservacao.TabIndex = 6;
@@ -239,7 +244,7 @@ namespace GM.View.custo
 			// 
 			// txtObservacao
 			// 
-			this.txtObservacao.Location = new System.Drawing.Point(105, 98);
+			this.txtObservacao.Location = new System.Drawing.Point(105, 167);
 			this.txtObservacao.MaxLength = 200;
 			this.txtObservacao.Multiline = true;
 			this.txtObservacao.Name = "txtObservacao";
@@ -248,7 +253,8 @@ namespace GM.View.custo
 			// 
 			// labTipo
 			// 
-			this.labTipo.Location = new System.Drawing.Point(24, 67);
+			this.labTipo.BackColor = System.Drawing.Color.Transparent;
+			this.labTipo.Location = new System.Drawing.Point(24, 136);
 			this.labTipo.Name = "labTipo";
 			this.labTipo.Size = new System.Drawing.Size(75, 25);
 			this.labTipo.TabIndex = 8;
@@ -262,14 +268,14 @@ namespace GM.View.custo
 			this.cbxTipo.Items.AddRange(new object[] {
 									"Custo",
 									"Despesa"});
-			this.cbxTipo.Location = new System.Drawing.Point(105, 67);
+			this.cbxTipo.Location = new System.Drawing.Point(105, 136);
 			this.cbxTipo.Name = "cbxTipo";
 			this.cbxTipo.Size = new System.Drawing.Size(102, 25);
 			this.cbxTipo.TabIndex = 4;
 			// 
 			// txtValor
 			// 
-			this.txtValor.Location = new System.Drawing.Point(294, 67);
+			this.txtValor.Location = new System.Drawing.Point(294, 136);
 			this.txtValor.MaxLength = 10;
 			this.txtValor.Name = "txtValor";
 			this.txtValor.Size = new System.Drawing.Size(146, 25);
@@ -279,7 +285,8 @@ namespace GM.View.custo
 			// 
 			// labValor
 			// 
-			this.labValor.Location = new System.Drawing.Point(213, 67);
+			this.labValor.BackColor = System.Drawing.Color.Transparent;
+			this.labValor.Location = new System.Drawing.Point(213, 136);
 			this.labValor.Name = "labValor";
 			this.labValor.Size = new System.Drawing.Size(75, 25);
 			this.labValor.TabIndex = 10;
@@ -288,7 +295,7 @@ namespace GM.View.custo
 			// 
 			// txtCategoria
 			// 
-			this.txtCategoria.Location = new System.Drawing.Point(105, 151);
+			this.txtCategoria.Location = new System.Drawing.Point(105, 220);
 			this.txtCategoria.MaxLength = 30;
 			this.txtCategoria.Name = "txtCategoria";
 			this.txtCategoria.Size = new System.Drawing.Size(75, 25);
@@ -300,7 +307,8 @@ namespace GM.View.custo
 			// 
 			// labCategoria
 			// 
-			this.labCategoria.Location = new System.Drawing.Point(24, 151);
+			this.labCategoria.BackColor = System.Drawing.Color.Transparent;
+			this.labCategoria.Location = new System.Drawing.Point(24, 220);
 			this.labCategoria.Name = "labCategoria";
 			this.labCategoria.Size = new System.Drawing.Size(75, 25);
 			this.labCategoria.TabIndex = 12;
@@ -315,9 +323,10 @@ namespace GM.View.custo
 			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(410, 389);
+			this.btnCancelar.Location = new System.Drawing.Point(410, 458);
 			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -337,9 +346,10 @@ namespace GM.View.custo
 			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(527, 389);
+			this.btnSalvar.Location = new System.Drawing.Point(527, 458);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
+			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -352,7 +362,7 @@ namespace GM.View.custo
 			// 
 			// txtNomeFornecedor
 			// 
-			this.txtNomeFornecedor.Location = new System.Drawing.Point(186, 5);
+			this.txtNomeFornecedor.Location = new System.Drawing.Point(186, 74);
 			this.txtNomeFornecedor.Name = "txtNomeFornecedor";
 			this.txtNomeFornecedor.ReadOnly = true;
 			this.txtNomeFornecedor.Size = new System.Drawing.Size(223, 25);
@@ -361,7 +371,7 @@ namespace GM.View.custo
 			// 
 			// txtCodigoFornecedor
 			// 
-			this.txtCodigoFornecedor.Location = new System.Drawing.Point(105, 5);
+			this.txtCodigoFornecedor.Location = new System.Drawing.Point(105, 74);
 			this.txtCodigoFornecedor.Name = "txtCodigoFornecedor";
 			this.txtCodigoFornecedor.Size = new System.Drawing.Size(75, 25);
 			this.txtCodigoFornecedor.TabIndex = 1;
@@ -372,7 +382,8 @@ namespace GM.View.custo
 			// 
 			// labFornecedor
 			// 
-			this.labFornecedor.Location = new System.Drawing.Point(-34, 5);
+			this.labFornecedor.BackColor = System.Drawing.Color.Transparent;
+			this.labFornecedor.Location = new System.Drawing.Point(-34, 74);
 			this.labFornecedor.Name = "labFornecedor";
 			this.labFornecedor.Size = new System.Drawing.Size(133, 23);
 			this.labFornecedor.TabIndex = 17;
@@ -383,14 +394,15 @@ namespace GM.View.custo
 			// 
 			this.cbxLoja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbxLoja.FormattingEnabled = true;
-			this.cbxLoja.Location = new System.Drawing.Point(458, 5);
+			this.cbxLoja.Location = new System.Drawing.Point(458, 74);
 			this.cbxLoja.Name = "cbxLoja";
 			this.cbxLoja.Size = new System.Drawing.Size(175, 25);
 			this.cbxLoja.TabIndex = 2;
 			// 
 			// labLoja
 			// 
-			this.labLoja.Location = new System.Drawing.Point(399, 5);
+			this.labLoja.BackColor = System.Drawing.Color.Transparent;
+			this.labLoja.Location = new System.Drawing.Point(399, 74);
 			this.labLoja.Name = "labLoja";
 			this.labLoja.Size = new System.Drawing.Size(57, 25);
 			this.labLoja.TabIndex = 21;
@@ -399,7 +411,7 @@ namespace GM.View.custo
 			// 
 			// txtNomeCategoria
 			// 
-			this.txtNomeCategoria.Location = new System.Drawing.Point(186, 151);
+			this.txtNomeCategoria.Location = new System.Drawing.Point(186, 220);
 			this.txtNomeCategoria.MaxLength = 10;
 			this.txtNomeCategoria.Name = "txtNomeCategoria";
 			this.txtNomeCategoria.ReadOnly = true;
@@ -411,7 +423,7 @@ namespace GM.View.custo
 			// CDCusto
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			this.ClientSize = new System.Drawing.Size(645, 429);
+			this.ClientSize = new System.Drawing.Size(645, 498);
 			this.Controls.Add(this.txtNomeCategoria);
 			this.Controls.Add(this.txtNomeFornecedor);
 			this.Controls.Add(this.txtCodigoFornecedor);
@@ -434,7 +446,7 @@ namespace GM.View.custo
 			this.Controls.Add(this.cbxLoja);
 			this.Controls.Add(this.labLoja);
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CDCusto";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

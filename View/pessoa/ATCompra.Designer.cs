@@ -29,6 +29,7 @@ namespace GM.View.pessoa
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATCompra));
 			this.listaProdutos = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -63,7 +64,7 @@ namespace GM.View.pessoa
 			this.listaProdutos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.listaProdutos.FullRowSelect = true;
 			this.listaProdutos.GridLines = true;
-			this.listaProdutos.Location = new System.Drawing.Point(12, 69);
+			this.listaProdutos.Location = new System.Drawing.Point(12, 129);
 			this.listaProdutos.Name = "listaProdutos";
 			this.listaProdutos.Size = new System.Drawing.Size(597, 197);
 			this.listaProdutos.TabIndex = 20;
@@ -99,7 +100,7 @@ namespace GM.View.pessoa
 			this.listaPagamentos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.listaPagamentos.FullRowSelect = true;
 			this.listaPagamentos.GridLines = true;
-			this.listaPagamentos.Location = new System.Drawing.Point(12, 272);
+			this.listaPagamentos.Location = new System.Drawing.Point(12, 332);
 			this.listaPagamentos.Name = "listaPagamentos";
 			this.listaPagamentos.Size = new System.Drawing.Size(234, 182);
 			this.listaPagamentos.TabIndex = 21;
@@ -130,9 +131,10 @@ namespace GM.View.pessoa
 			this.btnEfetivar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnEfetivar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnEfetivar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnEfetivar.Location = new System.Drawing.Point(252, 398);
+			this.btnEfetivar.Location = new System.Drawing.Point(252, 458);
 			this.btnEfetivar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEfetivar.Name = "btnEfetivar";
+			this.btnEfetivar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnEfetivar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnEfetivar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnEfetivar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -148,7 +150,7 @@ namespace GM.View.pessoa
 			// 
 			this.txtFornecedor.BackColor = System.Drawing.Color.White;
 			this.txtFornecedor.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtFornecedor.Location = new System.Drawing.Point(304, 12);
+			this.txtFornecedor.Location = new System.Drawing.Point(304, 72);
 			this.txtFornecedor.Name = "txtFornecedor";
 			this.txtFornecedor.ReadOnly = true;
 			this.txtFornecedor.Size = new System.Drawing.Size(305, 25);
@@ -157,8 +159,9 @@ namespace GM.View.pessoa
 			// 
 			// labFornecedor
 			// 
+			this.labFornecedor.BackColor = System.Drawing.Color.Transparent;
 			this.labFornecedor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labFornecedor.Location = new System.Drawing.Point(208, 12);
+			this.labFornecedor.Location = new System.Drawing.Point(208, 72);
 			this.labFornecedor.Name = "labFornecedor";
 			this.labFornecedor.Size = new System.Drawing.Size(90, 25);
 			this.labFornecedor.TabIndex = 34;
@@ -169,7 +172,7 @@ namespace GM.View.pessoa
 			// 
 			this.txtSede.BackColor = System.Drawing.Color.White;
 			this.txtSede.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtSede.Location = new System.Drawing.Point(452, 41);
+			this.txtSede.Location = new System.Drawing.Point(452, 101);
 			this.txtSede.Name = "txtSede";
 			this.txtSede.ReadOnly = true;
 			this.txtSede.Size = new System.Drawing.Size(157, 25);
@@ -178,8 +181,9 @@ namespace GM.View.pessoa
 			// 
 			// labSede
 			// 
+			this.labSede.BackColor = System.Drawing.Color.Transparent;
 			this.labSede.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSede.Location = new System.Drawing.Point(399, 39);
+			this.labSede.Location = new System.Drawing.Point(399, 99);
 			this.labSede.Name = "labSede";
 			this.labSede.Size = new System.Drawing.Size(47, 25);
 			this.labSede.TabIndex = 35;
@@ -190,7 +194,7 @@ namespace GM.View.pessoa
 			// 
 			this.txtCodigo.BackColor = System.Drawing.Color.White;
 			this.txtCodigo.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtCodigo.Location = new System.Drawing.Point(108, 12);
+			this.txtCodigo.Location = new System.Drawing.Point(108, 72);
 			this.txtCodigo.Name = "txtCodigo";
 			this.txtCodigo.ReadOnly = true;
 			this.txtCodigo.Size = new System.Drawing.Size(94, 25);
@@ -199,8 +203,9 @@ namespace GM.View.pessoa
 			// 
 			// labCodigo
 			// 
+			this.labCodigo.BackColor = System.Drawing.Color.Transparent;
 			this.labCodigo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labCodigo.Location = new System.Drawing.Point(12, 12);
+			this.labCodigo.Location = new System.Drawing.Point(12, 72);
 			this.labCodigo.Name = "labCodigo";
 			this.labCodigo.Size = new System.Drawing.Size(90, 25);
 			this.labCodigo.TabIndex = 38;
@@ -211,7 +216,7 @@ namespace GM.View.pessoa
 			// 
 			this.txtCondicao.BackColor = System.Drawing.Color.White;
 			this.txtCondicao.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtCondicao.Location = new System.Drawing.Point(108, 41);
+			this.txtCondicao.Location = new System.Drawing.Point(108, 101);
 			this.txtCondicao.Name = "txtCondicao";
 			this.txtCondicao.ReadOnly = true;
 			this.txtCondicao.Size = new System.Drawing.Size(285, 25);
@@ -220,8 +225,9 @@ namespace GM.View.pessoa
 			// 
 			// labCondicao
 			// 
+			this.labCondicao.BackColor = System.Drawing.Color.Transparent;
 			this.labCondicao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labCondicao.Location = new System.Drawing.Point(29, 41);
+			this.labCondicao.Location = new System.Drawing.Point(29, 101);
 			this.labCondicao.Name = "labCondicao";
 			this.labCondicao.Size = new System.Drawing.Size(73, 25);
 			this.labCondicao.TabIndex = 40;
@@ -232,7 +238,7 @@ namespace GM.View.pessoa
 			// 
 			this.txtTotal.BackColor = System.Drawing.Color.White;
 			this.txtTotal.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtTotal.Location = new System.Drawing.Point(452, 272);
+			this.txtTotal.Location = new System.Drawing.Point(452, 332);
 			this.txtTotal.Name = "txtTotal";
 			this.txtTotal.ReadOnly = true;
 			this.txtTotal.Size = new System.Drawing.Size(157, 25);
@@ -241,8 +247,9 @@ namespace GM.View.pessoa
 			// 
 			// labTotal
 			// 
+			this.labTotal.BackColor = System.Drawing.Color.Transparent;
 			this.labTotal.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labTotal.Location = new System.Drawing.Point(345, 272);
+			this.labTotal.Location = new System.Drawing.Point(345, 332);
 			this.labTotal.Name = "labTotal";
 			this.labTotal.Size = new System.Drawing.Size(101, 25);
 			this.labTotal.TabIndex = 41;
@@ -253,7 +260,7 @@ namespace GM.View.pessoa
 			// 
 			this.txtData.BackColor = System.Drawing.Color.White;
 			this.txtData.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtData.Location = new System.Drawing.Point(452, 303);
+			this.txtData.Location = new System.Drawing.Point(452, 363);
 			this.txtData.Name = "txtData";
 			this.txtData.ReadOnly = true;
 			this.txtData.Size = new System.Drawing.Size(157, 25);
@@ -262,8 +269,9 @@ namespace GM.View.pessoa
 			// 
 			// labData
 			// 
+			this.labData.BackColor = System.Drawing.Color.Transparent;
 			this.labData.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labData.Location = new System.Drawing.Point(345, 303);
+			this.labData.Location = new System.Drawing.Point(345, 363);
 			this.labData.Name = "labData";
 			this.labData.Size = new System.Drawing.Size(101, 25);
 			this.labData.TabIndex = 43;
@@ -274,7 +282,7 @@ namespace GM.View.pessoa
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(621, 466);
+			this.ClientSize = new System.Drawing.Size(621, 527);
 			this.Controls.Add(this.txtData);
 			this.Controls.Add(this.labData);
 			this.Controls.Add(this.txtTotal);
@@ -290,7 +298,7 @@ namespace GM.View.pessoa
 			this.Controls.Add(this.btnEfetivar);
 			this.Controls.Add(this.listaPagamentos);
 			this.Controls.Add(this.listaProdutos);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "ATCompra";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

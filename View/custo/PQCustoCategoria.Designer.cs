@@ -29,6 +29,7 @@ namespace GM.View.custo
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PQCustoCategoria));
 			this.listaCategoria = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -46,7 +47,7 @@ namespace GM.View.custo
 			this.listaCategoria.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.listaCategoria.FullRowSelect = true;
 			this.listaCategoria.GridLines = true;
-			this.listaCategoria.Location = new System.Drawing.Point(12, 43);
+			this.listaCategoria.Location = new System.Drawing.Point(12, 107);
 			this.listaCategoria.Name = "listaCategoria";
 			this.listaCategoria.Size = new System.Drawing.Size(360, 257);
 			this.listaCategoria.TabIndex = 21;
@@ -72,7 +73,7 @@ namespace GM.View.custo
 			this.btnSair.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnSair.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnSair.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSair.Location = new System.Drawing.Point(173, 12);
+			this.btnSair.Location = new System.Drawing.Point(173, 76);
 			this.btnSair.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSair.Name = "btnSair";
 			this.btnSair.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
@@ -94,7 +95,7 @@ namespace GM.View.custo
 			this.btnSelecionar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSelecionar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSelecionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSelecionar.Location = new System.Drawing.Point(255, 12);
+			this.btnSelecionar.Location = new System.Drawing.Point(255, 76);
 			this.btnSelecionar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSelecionar.Name = "btnSelecionar";
 			this.btnSelecionar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -109,7 +110,7 @@ namespace GM.View.custo
 			// 
 			// txtPesquisa
 			// 
-			this.txtPesquisa.Location = new System.Drawing.Point(12, 12);
+			this.txtPesquisa.Location = new System.Drawing.Point(12, 76);
 			this.txtPesquisa.Name = "txtPesquisa";
 			this.txtPesquisa.Size = new System.Drawing.Size(112, 25);
 			this.txtPesquisa.TabIndex = 51;
@@ -119,7 +120,7 @@ namespace GM.View.custo
 			// 
 			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnPesquisar.Location = new System.Drawing.Point(130, 12);
+			this.btnPesquisar.Location = new System.Drawing.Point(130, 76);
 			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnPesquisar.Name = "btnPesquisar";
 			this.btnPesquisar.Size = new System.Drawing.Size(37, 25);
@@ -131,14 +132,14 @@ namespace GM.View.custo
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(384, 312);
+			this.ClientSize = new System.Drawing.Size(384, 379);
 			this.Controls.Add(this.btnSair);
 			this.Controls.Add(this.btnSelecionar);
 			this.Controls.Add(this.txtPesquisa);
 			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.listaCategoria);
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;

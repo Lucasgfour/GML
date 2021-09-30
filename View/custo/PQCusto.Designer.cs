@@ -29,6 +29,7 @@ namespace GM.View.custo
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PQCusto));
 			this.btnSair = new Sunny.UI.UISymbolButton();
 			this.btnSelecionar = new Sunny.UI.UISymbolButton();
 			this.txtPesquisa = new System.Windows.Forms.TextBox();
@@ -52,9 +53,10 @@ namespace GM.View.custo
 			this.btnSair.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnSair.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnSair.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSair.Location = new System.Drawing.Point(569, 7);
+			this.btnSair.Location = new System.Drawing.Point(569, 74);
 			this.btnSair.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSair.Name = "btnSair";
+			this.btnSair.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSair.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnSair.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnSair.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -74,9 +76,10 @@ namespace GM.View.custo
 			this.btnSelecionar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSelecionar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSelecionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSelecionar.Location = new System.Drawing.Point(685, 7);
+			this.btnSelecionar.Location = new System.Drawing.Point(685, 74);
 			this.btnSelecionar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSelecionar.Name = "btnSelecionar";
+			this.btnSelecionar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSelecionar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSelecionar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSelecionar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -89,7 +92,7 @@ namespace GM.View.custo
 			// 
 			// txtPesquisa
 			// 
-			this.txtPesquisa.Location = new System.Drawing.Point(77, 12);
+			this.txtPesquisa.Location = new System.Drawing.Point(77, 79);
 			this.txtPesquisa.Name = "txtPesquisa";
 			this.txtPesquisa.Size = new System.Drawing.Size(156, 20);
 			this.txtPesquisa.TabIndex = 47;
@@ -100,7 +103,7 @@ namespace GM.View.custo
 			this.labSede.BackColor = System.Drawing.Color.Transparent;
 			this.labSede.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.labSede.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labSede.Location = new System.Drawing.Point(12, 12);
+			this.labSede.Location = new System.Drawing.Point(12, 79);
 			this.labSede.Name = "labSede";
 			this.labSede.Size = new System.Drawing.Size(59, 20);
 			this.labSede.TabIndex = 46;
@@ -111,7 +114,7 @@ namespace GM.View.custo
 			// 
 			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnPesquisar.Location = new System.Drawing.Point(239, 7);
+			this.btnPesquisar.Location = new System.Drawing.Point(239, 74);
 			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnPesquisar.Name = "btnPesquisar";
 			this.btnPesquisar.Size = new System.Drawing.Size(37, 29);
@@ -134,7 +137,7 @@ namespace GM.View.custo
 			this.listaCusto.FullRowSelect = true;
 			this.listaCusto.GridLines = true;
 			this.listaCusto.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.listaCusto.Location = new System.Drawing.Point(12, 42);
+			this.listaCusto.Location = new System.Drawing.Point(12, 109);
 			this.listaCusto.Name = "listaCusto";
 			this.listaCusto.Size = new System.Drawing.Size(848, 380);
 			this.listaCusto.TabIndex = 44;
@@ -183,14 +186,14 @@ namespace GM.View.custo
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(872, 434);
+			this.ClientSize = new System.Drawing.Size(872, 501);
 			this.Controls.Add(this.btnSair);
 			this.Controls.Add(this.btnSelecionar);
 			this.Controls.Add(this.txtPesquisa);
 			this.Controls.Add(this.labSede);
 			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.listaCusto);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "PQCusto";

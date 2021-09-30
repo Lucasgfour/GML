@@ -29,6 +29,7 @@ namespace GM.View.produto
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDFamilia));
 			this.txtNome = new System.Windows.Forms.TextBox();
 			this.labNome = new ReaLTaiizor.Controls.DungeonLabel();
 			this.txtDescricao = new System.Windows.Forms.TextBox();
@@ -41,7 +42,7 @@ namespace GM.View.produto
 			// txtNome
 			// 
 			this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtNome.Location = new System.Drawing.Point(110, 50);
+			this.txtNome.Location = new System.Drawing.Point(91, 70);
 			this.txtNome.MaxLength = 70;
 			this.txtNome.Name = "txtNome";
 			this.txtNome.Size = new System.Drawing.Size(277, 20);
@@ -52,7 +53,7 @@ namespace GM.View.produto
 			this.labNome.BackColor = System.Drawing.Color.Transparent;
 			this.labNome.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.labNome.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labNome.Location = new System.Drawing.Point(31, 50);
+			this.labNome.Location = new System.Drawing.Point(12, 70);
 			this.labNome.Name = "labNome";
 			this.labNome.Size = new System.Drawing.Size(73, 20);
 			this.labNome.TabIndex = 24;
@@ -62,7 +63,7 @@ namespace GM.View.produto
 			// txtDescricao
 			// 
 			this.txtDescricao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtDescricao.Location = new System.Drawing.Point(110, 76);
+			this.txtDescricao.Location = new System.Drawing.Point(91, 96);
 			this.txtDescricao.MaxLength = 200;
 			this.txtDescricao.Multiline = true;
 			this.txtDescricao.Name = "txtDescricao";
@@ -74,7 +75,7 @@ namespace GM.View.produto
 			this.labDescricao.BackColor = System.Drawing.Color.Transparent;
 			this.labDescricao.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.labDescricao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labDescricao.Location = new System.Drawing.Point(31, 76);
+			this.labDescricao.Location = new System.Drawing.Point(12, 96);
 			this.labDescricao.Name = "labDescricao";
 			this.labDescricao.Size = new System.Drawing.Size(73, 20);
 			this.labDescricao.TabIndex = 21;
@@ -101,9 +102,10 @@ namespace GM.View.produto
 			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(159, 156);
+			this.btnCancelar.Location = new System.Drawing.Point(140, 176);
 			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -123,9 +125,10 @@ namespace GM.View.produto
 			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(276, 156);
+			this.btnSalvar.Location = new System.Drawing.Point(257, 176);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
+			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -140,7 +143,7 @@ namespace GM.View.produto
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(419, 197);
+			this.ClientSize = new System.Drawing.Size(380, 221);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnSalvar);
 			this.Controls.Add(this.labTitulo);
@@ -148,7 +151,7 @@ namespace GM.View.produto
 			this.Controls.Add(this.labNome);
 			this.Controls.Add(this.txtDescricao);
 			this.Controls.Add(this.labDescricao);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.KeyPreview = true;
 			this.MaximizeBox = false;
 			this.Name = "CDFamilia";

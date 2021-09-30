@@ -29,6 +29,7 @@ namespace GM.View.compra
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PQCompra));
 			this.btnSair = new Sunny.UI.UISymbolButton();
 			this.btnSelecionar = new Sunny.UI.UISymbolButton();
 			this.txtPesquisa = new System.Windows.Forms.TextBox();
@@ -51,7 +52,7 @@ namespace GM.View.compra
 			this.btnSair.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnSair.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnSair.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSair.Location = new System.Drawing.Point(569, 7);
+			this.btnSair.Location = new System.Drawing.Point(569, 69);
 			this.btnSair.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSair.Name = "btnSair";
 			this.btnSair.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
@@ -73,7 +74,7 @@ namespace GM.View.compra
 			this.btnSelecionar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSelecionar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSelecionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSelecionar.Location = new System.Drawing.Point(685, 7);
+			this.btnSelecionar.Location = new System.Drawing.Point(685, 69);
 			this.btnSelecionar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSelecionar.Name = "btnSelecionar";
 			this.btnSelecionar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -88,7 +89,7 @@ namespace GM.View.compra
 			// 
 			// txtPesquisa
 			// 
-			this.txtPesquisa.Location = new System.Drawing.Point(77, 12);
+			this.txtPesquisa.Location = new System.Drawing.Point(77, 74);
 			this.txtPesquisa.Name = "txtPesquisa";
 			this.txtPesquisa.Size = new System.Drawing.Size(156, 20);
 			this.txtPesquisa.TabIndex = 41;
@@ -99,7 +100,7 @@ namespace GM.View.compra
 			this.labSede.BackColor = System.Drawing.Color.Transparent;
 			this.labSede.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.labSede.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labSede.Location = new System.Drawing.Point(12, 12);
+			this.labSede.Location = new System.Drawing.Point(12, 74);
 			this.labSede.Name = "labSede";
 			this.labSede.Size = new System.Drawing.Size(59, 20);
 			this.labSede.TabIndex = 40;
@@ -110,7 +111,7 @@ namespace GM.View.compra
 			// 
 			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnPesquisar.Location = new System.Drawing.Point(239, 7);
+			this.btnPesquisar.Location = new System.Drawing.Point(239, 69);
 			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnPesquisar.Name = "btnPesquisar";
 			this.btnPesquisar.Size = new System.Drawing.Size(37, 29);
@@ -132,7 +133,7 @@ namespace GM.View.compra
 			this.listaCompra.FullRowSelect = true;
 			this.listaCompra.GridLines = true;
 			this.listaCompra.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.listaCompra.Location = new System.Drawing.Point(12, 42);
+			this.listaCompra.Location = new System.Drawing.Point(12, 104);
 			this.listaCompra.Name = "listaCompra";
 			this.listaCompra.Size = new System.Drawing.Size(848, 380);
 			this.listaCompra.TabIndex = 38;
@@ -177,14 +178,14 @@ namespace GM.View.compra
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(872, 434);
+			this.ClientSize = new System.Drawing.Size(872, 496);
 			this.Controls.Add(this.btnSair);
 			this.Controls.Add(this.btnSelecionar);
 			this.Controls.Add(this.txtPesquisa);
 			this.Controls.Add(this.labSede);
 			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.listaCompra);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "PQCompra";

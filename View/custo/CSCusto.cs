@@ -7,9 +7,13 @@ using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
 using GM.View.contas;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.custo {
-	public partial class CSCusto : Form {
+	public partial class CSCusto : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private int codigo;
 		private Custo custo;
@@ -20,6 +24,7 @@ namespace GM.View.custo {
 		public CSCusto(int codigo) {
 			this.codigo = codigo;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void arranqueFormulario(object sender, EventArgs e) {

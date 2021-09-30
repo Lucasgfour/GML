@@ -29,6 +29,7 @@ namespace GM.View.Sistema
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTModulo));
 			this.listaTela = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -45,7 +46,7 @@ namespace GM.View.Sistema
 			this.listaTela.FullRowSelect = true;
 			this.listaTela.GridLines = true;
 			this.listaTela.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.listaTela.Location = new System.Drawing.Point(12, 47);
+			this.listaTela.Location = new System.Drawing.Point(12, 111);
 			this.listaTela.MultiSelect = false;
 			this.listaTela.Name = "listaTela";
 			this.listaTela.Size = new System.Drawing.Size(273, 367);
@@ -72,9 +73,10 @@ namespace GM.View.Sistema
 			this.btnRemover.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnRemover.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnRemover.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnRemover.Location = new System.Drawing.Point(162, 12);
+			this.btnRemover.Location = new System.Drawing.Point(162, 76);
 			this.btnRemover.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnRemover.Name = "btnRemover";
+			this.btnRemover.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnRemover.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnRemover.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnRemover.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -90,9 +92,10 @@ namespace GM.View.Sistema
 			// 
 			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(88, 12);
+			this.btnEditar.Location = new System.Drawing.Point(88, 76);
 			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEditar.Name = "btnEditar";
+			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnEditar.Size = new System.Drawing.Size(68, 29);
 			this.btnEditar.SymbolSize = 0;
 			this.btnEditar.TabIndex = 24;
@@ -107,9 +110,10 @@ namespace GM.View.Sistema
 			this.btnNovo.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnNovo.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnNovo.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnNovo.Location = new System.Drawing.Point(12, 12);
+			this.btnNovo.Location = new System.Drawing.Point(12, 76);
 			this.btnNovo.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnNovo.Name = "btnNovo";
+			this.btnNovo.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnNovo.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnNovo.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnNovo.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -124,13 +128,13 @@ namespace GM.View.Sistema
 			// CTModulo
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			this.ClientSize = new System.Drawing.Size(297, 426);
+			this.ClientSize = new System.Drawing.Size(297, 490);
 			this.Controls.Add(this.btnRemover);
 			this.Controls.Add(this.btnEditar);
 			this.Controls.Add(this.btnNovo);
 			this.Controls.Add(this.listaTela);
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CTModulo";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

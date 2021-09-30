@@ -29,6 +29,7 @@ namespace GM.View.pessoa
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDEndereco));
 			this.txtRua = new System.Windows.Forms.TextBox();
 			this.labRua = new ReaLTaiizor.Controls.DungeonLabel();
 			this.txtCodigo = new System.Windows.Forms.TextBox();
@@ -47,18 +48,19 @@ namespace GM.View.pessoa
 			// txtRua
 			// 
 			this.txtRua.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtRua.Location = new System.Drawing.Point(91, 44);
+			this.txtRua.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtRua.Location = new System.Drawing.Point(92, 102);
 			this.txtRua.MaxLength = 70;
 			this.txtRua.Name = "txtRua";
-			this.txtRua.Size = new System.Drawing.Size(317, 20);
+			this.txtRua.Size = new System.Drawing.Size(317, 23);
 			this.txtRua.TabIndex = 1;
 			// 
 			// labRua
 			// 
 			this.labRua.BackColor = System.Drawing.Color.Transparent;
-			this.labRua.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.labRua.Font = new System.Drawing.Font("Calibri", 9.75F);
 			this.labRua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labRua.Location = new System.Drawing.Point(12, 44);
+			this.labRua.Location = new System.Drawing.Point(13, 102);
 			this.labRua.Name = "labRua";
 			this.labRua.Size = new System.Drawing.Size(73, 20);
 			this.labRua.TabIndex = 31;
@@ -68,18 +70,19 @@ namespace GM.View.pessoa
 			// txtCodigo
 			// 
 			this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtCodigo.Location = new System.Drawing.Point(91, 18);
+			this.txtCodigo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtCodigo.Location = new System.Drawing.Point(92, 76);
 			this.txtCodigo.MaxLength = 70;
 			this.txtCodigo.Name = "txtCodigo";
-			this.txtCodigo.Size = new System.Drawing.Size(83, 20);
+			this.txtCodigo.Size = new System.Drawing.Size(83, 23);
 			this.txtCodigo.TabIndex = 0;
 			// 
 			// labCodigo
 			// 
 			this.labCodigo.BackColor = System.Drawing.Color.Transparent;
-			this.labCodigo.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.labCodigo.Font = new System.Drawing.Font("Calibri", 9.75F);
 			this.labCodigo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labCodigo.Location = new System.Drawing.Point(12, 18);
+			this.labCodigo.Location = new System.Drawing.Point(13, 76);
 			this.labCodigo.Name = "labCodigo";
 			this.labCodigo.Size = new System.Drawing.Size(73, 20);
 			this.labCodigo.TabIndex = 33;
@@ -89,18 +92,19 @@ namespace GM.View.pessoa
 			// txtBairro
 			// 
 			this.txtBairro.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtBairro.Location = new System.Drawing.Point(91, 70);
+			this.txtBairro.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtBairro.Location = new System.Drawing.Point(92, 128);
 			this.txtBairro.MaxLength = 70;
 			this.txtBairro.Name = "txtBairro";
-			this.txtBairro.Size = new System.Drawing.Size(128, 20);
+			this.txtBairro.Size = new System.Drawing.Size(128, 23);
 			this.txtBairro.TabIndex = 2;
 			// 
 			// labBairro
 			// 
 			this.labBairro.BackColor = System.Drawing.Color.Transparent;
-			this.labBairro.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.labBairro.Font = new System.Drawing.Font("Calibri", 9.75F);
 			this.labBairro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labBairro.Location = new System.Drawing.Point(12, 70);
+			this.labBairro.Location = new System.Drawing.Point(13, 128);
 			this.labBairro.Name = "labBairro";
 			this.labBairro.Size = new System.Drawing.Size(73, 20);
 			this.labBairro.TabIndex = 35;
@@ -110,9 +114,9 @@ namespace GM.View.pessoa
 			// labCidade
 			// 
 			this.labCidade.BackColor = System.Drawing.Color.Transparent;
-			this.labCidade.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.labCidade.Font = new System.Drawing.Font("Calibri", 9.75F);
 			this.labCidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labCidade.Location = new System.Drawing.Point(12, 96);
+			this.labCidade.Location = new System.Drawing.Point(13, 154);
 			this.labCidade.Name = "labCidade";
 			this.labCidade.Size = new System.Drawing.Size(73, 20);
 			this.labCidade.TabIndex = 36;
@@ -122,9 +126,9 @@ namespace GM.View.pessoa
 			// labPadrao
 			// 
 			this.labPadrao.BackColor = System.Drawing.Color.Transparent;
-			this.labPadrao.Font = new System.Drawing.Font("Segoe UI", 9F);
+			this.labPadrao.Font = new System.Drawing.Font("Calibri", 9.75F);
 			this.labPadrao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labPadrao.Location = new System.Drawing.Point(180, 18);
+			this.labPadrao.Location = new System.Drawing.Point(181, 76);
 			this.labPadrao.Name = "labPadrao";
 			this.labPadrao.Size = new System.Drawing.Size(188, 20);
 			this.labPadrao.TabIndex = 37;
@@ -134,10 +138,11 @@ namespace GM.View.pessoa
 			// txtCidade
 			// 
 			this.txtCidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtCidade.Location = new System.Drawing.Point(91, 96);
+			this.txtCidade.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtCidade.Location = new System.Drawing.Point(92, 154);
 			this.txtCidade.MaxLength = 70;
 			this.txtCidade.Name = "txtCidade";
-			this.txtCidade.Size = new System.Drawing.Size(83, 20);
+			this.txtCidade.Size = new System.Drawing.Size(83, 23);
 			this.txtCidade.TabIndex = 3;
 			this.txtCidade.TextChanged += new System.EventHandler(this.maskNumber);
 			this.txtCidade.Leave += new System.EventHandler(this.buscaCidade);
@@ -145,11 +150,12 @@ namespace GM.View.pessoa
 			// txtNomeCidade
 			// 
 			this.txtNomeCidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.txtNomeCidade.Location = new System.Drawing.Point(206, 96);
+			this.txtNomeCidade.Font = new System.Drawing.Font("Calibri", 9.75F);
+			this.txtNomeCidade.Location = new System.Drawing.Point(207, 154);
 			this.txtNomeCidade.MaxLength = 70;
 			this.txtNomeCidade.Name = "txtNomeCidade";
 			this.txtNomeCidade.ReadOnly = true;
-			this.txtNomeCidade.Size = new System.Drawing.Size(202, 20);
+			this.txtNomeCidade.Size = new System.Drawing.Size(202, 23);
 			this.txtNomeCidade.TabIndex = 39;
 			this.txtNomeCidade.TabStop = false;
 			// 
@@ -157,11 +163,11 @@ namespace GM.View.pessoa
 			// 
 			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnPesquisar.Location = new System.Drawing.Point(176, 96);
+			this.btnPesquisar.Location = new System.Drawing.Point(177, 154);
 			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnPesquisar.Name = "btnPesquisar";
 			this.btnPesquisar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnPesquisar.Size = new System.Drawing.Size(28, 20);
+			this.btnPesquisar.Size = new System.Drawing.Size(28, 23);
 			this.btnPesquisar.Symbol = 61442;
 			this.btnPesquisar.TabIndex = 4;
 			this.btnPesquisar.Click += new System.EventHandler(this.pesquisarClique);
@@ -174,9 +180,10 @@ namespace GM.View.pessoa
 			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(180, 122);
+			this.btnCancelar.Location = new System.Drawing.Point(181, 190);
 			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -196,9 +203,10 @@ namespace GM.View.pessoa
 			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(297, 122);
+			this.btnSalvar.Location = new System.Drawing.Point(298, 190);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
+			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -213,7 +221,7 @@ namespace GM.View.pessoa
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(427, 170);
+			this.ClientSize = new System.Drawing.Size(427, 231);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnSalvar);
 			this.Controls.Add(this.btnPesquisar);
@@ -227,7 +235,7 @@ namespace GM.View.pessoa
 			this.Controls.Add(this.labCodigo);
 			this.Controls.Add(this.txtRua);
 			this.Controls.Add(this.labRua);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "CDEndereco";

@@ -323,6 +323,11 @@ namespace GM.View.Sistema {
 		void cliqueUsuarioConfigura(object sender, EventArgs e) {
 			new CFUsuario().ShowDialog();
 		}
+		
+		void TabVendaCompraClick(object sender, EventArgs e)
+		{
+			
+		}
 	}
 		
 }

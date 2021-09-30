@@ -5,6 +5,7 @@ using System.Security.Cryptography;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GM.Componentes;
 using GM.Controller;
 using GM.Model;
 using GM.View.compra;
@@ -79,11 +80,19 @@ namespace GM.Controller {
 		// ============================== MASCARAS DE CAMPO ============================================
 		
 		// Mascára TextBox para dinheiro
+		public static void maskMoney(MinBox txt) {
+			maskMoney(txt.RT_TB, 2);
+		}
+		
 		public static void maskMoney(TextBox txt) {
 			maskMoney(txt, 2);
 		}
 		
 		// Mascára TextBox para dinheiro com parametrizao de casas
+		public static void maskMoney(MinBox txt, int casa) {
+			maskMoney(txt.RT_TB, 2);
+		}
+		
 		public static void maskMoney(TextBox txt, int casa) {
 			String vlr = txt.Text;
 			String vlrCompara = "";
@@ -106,6 +115,10 @@ namespace GM.Controller {
 				}
 			}
 			
+		}
+		
+		public static void maskNumber(MinBox txt) {
+			maskNumber(txt.RT_TB);
 		}
 		
 		// Mascára TextBox para número inteiro
@@ -131,6 +144,10 @@ namespace GM.Controller {
 		}
 		
 		// Mascára TextBox para Data
+		public static void maskData(MinBox txt) {
+			maskData(txt.RT_TB);
+		}
+		
 		public static void maskData(TextBox txt) {
 			String vlr = txt.Text;
 			String vlrCompara = "";
@@ -159,6 +176,10 @@ namespace GM.Controller {
 		}
 		
 		// Mascára TextBox para CPF
+		public static void maskCPF(MinBox txt) {
+			maskCPF(txt.RT_TB);
+		}
+		
 		public static void maskCPF(TextBox txt) {
 			String vlr = txt.Text;
 			String vlrCompara = "";
@@ -194,6 +215,10 @@ namespace GM.Controller {
 		}
 		
 		// Mascára TextBox para CNPJ
+		public static void maskCNPJ(MinBox txt) {
+			maskCNPJ(txt.RT_TB);
+		}
+		
 		public static void maskCNPJ(TextBox txt) {
 			String vlr = txt.Text;
 			String vlrCompara = "";

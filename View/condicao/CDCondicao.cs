@@ -5,20 +5,26 @@ using System.Drawing;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.condicao {
-	public partial class CDCondicao : Form {
+	public partial class CDCondicao : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private Condicao condicao = new Condicao();
 		private ObjectDao<Condicao> cDao = new ObjectDao<Condicao>();
 		
 		public CDCondicao() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		public CDCondicao(Condicao condicao) {
 			this.condicao = condicao;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void arranqueFormulario(object sender, EventArgs e) {

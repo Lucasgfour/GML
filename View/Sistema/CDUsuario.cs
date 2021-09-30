@@ -6,9 +6,13 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.Sistema {
-	public partial class CDUsuario : Form {
+	public partial class CDUsuario : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private LinkedList<Sede> sedes;
 		private ObjectDao<Sede> sDao = new ObjectDao<Sede>();
@@ -16,11 +20,13 @@ namespace GM.View.Sistema {
 		
 		public CDUsuario() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		public CDUsuario(Usuario usuario) {
 			this.usuario = usuario;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void arranqueFormulario(object sender, EventArgs e) {

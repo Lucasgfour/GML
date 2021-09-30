@@ -29,6 +29,7 @@ namespace GM.View.relatorio
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DGParametro));
 			this.txtParametro = new System.Windows.Forms.TextBox();
 			this.labParametro = new System.Windows.Forms.Label();
 			this.labTitulo = new System.Windows.Forms.Label();
@@ -39,7 +40,7 @@ namespace GM.View.relatorio
 			// 
 			this.txtParametro.BackColor = System.Drawing.Color.White;
 			this.txtParametro.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtParametro.Location = new System.Drawing.Point(122, 51);
+			this.txtParametro.Location = new System.Drawing.Point(122, 115);
 			this.txtParametro.Name = "txtParametro";
 			this.txtParametro.Size = new System.Drawing.Size(239, 25);
 			this.txtParametro.TabIndex = 16;
@@ -48,8 +49,9 @@ namespace GM.View.relatorio
 			// 
 			// labParametro
 			// 
+			this.labParametro.BackColor = System.Drawing.Color.Transparent;
 			this.labParametro.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labParametro.Location = new System.Drawing.Point(12, 51);
+			this.labParametro.Location = new System.Drawing.Point(12, 115);
 			this.labParametro.Name = "labParametro";
 			this.labParametro.Size = new System.Drawing.Size(104, 25);
 			this.labParametro.TabIndex = 17;
@@ -57,8 +59,9 @@ namespace GM.View.relatorio
 			// 
 			// labTitulo
 			// 
+			this.labTitulo.BackColor = System.Drawing.Color.Transparent;
 			this.labTitulo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labTitulo.Location = new System.Drawing.Point(12, 9);
+			this.labTitulo.Location = new System.Drawing.Point(12, 73);
 			this.labTitulo.Name = "labTitulo";
 			this.labTitulo.Size = new System.Drawing.Size(349, 25);
 			this.labTitulo.TabIndex = 18;
@@ -72,9 +75,10 @@ namespace GM.View.relatorio
 			this.btnOK.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnOK.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnOK.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnOK.Location = new System.Drawing.Point(250, 88);
+			this.btnOK.Location = new System.Drawing.Point(250, 152);
 			this.btnOK.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnOK.Name = "btnOK";
+			this.btnOK.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnOK.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnOK.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnOK.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -87,14 +91,14 @@ namespace GM.View.relatorio
 			// DGParametro
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			this.ClientSize = new System.Drawing.Size(373, 129);
+			this.ClientSize = new System.Drawing.Size(373, 196);
 			this.ControlBox = false;
 			this.Controls.Add(this.btnOK);
 			this.Controls.Add(this.labTitulo);
 			this.Controls.Add(this.txtParametro);
 			this.Controls.Add(this.labParametro);
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.KeyPreview = true;
 			this.Name = "DGParametro";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

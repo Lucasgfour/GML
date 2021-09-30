@@ -29,6 +29,7 @@ namespace GM.View.Sistema
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CFUsuario));
 			this.txtNome = new System.Windows.Forms.TextBox();
 			this.labNome = new System.Windows.Forms.Label();
 			this.labTitulo = new System.Windows.Forms.Label();
@@ -45,7 +46,7 @@ namespace GM.View.Sistema
 			// 
 			this.txtNome.BackColor = System.Drawing.Color.White;
 			this.txtNome.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtNome.Location = new System.Drawing.Point(108, 49);
+			this.txtNome.Location = new System.Drawing.Point(108, 112);
 			this.txtNome.MaxLength = 40;
 			this.txtNome.Name = "txtNome";
 			this.txtNome.Size = new System.Drawing.Size(306, 25);
@@ -53,8 +54,9 @@ namespace GM.View.Sistema
 			// 
 			// labNome
 			// 
+			this.labNome.BackColor = System.Drawing.Color.Transparent;
 			this.labNome.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labNome.Location = new System.Drawing.Point(12, 49);
+			this.labNome.Location = new System.Drawing.Point(12, 112);
 			this.labNome.Name = "labNome";
 			this.labNome.Size = new System.Drawing.Size(90, 25);
 			this.labNome.TabIndex = 28;
@@ -63,8 +65,9 @@ namespace GM.View.Sistema
 			// 
 			// labTitulo
 			// 
+			this.labTitulo.BackColor = System.Drawing.Color.Transparent;
 			this.labTitulo.Font = new System.Drawing.Font("Segoe UI", 14F);
-			this.labTitulo.Location = new System.Drawing.Point(12, 9);
+			this.labTitulo.Location = new System.Drawing.Point(12, 72);
 			this.labTitulo.Name = "labTitulo";
 			this.labTitulo.Size = new System.Drawing.Size(402, 29);
 			this.labTitulo.TabIndex = 29;
@@ -75,7 +78,7 @@ namespace GM.View.Sistema
 			// 
 			this.txtSenha.BackColor = System.Drawing.Color.White;
 			this.txtSenha.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtSenha.Location = new System.Drawing.Point(108, 80);
+			this.txtSenha.Location = new System.Drawing.Point(108, 143);
 			this.txtSenha.MaxLength = 15;
 			this.txtSenha.Name = "txtSenha";
 			this.txtSenha.Size = new System.Drawing.Size(131, 25);
@@ -83,8 +86,9 @@ namespace GM.View.Sistema
 			// 
 			// labNovaSenha
 			// 
+			this.labNovaSenha.BackColor = System.Drawing.Color.Transparent;
 			this.labNovaSenha.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labNovaSenha.Location = new System.Drawing.Point(12, 80);
+			this.labNovaSenha.Location = new System.Drawing.Point(12, 143);
 			this.labNovaSenha.Name = "labNovaSenha";
 			this.labNovaSenha.Size = new System.Drawing.Size(90, 25);
 			this.labNovaSenha.TabIndex = 31;
@@ -95,7 +99,7 @@ namespace GM.View.Sistema
 			// 
 			this.txtPin.BackColor = System.Drawing.Color.White;
 			this.txtPin.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtPin.Location = new System.Drawing.Point(108, 111);
+			this.txtPin.Location = new System.Drawing.Point(108, 174);
 			this.txtPin.MaxLength = 4;
 			this.txtPin.Name = "txtPin";
 			this.txtPin.Size = new System.Drawing.Size(94, 25);
@@ -104,8 +108,9 @@ namespace GM.View.Sistema
 			// 
 			// labNovoPin
 			// 
+			this.labNovoPin.BackColor = System.Drawing.Color.Transparent;
 			this.labNovoPin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labNovoPin.Location = new System.Drawing.Point(12, 111);
+			this.labNovoPin.Location = new System.Drawing.Point(12, 174);
 			this.labNovoPin.Name = "labNovoPin";
 			this.labNovoPin.Size = new System.Drawing.Size(90, 25);
 			this.labNovoPin.TabIndex = 33;
@@ -116,7 +121,7 @@ namespace GM.View.Sistema
 			// 
 			this.txtSenhaAtual.BackColor = System.Drawing.Color.White;
 			this.txtSenhaAtual.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtSenhaAtual.Location = new System.Drawing.Point(108, 165);
+			this.txtSenhaAtual.Location = new System.Drawing.Point(108, 228);
 			this.txtSenhaAtual.MaxLength = 15;
 			this.txtSenhaAtual.Name = "txtSenhaAtual";
 			this.txtSenhaAtual.Size = new System.Drawing.Size(131, 25);
@@ -125,12 +130,13 @@ namespace GM.View.Sistema
 			// 
 			// labSenha
 			// 
+			this.labSenha.BackColor = System.Drawing.Color.Transparent;
 			this.labSenha.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSenha.Location = new System.Drawing.Point(12, 165);
+			this.labSenha.Location = new System.Drawing.Point(12, 228);
 			this.labSenha.Name = "labSenha";
 			this.labSenha.Size = new System.Drawing.Size(90, 25);
 			this.labSenha.TabIndex = 35;
-			this.labSenha.Text = "Senha :";
+			this.labSenha.Text = "Senha Atual :";
 			this.labSenha.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
 			// btnSalvar
@@ -141,9 +147,10 @@ namespace GM.View.Sistema
 			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(283, 165);
+			this.btnSalvar.Location = new System.Drawing.Point(283, 224);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
+			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -157,7 +164,7 @@ namespace GM.View.Sistema
 			// CFUsuario
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			this.ClientSize = new System.Drawing.Size(426, 206);
+			this.ClientSize = new System.Drawing.Size(426, 266);
 			this.Controls.Add(this.btnSalvar);
 			this.Controls.Add(this.txtSenhaAtual);
 			this.Controls.Add(this.labSenha);
@@ -169,7 +176,7 @@ namespace GM.View.Sistema
 			this.Controls.Add(this.txtNome);
 			this.Controls.Add(this.labNome);
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CFUsuario";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

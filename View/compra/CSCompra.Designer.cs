@@ -29,6 +29,7 @@ namespace GM.View.compra
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CSCompra));
 			this.txtCodigo = new System.Windows.Forms.TextBox();
 			this.labCodigo = new System.Windows.Forms.Label();
 			this.txtFornecedor = new System.Windows.Forms.TextBox();
@@ -63,7 +64,7 @@ namespace GM.View.compra
 			// 
 			this.txtCodigo.BackColor = System.Drawing.Color.White;
 			this.txtCodigo.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtCodigo.Location = new System.Drawing.Point(108, 45);
+			this.txtCodigo.Location = new System.Drawing.Point(108, 118);
 			this.txtCodigo.Name = "txtCodigo";
 			this.txtCodigo.ReadOnly = true;
 			this.txtCodigo.Size = new System.Drawing.Size(94, 25);
@@ -72,8 +73,9 @@ namespace GM.View.compra
 			// 
 			// labCodigo
 			// 
+			this.labCodigo.BackColor = System.Drawing.Color.Transparent;
 			this.labCodigo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labCodigo.Location = new System.Drawing.Point(12, 45);
+			this.labCodigo.Location = new System.Drawing.Point(12, 118);
 			this.labCodigo.Name = "labCodigo";
 			this.labCodigo.Size = new System.Drawing.Size(90, 25);
 			this.labCodigo.TabIndex = 7;
@@ -84,7 +86,7 @@ namespace GM.View.compra
 			// 
 			this.txtFornecedor.BackColor = System.Drawing.Color.White;
 			this.txtFornecedor.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtFornecedor.Location = new System.Drawing.Point(108, 76);
+			this.txtFornecedor.Location = new System.Drawing.Point(108, 149);
 			this.txtFornecedor.Name = "txtFornecedor";
 			this.txtFornecedor.ReadOnly = true;
 			this.txtFornecedor.Size = new System.Drawing.Size(290, 25);
@@ -93,8 +95,9 @@ namespace GM.View.compra
 			// 
 			// labFornecedor
 			// 
+			this.labFornecedor.BackColor = System.Drawing.Color.Transparent;
 			this.labFornecedor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labFornecedor.Location = new System.Drawing.Point(12, 76);
+			this.labFornecedor.Location = new System.Drawing.Point(12, 149);
 			this.labFornecedor.Name = "labFornecedor";
 			this.labFornecedor.Size = new System.Drawing.Size(90, 25);
 			this.labFornecedor.TabIndex = 9;
@@ -103,8 +106,9 @@ namespace GM.View.compra
 			// 
 			// labSituacao
 			// 
+			this.labSituacao.BackColor = System.Drawing.Color.Transparent;
 			this.labSituacao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSituacao.Location = new System.Drawing.Point(208, 44);
+			this.labSituacao.Location = new System.Drawing.Point(208, 117);
 			this.labSituacao.Name = "labSituacao";
 			this.labSituacao.Size = new System.Drawing.Size(70, 25);
 			this.labSituacao.TabIndex = 10;
@@ -120,7 +124,7 @@ namespace GM.View.compra
 			this.cbxSituacao.Items.AddRange(new object[] {
 									"NÃO ATENDIDO",
 									"ATENDIDO"});
-			this.cbxSituacao.Location = new System.Drawing.Point(284, 44);
+			this.cbxSituacao.Location = new System.Drawing.Point(284, 117);
 			this.cbxSituacao.Name = "cbxSituacao";
 			this.cbxSituacao.Size = new System.Drawing.Size(136, 25);
 			this.cbxSituacao.TabIndex = 12;
@@ -129,7 +133,7 @@ namespace GM.View.compra
 			// 
 			this.txtCondicao.BackColor = System.Drawing.Color.White;
 			this.txtCondicao.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtCondicao.Location = new System.Drawing.Point(108, 168);
+			this.txtCondicao.Location = new System.Drawing.Point(108, 241);
 			this.txtCondicao.Name = "txtCondicao";
 			this.txtCondicao.ReadOnly = true;
 			this.txtCondicao.Size = new System.Drawing.Size(193, 25);
@@ -138,8 +142,9 @@ namespace GM.View.compra
 			// 
 			// labCondicao
 			// 
+			this.labCondicao.BackColor = System.Drawing.Color.Transparent;
 			this.labCondicao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labCondicao.Location = new System.Drawing.Point(29, 168);
+			this.labCondicao.Location = new System.Drawing.Point(29, 241);
 			this.labCondicao.Name = "labCondicao";
 			this.labCondicao.Size = new System.Drawing.Size(73, 25);
 			this.labCondicao.TabIndex = 14;
@@ -148,8 +153,9 @@ namespace GM.View.compra
 			// 
 			// labSede
 			// 
+			this.labSede.BackColor = System.Drawing.Color.Transparent;
 			this.labSede.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSede.Location = new System.Drawing.Point(404, 75);
+			this.labSede.Location = new System.Drawing.Point(404, 148);
 			this.labSede.Name = "labSede";
 			this.labSede.Size = new System.Drawing.Size(47, 25);
 			this.labSede.TabIndex = 15;
@@ -160,7 +166,7 @@ namespace GM.View.compra
 			// 
 			this.txtSede.BackColor = System.Drawing.Color.White;
 			this.txtSede.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtSede.Location = new System.Drawing.Point(457, 77);
+			this.txtSede.Location = new System.Drawing.Point(457, 150);
 			this.txtSede.Name = "txtSede";
 			this.txtSede.ReadOnly = true;
 			this.txtSede.Size = new System.Drawing.Size(157, 25);
@@ -169,8 +175,9 @@ namespace GM.View.compra
 			// 
 			// labObservacoes
 			// 
+			this.labObservacoes.BackColor = System.Drawing.Color.Transparent;
 			this.labObservacoes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labObservacoes.Location = new System.Drawing.Point(-3, 107);
+			this.labObservacoes.Location = new System.Drawing.Point(-3, 180);
 			this.labObservacoes.Name = "labObservacoes";
 			this.labObservacoes.Size = new System.Drawing.Size(105, 25);
 			this.labObservacoes.TabIndex = 17;
@@ -181,7 +188,7 @@ namespace GM.View.compra
 			// 
 			this.txtObservacoes.BackColor = System.Drawing.Color.White;
 			this.txtObservacoes.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtObservacoes.Location = new System.Drawing.Point(108, 107);
+			this.txtObservacoes.Location = new System.Drawing.Point(108, 180);
 			this.txtObservacoes.Multiline = true;
 			this.txtObservacoes.Name = "txtObservacoes";
 			this.txtObservacoes.ReadOnly = true;
@@ -199,7 +206,7 @@ namespace GM.View.compra
 			this.listaProdutos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.listaProdutos.FullRowSelect = true;
 			this.listaProdutos.GridLines = true;
-			this.listaProdutos.Location = new System.Drawing.Point(12, 199);
+			this.listaProdutos.Location = new System.Drawing.Point(12, 272);
 			this.listaProdutos.Name = "listaProdutos";
 			this.listaProdutos.Size = new System.Drawing.Size(602, 252);
 			this.listaProdutos.TabIndex = 19;
@@ -230,7 +237,7 @@ namespace GM.View.compra
 			// 
 			this.txtValor.BackColor = System.Drawing.Color.White;
 			this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtValor.Location = new System.Drawing.Point(426, 167);
+			this.txtValor.Location = new System.Drawing.Point(426, 240);
 			this.txtValor.Name = "txtValor";
 			this.txtValor.ReadOnly = true;
 			this.txtValor.Size = new System.Drawing.Size(188, 25);
@@ -239,8 +246,9 @@ namespace GM.View.compra
 			// 
 			// labValor
 			// 
+			this.labValor.BackColor = System.Drawing.Color.Transparent;
 			this.labValor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labValor.Location = new System.Drawing.Point(302, 167);
+			this.labValor.Location = new System.Drawing.Point(302, 240);
 			this.labValor.Name = "labValor";
 			this.labValor.Size = new System.Drawing.Size(118, 25);
 			this.labValor.TabIndex = 20;
@@ -251,7 +259,7 @@ namespace GM.View.compra
 			// 
 			this.txtData.BackColor = System.Drawing.Color.White;
 			this.txtData.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtData.Location = new System.Drawing.Point(479, 46);
+			this.txtData.Location = new System.Drawing.Point(479, 119);
 			this.txtData.Name = "txtData";
 			this.txtData.ReadOnly = true;
 			this.txtData.Size = new System.Drawing.Size(135, 25);
@@ -260,8 +268,9 @@ namespace GM.View.compra
 			// 
 			// labData
 			// 
+			this.labData.BackColor = System.Drawing.Color.Transparent;
 			this.labData.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labData.Location = new System.Drawing.Point(426, 46);
+			this.labData.Location = new System.Drawing.Point(426, 119);
 			this.labData.Name = "labData";
 			this.labData.Size = new System.Drawing.Size(47, 25);
 			this.labData.TabIndex = 24;
@@ -272,7 +281,7 @@ namespace GM.View.compra
 			// 
 			this.btnVoltar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnVoltar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnVoltar.Location = new System.Drawing.Point(1, 1);
+			this.btnVoltar.Location = new System.Drawing.Point(12, 74);
 			this.btnVoltar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnVoltar.Name = "btnVoltar";
 			this.btnVoltar.Radius = 0;
@@ -286,7 +295,7 @@ namespace GM.View.compra
 			// 
 			this.btnProximo.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnProximo.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnProximo.Location = new System.Drawing.Point(42, 1);
+			this.btnProximo.Location = new System.Drawing.Point(53, 74);
 			this.btnProximo.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnProximo.Name = "btnProximo";
 			this.btnProximo.Radius = 0;
@@ -300,7 +309,7 @@ namespace GM.View.compra
 			// 
 			this.btnAdicionar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnAdicionar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnAdicionar.Location = new System.Drawing.Point(88, 1);
+			this.btnAdicionar.Location = new System.Drawing.Point(99, 74);
 			this.btnAdicionar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnAdicionar.Name = "btnAdicionar";
 			this.btnAdicionar.Radius = 0;
@@ -314,7 +323,7 @@ namespace GM.View.compra
 			// 
 			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnEditar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnEditar.Location = new System.Drawing.Point(129, 1);
+			this.btnEditar.Location = new System.Drawing.Point(140, 74);
 			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEditar.Name = "btnEditar";
 			this.btnEditar.Radius = 0;
@@ -328,7 +337,7 @@ namespace GM.View.compra
 			// 
 			this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnDeletar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnDeletar.Location = new System.Drawing.Point(170, 1);
+			this.btnDeletar.Location = new System.Drawing.Point(181, 74);
 			this.btnDeletar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnDeletar.Name = "btnDeletar";
 			this.btnDeletar.Radius = 0;
@@ -342,7 +351,7 @@ namespace GM.View.compra
 			// 
 			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnPesquisar.Location = new System.Drawing.Point(216, 1);
+			this.btnPesquisar.Location = new System.Drawing.Point(227, 74);
 			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnPesquisar.Name = "btnPesquisar";
 			this.btnPesquisar.Radius = 0;
@@ -360,7 +369,7 @@ namespace GM.View.compra
 			this.btnEfetivar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnEfetivar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnEfetivar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnEfetivar.Location = new System.Drawing.Point(426, 1);
+			this.btnEfetivar.Location = new System.Drawing.Point(426, 74);
 			this.btnEfetivar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEfetivar.Name = "btnEfetivar";
 			this.btnEfetivar.Radius = 0;
@@ -380,7 +389,7 @@ namespace GM.View.compra
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(626, 463);
+			this.ClientSize = new System.Drawing.Size(626, 535);
 			this.Controls.Add(this.btnEfetivar);
 			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.btnDeletar);
@@ -405,7 +414,7 @@ namespace GM.View.compra
 			this.Controls.Add(this.txtCodigo);
 			this.Controls.Add(this.labCodigo);
 			this.Controls.Add(this.labSede);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CSCompra";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

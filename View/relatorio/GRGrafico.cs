@@ -8,10 +8,14 @@ using System.IO;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 using Newtonsoft.Json;
 
 namespace GM.View.relatorio {
-	public partial class GRGrafico : Form {
+	public partial class GRGrafico : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private DataTable dados;
 		private String titulo;
@@ -20,6 +24,7 @@ namespace GM.View.relatorio {
 			this.titulo = titulo;
 			this.dados = dados;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		private Resultado ToInfo() {

@@ -29,6 +29,7 @@ namespace GM.View.venda
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDVenda));
 			this.gpCliente = new System.Windows.Forms.GroupBox();
 			this.btnBuscaEndereco = new Sunny.UI.UISymbolButton();
 			this.btnAbrir = new Sunny.UI.UISymbolButton();
@@ -79,6 +80,7 @@ namespace GM.View.venda
 			// 
 			// gpCliente
 			// 
+			this.gpCliente.BackColor = System.Drawing.Color.Transparent;
 			this.gpCliente.Controls.Add(this.btnBuscaEndereco);
 			this.gpCliente.Controls.Add(this.btnAbrir);
 			this.gpCliente.Controls.Add(this.labEndereco);
@@ -87,7 +89,7 @@ namespace GM.View.venda
 			this.gpCliente.Controls.Add(this.txtCodigoEndereco);
 			this.gpCliente.Controls.Add(this.txtCliente);
 			this.gpCliente.Controls.Add(this.txtCodigoCliente);
-			this.gpCliente.Location = new System.Drawing.Point(12, 12);
+			this.gpCliente.Location = new System.Drawing.Point(12, 75);
 			this.gpCliente.Name = "gpCliente";
 			this.gpCliente.Size = new System.Drawing.Size(462, 82);
 			this.gpCliente.TabIndex = 0;
@@ -183,13 +185,14 @@ namespace GM.View.venda
 			// 
 			// gpCabecalho
 			// 
+			this.gpCabecalho.BackColor = System.Drawing.Color.Transparent;
 			this.gpCabecalho.Controls.Add(this.txtObservacao);
 			this.gpCabecalho.Controls.Add(this.labObservacao);
 			this.gpCabecalho.Controls.Add(this.labData);
 			this.gpCabecalho.Controls.Add(this.txtData);
 			this.gpCabecalho.Controls.Add(this.labSede);
 			this.gpCabecalho.Controls.Add(this.cbxSede);
-			this.gpCabecalho.Location = new System.Drawing.Point(480, 12);
+			this.gpCabecalho.Location = new System.Drawing.Point(480, 75);
 			this.gpCabecalho.Name = "gpCabecalho";
 			this.gpCabecalho.Size = new System.Drawing.Size(361, 196);
 			this.gpCabecalho.TabIndex = 1;
@@ -253,6 +256,7 @@ namespace GM.View.venda
 			// 
 			// gpProduto
 			// 
+			this.gpProduto.BackColor = System.Drawing.Color.Transparent;
 			this.gpProduto.Controls.Add(this.cbxProdutoCodigo);
 			this.gpProduto.Controls.Add(this.btnAdicionarProduto);
 			this.gpProduto.Controls.Add(this.btnLimpar);
@@ -264,7 +268,7 @@ namespace GM.View.venda
 			this.gpProduto.Controls.Add(this.txtQuantidade);
 			this.gpProduto.Controls.Add(this.labProduto);
 			this.gpProduto.Controls.Add(this.listaProduto);
-			this.gpProduto.Location = new System.Drawing.Point(12, 100);
+			this.gpProduto.Location = new System.Drawing.Point(12, 163);
 			this.gpProduto.Name = "gpProduto";
 			this.gpProduto.Size = new System.Drawing.Size(462, 370);
 			this.gpProduto.TabIndex = 2;
@@ -293,6 +297,7 @@ namespace GM.View.venda
 			this.btnAdicionarProduto.Location = new System.Drawing.Point(359, 79);
 			this.btnAdicionarProduto.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnAdicionarProduto.Name = "btnAdicionarProduto";
+			this.btnAdicionarProduto.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnAdicionarProduto.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnAdicionarProduto.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnAdicionarProduto.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -317,6 +322,7 @@ namespace GM.View.venda
 			this.btnLimpar.Location = new System.Drawing.Point(96, 80);
 			this.btnLimpar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnLimpar.Name = "btnLimpar";
+			this.btnLimpar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnLimpar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnLimpar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnLimpar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -341,6 +347,7 @@ namespace GM.View.venda
 			this.btnExcluir.Location = new System.Drawing.Point(9, 80);
 			this.btnExcluir.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnExcluir.Name = "btnExcluir";
+			this.btnExcluir.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnExcluir.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnExcluir.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnExcluir.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -451,13 +458,14 @@ namespace GM.View.venda
 			// 
 			// gpResumo
 			// 
+			this.gpResumo.BackColor = System.Drawing.Color.Transparent;
 			this.gpResumo.Controls.Add(this.listaParcela);
 			this.gpResumo.Controls.Add(this.btnVenda);
 			this.gpResumo.Controls.Add(this.labCondicao);
 			this.gpResumo.Controls.Add(this.labTotal);
 			this.gpResumo.Controls.Add(this.cbxCondicao);
 			this.gpResumo.Controls.Add(this.txtTotal);
-			this.gpResumo.Location = new System.Drawing.Point(480, 214);
+			this.gpResumo.Location = new System.Drawing.Point(480, 277);
 			this.gpResumo.Name = "gpResumo";
 			this.gpResumo.Size = new System.Drawing.Size(361, 256);
 			this.gpResumo.TabIndex = 3;
@@ -506,6 +514,7 @@ namespace GM.View.venda
 			this.btnVenda.Location = new System.Drawing.Point(19, 227);
 			this.btnVenda.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnVenda.Name = "btnVenda";
+			this.btnVenda.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnVenda.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnVenda.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnVenda.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -562,13 +571,13 @@ namespace GM.View.venda
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(853, 482);
+			this.ClientSize = new System.Drawing.Size(853, 544);
 			this.Controls.Add(this.gpResumo);
 			this.Controls.Add(this.gpProduto);
 			this.Controls.Add(this.gpCabecalho);
 			this.Controls.Add(this.gpCliente);
 			this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CDVenda";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

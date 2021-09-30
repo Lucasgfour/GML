@@ -4,20 +4,26 @@ using System.Drawing;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.custo {
-	public partial class CDCustoCategoria : Form {
+	public partial class CDCustoCategoria : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private Custo_categoria categoria = new Custo_categoria();
 		private ObjectDao<Custo_categoria> cDao = new ObjectDao<Custo_categoria>();
 		
 		public CDCustoCategoria() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		public CDCustoCategoria(Custo_categoria categoria) {
 			this.categoria = categoria;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void arranqueFormulario(object sender, EventArgs e) {

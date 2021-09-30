@@ -29,6 +29,7 @@ namespace GM.View.compra
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDCompra));
 			this.areaCabecalho = new System.Windows.Forms.GroupBox();
 			this.cbxLoja = new System.Windows.Forms.ComboBox();
 			this.labLoja = new System.Windows.Forms.Label();
@@ -70,6 +71,7 @@ namespace GM.View.compra
 			// 
 			// areaCabecalho
 			// 
+			this.areaCabecalho.BackColor = System.Drawing.Color.Transparent;
 			this.areaCabecalho.Controls.Add(this.cbxLoja);
 			this.areaCabecalho.Controls.Add(this.labLoja);
 			this.areaCabecalho.Controls.Add(this.txtDataCompra);
@@ -77,7 +79,7 @@ namespace GM.View.compra
 			this.areaCabecalho.Controls.Add(this.txtNomeFornecedor);
 			this.areaCabecalho.Controls.Add(this.txtCodigoFornecedor);
 			this.areaCabecalho.Controls.Add(this.labFornecedor);
-			this.areaCabecalho.Location = new System.Drawing.Point(12, 12);
+			this.areaCabecalho.Location = new System.Drawing.Point(12, 80);
 			this.areaCabecalho.Name = "areaCabecalho";
 			this.areaCabecalho.Size = new System.Drawing.Size(529, 82);
 			this.areaCabecalho.TabIndex = 0;
@@ -152,8 +154,9 @@ namespace GM.View.compra
 			// 
 			// areaObservacoes
 			// 
+			this.areaObservacoes.BackColor = System.Drawing.Color.Transparent;
 			this.areaObservacoes.Controls.Add(this.txtObservacao);
-			this.areaObservacoes.Location = new System.Drawing.Point(547, 12);
+			this.areaObservacoes.Location = new System.Drawing.Point(547, 80);
 			this.areaObservacoes.Name = "areaObservacoes";
 			this.areaObservacoes.Size = new System.Drawing.Size(303, 82);
 			this.areaObservacoes.TabIndex = 1;
@@ -172,6 +175,7 @@ namespace GM.View.compra
 			// 
 			// areaProdutos
 			// 
+			this.areaProdutos.BackColor = System.Drawing.Color.Transparent;
 			this.areaProdutos.Controls.Add(this.btnClearProduto);
 			this.areaProdutos.Controls.Add(this.btnDelProduto);
 			this.areaProdutos.Controls.Add(this.listProduto);
@@ -182,7 +186,7 @@ namespace GM.View.compra
 			this.areaProdutos.Controls.Add(this.labQuantidade);
 			this.areaProdutos.Controls.Add(this.txtProduto);
 			this.areaProdutos.Controls.Add(this.labProduto);
-			this.areaProdutos.Location = new System.Drawing.Point(12, 100);
+			this.areaProdutos.Location = new System.Drawing.Point(12, 168);
 			this.areaProdutos.Name = "areaProdutos";
 			this.areaProdutos.Size = new System.Drawing.Size(838, 267);
 			this.areaProdutos.TabIndex = 2;
@@ -357,6 +361,7 @@ namespace GM.View.compra
 			// 
 			// areaConclusao
 			// 
+			this.areaConclusao.BackColor = System.Drawing.Color.Transparent;
 			this.areaConclusao.Controls.Add(this.btnCalculo);
 			this.areaConclusao.Controls.Add(this.cbxCondicao);
 			this.areaConclusao.Controls.Add(this.labPagamento);
@@ -364,7 +369,7 @@ namespace GM.View.compra
 			this.areaConclusao.Controls.Add(this.btnSalvar);
 			this.areaConclusao.Controls.Add(this.txtValorTotal);
 			this.areaConclusao.Controls.Add(this.labValorTotal);
-			this.areaConclusao.Location = new System.Drawing.Point(12, 373);
+			this.areaConclusao.Location = new System.Drawing.Point(12, 441);
 			this.areaConclusao.Name = "areaConclusao";
 			this.areaConclusao.Size = new System.Drawing.Size(838, 57);
 			this.areaConclusao.TabIndex = 4;
@@ -468,17 +473,17 @@ namespace GM.View.compra
 			// CDCompra
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			this.ClientSize = new System.Drawing.Size(862, 443);
+			this.ClientSize = new System.Drawing.Size(862, 515);
 			this.Controls.Add(this.areaConclusao);
 			this.Controls.Add(this.areaProdutos);
 			this.Controls.Add(this.areaObservacoes);
 			this.Controls.Add(this.areaCabecalho);
 			this.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CDCompra";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
-			this.Text = "Cadastro de compra - 1 DE 2";
+			this.Text = "Cadastro de compra";
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.areaCabecalho.ResumeLayout(false);
 			this.areaCabecalho.PerformLayout();

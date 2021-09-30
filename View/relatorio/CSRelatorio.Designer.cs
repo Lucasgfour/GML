@@ -29,6 +29,7 @@ namespace GM.View.relatorio
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CSRelatorio));
 			this.listaRelatorios = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.gpxSelecionado = new System.Windows.Forms.GroupBox();
@@ -52,7 +53,7 @@ namespace GM.View.relatorio
 			this.listaRelatorios.FullRowSelect = true;
 			this.listaRelatorios.GridLines = true;
 			this.listaRelatorios.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.listaRelatorios.Location = new System.Drawing.Point(12, 12);
+			this.listaRelatorios.Location = new System.Drawing.Point(12, 78);
 			this.listaRelatorios.MultiSelect = false;
 			this.listaRelatorios.Name = "listaRelatorios";
 			this.listaRelatorios.Size = new System.Drawing.Size(320, 379);
@@ -68,12 +69,13 @@ namespace GM.View.relatorio
 			// 
 			// gpxSelecionado
 			// 
+			this.gpxSelecionado.BackColor = System.Drawing.Color.Transparent;
 			this.gpxSelecionado.Controls.Add(this.gerarGrafico);
 			this.gpxSelecionado.Controls.Add(this.gerarWeb);
 			this.gpxSelecionado.Controls.Add(this.gerarTabela);
 			this.gpxSelecionado.Controls.Add(this.txtObservacao);
 			this.gpxSelecionado.Controls.Add(this.txtDescricao);
-			this.gpxSelecionado.Location = new System.Drawing.Point(338, 63);
+			this.gpxSelecionado.Location = new System.Drawing.Point(338, 129);
 			this.gpxSelecionado.Name = "gpxSelecionado";
 			this.gpxSelecionado.Size = new System.Drawing.Size(284, 328);
 			this.gpxSelecionado.TabIndex = 1;
@@ -84,42 +86,42 @@ namespace GM.View.relatorio
 			// 
 			this.gerarGrafico.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.gerarGrafico.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.gerarGrafico.Location = new System.Drawing.Point(134, 241);
+			this.gerarGrafico.Location = new System.Drawing.Point(6, 241);
 			this.gerarGrafico.MinimumSize = new System.Drawing.Size(1, 1);
 			this.gerarGrafico.Name = "gerarGrafico";
-			this.gerarGrafico.Size = new System.Drawing.Size(144, 29);
+			this.gerarGrafico.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+			this.gerarGrafico.Size = new System.Drawing.Size(272, 29);
 			this.gerarGrafico.SymbolSize = 0;
 			this.gerarGrafico.TabIndex = 25;
 			this.gerarGrafico.Text = " Gerar em gráfico";
-			this.gerarGrafico.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.gerarGrafico.Click += new System.EventHandler(this.cliqueGerarGrafico);
 			// 
 			// gerarWeb
 			// 
 			this.gerarWeb.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.gerarWeb.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.gerarWeb.Location = new System.Drawing.Point(134, 206);
+			this.gerarWeb.Location = new System.Drawing.Point(6, 206);
 			this.gerarWeb.MinimumSize = new System.Drawing.Size(1, 1);
 			this.gerarWeb.Name = "gerarWeb";
-			this.gerarWeb.Size = new System.Drawing.Size(144, 29);
+			this.gerarWeb.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+			this.gerarWeb.Size = new System.Drawing.Size(272, 29);
 			this.gerarWeb.SymbolSize = 0;
 			this.gerarWeb.TabIndex = 24;
 			this.gerarWeb.Text = " Gerar em Web";
-			this.gerarWeb.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.gerarWeb.Click += new System.EventHandler(this.cliqueGerarWeb);
 			// 
 			// gerarTabela
 			// 
 			this.gerarTabela.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.gerarTabela.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.gerarTabela.Location = new System.Drawing.Point(134, 171);
+			this.gerarTabela.Location = new System.Drawing.Point(6, 171);
 			this.gerarTabela.MinimumSize = new System.Drawing.Size(1, 1);
 			this.gerarTabela.Name = "gerarTabela";
-			this.gerarTabela.Size = new System.Drawing.Size(144, 29);
+			this.gerarTabela.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+			this.gerarTabela.Size = new System.Drawing.Size(272, 29);
 			this.gerarTabela.SymbolSize = 0;
 			this.gerarTabela.TabIndex = 23;
 			this.gerarTabela.Text = " Gerar em tabela";
-			this.gerarTabela.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
 			this.gerarTabela.Click += new System.EventHandler(this.cliqueGerarTabela);
 			// 
 			// txtObservacao
@@ -143,10 +145,11 @@ namespace GM.View.relatorio
 			// 
 			// gpxFerramentas
 			// 
+			this.gpxFerramentas.BackColor = System.Drawing.Color.Transparent;
 			this.gpxFerramentas.Controls.Add(this.btnRemover);
 			this.gpxFerramentas.Controls.Add(this.btnEditar);
 			this.gpxFerramentas.Controls.Add(this.btnNovo);
-			this.gpxFerramentas.Location = new System.Drawing.Point(338, 3);
+			this.gpxFerramentas.Location = new System.Drawing.Point(338, 69);
 			this.gpxFerramentas.Name = "gpxFerramentas";
 			this.gpxFerramentas.Size = new System.Drawing.Size(284, 54);
 			this.gpxFerramentas.TabIndex = 2;
@@ -164,6 +167,7 @@ namespace GM.View.relatorio
 			this.btnRemover.Location = new System.Drawing.Point(156, 19);
 			this.btnRemover.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnRemover.Name = "btnRemover";
+			this.btnRemover.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnRemover.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnRemover.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnRemover.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -182,6 +186,7 @@ namespace GM.View.relatorio
 			this.btnEditar.Location = new System.Drawing.Point(82, 19);
 			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEditar.Name = "btnEditar";
+			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnEditar.Size = new System.Drawing.Size(68, 29);
 			this.btnEditar.SymbolSize = 0;
 			this.btnEditar.TabIndex = 21;
@@ -199,6 +204,7 @@ namespace GM.View.relatorio
 			this.btnNovo.Location = new System.Drawing.Point(6, 19);
 			this.btnNovo.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnNovo.Name = "btnNovo";
+			this.btnNovo.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnNovo.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnNovo.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnNovo.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -213,12 +219,12 @@ namespace GM.View.relatorio
 			// CSRelatorio
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			this.ClientSize = new System.Drawing.Size(634, 403);
+			this.ClientSize = new System.Drawing.Size(634, 469);
 			this.Controls.Add(this.gpxFerramentas);
 			this.Controls.Add(this.gpxSelecionado);
 			this.Controls.Add(this.listaRelatorios);
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CSRelatorio";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

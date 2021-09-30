@@ -4,9 +4,13 @@ using System.Drawing;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.pessoa {
-	public partial class CDEndereco : Form {
+	public partial class CDEndereco : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private int pessoa;
 		private Endereco endereco;
@@ -17,12 +21,14 @@ namespace GM.View.pessoa {
 			this.endereco = new Endereco();
 			this.endereco.pessoa = this.pessoa;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		public CDEndereco(Endereco end) {
 			this.endereco = end;
 			this.pessoa = 0;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void ArranqueFormulario(object sender, EventArgs e) {

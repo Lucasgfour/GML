@@ -6,15 +6,20 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.produto {
-	public partial class CSFamilia : Form {
+	public partial class CSFamilia : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private LinkedList<Familia> familias = new LinkedList<Familia>();
 		private ObjectDao<Familia> fDao = new ObjectDao<Familia>();
 		
 		public CSFamilia() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		public void pesquisar() {

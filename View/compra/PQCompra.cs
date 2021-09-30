@@ -5,13 +5,17 @@ using System.Drawing;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 // Neste formulário vou adotar um metódo diferenciado por conta de ser um Objeto que vai ficar pesado no banco
 // Em vez de pesquisar pelo objeto, vou utilizar um DataTable para obter os dados necessários.
 // Isso vai dar maior velocidade na pesquisa.
 
 namespace GM.View.compra {
-	public partial class PQCompra : Form {
+	public partial class PQCompra : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private DataTable dados;
 		private ObjectDao<Compra> cDao = new ObjectDao<Compra>();
@@ -19,6 +23,7 @@ namespace GM.View.compra {
 		
 		public PQCompra() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void arranqueFormulario(object sender, EventArgs e) {

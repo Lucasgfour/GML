@@ -29,6 +29,7 @@ namespace GM.View.pessoa
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PQEndereco));
 			this.listEndereco = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -47,7 +48,7 @@ namespace GM.View.pessoa
 									this.Col03});
 			this.listEndereco.FullRowSelect = true;
 			this.listEndereco.GridLines = true;
-			this.listEndereco.Location = new System.Drawing.Point(12, 38);
+			this.listEndereco.Location = new System.Drawing.Point(12, 105);
 			this.listEndereco.MultiSelect = false;
 			this.listEndereco.Name = "listEndereco";
 			this.listEndereco.Size = new System.Drawing.Size(563, 208);
@@ -75,7 +76,7 @@ namespace GM.View.pessoa
 			// 
 			this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnDeletar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnDeletar.Location = new System.Drawing.Point(88, 5);
+			this.btnDeletar.Location = new System.Drawing.Point(88, 72);
 			this.btnDeletar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnDeletar.Name = "btnDeletar";
 			this.btnDeletar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
@@ -87,7 +88,7 @@ namespace GM.View.pessoa
 			// 
 			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(50, 5);
+			this.btnEditar.Location = new System.Drawing.Point(50, 72);
 			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEditar.Name = "btnEditar";
 			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
@@ -100,7 +101,7 @@ namespace GM.View.pessoa
 			// 
 			this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnNovo.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnNovo.Location = new System.Drawing.Point(12, 5);
+			this.btnNovo.Location = new System.Drawing.Point(12, 72);
 			this.btnNovo.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnNovo.Name = "btnNovo";
 			this.btnNovo.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
@@ -117,7 +118,7 @@ namespace GM.View.pessoa
 			this.btnSelecionar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSelecionar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSelecionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSelecionar.Location = new System.Drawing.Point(373, 5);
+			this.btnSelecionar.Location = new System.Drawing.Point(373, 72);
 			this.btnSelecionar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSelecionar.Name = "btnSelecionar";
 			this.btnSelecionar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
@@ -134,13 +135,13 @@ namespace GM.View.pessoa
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(587, 258);
+			this.ClientSize = new System.Drawing.Size(587, 325);
 			this.Controls.Add(this.btnSelecionar);
 			this.Controls.Add(this.btnDeletar);
 			this.Controls.Add(this.btnEditar);
 			this.Controls.Add(this.btnNovo);
 			this.Controls.Add(this.listEndereco);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "PQEndereco";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

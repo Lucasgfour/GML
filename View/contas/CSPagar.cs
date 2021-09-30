@@ -7,10 +7,14 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.contas {
 
-	public partial class CSPagar : Form {
+	public partial class CSPagar : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private LinkedList<Sede> sedes;
 		private DataTable dados;
@@ -20,6 +24,7 @@ namespace GM.View.contas {
 			// 0 - Pagar & 1 - Receber
 			this.tipo = tipo;
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void arranqueFormulario(object sender, EventArgs e) {

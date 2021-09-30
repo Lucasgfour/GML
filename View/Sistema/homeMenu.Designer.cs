@@ -46,6 +46,7 @@ namespace GM.View.Sistema
 			this.btnFContasReceber = new System.Windows.Forms.Button();
 			this.btnFContasPagar = new System.Windows.Forms.Button();
 			this.TabDiversos = new System.Windows.Forms.TabPage();
+			this.btnFUsuarioConfigura = new System.Windows.Forms.Button();
 			this.btnFRelatorioProgramados = new System.Windows.Forms.Button();
 			this.btnFRelatoriosConsulta = new System.Windows.Forms.Button();
 			this.btnFUsuarioPermissao = new System.Windows.Forms.Button();
@@ -54,7 +55,6 @@ namespace GM.View.Sistema
 			this.btnFCondicaoConsulta = new System.Windows.Forms.Button();
 			this.materialTabSelector1 = new MaterialSkin.Controls.MaterialTabSelector();
 			this.bwkRelatorio = new System.ComponentModel.BackgroundWorker();
-			this.btnFUsuarioConfigura = new System.Windows.Forms.Button();
 			this.TabControle.SuspendLayout();
 			this.TabVendaCompra.SuspendLayout();
 			this.TabProduto.SuspendLayout();
@@ -108,6 +108,7 @@ namespace GM.View.Sistema
 			this.TabVendaCompra.TabIndex = 0;
 			this.TabVendaCompra.Text = "Vendas e Compras";
 			this.TabVendaCompra.UseVisualStyleBackColor = true;
+			this.TabVendaCompra.Click += new System.EventHandler(this.TabVendaCompraClick);
 			// 
 			// btnFCompra
 			// 
@@ -345,6 +346,25 @@ namespace GM.View.Sistema
 			this.TabDiversos.Text = "Diversos";
 			this.TabDiversos.UseVisualStyleBackColor = true;
 			// 
+			// btnFUsuarioConfigura
+			// 
+			this.btnFUsuarioConfigura.BackColor = System.Drawing.Color.Silver;
+			this.btnFUsuarioConfigura.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnFUsuarioConfigura.FlatAppearance.BorderSize = 0;
+			this.btnFUsuarioConfigura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnFUsuarioConfigura.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnFUsuarioConfigura.ForeColor = System.Drawing.Color.White;
+			this.btnFUsuarioConfigura.Image = ((System.Drawing.Image)(resources.GetObject("btnFUsuarioConfigura.Image")));
+			this.btnFUsuarioConfigura.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
+			this.btnFUsuarioConfigura.Location = new System.Drawing.Point(151, 99);
+			this.btnFUsuarioConfigura.Name = "btnFUsuarioConfigura";
+			this.btnFUsuarioConfigura.Size = new System.Drawing.Size(137, 87);
+			this.btnFUsuarioConfigura.TabIndex = 9;
+			this.btnFUsuarioConfigura.Text = "Configurações Meu Usuário";
+			this.btnFUsuarioConfigura.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnFUsuarioConfigura.UseVisualStyleBackColor = false;
+			this.btnFUsuarioConfigura.Click += new System.EventHandler(this.cliqueUsuarioConfigura);
+			// 
 			// btnFRelatorioProgramados
 			// 
 			this.btnFRelatorioProgramados.BackColor = System.Drawing.Color.Silver;
@@ -473,25 +493,6 @@ namespace GM.View.Sistema
 			// bwkRelatorio
 			// 
 			this.bwkRelatorio.DoWork += new System.ComponentModel.DoWorkEventHandler(this.ProcessoProgramado);
-			// 
-			// btnFUsuarioConfigura
-			// 
-			this.btnFUsuarioConfigura.BackColor = System.Drawing.Color.Silver;
-			this.btnFUsuarioConfigura.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
-			this.btnFUsuarioConfigura.FlatAppearance.BorderSize = 0;
-			this.btnFUsuarioConfigura.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-			this.btnFUsuarioConfigura.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnFUsuarioConfigura.ForeColor = System.Drawing.Color.White;
-			this.btnFUsuarioConfigura.Image = ((System.Drawing.Image)(resources.GetObject("btnFUsuarioConfigura.Image")));
-			this.btnFUsuarioConfigura.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-			this.btnFUsuarioConfigura.Location = new System.Drawing.Point(151, 99);
-			this.btnFUsuarioConfigura.Name = "btnFUsuarioConfigura";
-			this.btnFUsuarioConfigura.Size = new System.Drawing.Size(137, 87);
-			this.btnFUsuarioConfigura.TabIndex = 9;
-			this.btnFUsuarioConfigura.Text = "Configurações Meu Usuário";
-			this.btnFUsuarioConfigura.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
-			this.btnFUsuarioConfigura.UseVisualStyleBackColor = false;
-			this.btnFUsuarioConfigura.Click += new System.EventHandler(this.cliqueUsuarioConfigura);
 			// 
 			// homeMenu
 			// 

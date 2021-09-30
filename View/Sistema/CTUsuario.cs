@@ -6,15 +6,20 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.Sistema {
-	public partial class CTUsuario : Form {
+	public partial class CTUsuario : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private ObjectDao<Usuario> uDao = new ObjectDao<Usuario>();
 		private LinkedList<Usuario> usuarios = new LinkedList<Usuario>();
 		
 		public CTUsuario() {
 			InitializeComponent();	
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void Arranque(object sender, EventArgs e) {

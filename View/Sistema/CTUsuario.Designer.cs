@@ -29,6 +29,7 @@ namespace GM.View.Sistema
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CTUsuario));
 			this.listaUsuario = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -48,7 +49,7 @@ namespace GM.View.Sistema
 									this.Col04});
 			this.listaUsuario.FullRowSelect = true;
 			this.listaUsuario.GridLines = true;
-			this.listaUsuario.Location = new System.Drawing.Point(12, 47);
+			this.listaUsuario.Location = new System.Drawing.Point(12, 107);
 			this.listaUsuario.MultiSelect = false;
 			this.listaUsuario.Name = "listaUsuario";
 			this.listaUsuario.Size = new System.Drawing.Size(491, 321);
@@ -80,9 +81,10 @@ namespace GM.View.Sistema
 			// 
 			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(88, 12);
+			this.btnEditar.Location = new System.Drawing.Point(88, 72);
 			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnEditar.Name = "btnEditar";
+			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnEditar.Size = new System.Drawing.Size(68, 29);
 			this.btnEditar.SymbolSize = 0;
 			this.btnEditar.TabIndex = 24;
@@ -97,9 +99,10 @@ namespace GM.View.Sistema
 			this.btnNovo.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnNovo.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnNovo.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnNovo.Location = new System.Drawing.Point(12, 12);
+			this.btnNovo.Location = new System.Drawing.Point(12, 72);
 			this.btnNovo.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnNovo.Name = "btnNovo";
+			this.btnNovo.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnNovo.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnNovo.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnNovo.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -115,9 +118,10 @@ namespace GM.View.Sistema
 			// 
 			this.btnSenha.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnSenha.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSenha.Location = new System.Drawing.Point(350, 12);
+			this.btnSenha.Location = new System.Drawing.Point(350, 72);
 			this.btnSenha.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSenha.Name = "btnSenha";
+			this.btnSenha.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSenha.Size = new System.Drawing.Size(153, 29);
 			this.btnSenha.SymbolSize = 0;
 			this.btnSenha.TabIndex = 25;
@@ -127,13 +131,13 @@ namespace GM.View.Sistema
 			// CTUsuario
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			this.ClientSize = new System.Drawing.Size(515, 380);
+			this.ClientSize = new System.Drawing.Size(515, 440);
 			this.Controls.Add(this.btnSenha);
 			this.Controls.Add(this.btnEditar);
 			this.Controls.Add(this.btnNovo);
 			this.Controls.Add(this.listaUsuario);
 			this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "CTUsuario";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

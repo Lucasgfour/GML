@@ -29,6 +29,7 @@ namespace GM.View.relatorio
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GRGrafico));
 			this.cbxTipo = new System.Windows.Forms.ComboBox();
 			this.labTipo = new System.Windows.Forms.Label();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
@@ -44,15 +45,16 @@ namespace GM.View.relatorio
 									"Gráfico em Barra",
 									"Gráfico em Pizza",
 									"Gráfico em Radar"});
-			this.cbxTipo.Location = new System.Drawing.Point(139, 9);
+			this.cbxTipo.Location = new System.Drawing.Point(139, 69);
 			this.cbxTipo.Name = "cbxTipo";
 			this.cbxTipo.Size = new System.Drawing.Size(234, 25);
 			this.cbxTipo.TabIndex = 206;
 			// 
 			// labTipo
 			// 
+			this.labTipo.BackColor = System.Drawing.Color.Transparent;
 			this.labTipo.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labTipo.Location = new System.Drawing.Point(3, 9);
+			this.labTipo.Location = new System.Drawing.Point(3, 69);
 			this.labTipo.Name = "labTipo";
 			this.labTipo.Size = new System.Drawing.Size(130, 25);
 			this.labTipo.TabIndex = 207;
@@ -67,9 +69,10 @@ namespace GM.View.relatorio
 			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(216, 40);
+			this.btnSalvar.Location = new System.Drawing.Point(216, 100);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
+			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -85,11 +88,11 @@ namespace GM.View.relatorio
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(385, 81);
+			this.ClientSize = new System.Drawing.Size(385, 139);
 			this.Controls.Add(this.btnSalvar);
 			this.Controls.Add(this.cbxTipo);
 			this.Controls.Add(this.labTipo);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "GRGrafico";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;

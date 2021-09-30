@@ -29,6 +29,7 @@ namespace GM.View.relatorio
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GRTela));
 			this.dgDados = new System.Windows.Forms.DataGridView();
 			((System.ComponentModel.ISupportInitialize)(this.dgDados)).BeginInit();
 			this.SuspendLayout();
@@ -57,6 +58,7 @@ namespace GM.View.relatorio
 			this.ClientSize = new System.Drawing.Size(852, 535);
 			this.Controls.Add(this.dgDados);
 			this.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.Name = "GRTela";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
 			this.Text = "Relatório";

@@ -29,6 +29,7 @@ namespace GM.View.Sistema
 		/// </summary>
 		private void InitializeComponent()
 		{
+			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PQCidade));
 			this.listCidade = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -47,10 +48,10 @@ namespace GM.View.Sistema
 									this.Col03});
 			this.listCidade.FullRowSelect = true;
 			this.listCidade.GridLines = true;
-			this.listCidade.Location = new System.Drawing.Point(12, 47);
+			this.listCidade.Location = new System.Drawing.Point(12, 112);
 			this.listCidade.MultiSelect = false;
 			this.listCidade.Name = "listCidade";
-			this.listCidade.Size = new System.Drawing.Size(472, 223);
+			this.listCidade.Size = new System.Drawing.Size(550, 257);
 			this.listCidade.TabIndex = 0;
 			this.listCidade.UseCompatibleStateImageBehavior = false;
 			this.listCidade.View = System.Windows.Forms.View.Details;
@@ -78,14 +79,15 @@ namespace GM.View.Sistema
 			this.btnSelecionar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSelecionar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSelecionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSelecionar.Location = new System.Drawing.Point(282, 12);
+			this.btnSelecionar.Location = new System.Drawing.Point(327, 72);
 			this.btnSelecionar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSelecionar.Name = "btnSelecionar";
+			this.btnSelecionar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSelecionar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSelecionar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSelecionar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSelecionar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.Size = new System.Drawing.Size(202, 29);
+			this.btnSelecionar.Size = new System.Drawing.Size(236, 33);
 			this.btnSelecionar.Style = Sunny.UI.UIStyle.Green;
 			this.btnSelecionar.TabIndex = 35;
 			this.btnSelecionar.Text = "Selecionar";
@@ -93,9 +95,9 @@ namespace GM.View.Sistema
 			// 
 			// txtPesquisa
 			// 
-			this.txtPesquisa.Location = new System.Drawing.Point(77, 17);
+			this.txtPesquisa.Location = new System.Drawing.Point(88, 78);
 			this.txtPesquisa.Name = "txtPesquisa";
-			this.txtPesquisa.Size = new System.Drawing.Size(156, 20);
+			this.txtPesquisa.Size = new System.Drawing.Size(181, 23);
 			this.txtPesquisa.TabIndex = 34;
 			// 
 			// labPesquisa
@@ -103,9 +105,9 @@ namespace GM.View.Sistema
 			this.labPesquisa.BackColor = System.Drawing.Color.Transparent;
 			this.labPesquisa.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.labPesquisa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labPesquisa.Location = new System.Drawing.Point(12, 17);
+			this.labPesquisa.Location = new System.Drawing.Point(12, 78);
 			this.labPesquisa.Name = "labPesquisa";
-			this.labPesquisa.Size = new System.Drawing.Size(59, 20);
+			this.labPesquisa.Size = new System.Drawing.Size(69, 23);
 			this.labPesquisa.TabIndex = 33;
 			this.labPesquisa.Text = "Pesquisa :";
 			this.labPesquisa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -114,25 +116,27 @@ namespace GM.View.Sistema
 			// 
 			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnPesquisar.Location = new System.Drawing.Point(239, 12);
+			this.btnPesquisar.Location = new System.Drawing.Point(277, 72);
 			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnPesquisar.Name = "btnPesquisar";
-			this.btnPesquisar.Size = new System.Drawing.Size(37, 29);
+			this.btnPesquisar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+			this.btnPesquisar.Size = new System.Drawing.Size(43, 33);
 			this.btnPesquisar.Symbol = 61442;
 			this.btnPesquisar.TabIndex = 32;
 			this.btnPesquisar.Click += new System.EventHandler(this.pesquisarClique);
 			// 
 			// PQCidade
 			// 
-			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
+			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(496, 282);
+			this.ClientSize = new System.Drawing.Size(573, 381);
 			this.Controls.Add(this.btnSelecionar);
 			this.Controls.Add(this.txtPesquisa);
 			this.Controls.Add(this.labPesquisa);
 			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.listCidade);
-			this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+			this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.MinimizeBox = false;
 			this.Name = "PQCidade";

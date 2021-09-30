@@ -46,7 +46,6 @@ C:\Users\credecob01\Documents\SharpDevelop Projects\GM\obj\Release\GM.View.venda
 C:\Users\credecob01\Documents\SharpDevelop Projects\GM\obj\Release\GM.View.venda.PQVenda.resources
 C:\Users\credecob01\Documents\SharpDevelop Projects\GM\obj\Release\GM.csproj.GenerateResource.Cache
 C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.csprojResolveAssemblyReference.cache
-C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.Home.resources
 C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.View.caixa.CDCaixa.resources
 C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.View.caixa.CSCaixa.resources
 C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.View.caixa.zMVCaixa.resources
@@ -91,7 +90,6 @@ C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.View.Sistema.CTModulo.re
 C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.View.Sistema.CTUsuario.resources
 C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.View.Sistema.homeMenu.resources
 C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.View.IDUsuario.resources
-C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.View.Sistema.novaHome.resources
 C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.View.Sistema.PQCidade.resources
 C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.View.venda.ATVenda.resources
 C:\Users\credecob01\Documents\GitHub\GML\obj\Release\GM.View.venda.CDBalcao.resources

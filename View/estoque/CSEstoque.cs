@@ -7,9 +7,13 @@ using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.estoque {
-	public partial class CSEstoque : Form {
+	public partial class CSEstoque : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private Produto produto;
 		private ObjectDao<Produto> pDao = new ObjectDao<Produto>();
@@ -19,6 +23,7 @@ namespace GM.View.estoque {
 		
 		public CSEstoque() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void arranqueFormulario(object sender, EventArgs e) {

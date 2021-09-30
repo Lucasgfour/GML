@@ -5,9 +5,13 @@ using System.Drawing;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
+using MaterialSkin;
+using MaterialSkin.Controls;
 
 namespace GM.View.contas {
-	public partial class CSCredito : Form {
+	public partial class CSCredito : MaterialForm {
+		
+		protected override CreateParams CreateParams { get { const int CS_DROPSHADOW = 0x20000; CreateParams cp = base.CreateParams; cp.ClassStyle |= CS_DROPSHADOW; return cp; } }
 		
 		private ObjectDao<Pessoa> pDao = new ObjectDao<Pessoa>();
 		private DataTable dados;
@@ -15,6 +19,7 @@ namespace GM.View.contas {
 		
 		public CSCredito() {
 			InitializeComponent();
+			MaterialSkinManager.Instance.AddFormToManage(this);
 		}
 		
 		void arranqueFormulario(object sender, EventArgs e) {
