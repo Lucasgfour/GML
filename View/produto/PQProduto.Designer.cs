@@ -30,7 +30,7 @@ namespace GM.View.produto
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PQProduto));
-			this.txtPesquisa = new System.Windows.Forms.TextBox();
+			this.txtPesquisa = new GM.Componentes.MinBox();
 			this.labSede = new ReaLTaiizor.Controls.DungeonLabel();
 			this.btnPesquisar = new Sunny.UI.UISymbolButton();
 			this.listProduto = new System.Windows.Forms.ListView();
@@ -198,6 +198,6 @@ namespace GM.View.produto
 		private System.Windows.Forms.ListView listProduto;
 		private Sunny.UI.UISymbolButton btnPesquisar;
 		private ReaLTaiizor.Controls.DungeonLabel labSede;
-		private System.Windows.Forms.TextBox txtPesquisa;
+		private GM.Componentes.MinBox txtPesquisa;
 	}
 }

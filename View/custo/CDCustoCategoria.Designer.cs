@@ -32,7 +32,7 @@ namespace GM.View.custo
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDCustoCategoria));
 			this.btnCancelar = new Sunny.UI.UISymbolButton();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
-			this.txtNome = new System.Windows.Forms.TextBox();
+			this.txtNome = new GM.Componentes.MinBox();
 			this.labNome = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
@@ -44,10 +44,11 @@ namespace GM.View.custo
 			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(90, 108);
+			this.btnCancelar.Location = new System.Drawing.Point(96, 108);
 			this.btnCancelar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -71,6 +72,7 @@ namespace GM.View.custo
 			this.btnSalvar.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
+			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -83,12 +85,26 @@ namespace GM.View.custo
 			// 
 			// txtNome
 			// 
+			this.txtNome.BackColor = System.Drawing.Color.Transparent;
+			this.txtNome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtNome.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtNome.CustomBGColor = System.Drawing.Color.White;
+			this.txtNome.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtNome.ForeColor = System.Drawing.Color.Black;
 			this.txtNome.Location = new System.Drawing.Point(90, 75);
 			this.txtNome.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
 			this.txtNome.MaxLength = 32;
+			this.txtNome.Multiline = false;
 			this.txtNome.Name = "txtNome";
-			this.txtNome.Size = new System.Drawing.Size(240, 25);
+			this.txtNome.ReadOnly = false;
+			this.txtNome.SelectionStart = 0;
+			this.txtNome.Size = new System.Drawing.Size(240, 28);
+			this.txtNome.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtNome.TabIndex = 1;
+			this.txtNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtNome.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtNome.UseSystemPasswordChar = false;
 			// 
 			// labNome
 			// 
@@ -120,10 +136,9 @@ namespace GM.View.custo
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pressionarEnter);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
 		private System.Windows.Forms.Label labNome;
-		private System.Windows.Forms.TextBox txtNome;
+		private GM.Componentes.MinBox txtNome;
 		private Sunny.UI.UISymbolButton btnSalvar;
 		private Sunny.UI.UISymbolButton btnCancelar;
 	}

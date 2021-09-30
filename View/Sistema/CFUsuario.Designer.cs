@@ -30,14 +30,14 @@ namespace GM.View.Sistema
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CFUsuario));
-			this.txtNome = new System.Windows.Forms.TextBox();
+			this.txtNome = new GM.Componentes.MinBox();
 			this.labNome = new System.Windows.Forms.Label();
 			this.labTitulo = new System.Windows.Forms.Label();
-			this.txtSenha = new System.Windows.Forms.TextBox();
+			this.txtSenha = new GM.Componentes.MinBox();
 			this.labNovaSenha = new System.Windows.Forms.Label();
-			this.txtPin = new System.Windows.Forms.TextBox();
+			this.txtPin = new GM.Componentes.MinBox();
 			this.labNovoPin = new System.Windows.Forms.Label();
-			this.txtSenhaAtual = new System.Windows.Forms.TextBox();
+			this.txtSenhaAtual = new GM.Componentes.MinBox();
 			this.labSenha = new System.Windows.Forms.Label();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
 			this.SuspendLayout();
@@ -187,13 +187,13 @@ namespace GM.View.Sistema
 		}
 		private Sunny.UI.UISymbolButton btnSalvar;
 		private System.Windows.Forms.Label labSenha;
-		private System.Windows.Forms.TextBox txtSenhaAtual;
+		private GM.Componentes.MinBox txtSenhaAtual;
 		private System.Windows.Forms.Label labNovoPin;
-		private System.Windows.Forms.TextBox txtPin;
+		private GM.Componentes.MinBox txtPin;
 		private System.Windows.Forms.Label labNovaSenha;
-		private System.Windows.Forms.TextBox txtSenha;
+		private GM.Componentes.MinBox txtSenha;
 		private System.Windows.Forms.Label labTitulo;
 		private System.Windows.Forms.Label labNome;
-		private System.Windows.Forms.TextBox txtNome;
+		private GM.Componentes.MinBox txtNome;
 	}
 }

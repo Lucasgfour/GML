@@ -86,5 +86,10 @@ namespace GM.View.compra {
 		void duploClique(object sender, MouseEventArgs e) {
 			selecionar();
 		}
+		
+		void TxtPesquisaTextChanged(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }

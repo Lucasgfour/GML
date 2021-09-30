@@ -30,17 +30,17 @@ namespace GM.View.Sistema
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDUsuario));
-			this.txtUsuario = new System.Windows.Forms.TextBox();
+			this.txtUsuario = new GM.Componentes.MinBox();
 			this.labUsuario = new System.Windows.Forms.Label();
 			this.labSenha = new System.Windows.Forms.Label();
 			this.labSenha2 = new System.Windows.Forms.Label();
-			this.txtNome = new System.Windows.Forms.TextBox();
+			this.txtNome = new GM.Componentes.MinBox();
 			this.labNome = new System.Windows.Forms.Label();
-			this.cbxNivel = new System.Windows.Forms.ComboBox();
+			this.cbxNivel = new GM.Componentes.MinComboBox();
 			this.labPermissao = new System.Windows.Forms.Label();
 			this.chkVendedor = new System.Windows.Forms.CheckBox();
 			this.labSede = new System.Windows.Forms.Label();
-			this.cbxSede = new System.Windows.Forms.ComboBox();
+			this.cbxSede = new GM.Componentes.MinComboBox();
 			this.labPin = new System.Windows.Forms.Label();
 			this.labPin2 = new System.Windows.Forms.Label();
 			this.btnCancelar = new Sunny.UI.UISymbolButton();
@@ -293,10 +293,10 @@ namespace GM.View.Sistema
 		private System.Windows.Forms.Label labPermissao;
 		private System.Windows.Forms.ComboBox cbxNivel;
 		private System.Windows.Forms.Label labNome;
-		private System.Windows.Forms.TextBox txtNome;
+		private GM.Componentes.MinBox txtNome;
 		private System.Windows.Forms.Label labSenha2;
 		private System.Windows.Forms.Label labSenha;
 		private System.Windows.Forms.Label labUsuario;
-		private System.Windows.Forms.TextBox txtUsuario;
+		private GM.Componentes.MinBox txtUsuario;
 	}
 }

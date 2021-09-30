@@ -30,18 +30,16 @@ namespace GM.View.produto
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDFamilia));
-			this.txtNome = new System.Windows.Forms.TextBox();
+			this.txtNome = new GM.Componentes.MinBox();
 			this.labNome = new ReaLTaiizor.Controls.DungeonLabel();
-			this.txtDescricao = new System.Windows.Forms.TextBox();
+			this.txtDescricao = new GM.Componentes.MinBox();
 			this.labDescricao = new ReaLTaiizor.Controls.DungeonLabel();
-			this.labTitulo = new ReaLTaiizor.Controls.DungeonLabel();
 			this.btnCancelar = new Sunny.UI.UISymbolButton();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
 			this.SuspendLayout();
 			// 
 			// txtNome
 			// 
-			this.txtNome.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtNome.Location = new System.Drawing.Point(91, 70);
 			this.txtNome.MaxLength = 70;
 			this.txtNome.Name = "txtNome";
@@ -62,7 +60,6 @@ namespace GM.View.produto
 			// 
 			// txtDescricao
 			// 
-			this.txtDescricao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtDescricao.Location = new System.Drawing.Point(91, 96);
 			this.txtDescricao.MaxLength = 200;
 			this.txtDescricao.Multiline = true;
@@ -81,18 +78,6 @@ namespace GM.View.produto
 			this.labDescricao.TabIndex = 21;
 			this.labDescricao.Text = "Descrição :";
 			this.labDescricao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// labTitulo
-			// 
-			this.labTitulo.BackColor = System.Drawing.Color.Transparent;
-			this.labTitulo.Font = new System.Drawing.Font("Segoe UI", 11F);
-			this.labTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labTitulo.Location = new System.Drawing.Point(12, 9);
-			this.labTitulo.Name = "labTitulo";
-			this.labTitulo.Size = new System.Drawing.Size(395, 28);
-			this.labTitulo.TabIndex = 25;
-			this.labTitulo.Text = "Cadastro/Edição de família";
-			this.labTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// btnCancelar
 			// 
@@ -146,7 +131,6 @@ namespace GM.View.produto
 			this.ClientSize = new System.Drawing.Size(380, 221);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnSalvar);
-			this.Controls.Add(this.labTitulo);
 			this.Controls.Add(this.txtNome);
 			this.Controls.Add(this.labNome);
 			this.Controls.Add(this.txtDescricao);
@@ -164,10 +148,9 @@ namespace GM.View.produto
 		}
 		private Sunny.UI.UISymbolButton btnSalvar;
 		private Sunny.UI.UISymbolButton btnCancelar;
-		private ReaLTaiizor.Controls.DungeonLabel labTitulo;
 		private ReaLTaiizor.Controls.DungeonLabel labDescricao;
-		private System.Windows.Forms.TextBox txtDescricao;
+		private GM.Componentes.MinBox txtDescricao;
 		private ReaLTaiizor.Controls.DungeonLabel labNome;
-		private System.Windows.Forms.TextBox txtNome;
+		private GM.Componentes.MinBox txtNome;
 	}
 }

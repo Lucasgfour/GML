@@ -21,15 +21,6 @@ namespace GM.Componentes {
 		
 		public TextBox RT_TB = new TextBox();
 		
-		public event EventHandler TextChanged {
-			add {
-				RT_TB.TextChanged += value;
-			}
-			remove {
-				RT_TB.TextChanged -= value;
-			}
-		}
-		
 		public event KeyEventHandler KeyDown {
 			add {
 				RT_TB.KeyDown += value;
@@ -71,6 +62,16 @@ namespace GM.Componentes {
 		private Color _CustomBGColor = Color.White;
 		
 		private CharacterCasing _CharacterCasing = CharacterCasing.Normal;
+		
+		public CharacterCasing CharacterCasing {
+			get {
+				return this._CharacterCasing;
+			}
+			set {
+				this._CharacterCasing = value;
+				RT_TB.CharacterCasing = value;
+			}
+		}
 		
 		public CharacterCasing CharacterCas {
 			get {
@@ -211,6 +212,16 @@ namespace GM.Componentes {
 			}
 		}
 		
+		public HorizontalAlignment TextAlign {
+			get {
+				return RT_TB.TextAlign;
+			}
+			set {
+				this.RT_TB.TextAlign = value;
+				base.Invalidate();
+			}
+		}
+		
 		
 
 		protected override void OnTextChanged(EventArgs e)
@@ -304,7 +315,7 @@ namespace GM.Componentes {
 			this.P1 = new Pen(this.BorderColor);
 			this.B1 = new SolidBrush(this.CustomBGColor);
 			this.BackColor = Color.Transparent;
-			this.ForeColor = Color.DimGray;
+			this.ForeColor = Color.Black;
 			this.Text = null;
 			this.Font = new Font("Tahoma", 11f);
 			base.Size = new Size(110, 33);
@@ -507,7 +518,7 @@ namespace GM.Componentes {
 			e.Graphics.FillRectangle(linearGradientBrush, base.ClientRectangle);
 			e.Graphics.ResetClip();
 			e.Graphics.DrawPath(new Pen(this._ColorF), graphicsPath);
-			e.Graphics.DrawString(this.Text, this.Font, new SolidBrush(this.ForeColor), new Rectangle(3, 0, base.Width - 20, base.Height), new StringFormat
+			e.Graphics.DrawString(this.Text, new System.Drawing.Font("Calibri", 11F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0))), new SolidBrush(this.ForeColor), new Rectangle(3, 0, base.Width - 20, base.Height), new StringFormat
 			{
 				LineAlignment = StringAlignment.Center,
 				Alignment = StringAlignment.Near

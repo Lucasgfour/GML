@@ -29,10 +29,10 @@ namespace GM.View.venda
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.cbxPagamento = new System.Windows.Forms.ComboBox();
+			this.cbxPagamento = new GM.Componentes.MinComboBox();
 			this.labPagamento = new System.Windows.Forms.Label();
 			this.labZTroco = new System.Windows.Forms.Label();
-			this.txtTroco = new System.Windows.Forms.TextBox();
+			this.txtTroco = new GM.Componentes.MinBox();
 			this.labTroco = new System.Windows.Forms.Label();
 			this.labZTotal = new System.Windows.Forms.Label();
 			this.labTotal = new System.Windows.Forms.Label();
@@ -74,7 +74,6 @@ namespace GM.View.venda
 			// 
 			// txtTroco
 			// 
-			this.txtTroco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtTroco.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtTroco.Location = new System.Drawing.Point(115, 73);
 			this.txtTroco.Name = "txtTroco";
@@ -158,7 +157,7 @@ namespace GM.View.venda
 		private System.Windows.Forms.Label labTotal;
 		private System.Windows.Forms.Label labZTotal;
 		private System.Windows.Forms.Label labTroco;
-		private System.Windows.Forms.TextBox txtTroco;
+		private GM.Componentes.MinBox txtTroco;
 		private System.Windows.Forms.Label labZTroco;
 		private System.Windows.Forms.Label labPagamento;
 		private System.Windows.Forms.ComboBox cbxPagamento;

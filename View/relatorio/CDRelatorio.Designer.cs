@@ -30,25 +30,25 @@ namespace GM.View.relatorio
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDRelatorio));
-			this.txtDescricao = new System.Windows.Forms.TextBox();
+			this.txtDescricao = new GM.Componentes.MinBox();
 			this.labDescricao = new System.Windows.Forms.Label();
-			this.txtObservação = new System.Windows.Forms.TextBox();
+			this.txtObservação = new GM.Componentes.MinBox();
 			this.labObservacao = new System.Windows.Forms.Label();
 			this.gpxComando = new System.Windows.Forms.GroupBox();
-			this.txtComando = new System.Windows.Forms.TextBox();
+			this.txtComando = new GM.Componentes.MinBox();
 			this.gpxParametro = new System.Windows.Forms.GroupBox();
 			this.btnRemover = new Sunny.UI.UISymbolButton();
 			this.btnAdicionar = new Sunny.UI.UISymbolButton();
-			this.cbxTipo = new System.Windows.Forms.ComboBox();
+			this.cbxTipo = new GM.Componentes.MinComboBox();
 			this.labTipo = new System.Windows.Forms.Label();
-			this.txtParametro = new System.Windows.Forms.TextBox();
+			this.txtParametro = new GM.Componentes.MinBox();
 			this.listaParametro = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
 			this.labParametro = new System.Windows.Forms.Label();
 			this.btnCancelar = new Sunny.UI.UISymbolButton();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
-			this.cbxNivel = new System.Windows.Forms.ComboBox();
+			this.cbxNivel = new GM.Componentes.MinComboBox();
 			this.labNivel = new System.Windows.Forms.Label();
 			this.gpxComando.SuspendLayout();
 			this.gpxParametro.SuspendLayout();
@@ -371,14 +371,14 @@ namespace GM.View.relatorio
 		private System.Windows.Forms.ColumnHeader Col02;
 		private System.Windows.Forms.ColumnHeader Col01;
 		private System.Windows.Forms.ListView listaParametro;
-		private System.Windows.Forms.TextBox txtParametro;
+		private GM.Componentes.MinBox txtParametro;
 		private System.Windows.Forms.Label labTipo;
 		private System.Windows.Forms.GroupBox gpxParametro;
-		private System.Windows.Forms.TextBox txtComando;
+		private GM.Componentes.MinBox txtComando;
 		private System.Windows.Forms.GroupBox gpxComando;
 		private System.Windows.Forms.Label labObservacao;
-		private System.Windows.Forms.TextBox txtObservação;
+		private GM.Componentes.MinBox txtObservação;
 		private System.Windows.Forms.Label labDescricao;
-		private System.Windows.Forms.TextBox txtDescricao;
+		private GM.Componentes.MinBox txtDescricao;
 	}
 }

@@ -32,7 +32,7 @@ namespace GM.View.pessoa
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PQPessoa));
 			this.btnSair = new Sunny.UI.UISymbolButton();
 			this.btnSelecionar = new Sunny.UI.UISymbolButton();
-			this.txtPesquisa = new System.Windows.Forms.TextBox();
+			this.txtPesquisa = new GM.Componentes.MinBox();
 			this.labSede = new ReaLTaiizor.Controls.DungeonLabel();
 			this.btnPesquisar = new Sunny.UI.UISymbolButton();
 			this.listPessoa = new System.Windows.Forms.ListView();
@@ -179,7 +179,7 @@ namespace GM.View.pessoa
 		private System.Windows.Forms.ListView listPessoa;
 		private Sunny.UI.UISymbolButton btnPesquisar;
 		private ReaLTaiizor.Controls.DungeonLabel labSede;
-		private System.Windows.Forms.TextBox txtPesquisa;
+		private GM.Componentes.MinBox txtPesquisa;
 		private Sunny.UI.UISymbolButton btnSelecionar;
 		private Sunny.UI.UISymbolButton btnSair;
 	}

@@ -30,26 +30,26 @@ namespace GM.View.compra
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CSCompra));
-			this.txtCodigo = new System.Windows.Forms.TextBox();
+			this.txtCodigo = new GM.Componentes.MinBox();
 			this.labCodigo = new System.Windows.Forms.Label();
-			this.txtFornecedor = new System.Windows.Forms.TextBox();
+			this.txtFornecedor = new GM.Componentes.MinBox();
 			this.labFornecedor = new System.Windows.Forms.Label();
 			this.labSituacao = new System.Windows.Forms.Label();
-			this.cbxSituacao = new System.Windows.Forms.ComboBox();
-			this.txtCondicao = new System.Windows.Forms.TextBox();
+			this.cbxSituacao = new GM.Componentes.MinComboBox();
+			this.txtCondicao = new GM.Componentes.MinBox();
 			this.labCondicao = new System.Windows.Forms.Label();
 			this.labSede = new System.Windows.Forms.Label();
-			this.txtSede = new System.Windows.Forms.TextBox();
+			this.txtSede = new GM.Componentes.MinBox();
 			this.labObservacoes = new System.Windows.Forms.Label();
-			this.txtObservacoes = new System.Windows.Forms.TextBox();
+			this.txtObservacoes = new GM.Componentes.MinBox();
 			this.listaProdutos = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
 			this.Col03 = new System.Windows.Forms.ColumnHeader();
 			this.Col04 = new System.Windows.Forms.ColumnHeader();
-			this.txtValor = new System.Windows.Forms.TextBox();
+			this.txtValor = new GM.Componentes.MinBox();
 			this.labValor = new System.Windows.Forms.Label();
-			this.txtData = new System.Windows.Forms.TextBox();
+			this.txtData = new GM.Componentes.MinBox();
 			this.labData = new System.Windows.Forms.Label();
 			this.btnVoltar = new Sunny.UI.UISymbolButton();
 			this.btnProximo = new Sunny.UI.UISymbolButton();
@@ -63,13 +63,24 @@ namespace GM.View.compra
 			// txtCodigo
 			// 
 			this.txtCodigo.BackColor = System.Drawing.Color.White;
+			this.txtCodigo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtCodigo.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtCodigo.CustomBGColor = System.Drawing.Color.White;
 			this.txtCodigo.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtCodigo.Location = new System.Drawing.Point(108, 118);
+			this.txtCodigo.ForeColor = System.Drawing.Color.Black;
+			this.txtCodigo.Location = new System.Drawing.Point(108, 120);
+			this.txtCodigo.MaxLength = 32767;
+			this.txtCodigo.Multiline = false;
 			this.txtCodigo.Name = "txtCodigo";
 			this.txtCodigo.ReadOnly = true;
-			this.txtCodigo.Size = new System.Drawing.Size(94, 25);
+			this.txtCodigo.SelectionStart = 0;
+			this.txtCodigo.Size = new System.Drawing.Size(94, 28);
+			this.txtCodigo.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtCodigo.TabIndex = 6;
-			this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtCodigo.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtCodigo.UseSystemPasswordChar = false;
 			// 
 			// labCodigo
 			// 
@@ -85,19 +96,30 @@ namespace GM.View.compra
 			// txtFornecedor
 			// 
 			this.txtFornecedor.BackColor = System.Drawing.Color.White;
+			this.txtFornecedor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtFornecedor.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtFornecedor.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtFornecedor.CustomBGColor = System.Drawing.Color.White;
 			this.txtFornecedor.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtFornecedor.Location = new System.Drawing.Point(108, 149);
+			this.txtFornecedor.ForeColor = System.Drawing.Color.Black;
+			this.txtFornecedor.Location = new System.Drawing.Point(108, 154);
+			this.txtFornecedor.MaxLength = 32767;
+			this.txtFornecedor.Multiline = false;
 			this.txtFornecedor.Name = "txtFornecedor";
 			this.txtFornecedor.ReadOnly = true;
-			this.txtFornecedor.Size = new System.Drawing.Size(290, 25);
+			this.txtFornecedor.SelectionStart = 0;
+			this.txtFornecedor.Size = new System.Drawing.Size(290, 28);
+			this.txtFornecedor.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtFornecedor.TabIndex = 8;
-			this.txtFornecedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtFornecedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtFornecedor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtFornecedor.UseSystemPasswordChar = false;
 			// 
 			// labFornecedor
 			// 
 			this.labFornecedor.BackColor = System.Drawing.Color.Transparent;
 			this.labFornecedor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labFornecedor.Location = new System.Drawing.Point(12, 149);
+			this.labFornecedor.Location = new System.Drawing.Point(12, 152);
 			this.labFornecedor.Name = "labFornecedor";
 			this.labFornecedor.Size = new System.Drawing.Size(90, 25);
 			this.labFornecedor.TabIndex = 9;
@@ -108,7 +130,7 @@ namespace GM.View.compra
 			// 
 			this.labSituacao.BackColor = System.Drawing.Color.Transparent;
 			this.labSituacao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSituacao.Location = new System.Drawing.Point(208, 117);
+			this.labSituacao.Location = new System.Drawing.Point(208, 120);
 			this.labSituacao.Name = "labSituacao";
 			this.labSituacao.Size = new System.Drawing.Size(70, 25);
 			this.labSituacao.TabIndex = 10;
@@ -117,34 +139,63 @@ namespace GM.View.compra
 			// 
 			// cbxSituacao
 			// 
+			this.cbxSituacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxSituacao.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxSituacao.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxSituacao.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxSituacao.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxSituacao.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxSituacao.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxSituacao.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxSituacao.ColorH = System.Drawing.Color.White;
+			this.cbxSituacao.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxSituacao.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxSituacao.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxSituacao.DropDownHeight = 100;
 			this.cbxSituacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbxSituacao.Enabled = false;
 			this.cbxSituacao.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.cbxSituacao.ForeColor = System.Drawing.Color.Black;
 			this.cbxSituacao.FormattingEnabled = true;
+			this.cbxSituacao.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxSituacao.IntegralHeight = false;
+			this.cbxSituacao.ItemHeight = 20;
 			this.cbxSituacao.Items.AddRange(new object[] {
 									"NÃO ATENDIDO",
 									"ATENDIDO"});
-			this.cbxSituacao.Location = new System.Drawing.Point(284, 117);
+			this.cbxSituacao.Location = new System.Drawing.Point(284, 119);
 			this.cbxSituacao.Name = "cbxSituacao";
-			this.cbxSituacao.Size = new System.Drawing.Size(136, 25);
+			this.cbxSituacao.Size = new System.Drawing.Size(136, 26);
+			this.cbxSituacao.StartIndex = 0;
 			this.cbxSituacao.TabIndex = 12;
 			// 
 			// txtCondicao
 			// 
 			this.txtCondicao.BackColor = System.Drawing.Color.White;
+			this.txtCondicao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtCondicao.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtCondicao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtCondicao.CustomBGColor = System.Drawing.Color.White;
 			this.txtCondicao.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtCondicao.Location = new System.Drawing.Point(108, 241);
+			this.txtCondicao.ForeColor = System.Drawing.Color.Black;
+			this.txtCondicao.Location = new System.Drawing.Point(108, 247);
+			this.txtCondicao.MaxLength = 32767;
+			this.txtCondicao.Multiline = false;
 			this.txtCondicao.Name = "txtCondicao";
 			this.txtCondicao.ReadOnly = true;
-			this.txtCondicao.Size = new System.Drawing.Size(193, 25);
+			this.txtCondicao.SelectionStart = 0;
+			this.txtCondicao.Size = new System.Drawing.Size(193, 28);
+			this.txtCondicao.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtCondicao.TabIndex = 13;
-			this.txtCondicao.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtCondicao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtCondicao.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtCondicao.UseSystemPasswordChar = false;
 			// 
 			// labCondicao
 			// 
 			this.labCondicao.BackColor = System.Drawing.Color.Transparent;
 			this.labCondicao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labCondicao.Location = new System.Drawing.Point(29, 241);
+			this.labCondicao.Location = new System.Drawing.Point(29, 250);
 			this.labCondicao.Name = "labCondicao";
 			this.labCondicao.Size = new System.Drawing.Size(73, 25);
 			this.labCondicao.TabIndex = 14;
@@ -155,7 +206,7 @@ namespace GM.View.compra
 			// 
 			this.labSede.BackColor = System.Drawing.Color.Transparent;
 			this.labSede.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSede.Location = new System.Drawing.Point(404, 148);
+			this.labSede.Location = new System.Drawing.Point(404, 151);
 			this.labSede.Name = "labSede";
 			this.labSede.Size = new System.Drawing.Size(47, 25);
 			this.labSede.TabIndex = 15;
@@ -165,19 +216,30 @@ namespace GM.View.compra
 			// txtSede
 			// 
 			this.txtSede.BackColor = System.Drawing.Color.White;
+			this.txtSede.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtSede.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtSede.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtSede.CustomBGColor = System.Drawing.Color.White;
 			this.txtSede.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtSede.Location = new System.Drawing.Point(457, 150);
+			this.txtSede.ForeColor = System.Drawing.Color.Black;
+			this.txtSede.Location = new System.Drawing.Point(457, 153);
+			this.txtSede.MaxLength = 32767;
+			this.txtSede.Multiline = false;
 			this.txtSede.Name = "txtSede";
 			this.txtSede.ReadOnly = true;
-			this.txtSede.Size = new System.Drawing.Size(157, 25);
+			this.txtSede.SelectionStart = 0;
+			this.txtSede.Size = new System.Drawing.Size(157, 28);
+			this.txtSede.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtSede.TabIndex = 16;
-			this.txtSede.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtSede.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtSede.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtSede.UseSystemPasswordChar = false;
 			// 
 			// labObservacoes
 			// 
 			this.labObservacoes.BackColor = System.Drawing.Color.Transparent;
 			this.labObservacoes.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labObservacoes.Location = new System.Drawing.Point(-3, 180);
+			this.labObservacoes.Location = new System.Drawing.Point(-3, 183);
 			this.labObservacoes.Name = "labObservacoes";
 			this.labObservacoes.Size = new System.Drawing.Size(105, 25);
 			this.labObservacoes.TabIndex = 17;
@@ -187,14 +249,24 @@ namespace GM.View.compra
 			// txtObservacoes
 			// 
 			this.txtObservacoes.BackColor = System.Drawing.Color.White;
+			this.txtObservacoes.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtObservacoes.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtObservacoes.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtObservacoes.CustomBGColor = System.Drawing.Color.White;
 			this.txtObservacoes.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtObservacoes.Location = new System.Drawing.Point(108, 180);
+			this.txtObservacoes.ForeColor = System.Drawing.Color.Black;
+			this.txtObservacoes.Location = new System.Drawing.Point(108, 187);
+			this.txtObservacoes.MaxLength = 32767;
 			this.txtObservacoes.Multiline = true;
 			this.txtObservacoes.Name = "txtObservacoes";
 			this.txtObservacoes.ReadOnly = true;
+			this.txtObservacoes.SelectionStart = 0;
 			this.txtObservacoes.Size = new System.Drawing.Size(506, 54);
+			this.txtObservacoes.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtObservacoes.TabIndex = 18;
-			this.txtObservacoes.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtObservacoes.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtObservacoes.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtObservacoes.UseSystemPasswordChar = false;
 			// 
 			// listaProdutos
 			// 
@@ -206,9 +278,9 @@ namespace GM.View.compra
 			this.listaProdutos.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.listaProdutos.FullRowSelect = true;
 			this.listaProdutos.GridLines = true;
-			this.listaProdutos.Location = new System.Drawing.Point(12, 272);
+			this.listaProdutos.Location = new System.Drawing.Point(12, 281);
 			this.listaProdutos.Name = "listaProdutos";
-			this.listaProdutos.Size = new System.Drawing.Size(602, 252);
+			this.listaProdutos.Size = new System.Drawing.Size(602, 242);
 			this.listaProdutos.TabIndex = 19;
 			this.listaProdutos.UseCompatibleStateImageBehavior = false;
 			this.listaProdutos.View = System.Windows.Forms.View.Details;
@@ -236,19 +308,30 @@ namespace GM.View.compra
 			// txtValor
 			// 
 			this.txtValor.BackColor = System.Drawing.Color.White;
+			this.txtValor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtValor.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtValor.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtValor.CustomBGColor = System.Drawing.Color.White;
 			this.txtValor.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtValor.Location = new System.Drawing.Point(426, 240);
+			this.txtValor.ForeColor = System.Drawing.Color.Black;
+			this.txtValor.Location = new System.Drawing.Point(426, 247);
+			this.txtValor.MaxLength = 32767;
+			this.txtValor.Multiline = false;
 			this.txtValor.Name = "txtValor";
 			this.txtValor.ReadOnly = true;
-			this.txtValor.Size = new System.Drawing.Size(188, 25);
+			this.txtValor.SelectionStart = 0;
+			this.txtValor.Size = new System.Drawing.Size(188, 28);
+			this.txtValor.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtValor.TabIndex = 21;
-			this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtValor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtValor.UseSystemPasswordChar = false;
 			// 
 			// labValor
 			// 
 			this.labValor.BackColor = System.Drawing.Color.Transparent;
 			this.labValor.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labValor.Location = new System.Drawing.Point(302, 240);
+			this.labValor.Location = new System.Drawing.Point(302, 247);
 			this.labValor.Name = "labValor";
 			this.labValor.Size = new System.Drawing.Size(118, 25);
 			this.labValor.TabIndex = 20;
@@ -258,13 +341,24 @@ namespace GM.View.compra
 			// txtData
 			// 
 			this.txtData.BackColor = System.Drawing.Color.White;
+			this.txtData.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtData.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtData.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtData.CustomBGColor = System.Drawing.Color.White;
 			this.txtData.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.txtData.ForeColor = System.Drawing.Color.Black;
 			this.txtData.Location = new System.Drawing.Point(479, 119);
+			this.txtData.MaxLength = 32767;
+			this.txtData.Multiline = false;
 			this.txtData.Name = "txtData";
 			this.txtData.ReadOnly = true;
-			this.txtData.Size = new System.Drawing.Size(135, 25);
+			this.txtData.SelectionStart = 0;
+			this.txtData.Size = new System.Drawing.Size(135, 28);
+			this.txtData.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtData.TabIndex = 23;
-			this.txtData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtData.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtData.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtData.UseSystemPasswordChar = false;
 			// 
 			// labData
 			// 
@@ -421,7 +515,6 @@ namespace GM.View.compra
 			this.Text = "Consulta compra";
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
 		private Sunny.UI.UISymbolButton btnEfetivar;
 		private Sunny.UI.UISymbolButton btnPesquisar;
@@ -435,21 +528,21 @@ namespace GM.View.compra
 		private System.Windows.Forms.ColumnHeader Col03;
 		private System.Windows.Forms.ColumnHeader Col02;
 		private System.Windows.Forms.ColumnHeader Col01;
-		private System.Windows.Forms.TextBox txtData;
-		private System.Windows.Forms.TextBox txtValor;
+		private GM.Componentes.MinBox txtData;
+		private GM.Componentes.MinBox txtValor;
 		private System.Windows.Forms.ListView listaProdutos;
-		private System.Windows.Forms.TextBox txtObservacoes;
+		private GM.Componentes.MinBox txtObservacoes;
 		private System.Windows.Forms.Label labObservacoes;
-		private System.Windows.Forms.TextBox txtSede;
+		private GM.Componentes.MinBox txtSede;
 		private System.Windows.Forms.Label labSede;
 		private System.Windows.Forms.Label labCondicao;
-		private System.Windows.Forms.TextBox txtCondicao;
-		private System.Windows.Forms.ComboBox cbxSituacao;
+		private GM.Componentes.MinBox txtCondicao;
+		private GM.Componentes.MinComboBox cbxSituacao;
 		private System.Windows.Forms.Label labValor;
 		private System.Windows.Forms.Label labSituacao;
 		private System.Windows.Forms.Label labFornecedor;
-		private System.Windows.Forms.TextBox txtFornecedor;
+		private GM.Componentes.MinBox txtFornecedor;
 		private System.Windows.Forms.Label labCodigo;
-		private System.Windows.Forms.TextBox txtCodigo;
+		private GM.Componentes.MinBox txtCodigo;
 	}
 }

@@ -5,6 +5,7 @@ using System.Data;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using GM.Componentes;
 using GM.Controller;
 using GM.Model;
 using MaterialSkin;
@@ -119,11 +120,11 @@ namespace GM.View.estoque {
 		}
 		
 		void maskData(object sender, EventArgs e) {
-			Ferramentas.maskData((TextBox) sender);
+			Ferramentas.maskData((MinBox) sender);
 		}
 		
 		void maskDataLeave(object sender, EventArgs e) {
-			TextBox txt = (TextBox) sender;
+			MinBox txt = (MinBox) sender;
 			try {
 				DateTime.Parse(txt.Text);
 			} catch (Exception) {

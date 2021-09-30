@@ -30,7 +30,7 @@ namespace GM.View.relatorio
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DGParametro));
-			this.txtParametro = new System.Windows.Forms.TextBox();
+			this.txtParametro = new GM.Componentes.MinBox();
 			this.labParametro = new System.Windows.Forms.Label();
 			this.labTitulo = new System.Windows.Forms.Label();
 			this.btnOK = new Sunny.UI.UISymbolButton();
@@ -112,6 +112,6 @@ namespace GM.View.relatorio
 		private Sunny.UI.UISymbolButton btnOK;
 		private System.Windows.Forms.Label labTitulo;
 		private System.Windows.Forms.Label labParametro;
-		private System.Windows.Forms.TextBox txtParametro;
+		private GM.Componentes.MinBox txtParametro;
 	}
 }

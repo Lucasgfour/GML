@@ -30,7 +30,7 @@ namespace GM.View.relatorio
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GRGrafico));
-			this.cbxTipo = new System.Windows.Forms.ComboBox();
+			this.cbxTipo = new GM.Componentes.MinComboBox();
 			this.labTipo = new System.Windows.Forms.Label();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
 			this.SuspendLayout();

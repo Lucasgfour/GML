@@ -30,28 +30,26 @@ namespace GM.View.produto
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDProduto));
-			this.txtCodigo = new System.Windows.Forms.TextBox();
+			this.txtCodigo = new GM.Componentes.MinBox();
 			this.labCodigo = new ReaLTaiizor.Controls.DungeonLabel();
 			this.btnCancelar = new Sunny.UI.UISymbolButton();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
-			this.cbxFamilia = new System.Windows.Forms.ComboBox();
+			this.cbxFamilia = new GM.Componentes.MinComboBox();
 			this.labFamilia = new ReaLTaiizor.Controls.DungeonLabel();
-			this.txtValor = new System.Windows.Forms.TextBox();
+			this.txtValor = new GM.Componentes.MinBox();
 			this.labValor = new ReaLTaiizor.Controls.DungeonLabel();
-			this.txtDescricao = new System.Windows.Forms.TextBox();
+			this.txtDescricao = new GM.Componentes.MinBox();
 			this.labDescricao = new ReaLTaiizor.Controls.DungeonLabel();
-			this.labTitulo = new ReaLTaiizor.Controls.DungeonLabel();
-			this.cbxSituacao = new System.Windows.Forms.ComboBox();
+			this.cbxSituacao = new GM.Componentes.MinComboBox();
 			this.labSituacao = new ReaLTaiizor.Controls.DungeonLabel();
-			this.txtUnidade = new System.Windows.Forms.TextBox();
+			this.txtUnidade = new GM.Componentes.MinBox();
 			this.labUnidade = new ReaLTaiizor.Controls.DungeonLabel();
-			this.txtCodBarra = new System.Windows.Forms.TextBox();
+			this.txtCodBarra = new GM.Componentes.MinBox();
 			this.labCodBarra = new ReaLTaiizor.Controls.DungeonLabel();
 			this.SuspendLayout();
 			// 
 			// txtCodigo
 			// 
-			this.txtCodigo.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
 			this.txtCodigo.Location = new System.Drawing.Point(131, 81);
 			this.txtCodigo.MaxLength = 20;
@@ -118,11 +116,30 @@ namespace GM.View.produto
 			// 
 			// cbxFamilia
 			// 
+			this.cbxFamilia.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxFamilia.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxFamilia.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxFamilia.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxFamilia.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxFamilia.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxFamilia.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxFamilia.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxFamilia.ColorH = System.Drawing.Color.White;
+			this.cbxFamilia.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxFamilia.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxFamilia.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxFamilia.DropDownHeight = 100;
 			this.cbxFamilia.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbxFamilia.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.cbxFamilia.ForeColor = System.Drawing.Color.Black;
 			this.cbxFamilia.FormattingEnabled = true;
+			this.cbxFamilia.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxFamilia.IntegralHeight = false;
+			this.cbxFamilia.ItemHeight = 20;
 			this.cbxFamilia.Location = new System.Drawing.Point(131, 141);
 			this.cbxFamilia.Name = "cbxFamilia";
-			this.cbxFamilia.Size = new System.Drawing.Size(224, 23);
+			this.cbxFamilia.Size = new System.Drawing.Size(224, 26);
+			this.cbxFamilia.StartIndex = 0;
 			this.cbxFamilia.TabIndex = 2;
 			// 
 			// labFamilia
@@ -139,7 +156,6 @@ namespace GM.View.produto
 			// 
 			// txtValor
 			// 
-			this.txtValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtValor.Location = new System.Drawing.Point(131, 203);
 			this.txtValor.MaxLength = 15;
 			this.txtValor.Name = "txtValor";
@@ -161,7 +177,6 @@ namespace GM.View.produto
 			// 
 			// txtDescricao
 			// 
-			this.txtDescricao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtDescricao.Location = new System.Drawing.Point(131, 111);
 			this.txtDescricao.MaxLength = 100;
 			this.txtDescricao.Name = "txtDescricao";
@@ -180,28 +195,35 @@ namespace GM.View.produto
 			this.labDescricao.Text = "Descrição :";
 			this.labDescricao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
-			// labTitulo
-			// 
-			this.labTitulo.BackColor = System.Drawing.Color.Transparent;
-			this.labTitulo.Font = new System.Drawing.Font("Segoe UI", 11F);
-			this.labTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labTitulo.Location = new System.Drawing.Point(14, 10);
-			this.labTitulo.Name = "labTitulo";
-			this.labTitulo.Size = new System.Drawing.Size(440, 32);
-			this.labTitulo.TabIndex = 23;
-			this.labTitulo.Text = "Cadastro / Edição de Produto";
-			this.labTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
 			// cbxSituacao
 			// 
+			this.cbxSituacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxSituacao.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxSituacao.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxSituacao.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxSituacao.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxSituacao.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxSituacao.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxSituacao.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxSituacao.ColorH = System.Drawing.Color.White;
+			this.cbxSituacao.ColorI = System.Drawing.Color.Transparent;
+			this.cbxSituacao.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxSituacao.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxSituacao.DropDownHeight = 100;
 			this.cbxSituacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbxSituacao.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.cbxSituacao.ForeColor = System.Drawing.Color.Black;
 			this.cbxSituacao.FormattingEnabled = true;
+			this.cbxSituacao.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxSituacao.IntegralHeight = false;
+			this.cbxSituacao.ItemHeight = 20;
 			this.cbxSituacao.Items.AddRange(new object[] {
 									"SUSPENSO",
 									"ATIVO"});
 			this.cbxSituacao.Location = new System.Drawing.Point(244, 172);
 			this.cbxSituacao.Name = "cbxSituacao";
-			this.cbxSituacao.Size = new System.Drawing.Size(111, 23);
+			this.cbxSituacao.Size = new System.Drawing.Size(111, 26);
+			this.cbxSituacao.StartIndex = 0;
 			this.cbxSituacao.TabIndex = 4;
 			// 
 			// labSituacao
@@ -218,7 +240,6 @@ namespace GM.View.produto
 			// 
 			// txtUnidade
 			// 
-			this.txtUnidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtUnidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Upper;
 			this.txtUnidade.Location = new System.Drawing.Point(131, 172);
 			this.txtUnidade.MaxLength = 2;
@@ -240,7 +261,6 @@ namespace GM.View.produto
 			// 
 			// txtCodBarra
 			// 
-			this.txtCodBarra.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtCodBarra.Location = new System.Drawing.Point(131, 233);
 			this.txtCodBarra.MaxLength = 200;
 			this.txtCodBarra.Multiline = true;
@@ -279,7 +299,6 @@ namespace GM.View.produto
 			this.Controls.Add(this.labValor);
 			this.Controls.Add(this.txtDescricao);
 			this.Controls.Add(this.labDescricao);
-			this.Controls.Add(this.labTitulo);
 			this.Controls.Add(this.cbxSituacao);
 			this.Controls.Add(this.labSituacao);
 			this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
@@ -295,21 +314,20 @@ namespace GM.View.produto
 			this.PerformLayout();
 		}
 		private ReaLTaiizor.Controls.DungeonLabel labCodBarra;
-		private System.Windows.Forms.TextBox txtCodBarra;
+		private GM.Componentes.MinBox txtCodBarra;
 		private ReaLTaiizor.Controls.DungeonLabel labUnidade;
-		private System.Windows.Forms.TextBox txtUnidade;
+		private GM.Componentes.MinBox txtUnidade;
 		private ReaLTaiizor.Controls.DungeonLabel labSituacao;
-		private System.Windows.Forms.ComboBox cbxSituacao;
-		private ReaLTaiizor.Controls.DungeonLabel labTitulo;
+		private GM.Componentes.MinComboBox cbxSituacao;
 		private ReaLTaiizor.Controls.DungeonLabel labDescricao;
-		private System.Windows.Forms.TextBox txtDescricao;
+		private GM.Componentes.MinBox txtDescricao;
 		private ReaLTaiizor.Controls.DungeonLabel labValor;
-		private System.Windows.Forms.TextBox txtValor;
+		private GM.Componentes.MinBox txtValor;
 		private ReaLTaiizor.Controls.DungeonLabel labFamilia;
-		private System.Windows.Forms.ComboBox cbxFamilia;
+		private GM.Componentes.MinComboBox cbxFamilia;
 		private Sunny.UI.UISymbolButton btnSalvar;
 		private Sunny.UI.UISymbolButton btnCancelar;
 		private ReaLTaiizor.Controls.DungeonLabel labCodigo;
-		private System.Windows.Forms.TextBox txtCodigo;
+		private GM.Componentes.MinBox txtCodigo;
 	}
 }

@@ -30,12 +30,12 @@ namespace GM.View.Sistema
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDTela));
-			this.txtTela = new System.Windows.Forms.TextBox();
+			this.txtTela = new GM.Componentes.MinBox();
 			this.labTela = new System.Windows.Forms.Label();
 			this.labSituacao = new System.Windows.Forms.Label();
-			this.cbxSituacao = new System.Windows.Forms.ComboBox();
+			this.cbxSituacao = new GM.Componentes.MinComboBox();
 			this.labPermissao = new System.Windows.Forms.Label();
-			this.cbxNivel = new System.Windows.Forms.ComboBox();
+			this.cbxNivel = new GM.Componentes.MinComboBox();
 			this.btnCancelar = new Sunny.UI.UISymbolButton();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
 			this.SuspendLayout();
@@ -193,6 +193,6 @@ namespace GM.View.Sistema
 		private System.Windows.Forms.ComboBox cbxSituacao;
 		private System.Windows.Forms.Label labSituacao;
 		private System.Windows.Forms.Label labTela;
-		private System.Windows.Forms.TextBox txtTela;
+		private GM.Componentes.MinBox txtTela;
 	}
 }

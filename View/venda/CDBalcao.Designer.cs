@@ -40,8 +40,8 @@ namespace GM.View.venda
 			this.labValor = new System.Windows.Forms.Label();
 			this.labUnidade = new System.Windows.Forms.Label();
 			this.label4 = new System.Windows.Forms.Label();
-			this.txtPreco = new System.Windows.Forms.TextBox();
-			this.txtQuantidade = new System.Windows.Forms.TextBox();
+			this.txtPreco = new GM.Componentes.MinBox();
+			this.txtQuantidade = new GM.Componentes.MinBox();
 			this.labPreco = new System.Windows.Forms.Label();
 			this.labQuantidade = new System.Windows.Forms.Label();
 			this.cbxProduto = new System.Windows.Forms.ComboBox();
@@ -176,7 +176,6 @@ namespace GM.View.venda
 			// 
 			// txtPreco
 			// 
-			this.txtPreco.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtPreco.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtPreco.Location = new System.Drawing.Point(87, 79);
 			this.txtPreco.Name = "txtPreco";
@@ -186,7 +185,6 @@ namespace GM.View.venda
 			// 
 			// txtQuantidade
 			// 
-			this.txtQuantidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtQuantidade.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtQuantidade.Location = new System.Drawing.Point(87, 46);
 			this.txtQuantidade.Name = "txtQuantidade";
@@ -392,8 +390,8 @@ namespace GM.View.venda
 		private System.Windows.Forms.Label labVendedor;
 		private System.Windows.Forms.ComboBox cbxVendedor;
 		private System.Windows.Forms.Label label4;
-		private System.Windows.Forms.TextBox txtQuantidade;
-		private System.Windows.Forms.TextBox txtPreco;
+		private GM.Componentes.MinBox txtQuantidade;
+		private GM.Componentes.MinBox txtPreco;
 		private System.Windows.Forms.ComboBox cbxProdutoCodigo;
 		private System.Windows.Forms.ComboBox cbxProduto;
 		private System.Windows.Forms.Label labQuantidade;

@@ -31,8 +31,8 @@ namespace GM.View.contas
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CSCredito));
 			this.btnAbrir = new Sunny.UI.UISymbolButton();
-			this.txtFornecedor = new System.Windows.Forms.TextBox();
-			this.txtCodigo = new System.Windows.Forms.TextBox();
+			this.txtFornecedor = new GM.Componentes.MinBox();
+			this.txtCodigo = new GM.Componentes.MinBox();
 			this.labProduto = new System.Windows.Forms.Label();
 			this.listaMovimento = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
@@ -45,11 +45,11 @@ namespace GM.View.contas
 			// 
 			this.btnAbrir.Cursor = System.Windows.Forms.Cursors.Hand;
 			this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnAbrir.Location = new System.Drawing.Point(187, 70);
+			this.btnAbrir.Location = new System.Drawing.Point(193, 71);
 			this.btnAbrir.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnAbrir.Name = "btnAbrir";
 			this.btnAbrir.Radius = 0;
-			this.btnAbrir.Size = new System.Drawing.Size(48, 23);
+			this.btnAbrir.Size = new System.Drawing.Size(48, 27);
 			this.btnAbrir.Symbol = 61442;
 			this.btnAbrir.TabIndex = 36;
 			this.btnAbrir.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 10F);
@@ -58,24 +58,48 @@ namespace GM.View.contas
 			// txtFornecedor
 			// 
 			this.txtFornecedor.BackColor = System.Drawing.SystemColors.ButtonHighlight;
-			this.txtFornecedor.Location = new System.Drawing.Point(241, 70);
+			this.txtFornecedor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtFornecedor.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtFornecedor.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtFornecedor.CustomBGColor = System.Drawing.Color.White;
+			this.txtFornecedor.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtFornecedor.ForeColor = System.Drawing.Color.Black;
+			this.txtFornecedor.Location = new System.Drawing.Point(247, 70);
 			this.txtFornecedor.MaxLength = 50;
+			this.txtFornecedor.Multiline = false;
 			this.txtFornecedor.Name = "txtFornecedor";
 			this.txtFornecedor.ReadOnly = true;
-			this.txtFornecedor.Size = new System.Drawing.Size(261, 23);
+			this.txtFornecedor.SelectionStart = 0;
+			this.txtFornecedor.Size = new System.Drawing.Size(255, 28);
+			this.txtFornecedor.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtFornecedor.TabIndex = 35;
-			this.txtFornecedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtFornecedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtFornecedor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtFornecedor.UseSystemPasswordChar = false;
 			// 
 			// txtCodigo
 			// 
+			this.txtCodigo.BackColor = System.Drawing.Color.Transparent;
+			this.txtCodigo.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtCodigo.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtCodigo.CustomBGColor = System.Drawing.Color.White;
+			this.txtCodigo.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtCodigo.ForeColor = System.Drawing.Color.Black;
 			this.txtCodigo.Location = new System.Drawing.Point(135, 70);
 			this.txtCodigo.MaxLength = 50;
+			this.txtCodigo.Multiline = false;
 			this.txtCodigo.Name = "txtCodigo";
-			this.txtCodigo.Size = new System.Drawing.Size(52, 23);
+			this.txtCodigo.ReadOnly = false;
+			this.txtCodigo.SelectionStart = 0;
+			this.txtCodigo.Size = new System.Drawing.Size(52, 28);
+			this.txtCodigo.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtCodigo.TabIndex = 33;
-			this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.txtCodigo.TextChanged += new System.EventHandler(this.maskNumber);
+			this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtCodigo.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtCodigo.UseSystemPasswordChar = false;
 			this.txtCodigo.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.duploClique);
+			this.txtCodigo.TextChanged += new System.EventHandler(this.maskNumber);
 			// 
 			// labProduto
 			// 
@@ -96,10 +120,10 @@ namespace GM.View.contas
 									this.Col04});
 			this.listaMovimento.FullRowSelect = true;
 			this.listaMovimento.GridLines = true;
-			this.listaMovimento.Location = new System.Drawing.Point(12, 100);
+			this.listaMovimento.Location = new System.Drawing.Point(12, 104);
 			this.listaMovimento.MultiSelect = false;
 			this.listaMovimento.Name = "listaMovimento";
-			this.listaMovimento.Size = new System.Drawing.Size(490, 367);
+			this.listaMovimento.Size = new System.Drawing.Size(490, 363);
 			this.listaMovimento.TabIndex = 37;
 			this.listaMovimento.UseCompatibleStateImageBehavior = false;
 			this.listaMovimento.View = System.Windows.Forms.View.Details;
@@ -143,7 +167,6 @@ namespace GM.View.contas
 			this.Text = "Crédito Cliente/Fornecedores";
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
 		private System.Windows.Forms.ColumnHeader Col03;
 		private System.Windows.Forms.ColumnHeader Col04;
@@ -151,8 +174,8 @@ namespace GM.View.contas
 		private System.Windows.Forms.ColumnHeader Col01;
 		private System.Windows.Forms.ListView listaMovimento;
 		private System.Windows.Forms.Label labProduto;
-		private System.Windows.Forms.TextBox txtCodigo;
-		private System.Windows.Forms.TextBox txtFornecedor;
+		private GM.Componentes.MinBox txtCodigo;
+		private GM.Componentes.MinBox txtFornecedor;
 		private Sunny.UI.UISymbolButton btnAbrir;
 	}
 }

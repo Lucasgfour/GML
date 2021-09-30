@@ -31,15 +31,15 @@ namespace GM.View.compra
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDCompra));
 			this.areaCabecalho = new System.Windows.Forms.GroupBox();
-			this.cbxLoja = new System.Windows.Forms.ComboBox();
+			this.cbxLoja = new GM.Componentes.MinComboBox();
 			this.labLoja = new System.Windows.Forms.Label();
-			this.txtDataCompra = new System.Windows.Forms.TextBox();
+			this.txtDataCompra = new GM.Componentes.MinBox();
 			this.labDataCompra = new System.Windows.Forms.Label();
-			this.txtNomeFornecedor = new System.Windows.Forms.TextBox();
-			this.txtCodigoFornecedor = new System.Windows.Forms.TextBox();
+			this.txtNomeFornecedor = new GM.Componentes.MinBox();
+			this.txtCodigoFornecedor = new GM.Componentes.MinBox();
 			this.labFornecedor = new System.Windows.Forms.Label();
 			this.areaObservacoes = new System.Windows.Forms.GroupBox();
-			this.txtObservacao = new System.Windows.Forms.TextBox();
+			this.txtObservacao = new GM.Componentes.MinBox();
 			this.areaProdutos = new System.Windows.Forms.GroupBox();
 			this.btnClearProduto = new Sunny.UI.UISymbolButton();
 			this.btnDelProduto = new Sunny.UI.UISymbolButton();
@@ -49,19 +49,19 @@ namespace GM.View.compra
 			this.PCol3 = new System.Windows.Forms.ColumnHeader();
 			this.PCol4 = new System.Windows.Forms.ColumnHeader();
 			this.btnAddProduto = new Sunny.UI.UISymbolButton();
-			this.txtPreco = new System.Windows.Forms.TextBox();
+			this.txtPreco = new GM.Componentes.MinBox();
 			this.labPreco = new System.Windows.Forms.Label();
-			this.txtQuantidade = new System.Windows.Forms.TextBox();
+			this.txtQuantidade = new GM.Componentes.MinBox();
 			this.labQuantidade = new System.Windows.Forms.Label();
 			this.txtProduto = new System.Windows.Forms.ComboBox();
 			this.labProduto = new System.Windows.Forms.Label();
 			this.areaConclusao = new System.Windows.Forms.GroupBox();
 			this.btnCalculo = new Sunny.UI.UISymbolButton();
-			this.cbxCondicao = new System.Windows.Forms.ComboBox();
+			this.cbxCondicao = new GM.Componentes.MinComboBox();
 			this.labPagamento = new System.Windows.Forms.Label();
 			this.btnCancelar = new Sunny.UI.UISymbolButton();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
-			this.txtValorTotal = new System.Windows.Forms.TextBox();
+			this.txtValorTotal = new GM.Componentes.MinBox();
 			this.labValorTotal = new System.Windows.Forms.Label();
 			this.areaCabecalho.SuspendLayout();
 			this.areaObservacoes.SuspendLayout();
@@ -71,7 +71,7 @@ namespace GM.View.compra
 			// 
 			// areaCabecalho
 			// 
-			this.areaCabecalho.BackColor = System.Drawing.Color.Transparent;
+			this.areaCabecalho.BackColor = System.Drawing.Color.White;
 			this.areaCabecalho.Controls.Add(this.cbxLoja);
 			this.areaCabecalho.Controls.Add(this.labLoja);
 			this.areaCabecalho.Controls.Add(this.txtDataCompra);
@@ -88,11 +88,30 @@ namespace GM.View.compra
 			// 
 			// cbxLoja
 			// 
+			this.cbxLoja.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxLoja.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxLoja.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxLoja.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxLoja.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxLoja.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxLoja.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxLoja.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxLoja.ColorH = System.Drawing.Color.White;
+			this.cbxLoja.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxLoja.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxLoja.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxLoja.DropDownHeight = 100;
 			this.cbxLoja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbxLoja.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.cbxLoja.ForeColor = System.Drawing.Color.Black;
 			this.cbxLoja.FormattingEnabled = true;
-			this.cbxLoja.Location = new System.Drawing.Point(343, 18);
+			this.cbxLoja.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxLoja.IntegralHeight = false;
+			this.cbxLoja.ItemHeight = 20;
+			this.cbxLoja.Location = new System.Drawing.Point(343, 21);
 			this.cbxLoja.Name = "cbxLoja";
-			this.cbxLoja.Size = new System.Drawing.Size(180, 24);
+			this.cbxLoja.Size = new System.Drawing.Size(180, 26);
+			this.cbxLoja.StartIndex = 0;
 			this.cbxLoja.TabIndex = 1;
 			// 
 			// labLoja
@@ -106,11 +125,25 @@ namespace GM.View.compra
 			// 
 			// txtDataCompra
 			// 
+			this.txtDataCompra.BackColor = System.Drawing.Color.Transparent;
+			this.txtDataCompra.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtDataCompra.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtDataCompra.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtDataCompra.CustomBGColor = System.Drawing.Color.White;
+			this.txtDataCompra.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtDataCompra.ForeColor = System.Drawing.Color.Black;
 			this.txtDataCompra.Location = new System.Drawing.Point(145, 19);
+			this.txtDataCompra.MaxLength = 10;
+			this.txtDataCompra.Multiline = false;
 			this.txtDataCompra.Name = "txtDataCompra";
-			this.txtDataCompra.Size = new System.Drawing.Size(129, 23);
+			this.txtDataCompra.ReadOnly = false;
+			this.txtDataCompra.SelectionStart = 0;
+			this.txtDataCompra.Size = new System.Drawing.Size(129, 28);
+			this.txtDataCompra.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtDataCompra.TabIndex = 0;
-			this.txtDataCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtDataCompra.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtDataCompra.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtDataCompra.UseSystemPasswordChar = false;
 			this.txtDataCompra.TextChanged += new System.EventHandler(this.maskData);
 			this.txtDataCompra.Leave += new System.EventHandler(this.maskDataAux);
 			// 
@@ -125,23 +158,51 @@ namespace GM.View.compra
 			// 
 			// txtNomeFornecedor
 			// 
+			this.txtNomeFornecedor.BackColor = System.Drawing.Color.Transparent;
+			this.txtNomeFornecedor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtNomeFornecedor.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtNomeFornecedor.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtNomeFornecedor.CustomBGColor = System.Drawing.Color.White;
+			this.txtNomeFornecedor.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtNomeFornecedor.ForeColor = System.Drawing.Color.Black;
 			this.txtNomeFornecedor.Location = new System.Drawing.Point(226, 48);
+			this.txtNomeFornecedor.MaxLength = 32767;
+			this.txtNomeFornecedor.Multiline = false;
 			this.txtNomeFornecedor.Name = "txtNomeFornecedor";
 			this.txtNomeFornecedor.ReadOnly = true;
-			this.txtNomeFornecedor.Size = new System.Drawing.Size(297, 23);
+			this.txtNomeFornecedor.SelectionStart = 0;
+			this.txtNomeFornecedor.Size = new System.Drawing.Size(297, 28);
+			this.txtNomeFornecedor.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtNomeFornecedor.TabIndex = 2;
 			this.txtNomeFornecedor.TabStop = false;
+			this.txtNomeFornecedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtNomeFornecedor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtNomeFornecedor.UseSystemPasswordChar = false;
 			// 
 			// txtCodigoFornecedor
 			// 
+			this.txtCodigoFornecedor.BackColor = System.Drawing.Color.Transparent;
+			this.txtCodigoFornecedor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtCodigoFornecedor.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtCodigoFornecedor.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtCodigoFornecedor.CustomBGColor = System.Drawing.Color.White;
+			this.txtCodigoFornecedor.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtCodigoFornecedor.ForeColor = System.Drawing.Color.Black;
 			this.txtCodigoFornecedor.Location = new System.Drawing.Point(145, 48);
+			this.txtCodigoFornecedor.MaxLength = 32767;
+			this.txtCodigoFornecedor.Multiline = false;
 			this.txtCodigoFornecedor.Name = "txtCodigoFornecedor";
-			this.txtCodigoFornecedor.Size = new System.Drawing.Size(75, 23);
+			this.txtCodigoFornecedor.ReadOnly = false;
+			this.txtCodigoFornecedor.SelectionStart = 0;
+			this.txtCodigoFornecedor.Size = new System.Drawing.Size(75, 28);
+			this.txtCodigoFornecedor.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtCodigoFornecedor.TabIndex = 2;
-			this.txtCodigoFornecedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtCodigoFornecedor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtCodigoFornecedor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtCodigoFornecedor.UseSystemPasswordChar = false;
+			this.txtCodigoFornecedor.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.buscarCliente);
 			this.txtCodigoFornecedor.TextChanged += new System.EventHandler(this.maskNumber);
 			this.txtCodigoFornecedor.Leave += new System.EventHandler(this.showCliente);
-			this.txtCodigoFornecedor.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.buscarCliente);
 			// 
 			// labFornecedor
 			// 
@@ -165,13 +226,26 @@ namespace GM.View.compra
 			// 
 			// txtObservacao
 			// 
+			this.txtObservacao.BackColor = System.Drawing.Color.Transparent;
+			this.txtObservacao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtObservacao.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtObservacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtObservacao.CustomBGColor = System.Drawing.Color.White;
 			this.txtObservacao.Dock = System.Windows.Forms.DockStyle.Fill;
+			this.txtObservacao.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtObservacao.ForeColor = System.Drawing.Color.Black;
 			this.txtObservacao.Location = new System.Drawing.Point(3, 19);
 			this.txtObservacao.MaxLength = 200;
 			this.txtObservacao.Multiline = true;
 			this.txtObservacao.Name = "txtObservacao";
+			this.txtObservacao.ReadOnly = false;
+			this.txtObservacao.SelectionStart = 0;
 			this.txtObservacao.Size = new System.Drawing.Size(297, 60);
+			this.txtObservacao.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtObservacao.TabIndex = 3;
+			this.txtObservacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtObservacao.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtObservacao.UseSystemPasswordChar = false;
 			// 
 			// areaProdutos
 			// 
@@ -289,11 +363,13 @@ namespace GM.View.compra
 			this.btnAddProduto.Location = new System.Drawing.Point(773, 19);
 			this.btnAddProduto.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnAddProduto.Name = "btnAddProduto";
+			this.btnAddProduto.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnAddProduto.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnAddProduto.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnAddProduto.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnAddProduto.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnAddProduto.Size = new System.Drawing.Size(59, 23);
+			this.btnAddProduto.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
+			this.btnAddProduto.Size = new System.Drawing.Size(59, 28);
 			this.btnAddProduto.Style = Sunny.UI.UIStyle.Green;
 			this.btnAddProduto.Symbol = 61543;
 			this.btnAddProduto.SymbolSize = 0;
@@ -303,12 +379,27 @@ namespace GM.View.compra
 			// 
 			// txtPreco
 			// 
+			this.txtPreco.BackColor = System.Drawing.Color.Transparent;
+			this.txtPreco.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtPreco.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPreco.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPreco.CustomBGColor = System.Drawing.Color.White;
+			this.txtPreco.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtPreco.ForeColor = System.Drawing.Color.Black;
 			this.txtPreco.Location = new System.Drawing.Point(695, 19);
+			this.txtPreco.MaxLength = 32767;
+			this.txtPreco.Multiline = false;
 			this.txtPreco.Name = "txtPreco";
-			this.txtPreco.Size = new System.Drawing.Size(72, 23);
+			this.txtPreco.ReadOnly = false;
+			this.txtPreco.SelectionStart = 0;
+			this.txtPreco.Size = new System.Drawing.Size(72, 28);
+			this.txtPreco.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtPreco.TabIndex = 6;
-			this.txtPreco.TextChanged += new System.EventHandler(this.maskfloat);
+			this.txtPreco.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPreco.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPreco.UseSystemPasswordChar = false;
 			this.txtPreco.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pressEnterProduto);
+			this.txtPreco.TextChanged += new System.EventHandler(this.maskfloat);
 			// 
 			// labPreco
 			// 
@@ -321,13 +412,27 @@ namespace GM.View.compra
 			// 
 			// txtQuantidade
 			// 
+			this.txtQuantidade.BackColor = System.Drawing.Color.Transparent;
+			this.txtQuantidade.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtQuantidade.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtQuantidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtQuantidade.CustomBGColor = System.Drawing.Color.White;
+			this.txtQuantidade.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtQuantidade.ForeColor = System.Drawing.Color.Black;
 			this.txtQuantidade.Location = new System.Drawing.Point(554, 18);
+			this.txtQuantidade.MaxLength = 32767;
+			this.txtQuantidade.Multiline = false;
 			this.txtQuantidade.Name = "txtQuantidade";
-			this.txtQuantidade.Size = new System.Drawing.Size(72, 23);
+			this.txtQuantidade.ReadOnly = false;
+			this.txtQuantidade.SelectionStart = 0;
+			this.txtQuantidade.Size = new System.Drawing.Size(72, 28);
+			this.txtQuantidade.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtQuantidade.TabIndex = 5;
-			this.txtQuantidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
-			this.txtQuantidade.TextChanged += new System.EventHandler(this.maskQuantidade);
+			this.txtQuantidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtQuantidade.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtQuantidade.UseSystemPasswordChar = false;
 			this.txtQuantidade.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pressEnterProduto);
+			this.txtQuantidade.TextChanged += new System.EventHandler(this.maskQuantidade);
 			// 
 			// labQuantidade
 			// 
@@ -361,7 +466,7 @@ namespace GM.View.compra
 			// 
 			// areaConclusao
 			// 
-			this.areaConclusao.BackColor = System.Drawing.Color.Transparent;
+			this.areaConclusao.BackColor = System.Drawing.Color.White;
 			this.areaConclusao.Controls.Add(this.btnCalculo);
 			this.areaConclusao.Controls.Add(this.cbxCondicao);
 			this.areaConclusao.Controls.Add(this.labPagamento);
@@ -383,6 +488,8 @@ namespace GM.View.compra
 			this.btnCalculo.Location = new System.Drawing.Point(554, 17);
 			this.btnCalculo.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnCalculo.Name = "btnCalculo";
+			this.btnCalculo.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
+			this.btnCalculo.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
 			this.btnCalculo.Size = new System.Drawing.Size(44, 31);
 			this.btnCalculo.Symbol = 61932;
 			this.btnCalculo.TabIndex = 22;
@@ -391,11 +498,30 @@ namespace GM.View.compra
 			// 
 			// cbxCondicao
 			// 
+			this.cbxCondicao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxCondicao.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxCondicao.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxCondicao.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxCondicao.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxCondicao.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxCondicao.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxCondicao.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxCondicao.ColorH = System.Drawing.Color.White;
+			this.cbxCondicao.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxCondicao.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxCondicao.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxCondicao.DropDownHeight = 100;
 			this.cbxCondicao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbxCondicao.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.cbxCondicao.ForeColor = System.Drawing.Color.Black;
 			this.cbxCondicao.FormattingEnabled = true;
+			this.cbxCondicao.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxCondicao.IntegralHeight = false;
+			this.cbxCondicao.ItemHeight = 20;
 			this.cbxCondicao.Location = new System.Drawing.Point(336, 20);
 			this.cbxCondicao.Name = "cbxCondicao";
-			this.cbxCondicao.Size = new System.Drawing.Size(212, 24);
+			this.cbxCondicao.Size = new System.Drawing.Size(212, 26);
+			this.cbxCondicao.StartIndex = 0;
 			this.cbxCondicao.TabIndex = 6;
 			// 
 			// labPagamento
@@ -418,10 +544,12 @@ namespace GM.View.compra
 			this.btnCancelar.Location = new System.Drawing.Point(604, 17);
 			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
+			this.btnCancelar.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
 			this.btnCancelar.Size = new System.Drawing.Size(121, 31);
 			this.btnCancelar.Style = Sunny.UI.UIStyle.Red;
 			this.btnCancelar.Symbol = 61453;
@@ -441,10 +569,12 @@ namespace GM.View.compra
 			this.btnSalvar.Location = new System.Drawing.Point(731, 17);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
+			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
+			this.btnSalvar.RectSides = System.Windows.Forms.ToolStripStatusLabelBorderSides.None;
 			this.btnSalvar.Size = new System.Drawing.Size(100, 31);
 			this.btnSalvar.Style = Sunny.UI.UIStyle.Green;
 			this.btnSalvar.TabIndex = 11;
@@ -455,11 +585,24 @@ namespace GM.View.compra
 			// txtValorTotal
 			// 
 			this.txtValorTotal.BackColor = System.Drawing.SystemColors.ButtonHighlight;
+			this.txtValorTotal.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtValorTotal.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtValorTotal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtValorTotal.CustomBGColor = System.Drawing.Color.White;
+			this.txtValorTotal.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtValorTotal.ForeColor = System.Drawing.Color.Black;
 			this.txtValorTotal.Location = new System.Drawing.Point(94, 20);
+			this.txtValorTotal.MaxLength = 32767;
+			this.txtValorTotal.Multiline = false;
 			this.txtValorTotal.Name = "txtValorTotal";
 			this.txtValorTotal.ReadOnly = true;
-			this.txtValorTotal.Size = new System.Drawing.Size(138, 23);
+			this.txtValorTotal.SelectionStart = 0;
+			this.txtValorTotal.Size = new System.Drawing.Size(138, 28);
+			this.txtValorTotal.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtValorTotal.TabIndex = 19;
+			this.txtValorTotal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtValorTotal.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtValorTotal.UseSystemPasswordChar = false;
 			// 
 			// labValorTotal
 			// 
@@ -486,22 +629,18 @@ namespace GM.View.compra
 			this.Text = "Cadastro de compra";
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.areaCabecalho.ResumeLayout(false);
-			this.areaCabecalho.PerformLayout();
 			this.areaObservacoes.ResumeLayout(false);
-			this.areaObservacoes.PerformLayout();
 			this.areaProdutos.ResumeLayout(false);
-			this.areaProdutos.PerformLayout();
 			this.areaConclusao.ResumeLayout(false);
-			this.areaConclusao.PerformLayout();
 			this.ResumeLayout(false);
 		}
 		private Sunny.UI.UISymbolButton btnCalculo;
 		private System.Windows.Forms.Label labPagamento;
-		private System.Windows.Forms.ComboBox cbxCondicao;
+		private GM.Componentes.MinComboBox cbxCondicao;
 		private Sunny.UI.UISymbolButton btnSalvar;
 		private Sunny.UI.UISymbolButton btnCancelar;
 		private System.Windows.Forms.Label labValorTotal;
-		private System.Windows.Forms.TextBox txtValorTotal;
+		private GM.Componentes.MinBox txtValorTotal;
 		private System.Windows.Forms.GroupBox areaConclusao;
 		private Sunny.UI.UISymbolButton btnDelProduto;
 		private Sunny.UI.UISymbolButton btnClearProduto;
@@ -512,21 +651,21 @@ namespace GM.View.compra
 		private System.Windows.Forms.ListView listProduto;
 		private Sunny.UI.UISymbolButton btnAddProduto;
 		private System.Windows.Forms.Label labQuantidade;
-		private System.Windows.Forms.TextBox txtQuantidade;
+		private GM.Componentes.MinBox txtQuantidade;
 		private System.Windows.Forms.Label labPreco;
-		private System.Windows.Forms.TextBox txtPreco;
+		private GM.Componentes.MinBox txtPreco;
 		private System.Windows.Forms.Label labProduto;
 		private System.Windows.Forms.ComboBox txtProduto;
 		private System.Windows.Forms.GroupBox areaProdutos;
-		private System.Windows.Forms.TextBox txtObservacao;
+		private GM.Componentes.MinBox txtObservacao;
 		private System.Windows.Forms.GroupBox areaObservacoes;
 		private System.Windows.Forms.Label labDataCompra;
-		private System.Windows.Forms.TextBox txtDataCompra;
+		private GM.Componentes.MinBox txtDataCompra;
 		private System.Windows.Forms.Label labLoja;
-		private System.Windows.Forms.ComboBox cbxLoja;
+		private GM.Componentes.MinComboBox cbxLoja;
 		private System.Windows.Forms.Label labFornecedor;
-		private System.Windows.Forms.TextBox txtCodigoFornecedor;
-		private System.Windows.Forms.TextBox txtNomeFornecedor;
+		private GM.Componentes.MinBox txtCodigoFornecedor;
+		private GM.Componentes.MinBox txtNomeFornecedor;
 		private System.Windows.Forms.GroupBox areaCabecalho;
 	}
 }

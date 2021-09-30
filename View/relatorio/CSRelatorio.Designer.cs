@@ -36,8 +36,8 @@ namespace GM.View.relatorio
 			this.gerarGrafico = new Sunny.UI.UISymbolButton();
 			this.gerarWeb = new Sunny.UI.UISymbolButton();
 			this.gerarTabela = new Sunny.UI.UISymbolButton();
-			this.txtObservacao = new System.Windows.Forms.TextBox();
-			this.txtDescricao = new System.Windows.Forms.TextBox();
+			this.txtObservacao = new GM.Componentes.MinBox();
+			this.txtDescricao = new GM.Componentes.MinBox();
 			this.gpxFerramentas = new System.Windows.Forms.GroupBox();
 			this.btnRemover = new Sunny.UI.UISymbolButton();
 			this.btnEditar = new Sunny.UI.UISymbolButton();
@@ -238,8 +238,8 @@ namespace GM.View.relatorio
 		private Sunny.UI.UISymbolButton gerarTabela;
 		private Sunny.UI.UISymbolButton gerarWeb;
 		private Sunny.UI.UISymbolButton gerarGrafico;
-		private System.Windows.Forms.TextBox txtDescricao;
-		private System.Windows.Forms.TextBox txtObservacao;
+		private GM.Componentes.MinBox txtDescricao;
+		private GM.Componentes.MinBox txtObservacao;
 		private Sunny.UI.UISymbolButton btnRemover;
 		private Sunny.UI.UISymbolButton btnNovo;
 		private Sunny.UI.UISymbolButton btnEditar;

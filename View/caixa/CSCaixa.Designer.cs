@@ -34,7 +34,7 @@ namespace GM.View.caixa
 			this.labAte = new ReaLTaiizor.Controls.DungeonLabel();
 			this.btnPesquisar = new Sunny.UI.UISymbolButton();
 			this.pnlMovimentacoes = new System.Windows.Forms.Panel();
-			this.cbxSede = new System.Windows.Forms.ComboBox();
+			this.cbxSede = new GM.Componentes.MinComboBox();
 			this.labSede = new ReaLTaiizor.Controls.DungeonLabel();
 			this.btnAdicionar = new Sunny.UI.UISymbolButton();
 			this.SuspendLayout();

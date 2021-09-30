@@ -29,13 +29,12 @@ namespace GM.View.venda
 		/// </summary>
 		private void InitializeComponent()
 		{
-			this.txtPin = new System.Windows.Forms.TextBox();
+			this.txtPin = new GM.Componentes.MinBox();
 			this.labZTroco = new System.Windows.Forms.Label();
 			this.SuspendLayout();
 			// 
 			// txtPin
 			// 
-			this.txtPin.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtPin.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtPin.Location = new System.Drawing.Point(12, 40);
 			this.txtPin.MaxLength = 4;
@@ -76,6 +75,6 @@ namespace GM.View.venda
 			this.PerformLayout();
 		}
 		private System.Windows.Forms.Label labZTroco;
-		private System.Windows.Forms.TextBox txtPin;
+		private GM.Componentes.MinBox txtPin;
 	}
 }

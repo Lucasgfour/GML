@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using GM.Componentes;
 using GM.Controller;
 using GM.Model;
 using MaterialSkin;
@@ -143,15 +144,15 @@ namespace GM.View.compra {
 		// ======================== DEFININDO MASCARAS ====================================
 		
 		void maskfloat(object sender, EventArgs e) {
-			Ferramentas.maskMoney((TextBox) sender);
+			Ferramentas.maskMoney((MinBox) sender);
 		}
 		
 		void maskData(object sender, EventArgs e) {
-			Ferramentas.maskData((TextBox) sender);
+			Ferramentas.maskData(txtDataCompra);
 		}
 		
 		void maskDataAux(object sender, EventArgs e) {
-			TextBox txt = (TextBox) sender;
+			MinBox txt = (MinBox) sender;
 			try {
 				DateTime a = DateTime.Parse(txt.Text);
 			} catch (Exception) {
@@ -160,11 +161,11 @@ namespace GM.View.compra {
 		}
 		
 		void maskNumber(object sender, EventArgs e) {
-			Ferramentas.maskNumber((TextBox) sender);
+			Ferramentas.maskNumber((MinBox) sender);
 		}
 		
 		void maskQuantidade(object sender, EventArgs e) {
-			Ferramentas.maskMoney((TextBox) sender, 3);
+			Ferramentas.maskMoney((MinBox) sender, 3);
 		}
 		
 		// ======================= EVENTOS E FUNÇÕES

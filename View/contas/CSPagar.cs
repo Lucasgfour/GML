@@ -132,5 +132,10 @@ namespace GM.View.contas {
 				return "ContasReceber";
 			}
 		}
+		
+		void ListaContasSelectedIndexChanged(object sender, EventArgs e)
+		{
+			
+		}
 	}
 }

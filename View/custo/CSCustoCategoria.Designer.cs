@@ -33,9 +33,9 @@ namespace GM.View.custo
 			this.listaCategoria = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
-			this.btnAdicionar = new Sunny.UI.UISymbolButton();
-			this.btnEditar = new Sunny.UI.UISymbolButton();
-			this.btnRemover = new Sunny.UI.UISymbolButton();
+			this.btnAdicionar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnEditar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnRemover = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.SuspendLayout();
 			// 
 			// listaCategoria
@@ -46,9 +46,9 @@ namespace GM.View.custo
 			this.listaCategoria.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.listaCategoria.FullRowSelect = true;
 			this.listaCategoria.GridLines = true;
-			this.listaCategoria.Location = new System.Drawing.Point(12, 111);
+			this.listaCategoria.Location = new System.Drawing.Point(12, 102);
 			this.listaCategoria.Name = "listaCategoria";
-			this.listaCategoria.Size = new System.Drawing.Size(363, 324);
+			this.listaCategoria.Size = new System.Drawing.Size(363, 333);
 			this.listaCategoria.TabIndex = 20;
 			this.listaCategoria.UseCompatibleStateImageBehavior = false;
 			this.listaCategoria.View = System.Windows.Forms.View.Details;
@@ -65,44 +65,41 @@ namespace GM.View.custo
 			// 
 			// btnAdicionar
 			// 
-			this.btnAdicionar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAdicionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnAdicionar.Location = new System.Drawing.Point(12, 76);
-			this.btnAdicionar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnAdicionar.Depth = 0;
+			this.btnAdicionar.Location = new System.Drawing.Point(12, 70);
+			this.btnAdicionar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnAdicionar.Name = "btnAdicionar";
-			this.btnAdicionar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnAdicionar.Size = new System.Drawing.Size(123, 29);
-			this.btnAdicionar.Symbol = 61543;
-			this.btnAdicionar.TabIndex = 27;
-			this.btnAdicionar.Text = "Adicionar";
+			this.btnAdicionar.Primary = true;
+			this.btnAdicionar.Size = new System.Drawing.Size(144, 26);
+			this.btnAdicionar.TabIndex = 30;
+			this.btnAdicionar.Text = "ADICIONAR";
+			this.btnAdicionar.UseVisualStyleBackColor = true;
 			this.btnAdicionar.Click += new System.EventHandler(this.cliqueAdicionar);
 			// 
 			// btnEditar
 			// 
-			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(141, 76);
-			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnEditar.Depth = 0;
+			this.btnEditar.Location = new System.Drawing.Point(162, 70);
+			this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnEditar.Size = new System.Drawing.Size(101, 29);
-			this.btnEditar.Symbol = 61508;
-			this.btnEditar.TabIndex = 28;
-			this.btnEditar.Text = "Editar";
+			this.btnEditar.Primary = true;
+			this.btnEditar.Size = new System.Drawing.Size(95, 26);
+			this.btnEditar.TabIndex = 31;
+			this.btnEditar.Text = "EDITAR";
+			this.btnEditar.UseVisualStyleBackColor = true;
 			this.btnEditar.Click += new System.EventHandler(this.cliqueEditar);
 			// 
 			// btnRemover
 			// 
-			this.btnRemover.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnRemover.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnRemover.Location = new System.Drawing.Point(248, 76);
-			this.btnRemover.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnRemover.Depth = 0;
+			this.btnRemover.Location = new System.Drawing.Point(263, 70);
+			this.btnRemover.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnRemover.Name = "btnRemover";
-			this.btnRemover.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnRemover.Size = new System.Drawing.Size(127, 29);
-			this.btnRemover.Symbol = 61453;
-			this.btnRemover.TabIndex = 29;
-			this.btnRemover.Text = "Remover";
+			this.btnRemover.Primary = true;
+			this.btnRemover.Size = new System.Drawing.Size(112, 26);
+			this.btnRemover.TabIndex = 32;
+			this.btnRemover.Text = "REMOVER";
+			this.btnRemover.UseVisualStyleBackColor = true;
 			this.btnRemover.Click += new System.EventHandler(this.cliqueRemover);
 			// 
 			// CSCustoCategoria
@@ -122,9 +119,9 @@ namespace GM.View.custo
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
 		}
-		private Sunny.UI.UISymbolButton btnRemover;
-		private Sunny.UI.UISymbolButton btnEditar;
-		private Sunny.UI.UISymbolButton btnAdicionar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnRemover;
+		private MaterialSkin.Controls.MaterialRaisedButton btnEditar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnAdicionar;
 		private System.Windows.Forms.ColumnHeader Col02;
 		private System.Windows.Forms.ColumnHeader Col01;
 		private System.Windows.Forms.ListView listaCategoria;

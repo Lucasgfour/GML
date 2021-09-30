@@ -30,15 +30,14 @@ namespace GM.View.contas
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDMovimento));
-			this.cbxTipo = new System.Windows.Forms.ComboBox();
+			this.cbxTipo = new GM.Componentes.MinComboBox();
 			this.labTipo = new System.Windows.Forms.Label();
 			this.labDescricao = new System.Windows.Forms.Label();
-			this.txtDescricao = new System.Windows.Forms.TextBox();
-			this.txtValor = new System.Windows.Forms.TextBox();
+			this.txtDescricao = new GM.Componentes.MinBox();
+			this.txtValor = new GM.Componentes.MinBox();
 			this.labValor = new System.Windows.Forms.Label();
-			this.txtData = new System.Windows.Forms.TextBox();
+			this.txtData = new GM.Componentes.MinBox();
 			this.labData = new System.Windows.Forms.Label();
-			this.labTitulo = new ReaLTaiizor.Controls.DungeonLabel();
 			this.btnCancelar = new Sunny.UI.UISymbolButton();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
 			this.labSaldo = new ReaLTaiizor.Controls.DungeonLabel();
@@ -46,21 +45,40 @@ namespace GM.View.contas
 			// 
 			// cbxTipo
 			// 
+			this.cbxTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxTipo.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxTipo.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxTipo.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxTipo.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxTipo.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxTipo.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxTipo.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxTipo.ColorH = System.Drawing.Color.White;
+			this.cbxTipo.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxTipo.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxTipo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxTipo.DropDownHeight = 100;
 			this.cbxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+			this.cbxTipo.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.cbxTipo.ForeColor = System.Drawing.Color.Black;
 			this.cbxTipo.FormattingEnabled = true;
+			this.cbxTipo.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxTipo.IntegralHeight = false;
+			this.cbxTipo.ItemHeight = 20;
 			this.cbxTipo.Items.AddRange(new object[] {
 									"Entrada",
 									"Saída"});
-			this.cbxTipo.Location = new System.Drawing.Point(91, 141);
+			this.cbxTipo.Location = new System.Drawing.Point(91, 108);
 			this.cbxTipo.Name = "cbxTipo";
-			this.cbxTipo.Size = new System.Drawing.Size(118, 23);
+			this.cbxTipo.Size = new System.Drawing.Size(118, 26);
+			this.cbxTipo.StartIndex = 0;
 			this.cbxTipo.TabIndex = 1;
 			this.cbxTipo.SelectedIndexChanged += new System.EventHandler(this.mudarTipo);
 			// 
 			// labTipo
 			// 
 			this.labTipo.BackColor = System.Drawing.Color.Transparent;
-			this.labTipo.Location = new System.Drawing.Point(12, 141);
+			this.labTipo.Location = new System.Drawing.Point(12, 108);
 			this.labTipo.Name = "labTipo";
 			this.labTipo.Size = new System.Drawing.Size(73, 23);
 			this.labTipo.TabIndex = 1;
@@ -70,7 +88,7 @@ namespace GM.View.contas
 			// labDescricao
 			// 
 			this.labDescricao.BackColor = System.Drawing.Color.Transparent;
-			this.labDescricao.Location = new System.Drawing.Point(12, 170);
+			this.labDescricao.Location = new System.Drawing.Point(12, 140);
 			this.labDescricao.Name = "labDescricao";
 			this.labDescricao.Size = new System.Drawing.Size(73, 23);
 			this.labDescricao.TabIndex = 3;
@@ -79,26 +97,53 @@ namespace GM.View.contas
 			// 
 			// txtDescricao
 			// 
-			this.txtDescricao.Location = new System.Drawing.Point(91, 170);
+			this.txtDescricao.BackColor = System.Drawing.Color.Transparent;
+			this.txtDescricao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtDescricao.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtDescricao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtDescricao.CustomBGColor = System.Drawing.Color.White;
+			this.txtDescricao.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtDescricao.ForeColor = System.Drawing.Color.Black;
+			this.txtDescricao.Location = new System.Drawing.Point(91, 140);
 			this.txtDescricao.MaxLength = 50;
+			this.txtDescricao.Multiline = false;
 			this.txtDescricao.Name = "txtDescricao";
-			this.txtDescricao.Size = new System.Drawing.Size(206, 23);
+			this.txtDescricao.ReadOnly = false;
+			this.txtDescricao.SelectionStart = 0;
+			this.txtDescricao.Size = new System.Drawing.Size(206, 28);
+			this.txtDescricao.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtDescricao.TabIndex = 2;
+			this.txtDescricao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtDescricao.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtDescricao.UseSystemPasswordChar = false;
 			// 
 			// txtValor
 			// 
-			this.txtValor.Location = new System.Drawing.Point(91, 199);
+			this.txtValor.BackColor = System.Drawing.Color.Transparent;
+			this.txtValor.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtValor.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtValor.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtValor.CustomBGColor = System.Drawing.Color.White;
+			this.txtValor.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtValor.ForeColor = System.Drawing.Color.Black;
+			this.txtValor.Location = new System.Drawing.Point(91, 174);
 			this.txtValor.MaxLength = 50;
+			this.txtValor.Multiline = false;
 			this.txtValor.Name = "txtValor";
-			this.txtValor.Size = new System.Drawing.Size(140, 23);
+			this.txtValor.ReadOnly = false;
+			this.txtValor.SelectionStart = 0;
+			this.txtValor.Size = new System.Drawing.Size(140, 28);
+			this.txtValor.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtValor.TabIndex = 3;
-			this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtValor.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtValor.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtValor.UseSystemPasswordChar = false;
 			this.txtValor.TextChanged += new System.EventHandler(this.maskMoney);
 			// 
 			// labValor
 			// 
 			this.labValor.BackColor = System.Drawing.Color.Transparent;
-			this.labValor.Location = new System.Drawing.Point(12, 199);
+			this.labValor.Location = new System.Drawing.Point(12, 174);
 			this.labValor.Name = "labValor";
 			this.labValor.Size = new System.Drawing.Size(73, 23);
 			this.labValor.TabIndex = 5;
@@ -107,36 +152,37 @@ namespace GM.View.contas
 			// 
 			// txtData
 			// 
-			this.txtData.Location = new System.Drawing.Point(91, 112);
+			this.txtData.BackColor = System.Drawing.Color.Transparent;
+			this.txtData.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtData.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtData.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtData.CustomBGColor = System.Drawing.Color.White;
+			this.txtData.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtData.ForeColor = System.Drawing.Color.Black;
+			this.txtData.Location = new System.Drawing.Point(91, 74);
 			this.txtData.MaxLength = 50;
+			this.txtData.Multiline = false;
 			this.txtData.Name = "txtData";
-			this.txtData.Size = new System.Drawing.Size(140, 23);
+			this.txtData.ReadOnly = false;
+			this.txtData.SelectionStart = 0;
+			this.txtData.Size = new System.Drawing.Size(140, 28);
+			this.txtData.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtData.TabIndex = 0;
-			this.txtData.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtData.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtData.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtData.UseSystemPasswordChar = false;
 			this.txtData.TextChanged += new System.EventHandler(this.maskData);
 			this.txtData.Leave += new System.EventHandler(this.maskDataLeave);
 			// 
 			// labData
 			// 
 			this.labData.BackColor = System.Drawing.Color.Transparent;
-			this.labData.Location = new System.Drawing.Point(12, 112);
+			this.labData.Location = new System.Drawing.Point(12, 74);
 			this.labData.Name = "labData";
 			this.labData.Size = new System.Drawing.Size(73, 23);
 			this.labData.TabIndex = 7;
 			this.labData.Text = "Data :";
 			this.labData.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// labTitulo
-			// 
-			this.labTitulo.BackColor = System.Drawing.Color.Transparent;
-			this.labTitulo.Font = new System.Drawing.Font("Segoe UI", 11F);
-			this.labTitulo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labTitulo.Location = new System.Drawing.Point(12, 77);
-			this.labTitulo.Name = "labTitulo";
-			this.labTitulo.Size = new System.Drawing.Size(285, 28);
-			this.labTitulo.TabIndex = 24;
-			this.labTitulo.Text = "Cadastro de Movimentação de Conta";
-			this.labTitulo.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
 			// btnCancelar
 			// 
@@ -146,9 +192,10 @@ namespace GM.View.contas
 			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
 			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(69, 256);
+			this.btnCancelar.Location = new System.Drawing.Point(69, 252);
 			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
 			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
 			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
@@ -168,9 +215,10 @@ namespace GM.View.contas
 			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
 			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(186, 256);
+			this.btnSalvar.Location = new System.Drawing.Point(186, 252);
 			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
 			this.btnSalvar.Name = "btnSalvar";
+			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
 			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
 			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
 			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
@@ -186,7 +234,7 @@ namespace GM.View.contas
 			this.labSaldo.BackColor = System.Drawing.Color.Transparent;
 			this.labSaldo.Font = new System.Drawing.Font("Segoe UI", 11F);
 			this.labSaldo.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labSaldo.Location = new System.Drawing.Point(12, 225);
+			this.labSaldo.Location = new System.Drawing.Point(12, 205);
 			this.labSaldo.Name = "labSaldo";
 			this.labSaldo.Size = new System.Drawing.Size(285, 28);
 			this.labSaldo.TabIndex = 27;
@@ -197,11 +245,10 @@ namespace GM.View.contas
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-			this.ClientSize = new System.Drawing.Size(309, 297);
+			this.ClientSize = new System.Drawing.Size(309, 293);
 			this.Controls.Add(this.labSaldo);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnSalvar);
-			this.Controls.Add(this.labTitulo);
 			this.Controls.Add(this.txtData);
 			this.Controls.Add(this.labData);
 			this.Controls.Add(this.txtValor);
@@ -218,19 +265,17 @@ namespace GM.View.contas
 			this.Text = "Cadastro de movimentação de conta";
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
 		private ReaLTaiizor.Controls.DungeonLabel labSaldo;
 		private Sunny.UI.UISymbolButton btnSalvar;
 		private Sunny.UI.UISymbolButton btnCancelar;
-		private ReaLTaiizor.Controls.DungeonLabel labTitulo;
 		private System.Windows.Forms.Label labData;
-		private System.Windows.Forms.TextBox txtData;
+		private GM.Componentes.MinBox txtData;
 		private System.Windows.Forms.Label labValor;
-		private System.Windows.Forms.TextBox txtValor;
-		private System.Windows.Forms.TextBox txtDescricao;
+		private GM.Componentes.MinBox txtValor;
+		private GM.Componentes.MinBox txtDescricao;
 		private System.Windows.Forms.Label labDescricao;
 		private System.Windows.Forms.Label labTipo;
-		private System.Windows.Forms.ComboBox cbxTipo;
+		private GM.Componentes.MinComboBox cbxTipo;
 	}
 }

@@ -1,6 +1,7 @@
 ﻿
 using System;
 using System.Drawing;
+using System.Linq;
 using System.Windows.Forms;
 using GM.Controller;
 using GM.Model;
@@ -25,6 +26,9 @@ namespace GM.View.pessoa {
 				this.Close();
 			} else {
 				primeiro();
+			}
+			foreach (Button btn in this.Controls.OfType<Button>()) {
+				btn.BackColor = MaterialSkinManager.Instance.ColorScheme.PrimaryColor;
 			}
 		}
 		

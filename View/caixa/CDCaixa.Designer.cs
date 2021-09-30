@@ -31,16 +31,16 @@ namespace GM.View.caixa
 		{
 			this.labTitulo = new ReaLTaiizor.Controls.DungeonLabel();
 			this.labDescricao = new ReaLTaiizor.Controls.DungeonLabel();
-			this.txtDescricao = new System.Windows.Forms.TextBox();
+			this.txtDescricao = new GM.Componentes.MinBox();
 			this.labValor = new ReaLTaiizor.Controls.DungeonLabel();
-			this.txtValor = new System.Windows.Forms.TextBox();
+			this.txtValor = new GM.Componentes.MinBox();
 			this.labTipo = new ReaLTaiizor.Controls.DungeonLabel();
-			this.cbxTipo = new System.Windows.Forms.ComboBox();
-			this.cbxSede = new System.Windows.Forms.ComboBox();
+			this.cbxTipo = new GM.Componentes.MinComboBox();
+			this.cbxSede = new GM.Componentes.MinComboBox();
 			this.labSede = new ReaLTaiizor.Controls.DungeonLabel();
 			this.btnSalvar = new Sunny.UI.UISymbolButton();
 			this.btnCancelar = new Sunny.UI.UISymbolButton();
-			this.txtData = new System.Windows.Forms.TextBox();
+			this.txtData = new GM.Componentes.MinBox();
 			this.labData = new ReaLTaiizor.Controls.DungeonLabel();
 			this.SuspendLayout();
 			// 
@@ -70,7 +70,6 @@ namespace GM.View.caixa
 			// 
 			// txtDescricao
 			// 
-			this.txtDescricao.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtDescricao.Location = new System.Drawing.Point(101, 99);
 			this.txtDescricao.MaxLength = 70;
 			this.txtDescricao.Name = "txtDescricao";
@@ -91,7 +90,6 @@ namespace GM.View.caixa
 			// 
 			// txtValor
 			// 
-			this.txtValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtValor.Location = new System.Drawing.Point(101, 152);
 			this.txtValor.MaxLength = 70;
 			this.txtValor.Name = "txtValor";
@@ -189,7 +187,6 @@ namespace GM.View.caixa
 			// 
 			// txtData
 			// 
-			this.txtData.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
 			this.txtData.Location = new System.Drawing.Point(101, 73);
 			this.txtData.MaxLength = 70;
 			this.txtData.Name = "txtData";
@@ -240,16 +237,16 @@ namespace GM.View.caixa
 			this.PerformLayout();
 		}
 		private ReaLTaiizor.Controls.DungeonLabel labData;
-		private System.Windows.Forms.TextBox txtData;
+		private GM.Componentes.MinBox txtData;
 		private Sunny.UI.UISymbolButton btnCancelar;
 		private Sunny.UI.UISymbolButton btnSalvar;
 		private ReaLTaiizor.Controls.DungeonLabel labSede;
 		private System.Windows.Forms.ComboBox cbxSede;
 		private System.Windows.Forms.ComboBox cbxTipo;
 		private ReaLTaiizor.Controls.DungeonLabel labTipo;
-		private System.Windows.Forms.TextBox txtValor;
+		private GM.Componentes.MinBox txtValor;
 		private ReaLTaiizor.Controls.DungeonLabel labValor;
-		private System.Windows.Forms.TextBox txtDescricao;
+		private GM.Componentes.MinBox txtDescricao;
 		private ReaLTaiizor.Controls.DungeonLabel labDescricao;
 		private ReaLTaiizor.Controls.DungeonLabel labTitulo;
 	}

@@ -35,7 +35,7 @@ namespace GM.View.Sistema
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
 			this.Col03 = new System.Windows.Forms.ColumnHeader();
 			this.btnSelecionar = new Sunny.UI.UISymbolButton();
-			this.txtPesquisa = new System.Windows.Forms.TextBox();
+			this.txtPesquisa = new GM.Componentes.MinBox();
 			this.labPesquisa = new ReaLTaiizor.Controls.DungeonLabel();
 			this.btnPesquisar = new Sunny.UI.UISymbolButton();
 			this.SuspendLayout();
@@ -148,7 +148,7 @@ namespace GM.View.Sistema
 		}
 		private Sunny.UI.UISymbolButton btnPesquisar;
 		private ReaLTaiizor.Controls.DungeonLabel labPesquisa;
-		private System.Windows.Forms.TextBox txtPesquisa;
+		private GM.Componentes.MinBox txtPesquisa;
 		private Sunny.UI.UISymbolButton btnSelecionar;
 		private System.Windows.Forms.ColumnHeader Col03;
 		private System.Windows.Forms.ColumnHeader Col02;

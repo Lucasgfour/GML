@@ -30,17 +30,17 @@ namespace GM.View.venda
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(ATVenda));
-			this.txtData = new System.Windows.Forms.TextBox();
+			this.txtData = new GM.Componentes.MinBox();
 			this.labData = new System.Windows.Forms.Label();
-			this.txtTotal = new System.Windows.Forms.TextBox();
+			this.txtTotal = new GM.Componentes.MinBox();
 			this.labTotal = new System.Windows.Forms.Label();
-			this.txtCondicao = new System.Windows.Forms.TextBox();
+			this.txtCondicao = new GM.Componentes.MinBox();
 			this.labCondicao = new System.Windows.Forms.Label();
-			this.txtCodigo = new System.Windows.Forms.TextBox();
+			this.txtCodigo = new GM.Componentes.MinBox();
 			this.labCodigo = new System.Windows.Forms.Label();
-			this.txtSede = new System.Windows.Forms.TextBox();
+			this.txtSede = new GM.Componentes.MinBox();
 			this.labSede = new System.Windows.Forms.Label();
-			this.txtCliente = new System.Windows.Forms.TextBox();
+			this.txtCliente = new GM.Componentes.MinBox();
 			this.labCliente = new System.Windows.Forms.Label();
 			this.Col03 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -329,16 +329,16 @@ namespace GM.View.venda
 		private System.Windows.Forms.ColumnHeader Col02;
 		private System.Windows.Forms.ColumnHeader Col03;
 		private System.Windows.Forms.Label labCliente;
-		private System.Windows.Forms.TextBox txtCliente;
+		private GM.Componentes.MinBox txtCliente;
 		private System.Windows.Forms.Label labSede;
-		private System.Windows.Forms.TextBox txtSede;
+		private GM.Componentes.MinBox txtSede;
 		private System.Windows.Forms.Label labCodigo;
-		private System.Windows.Forms.TextBox txtCodigo;
+		private GM.Componentes.MinBox txtCodigo;
 		private System.Windows.Forms.Label labCondicao;
-		private System.Windows.Forms.TextBox txtCondicao;
+		private GM.Componentes.MinBox txtCondicao;
 		private System.Windows.Forms.Label labTotal;
-		private System.Windows.Forms.TextBox txtTotal;
+		private GM.Componentes.MinBox txtTotal;
 		private System.Windows.Forms.Label labData;
-		private System.Windows.Forms.TextBox txtData;
+		private GM.Componentes.MinBox txtData;
 	}
 }

@@ -30,11 +30,8 @@ namespace GM.View.custo
 		private void InitializeComponent()
 		{
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(PQCusto));
-			this.btnSair = new Sunny.UI.UISymbolButton();
-			this.btnSelecionar = new Sunny.UI.UISymbolButton();
-			this.txtPesquisa = new System.Windows.Forms.TextBox();
+			this.txtPesquisa = new GM.Componentes.MinBox();
 			this.labSede = new ReaLTaiizor.Controls.DungeonLabel();
-			this.btnPesquisar = new Sunny.UI.UISymbolButton();
 			this.listaCusto = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
@@ -43,59 +40,32 @@ namespace GM.View.custo
 			this.Col05 = new System.Windows.Forms.ColumnHeader();
 			this.Col06 = new System.Windows.Forms.ColumnHeader();
 			this.Col07 = new System.Windows.Forms.ColumnHeader();
+			this.btnSelecionar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnCancelar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnPesquisar = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.SuspendLayout();
-			// 
-			// btnSair
-			// 
-			this.btnSair.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSair.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnSair.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnSair.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnSair.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnSair.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSair.Location = new System.Drawing.Point(569, 74);
-			this.btnSair.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnSair.Name = "btnSair";
-			this.btnSair.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnSair.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnSair.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnSair.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnSair.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnSair.Size = new System.Drawing.Size(110, 29);
-			this.btnSair.Style = Sunny.UI.UIStyle.Red;
-			this.btnSair.Symbol = 61453;
-			this.btnSair.TabIndex = 49;
-			this.btnSair.Text = "Sair";
-			this.btnSair.Click += new System.EventHandler(this.sairClique);
-			// 
-			// btnSelecionar
-			// 
-			this.btnSelecionar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSelecionar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSelecionar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSelecionar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSelecionar.Location = new System.Drawing.Point(685, 74);
-			this.btnSelecionar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnSelecionar.Name = "btnSelecionar";
-			this.btnSelecionar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnSelecionar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSelecionar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSelecionar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.Size = new System.Drawing.Size(175, 29);
-			this.btnSelecionar.Style = Sunny.UI.UIStyle.Green;
-			this.btnSelecionar.TabIndex = 48;
-			this.btnSelecionar.Text = "Selecionar";
-			this.btnSelecionar.Click += new System.EventHandler(this.selecionarClique);
 			// 
 			// txtPesquisa
 			// 
-			this.txtPesquisa.Location = new System.Drawing.Point(77, 79);
+			this.txtPesquisa.BackColor = System.Drawing.Color.Transparent;
+			this.txtPesquisa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtPesquisa.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPesquisa.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPesquisa.CustomBGColor = System.Drawing.Color.White;
+			this.txtPesquisa.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtPesquisa.ForeColor = System.Drawing.Color.Black;
+			this.txtPesquisa.Location = new System.Drawing.Point(77, 73);
+			this.txtPesquisa.MaxLength = 32767;
+			this.txtPesquisa.Multiline = false;
 			this.txtPesquisa.Name = "txtPesquisa";
-			this.txtPesquisa.Size = new System.Drawing.Size(156, 20);
-			this.txtPesquisa.TabIndex = 47;
+			this.txtPesquisa.ReadOnly = false;
+			this.txtPesquisa.SelectionStart = 0;
+			this.txtPesquisa.Size = new System.Drawing.Size(156, 28);
+			this.txtPesquisa.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
+			this.txtPesquisa.TabIndex = 1;
+			this.txtPesquisa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPesquisa.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPesquisa.UseSystemPasswordChar = false;
 			this.txtPesquisa.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pressEnter);
 			// 
 			// labSede
@@ -103,24 +73,12 @@ namespace GM.View.custo
 			this.labSede.BackColor = System.Drawing.Color.Transparent;
 			this.labSede.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.labSede.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labSede.Location = new System.Drawing.Point(12, 79);
+			this.labSede.Location = new System.Drawing.Point(12, 73);
 			this.labSede.Name = "labSede";
-			this.labSede.Size = new System.Drawing.Size(59, 20);
+			this.labSede.Size = new System.Drawing.Size(59, 28);
 			this.labSede.TabIndex = 46;
 			this.labSede.Text = "Pesquisa :";
 			this.labSede.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// btnPesquisar
-			// 
-			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnPesquisar.Location = new System.Drawing.Point(239, 74);
-			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnPesquisar.Name = "btnPesquisar";
-			this.btnPesquisar.Size = new System.Drawing.Size(37, 29);
-			this.btnPesquisar.Symbol = 61442;
-			this.btnPesquisar.TabIndex = 45;
-			this.btnPesquisar.Click += new System.EventHandler(this.pesquisarClique);
 			// 
 			// listaCusto
 			// 
@@ -140,7 +98,7 @@ namespace GM.View.custo
 			this.listaCusto.Location = new System.Drawing.Point(12, 109);
 			this.listaCusto.Name = "listaCusto";
 			this.listaCusto.Size = new System.Drawing.Size(848, 380);
-			this.listaCusto.TabIndex = 44;
+			this.listaCusto.TabIndex = 3;
 			this.listaCusto.UseCompatibleStateImageBehavior = false;
 			this.listaCusto.View = System.Windows.Forms.View.Details;
 			this.listaCusto.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.duploClique);
@@ -182,16 +140,55 @@ namespace GM.View.custo
 			this.Col07.Text = "Observação";
 			this.Col07.Width = 120;
 			// 
+			// btnSelecionar
+			// 
+			this.btnSelecionar.Depth = 0;
+			this.btnSelecionar.Location = new System.Drawing.Point(682, 73);
+			this.btnSelecionar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnSelecionar.Name = "btnSelecionar";
+			this.btnSelecionar.Primary = true;
+			this.btnSelecionar.Size = new System.Drawing.Size(178, 30);
+			this.btnSelecionar.TabIndex = 4;
+			this.btnSelecionar.Text = "SELECIONAR";
+			this.btnSelecionar.UseVisualStyleBackColor = true;
+			this.btnSelecionar.Click += new System.EventHandler(this.selecionarClique);
+			// 
+			// btnCancelar
+			// 
+			this.btnCancelar.Depth = 0;
+			this.btnCancelar.Location = new System.Drawing.Point(554, 73);
+			this.btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.Primary = true;
+			this.btnCancelar.Size = new System.Drawing.Size(122, 30);
+			this.btnCancelar.TabIndex = 5;
+			this.btnCancelar.Text = "CANCELAR";
+			this.btnCancelar.UseVisualStyleBackColor = true;
+			this.btnCancelar.Click += new System.EventHandler(this.sairClique);
+			// 
+			// btnPesquisar
+			// 
+			this.btnPesquisar.Depth = 0;
+			this.btnPesquisar.Location = new System.Drawing.Point(239, 73);
+			this.btnPesquisar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnPesquisar.Name = "btnPesquisar";
+			this.btnPesquisar.Primary = true;
+			this.btnPesquisar.Size = new System.Drawing.Size(122, 28);
+			this.btnPesquisar.TabIndex = 2;
+			this.btnPesquisar.Text = "PESQUISAR";
+			this.btnPesquisar.UseVisualStyleBackColor = true;
+			this.btnPesquisar.Click += new System.EventHandler(this.pesquisarClique);
+			// 
 			// PQCusto
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(872, 501);
-			this.Controls.Add(this.btnSair);
+			this.Controls.Add(this.btnPesquisar);
+			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnSelecionar);
 			this.Controls.Add(this.txtPesquisa);
 			this.Controls.Add(this.labSede);
-			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.listaCusto);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
@@ -201,8 +198,8 @@ namespace GM.View.custo
 			this.Text = "Pesquisa de Custo/Despesa";
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
+		private MaterialSkin.Controls.MaterialRaisedButton btnCancelar;
 		private System.Windows.Forms.ColumnHeader Col07;
 		private System.Windows.Forms.ColumnHeader Col06;
 		private System.Windows.Forms.ColumnHeader Col05;
@@ -211,10 +208,9 @@ namespace GM.View.custo
 		private System.Windows.Forms.ColumnHeader Col02;
 		private System.Windows.Forms.ColumnHeader Col01;
 		private System.Windows.Forms.ListView listaCusto;
-		private Sunny.UI.UISymbolButton btnPesquisar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnPesquisar;
 		private ReaLTaiizor.Controls.DungeonLabel labSede;
-		private System.Windows.Forms.TextBox txtPesquisa;
-		private Sunny.UI.UISymbolButton btnSelecionar;
-		private Sunny.UI.UISymbolButton btnSair;
+		private GM.Componentes.MinBox txtPesquisa;
+		private MaterialSkin.Controls.MaterialRaisedButton btnSelecionar;
 	}
 }
