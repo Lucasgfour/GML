@@ -234,11 +234,11 @@ namespace GM.View.pessoa
 			// btnSalvar
 			// 
 			this.btnSalvar.Depth = 0;
-			this.btnSalvar.Location = new System.Drawing.Point(322, 216);
+			this.btnSalvar.Location = new System.Drawing.Point(322, 207);
 			this.btnSalvar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnSalvar.Name = "btnSalvar";
 			this.btnSalvar.Primary = true;
-			this.btnSalvar.Size = new System.Drawing.Size(93, 26);
+			this.btnSalvar.Size = new System.Drawing.Size(93, 35);
 			this.btnSalvar.TabIndex = 58;
 			this.btnSalvar.Text = "SALVAR";
 			this.btnSalvar.UseVisualStyleBackColor = true;
@@ -247,11 +247,11 @@ namespace GM.View.pessoa
 			// btnCancelar
 			// 
 			this.btnCancelar.Depth = 0;
-			this.btnCancelar.Location = new System.Drawing.Point(223, 216);
+			this.btnCancelar.Location = new System.Drawing.Point(223, 207);
 			this.btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnCancelar.Name = "btnCancelar";
 			this.btnCancelar.Primary = true;
-			this.btnCancelar.Size = new System.Drawing.Size(93, 26);
+			this.btnCancelar.Size = new System.Drawing.Size(93, 35);
 			this.btnCancelar.TabIndex = 59;
 			this.btnCancelar.Text = "CANCELAR";
 			this.btnCancelar.UseVisualStyleBackColor = true;

@@ -4,6 +4,7 @@ using System.Collections.Generic;
 using System.Drawing;
 using System.Linq;
 using System.Windows.Forms;
+using GM.Componentes;
 using GM.Controller;
 using GM.Model;
 using MaterialSkin;
@@ -144,6 +145,12 @@ namespace GM.View.venda {
 			cbxCondicao.SelectedIndex = 0;
 		}
 		
+		void pressionarEnterProduto(object sender, System.Windows.Forms.KeyEventArgs e) {
+			if(e.KeyCode== Keys.Enter) {
+				btnAdicionar.PerformClick();	
+			}
+		}
+		
 		// Função para atualizar dinamicamente os dados do pedido enquato o usuário vai fazendo alterações
 		private void atualizarInfo() {
 			try {
@@ -229,19 +236,19 @@ namespace GM.View.venda {
 		// ==== Mascaras de Campo ===============================================================================
 		
 		void maskNumber(object sender, EventArgs e) {
-			Ferramentas.maskNumber((TextBox) sender);
+			Ferramentas.maskNumber((MinBox) sender);
 		}
 		
 		void maskMoney(object sender, EventArgs e) {
-			Ferramentas.maskMoney((TextBox) sender);
+			Ferramentas.maskMoney((MinBox) sender);
 		}
 		
 		void maskQuantidade(object sender, EventArgs e) {
-			Ferramentas.maskMoney((TextBox) sender, 3);
+			Ferramentas.maskMoney((MinBox) sender, 3);
 		}
 		
 		void maskData(object sender, EventArgs e) {
-			Ferramentas.maskData((TextBox) sender);
+			Ferramentas.maskData((MinBox) sender);
 		}
 		
 		// ==== Botões ==========================================================================================
@@ -367,5 +374,6 @@ namespace GM.View.venda {
 				MessageBox.Show(mensagem, "Resultado", MessageBoxButtons.OK, MessageBoxIcon.Information);
 			}
 		}
+	
 	}
 }

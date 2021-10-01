@@ -87,6 +87,7 @@ namespace GM.View.compra {
 				}
 			} else {
 				this.compra = new Compra();
+				txtDataCompra.Text = DateTime.Today.ToString("dd/MM/yyyy");
 			}
 			
 			
@@ -168,7 +169,7 @@ namespace GM.View.compra {
 			Ferramentas.maskMoney((MinBox) sender, 3);
 		}
 		
-		// ======================= EVENTOS E FUNÇÕES
+		// ======================= EVENTOS E FUNÇÕES ============================================================
 		
 		void buscarCliente(object sender, MouseEventArgs e) {
 			Resultado res = Pesquisa.pessoa(1);
@@ -199,6 +200,7 @@ namespace GM.View.compra {
 		}
 		
 		private void attDisplay() {
+			attContas();
 			txtValorTotal.Text = "R$ " + String.Format("{0:N}", getValorTotal());
 		}
 		
@@ -245,7 +247,7 @@ namespace GM.View.compra {
 		
 		void pressEnterProduto(object sender, KeyEventArgs e) {
 			if(e.KeyCode == Keys.Enter) {
-				btnAddProduto.PerformClick();
+				btnAdicionar.PerformClick();
 			}
 			
 		}
@@ -335,8 +337,6 @@ namespace GM.View.compra {
 						}
 					}
 					
-					
-					
 					if(res.condicao) {
 						// Caso tenha inserido a compra e obtido o Código,
 						// Ele faz a inserção dos produtos
@@ -375,5 +375,33 @@ namespace GM.View.compra {
 				MessageBox.Show(Financeiro.parcelaToString(contas));
 			}
 		}
+		
+		public void attContas() {
+			try {
+				listaParcela.Items.Clear();
+				LinkedList<Contas> contas = Financeiro.gerarParcela(getValorTotal(), DateTime.Parse(txtDataCompra.Text), 0, sedes.ElementAt(cbxLoja.SelectedIndex).codigo, int.Parse(txtCodigoFornecedor.Text), condicoes.ElementAt(cbxCondicao.SelectedIndex), "Compra", 0);	
+				foreach (Contas cont in contas) {
+					ListViewItem lv = new ListViewItem();
+					lv.Text = cont.vencimento.ToString("dd/MM/yyyy");
+					lv.SubItems.Add(cont.sequencia.ToString());
+					lv.SubItems.Add("R$ " + String.Format("{0:N}", cont.valor));
+					listaParcela.Items.Add(lv);
+				}
+			} catch(Exception e1) {
+				MessageBox.Show(e1.ToString());
+				listaParcela.Items.Clear();
+			}
+		}
+		
+		void buscaCliente(object sender, EventArgs e) {
+			Resultado resBusca = Pesquisa.pessoa(1);
+			if(resBusca.condicao) {
+				txtCodigoFornecedor.Text = resBusca.converter<Pessoa>().codigo.ToString();
+				txtCodigoFornecedor.Focus();
+				cbxCondicao.Focus();
+			}
+		}
 	}
+	
+	
 }

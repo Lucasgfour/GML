@@ -44,12 +44,30 @@ namespace GM.View.venda
 			this.cbxPagamento.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Left) 
 									| System.Windows.Forms.AnchorStyles.Right)));
 			this.cbxPagamento.AutoCompleteSource = System.Windows.Forms.AutoCompleteSource.CustomSource;
+			this.cbxPagamento.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxPagamento.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxPagamento.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxPagamento.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxPagamento.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxPagamento.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxPagamento.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxPagamento.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxPagamento.ColorH = System.Drawing.Color.White;
+			this.cbxPagamento.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxPagamento.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxPagamento.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxPagamento.DropDownHeight = 100;
 			this.cbxPagamento.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbxPagamento.Font = new System.Drawing.Font("Segoe UI", 11.25F);
+			this.cbxPagamento.ForeColor = System.Drawing.Color.Black;
 			this.cbxPagamento.FormattingEnabled = true;
+			this.cbxPagamento.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxPagamento.IntegralHeight = false;
+			this.cbxPagamento.ItemHeight = 20;
 			this.cbxPagamento.Location = new System.Drawing.Point(115, 12);
 			this.cbxPagamento.Name = "cbxPagamento";
-			this.cbxPagamento.Size = new System.Drawing.Size(252, 28);
+			this.cbxPagamento.Size = new System.Drawing.Size(252, 26);
+			this.cbxPagamento.StartIndex = 0;
 			this.cbxPagamento.TabIndex = 1;
 			// 
 			// labPagamento
@@ -74,12 +92,25 @@ namespace GM.View.venda
 			// 
 			// txtTroco
 			// 
+			this.txtTroco.BackColor = System.Drawing.Color.Transparent;
+			this.txtTroco.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtTroco.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtTroco.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtTroco.CustomBGColor = System.Drawing.Color.White;
 			this.txtTroco.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtTroco.ForeColor = System.Drawing.Color.Black;
 			this.txtTroco.Location = new System.Drawing.Point(115, 73);
+			this.txtTroco.MaxLength = 32767;
+			this.txtTroco.Multiline = false;
 			this.txtTroco.Name = "txtTroco";
-			this.txtTroco.Size = new System.Drawing.Size(121, 27);
+			this.txtTroco.ReadOnly = false;
+			this.txtTroco.SelectionStart = 0;
+			this.txtTroco.Size = new System.Drawing.Size(121, 30);
+			this.txtTroco.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtTroco.TabIndex = 2;
-			this.txtTroco.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtTroco.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtTroco.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtTroco.UseSystemPasswordChar = false;
 			this.txtTroco.TextChanged += new System.EventHandler(this.maskMoney);
 			// 
 			// labTroco
@@ -90,7 +121,7 @@ namespace GM.View.venda
 			this.labTroco.Font = new System.Drawing.Font("Segoe UI", 11F);
 			this.labTroco.Location = new System.Drawing.Point(242, 73);
 			this.labTroco.Name = "labTroco";
-			this.labTroco.Size = new System.Drawing.Size(125, 27);
+			this.labTroco.Size = new System.Drawing.Size(125, 30);
 			this.labTroco.TabIndex = 17;
 			this.labTroco.Text = "R$ 0,00";
 			this.labTroco.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -151,7 +182,6 @@ namespace GM.View.venda
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pressionarTecla);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
 		private System.Windows.Forms.Label labAtalho1;
 		private System.Windows.Forms.Label labTotal;
@@ -160,6 +190,6 @@ namespace GM.View.venda
 		private GM.Componentes.MinBox txtTroco;
 		private System.Windows.Forms.Label labZTroco;
 		private System.Windows.Forms.Label labPagamento;
-		private System.Windows.Forms.ComboBox cbxPagamento;
+		private GM.Componentes.MinComboBox cbxPagamento;
 	}
 }

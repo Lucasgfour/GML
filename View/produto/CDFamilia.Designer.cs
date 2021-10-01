@@ -34,17 +34,31 @@ namespace GM.View.produto
 			this.labNome = new ReaLTaiizor.Controls.DungeonLabel();
 			this.txtDescricao = new GM.Componentes.MinBox();
 			this.labDescricao = new ReaLTaiizor.Controls.DungeonLabel();
-			this.btnCancelar = new Sunny.UI.UISymbolButton();
-			this.btnSalvar = new Sunny.UI.UISymbolButton();
+			this.btnCancelar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnSalvar = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.SuspendLayout();
 			// 
 			// txtNome
 			// 
+			this.txtNome.BackColor = System.Drawing.Color.Transparent;
+			this.txtNome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtNome.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtNome.CustomBGColor = System.Drawing.Color.White;
+			this.txtNome.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtNome.ForeColor = System.Drawing.Color.Black;
 			this.txtNome.Location = new System.Drawing.Point(91, 70);
 			this.txtNome.MaxLength = 70;
+			this.txtNome.Multiline = false;
 			this.txtNome.Name = "txtNome";
-			this.txtNome.Size = new System.Drawing.Size(277, 20);
+			this.txtNome.ReadOnly = false;
+			this.txtNome.SelectionStart = 0;
+			this.txtNome.Size = new System.Drawing.Size(277, 28);
+			this.txtNome.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtNome.TabIndex = 17;
+			this.txtNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtNome.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtNome.UseSystemPasswordChar = false;
 			// 
 			// labNome
 			// 
@@ -60,19 +74,32 @@ namespace GM.View.produto
 			// 
 			// txtDescricao
 			// 
-			this.txtDescricao.Location = new System.Drawing.Point(91, 96);
+			this.txtDescricao.BackColor = System.Drawing.Color.Transparent;
+			this.txtDescricao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtDescricao.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtDescricao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtDescricao.CustomBGColor = System.Drawing.Color.White;
+			this.txtDescricao.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtDescricao.ForeColor = System.Drawing.Color.Black;
+			this.txtDescricao.Location = new System.Drawing.Point(91, 104);
 			this.txtDescricao.MaxLength = 200;
 			this.txtDescricao.Multiline = true;
 			this.txtDescricao.Name = "txtDescricao";
+			this.txtDescricao.ReadOnly = false;
+			this.txtDescricao.SelectionStart = 0;
 			this.txtDescricao.Size = new System.Drawing.Size(277, 68);
+			this.txtDescricao.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtDescricao.TabIndex = 18;
+			this.txtDescricao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtDescricao.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtDescricao.UseSystemPasswordChar = false;
 			// 
 			// labDescricao
 			// 
 			this.labDescricao.BackColor = System.Drawing.Color.Transparent;
 			this.labDescricao.Font = new System.Drawing.Font("Segoe UI", 9F);
 			this.labDescricao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labDescricao.Location = new System.Drawing.Point(12, 96);
+			this.labDescricao.Location = new System.Drawing.Point(12, 104);
 			this.labDescricao.Name = "labDescricao";
 			this.labDescricao.Size = new System.Drawing.Size(73, 20);
 			this.labDescricao.TabIndex = 21;
@@ -81,47 +108,28 @@ namespace GM.View.produto
 			// 
 			// btnCancelar
 			// 
-			this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCancelar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnCancelar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(140, 176);
-			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnCancelar.Depth = 0;
+			this.btnCancelar.Location = new System.Drawing.Point(176, 178);
+			this.btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnCancelar.Name = "btnCancelar";
-			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.Size = new System.Drawing.Size(111, 29);
-			this.btnCancelar.Style = Sunny.UI.UIStyle.Red;
-			this.btnCancelar.Symbol = 61453;
-			this.btnCancelar.TabIndex = 27;
-			this.btnCancelar.Text = "Sair";
+			this.btnCancelar.Primary = true;
+			this.btnCancelar.Size = new System.Drawing.Size(93, 31);
+			this.btnCancelar.TabIndex = 61;
+			this.btnCancelar.Text = "CANCELAR";
+			this.btnCancelar.UseVisualStyleBackColor = true;
 			this.btnCancelar.Click += new System.EventHandler(this.sairClique);
 			// 
 			// btnSalvar
 			// 
-			this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSalvar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSalvar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(257, 176);
-			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnSalvar.Depth = 0;
+			this.btnSalvar.Location = new System.Drawing.Point(275, 178);
+			this.btnSalvar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnSalvar.Name = "btnSalvar";
-			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.Size = new System.Drawing.Size(111, 29);
-			this.btnSalvar.Style = Sunny.UI.UIStyle.Green;
-			this.btnSalvar.TabIndex = 26;
-			this.btnSalvar.Text = "Salvar";
+			this.btnSalvar.Primary = true;
+			this.btnSalvar.Size = new System.Drawing.Size(93, 31);
+			this.btnSalvar.TabIndex = 60;
+			this.btnSalvar.Text = "SALVAR";
+			this.btnSalvar.UseVisualStyleBackColor = true;
 			this.btnSalvar.Click += new System.EventHandler(this.salvarClique);
 			// 
 			// CDFamilia
@@ -144,10 +152,9 @@ namespace GM.View.produto
 			this.Load += new System.EventHandler(this.Arranque);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pressEnter);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
-		private Sunny.UI.UISymbolButton btnSalvar;
-		private Sunny.UI.UISymbolButton btnCancelar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnSalvar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnCancelar;
 		private ReaLTaiizor.Controls.DungeonLabel labDescricao;
 		private GM.Componentes.MinBox txtDescricao;
 		private ReaLTaiizor.Controls.DungeonLabel labNome;

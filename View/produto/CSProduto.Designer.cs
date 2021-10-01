@@ -38,10 +38,10 @@ namespace GM.View.produto
 			this.Col05 = new System.Windows.Forms.ColumnHeader();
 			this.Col06 = new System.Windows.Forms.ColumnHeader();
 			this.txtPesquisa = new GM.Componentes.MinBox();
-			this.labSede = new ReaLTaiizor.Controls.DungeonLabel();
-			this.btnPesquisar = new Sunny.UI.UISymbolButton();
-			this.btnAdicionar = new Sunny.UI.UISymbolButton();
-			this.btnEditar = new Sunny.UI.UISymbolButton();
+			this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnRemover = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnEditar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnAdicionar = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.SuspendLayout();
 			// 
 			// listProduto
@@ -99,73 +99,88 @@ namespace GM.View.produto
 			// 
 			// txtPesquisa
 			// 
-			this.txtPesquisa.Location = new System.Drawing.Point(92, 81);
+			this.txtPesquisa.BackColor = System.Drawing.Color.Transparent;
+			this.txtPesquisa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtPesquisa.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPesquisa.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPesquisa.CustomBGColor = System.Drawing.Color.White;
+			this.txtPesquisa.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtPesquisa.ForeColor = System.Drawing.Color.Black;
+			this.txtPesquisa.Location = new System.Drawing.Point(16, 76);
+			this.txtPesquisa.MaxLength = 32767;
+			this.txtPesquisa.Multiline = false;
 			this.txtPesquisa.Name = "txtPesquisa";
-			this.txtPesquisa.Size = new System.Drawing.Size(137, 23);
+			this.txtPesquisa.ReadOnly = false;
+			this.txtPesquisa.SelectionStart = 0;
+			this.txtPesquisa.Size = new System.Drawing.Size(214, 28);
+			this.txtPesquisa.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtPesquisa.TabIndex = 25;
+			this.txtPesquisa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPesquisa.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPesquisa.UseSystemPasswordChar = false;
 			// 
-			// labSede
+			// btnBuscar
 			// 
-			this.labSede.BackColor = System.Drawing.Color.Transparent;
-			this.labSede.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.labSede.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labSede.Location = new System.Drawing.Point(16, 81);
-			this.labSede.Name = "labSede";
-			this.labSede.Size = new System.Drawing.Size(69, 23);
-			this.labSede.TabIndex = 24;
-			this.labSede.Text = "Pesquisa :";
-			this.labSede.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.btnBuscar.Depth = 0;
+			this.btnBuscar.Location = new System.Drawing.Point(236, 76);
+			this.btnBuscar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnBuscar.Name = "btnBuscar";
+			this.btnBuscar.Primary = true;
+			this.btnBuscar.Size = new System.Drawing.Size(94, 28);
+			this.btnBuscar.TabIndex = 70;
+			this.btnBuscar.Text = "BUSCAR";
+			this.btnBuscar.UseVisualStyleBackColor = true;
+			this.btnBuscar.Click += new System.EventHandler(this.pesquisarClique);
 			// 
-			// btnPesquisar
+			// btnRemover
 			// 
-			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnPesquisar.Location = new System.Drawing.Point(236, 75);
-			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnPesquisar.Name = "btnPesquisar";
-			this.btnPesquisar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnPesquisar.Size = new System.Drawing.Size(43, 33);
-			this.btnPesquisar.Symbol = 61442;
-			this.btnPesquisar.TabIndex = 23;
-			this.btnPesquisar.Click += new System.EventHandler(this.pesquisarClique);
-			// 
-			// btnAdicionar
-			// 
-			this.btnAdicionar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAdicionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnAdicionar.Location = new System.Drawing.Point(287, 75);
-			this.btnAdicionar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnAdicionar.Name = "btnAdicionar";
-			this.btnAdicionar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnAdicionar.Size = new System.Drawing.Size(202, 33);
-			this.btnAdicionar.Symbol = 61543;
-			this.btnAdicionar.TabIndex = 26;
-			this.btnAdicionar.Text = "Adicionar";
-			this.btnAdicionar.Click += new System.EventHandler(this.adicionarClique);
+			this.btnRemover.Depth = 0;
+			this.btnRemover.Location = new System.Drawing.Point(715, 76);
+			this.btnRemover.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnRemover.Name = "btnRemover";
+			this.btnRemover.Primary = true;
+			this.btnRemover.Size = new System.Drawing.Size(94, 28);
+			this.btnRemover.TabIndex = 69;
+			this.btnRemover.Text = "REMOVER";
+			this.btnRemover.UseVisualStyleBackColor = true;
+			this.btnRemover.Visible = false;
 			// 
 			// btnEditar
 			// 
-			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(495, 75);
-			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnEditar.Depth = 0;
+			this.btnEditar.Location = new System.Drawing.Point(615, 76);
+			this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnEditar.Size = new System.Drawing.Size(43, 33);
-			this.btnEditar.Symbol = 61508;
-			this.btnEditar.TabIndex = 27;
+			this.btnEditar.Primary = true;
+			this.btnEditar.Size = new System.Drawing.Size(94, 28);
+			this.btnEditar.TabIndex = 68;
+			this.btnEditar.Text = "EDITAR";
+			this.btnEditar.UseVisualStyleBackColor = true;
 			this.btnEditar.Click += new System.EventHandler(this.editarClique);
+			// 
+			// btnAdicionar
+			// 
+			this.btnAdicionar.Depth = 0;
+			this.btnAdicionar.Location = new System.Drawing.Point(515, 76);
+			this.btnAdicionar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnAdicionar.Name = "btnAdicionar";
+			this.btnAdicionar.Primary = true;
+			this.btnAdicionar.Size = new System.Drawing.Size(94, 28);
+			this.btnAdicionar.TabIndex = 67;
+			this.btnAdicionar.Text = "ADICIONAR";
+			this.btnAdicionar.UseVisualStyleBackColor = true;
+			this.btnAdicionar.Click += new System.EventHandler(this.adicionarClique);
 			// 
 			// CSProduto
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(821, 575);
+			this.Controls.Add(this.btnBuscar);
+			this.Controls.Add(this.btnRemover);
 			this.Controls.Add(this.btnEditar);
 			this.Controls.Add(this.btnAdicionar);
 			this.Controls.Add(this.txtPesquisa);
-			this.Controls.Add(this.labSede);
-			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.listProduto);
 			this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -175,12 +190,11 @@ namespace GM.View.produto
 			this.Text = "Consulta Produtos";
 			this.Load += new System.EventHandler(this.Arranque);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
-		private Sunny.UI.UISymbolButton btnEditar;
-		private Sunny.UI.UISymbolButton btnAdicionar;
-		private Sunny.UI.UISymbolButton btnPesquisar;
-		private ReaLTaiizor.Controls.DungeonLabel labSede;
+		private MaterialSkin.Controls.MaterialRaisedButton btnRemover;
+		private MaterialSkin.Controls.MaterialRaisedButton btnBuscar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnEditar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnAdicionar;
 		private GM.Componentes.MinBox txtPesquisa;
 		private System.Windows.Forms.ColumnHeader Col06;
 		private System.Windows.Forms.ColumnHeader Col05;

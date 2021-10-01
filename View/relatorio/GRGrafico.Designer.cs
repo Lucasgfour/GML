@@ -32,14 +32,31 @@ namespace GM.View.relatorio
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(GRGrafico));
 			this.cbxTipo = new GM.Componentes.MinComboBox();
 			this.labTipo = new System.Windows.Forms.Label();
-			this.btnSalvar = new Sunny.UI.UISymbolButton();
+			this.btnGerar = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.SuspendLayout();
 			// 
 			// cbxTipo
 			// 
+			this.cbxTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxTipo.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxTipo.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxTipo.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxTipo.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxTipo.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxTipo.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxTipo.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxTipo.ColorH = System.Drawing.Color.White;
+			this.cbxTipo.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxTipo.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxTipo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxTipo.DropDownHeight = 100;
 			this.cbxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbxTipo.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.cbxTipo.ForeColor = System.Drawing.Color.Black;
 			this.cbxTipo.FormattingEnabled = true;
+			this.cbxTipo.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxTipo.IntegralHeight = false;
+			this.cbxTipo.ItemHeight = 20;
 			this.cbxTipo.Items.AddRange(new object[] {
 									"Gráfico em Linha",
 									"Gráfico em Barra",
@@ -47,7 +64,8 @@ namespace GM.View.relatorio
 									"Gráfico em Radar"});
 			this.cbxTipo.Location = new System.Drawing.Point(139, 69);
 			this.cbxTipo.Name = "cbxTipo";
-			this.cbxTipo.Size = new System.Drawing.Size(234, 25);
+			this.cbxTipo.Size = new System.Drawing.Size(234, 26);
+			this.cbxTipo.StartIndex = 0;
 			this.cbxTipo.TabIndex = 206;
 			// 
 			// labTipo
@@ -61,35 +79,25 @@ namespace GM.View.relatorio
 			this.labTipo.Text = "Tipo de Gráfico :";
 			this.labTipo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
-			// btnSalvar
+			// btnGerar
 			// 
-			this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSalvar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSalvar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(216, 100);
-			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnSalvar.Name = "btnSalvar";
-			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.Size = new System.Drawing.Size(157, 29);
-			this.btnSalvar.Style = Sunny.UI.UIStyle.Green;
-			this.btnSalvar.Symbol = 61568;
-			this.btnSalvar.TabIndex = 208;
-			this.btnSalvar.Text = "Gerar Gráfico";
-			this.btnSalvar.Click += new System.EventHandler(this.gerar);
+			this.btnGerar.Depth = 0;
+			this.btnGerar.Location = new System.Drawing.Point(241, 101);
+			this.btnGerar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnGerar.Name = "btnGerar";
+			this.btnGerar.Primary = true;
+			this.btnGerar.Size = new System.Drawing.Size(132, 28);
+			this.btnGerar.TabIndex = 214;
+			this.btnGerar.Text = "GERAR";
+			this.btnGerar.UseVisualStyleBackColor = true;
+			this.btnGerar.Click += new System.EventHandler(this.gerar);
 			// 
 			// GRGrafico
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(385, 139);
-			this.Controls.Add(this.btnSalvar);
+			this.Controls.Add(this.btnGerar);
 			this.Controls.Add(this.cbxTipo);
 			this.Controls.Add(this.labTipo);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -100,8 +108,8 @@ namespace GM.View.relatorio
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
 		}
-		private Sunny.UI.UISymbolButton btnSalvar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnGerar;
 		private System.Windows.Forms.Label labTipo;
-		private System.Windows.Forms.ComboBox cbxTipo;
+		private GM.Componentes.MinComboBox cbxTipo;
 	}
 }

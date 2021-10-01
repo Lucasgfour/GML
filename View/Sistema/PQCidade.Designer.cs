@@ -34,10 +34,9 @@ namespace GM.View.Sistema
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
 			this.Col03 = new System.Windows.Forms.ColumnHeader();
-			this.btnSelecionar = new Sunny.UI.UISymbolButton();
 			this.txtPesquisa = new GM.Componentes.MinBox();
-			this.labPesquisa = new ReaLTaiizor.Controls.DungeonLabel();
-			this.btnPesquisar = new Sunny.UI.UISymbolButton();
+			this.btnPesquisar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnSelecionar = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.SuspendLayout();
 			// 
 			// listCidade
@@ -48,10 +47,10 @@ namespace GM.View.Sistema
 									this.Col03});
 			this.listCidade.FullRowSelect = true;
 			this.listCidade.GridLines = true;
-			this.listCidade.Location = new System.Drawing.Point(12, 112);
+			this.listCidade.Location = new System.Drawing.Point(12, 103);
 			this.listCidade.MultiSelect = false;
 			this.listCidade.Name = "listCidade";
-			this.listCidade.Size = new System.Drawing.Size(550, 257);
+			this.listCidade.Size = new System.Drawing.Size(550, 266);
 			this.listCidade.TabIndex = 0;
 			this.listCidade.UseCompatibleStateImageBehavior = false;
 			this.listCidade.View = System.Windows.Forms.View.Details;
@@ -71,69 +70,62 @@ namespace GM.View.Sistema
 			this.Col03.Text = "UF";
 			this.Col03.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
 			// 
-			// btnSelecionar
-			// 
-			this.btnSelecionar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSelecionar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSelecionar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSelecionar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSelecionar.Location = new System.Drawing.Point(327, 72);
-			this.btnSelecionar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnSelecionar.Name = "btnSelecionar";
-			this.btnSelecionar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnSelecionar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSelecionar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSelecionar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.Size = new System.Drawing.Size(236, 33);
-			this.btnSelecionar.Style = Sunny.UI.UIStyle.Green;
-			this.btnSelecionar.TabIndex = 35;
-			this.btnSelecionar.Text = "Selecionar";
-			this.btnSelecionar.Click += new System.EventHandler(this.selecionarClique);
-			// 
 			// txtPesquisa
 			// 
-			this.txtPesquisa.Location = new System.Drawing.Point(88, 78);
+			this.txtPesquisa.BackColor = System.Drawing.Color.Transparent;
+			this.txtPesquisa.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtPesquisa.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPesquisa.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPesquisa.CustomBGColor = System.Drawing.Color.White;
+			this.txtPesquisa.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtPesquisa.ForeColor = System.Drawing.Color.Black;
+			this.txtPesquisa.Location = new System.Drawing.Point(12, 69);
+			this.txtPesquisa.MaxLength = 32767;
+			this.txtPesquisa.Multiline = false;
 			this.txtPesquisa.Name = "txtPesquisa";
-			this.txtPesquisa.Size = new System.Drawing.Size(181, 23);
+			this.txtPesquisa.ReadOnly = false;
+			this.txtPesquisa.SelectionStart = 0;
+			this.txtPesquisa.Size = new System.Drawing.Size(181, 28);
+			this.txtPesquisa.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtPesquisa.TabIndex = 34;
-			// 
-			// labPesquisa
-			// 
-			this.labPesquisa.BackColor = System.Drawing.Color.Transparent;
-			this.labPesquisa.Font = new System.Drawing.Font("Segoe UI", 9F);
-			this.labPesquisa.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
-			this.labPesquisa.Location = new System.Drawing.Point(12, 78);
-			this.labPesquisa.Name = "labPesquisa";
-			this.labPesquisa.Size = new System.Drawing.Size(69, 23);
-			this.labPesquisa.TabIndex = 33;
-			this.labPesquisa.Text = "Pesquisa :";
-			this.labPesquisa.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			this.txtPesquisa.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPesquisa.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPesquisa.UseSystemPasswordChar = false;
 			// 
 			// btnPesquisar
 			// 
-			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnPesquisar.Location = new System.Drawing.Point(277, 72);
-			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnPesquisar.Depth = 0;
+			this.btnPesquisar.Location = new System.Drawing.Point(199, 69);
+			this.btnPesquisar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnPesquisar.Name = "btnPesquisar";
-			this.btnPesquisar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnPesquisar.Size = new System.Drawing.Size(43, 33);
-			this.btnPesquisar.Symbol = 61442;
-			this.btnPesquisar.TabIndex = 32;
+			this.btnPesquisar.Primary = true;
+			this.btnPesquisar.Size = new System.Drawing.Size(103, 28);
+			this.btnPesquisar.TabIndex = 63;
+			this.btnPesquisar.Text = "PESQUISAR";
+			this.btnPesquisar.UseVisualStyleBackColor = true;
 			this.btnPesquisar.Click += new System.EventHandler(this.pesquisarClique);
+			// 
+			// btnSelecionar
+			// 
+			this.btnSelecionar.Depth = 0;
+			this.btnSelecionar.Location = new System.Drawing.Point(408, 69);
+			this.btnSelecionar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnSelecionar.Name = "btnSelecionar";
+			this.btnSelecionar.Primary = true;
+			this.btnSelecionar.Size = new System.Drawing.Size(154, 28);
+			this.btnSelecionar.TabIndex = 64;
+			this.btnSelecionar.Text = "SELECIONAR";
+			this.btnSelecionar.UseVisualStyleBackColor = true;
+			this.btnSelecionar.Click += new System.EventHandler(this.selecionarClique);
 			// 
 			// PQCidade
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(573, 381);
+			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.btnSelecionar);
 			this.Controls.Add(this.txtPesquisa);
-			this.Controls.Add(this.labPesquisa);
-			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.listCidade);
 			this.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -144,12 +136,10 @@ namespace GM.View.Sistema
 			this.Text = "Pesquisa por cidade";
 			this.Load += new System.EventHandler(this.arranque);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
-		private Sunny.UI.UISymbolButton btnPesquisar;
-		private ReaLTaiizor.Controls.DungeonLabel labPesquisa;
+		private MaterialSkin.Controls.MaterialRaisedButton btnSelecionar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnPesquisar;
 		private GM.Componentes.MinBox txtPesquisa;
-		private Sunny.UI.UISymbolButton btnSelecionar;
 		private System.Windows.Forms.ColumnHeader Col03;
 		private System.Windows.Forms.ColumnHeader Col02;
 		private System.Windows.Forms.ColumnHeader Col01;

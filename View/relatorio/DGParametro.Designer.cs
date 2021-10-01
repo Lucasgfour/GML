@@ -33,18 +33,30 @@ namespace GM.View.relatorio
 			this.txtParametro = new GM.Componentes.MinBox();
 			this.labParametro = new System.Windows.Forms.Label();
 			this.labTitulo = new System.Windows.Forms.Label();
-			this.btnOK = new Sunny.UI.UISymbolButton();
+			this.btnOK = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.SuspendLayout();
 			// 
 			// txtParametro
 			// 
 			this.txtParametro.BackColor = System.Drawing.Color.White;
+			this.txtParametro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtParametro.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtParametro.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtParametro.CustomBGColor = System.Drawing.Color.White;
 			this.txtParametro.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.txtParametro.ForeColor = System.Drawing.Color.Black;
 			this.txtParametro.Location = new System.Drawing.Point(122, 115);
+			this.txtParametro.MaxLength = 32767;
+			this.txtParametro.Multiline = false;
 			this.txtParametro.Name = "txtParametro";
-			this.txtParametro.Size = new System.Drawing.Size(239, 25);
+			this.txtParametro.ReadOnly = false;
+			this.txtParametro.SelectionStart = 0;
+			this.txtParametro.Size = new System.Drawing.Size(239, 28);
+			this.txtParametro.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtParametro.TabIndex = 16;
-			this.txtParametro.TextAlign = System.Windows.Forms.HorizontalAlignment.Center;
+			this.txtParametro.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtParametro.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtParametro.UseSystemPasswordChar = false;
 			this.txtParametro.TextChanged += new System.EventHandler(this.maskParametro);
 			// 
 			// labParametro
@@ -69,23 +81,15 @@ namespace GM.View.relatorio
 			// 
 			// btnOK
 			// 
-			this.btnOK.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnOK.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnOK.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnOK.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnOK.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnOK.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnOK.Location = new System.Drawing.Point(250, 152);
-			this.btnOK.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnOK.Depth = 0;
+			this.btnOK.Location = new System.Drawing.Point(256, 156);
+			this.btnOK.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnOK.Name = "btnOK";
-			this.btnOK.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnOK.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnOK.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnOK.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnOK.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnOK.Size = new System.Drawing.Size(111, 29);
-			this.btnOK.Style = Sunny.UI.UIStyle.Green;
-			this.btnOK.TabIndex = 19;
+			this.btnOK.Primary = true;
+			this.btnOK.Size = new System.Drawing.Size(105, 28);
+			this.btnOK.TabIndex = 213;
+			this.btnOK.Text = "OK";
+			this.btnOK.UseVisualStyleBackColor = true;
 			this.btnOK.Click += new System.EventHandler(this.cliqueOK);
 			// 
 			// DGParametro
@@ -107,9 +111,8 @@ namespace GM.View.relatorio
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pressionar);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
-		private Sunny.UI.UISymbolButton btnOK;
+		private MaterialSkin.Controls.MaterialRaisedButton btnOK;
 		private System.Windows.Forms.Label labTitulo;
 		private System.Windows.Forms.Label labParametro;
 		private GM.Componentes.MinBox txtParametro;

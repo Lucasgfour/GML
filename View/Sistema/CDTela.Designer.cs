@@ -36,19 +36,31 @@ namespace GM.View.Sistema
 			this.cbxSituacao = new GM.Componentes.MinComboBox();
 			this.labPermissao = new System.Windows.Forms.Label();
 			this.cbxNivel = new GM.Componentes.MinComboBox();
-			this.btnCancelar = new Sunny.UI.UISymbolButton();
-			this.btnSalvar = new Sunny.UI.UISymbolButton();
+			this.btnCancelar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnSalvar = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.SuspendLayout();
 			// 
 			// txtTela
 			// 
 			this.txtTela.BackColor = System.Drawing.Color.White;
+			this.txtTela.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtTela.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtTela.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtTela.CustomBGColor = System.Drawing.Color.White;
 			this.txtTela.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.txtTela.ForeColor = System.Drawing.Color.Black;
 			this.txtTela.Location = new System.Drawing.Point(108, 74);
 			this.txtTela.MaxLength = 30;
+			this.txtTela.Multiline = false;
 			this.txtTela.Name = "txtTela";
-			this.txtTela.Size = new System.Drawing.Size(208, 25);
+			this.txtTela.ReadOnly = false;
+			this.txtTela.SelectionStart = 0;
+			this.txtTela.Size = new System.Drawing.Size(208, 28);
+			this.txtTela.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtTela.TabIndex = 22;
+			this.txtTela.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtTela.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtTela.UseSystemPasswordChar = false;
 			// 
 			// labTela
 			// 
@@ -74,15 +86,33 @@ namespace GM.View.Sistema
 			// 
 			// cbxSituacao
 			// 
+			this.cbxSituacao.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxSituacao.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxSituacao.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxSituacao.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxSituacao.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxSituacao.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxSituacao.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxSituacao.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxSituacao.ColorH = System.Drawing.Color.White;
+			this.cbxSituacao.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxSituacao.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxSituacao.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxSituacao.DropDownHeight = 100;
 			this.cbxSituacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbxSituacao.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.cbxSituacao.ForeColor = System.Drawing.Color.Black;
 			this.cbxSituacao.FormattingEnabled = true;
+			this.cbxSituacao.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxSituacao.IntegralHeight = false;
+			this.cbxSituacao.ItemHeight = 20;
 			this.cbxSituacao.Items.AddRange(new object[] {
 									"Bloqueada",
 									"Ativa"});
 			this.cbxSituacao.Location = new System.Drawing.Point(108, 105);
 			this.cbxSituacao.Name = "cbxSituacao";
-			this.cbxSituacao.Size = new System.Drawing.Size(90, 25);
+			this.cbxSituacao.Size = new System.Drawing.Size(90, 26);
+			this.cbxSituacao.StartIndex = 0;
 			this.cbxSituacao.TabIndex = 32;
 			// 
 			// labPermissao
@@ -98,9 +128,26 @@ namespace GM.View.Sistema
 			// 
 			// cbxNivel
 			// 
+			this.cbxNivel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxNivel.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxNivel.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxNivel.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxNivel.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxNivel.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxNivel.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxNivel.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxNivel.ColorH = System.Drawing.Color.White;
+			this.cbxNivel.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxNivel.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxNivel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxNivel.DropDownHeight = 100;
 			this.cbxNivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbxNivel.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.cbxNivel.ForeColor = System.Drawing.Color.Black;
 			this.cbxNivel.FormattingEnabled = true;
+			this.cbxNivel.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxNivel.IntegralHeight = false;
+			this.cbxNivel.ItemHeight = 20;
 			this.cbxNivel.Items.AddRange(new object[] {
 									"Nível 0",
 									"Nível 1",
@@ -115,52 +162,34 @@ namespace GM.View.Sistema
 									"Nível 10"});
 			this.cbxNivel.Location = new System.Drawing.Point(108, 136);
 			this.cbxNivel.Name = "cbxNivel";
-			this.cbxNivel.Size = new System.Drawing.Size(154, 25);
+			this.cbxNivel.Size = new System.Drawing.Size(154, 26);
+			this.cbxNivel.StartIndex = 0;
 			this.cbxNivel.TabIndex = 34;
 			// 
 			// btnCancelar
 			// 
-			this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCancelar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnCancelar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(108, 172);
-			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnCancelar.Depth = 0;
+			this.btnCancelar.Location = new System.Drawing.Point(124, 174);
+			this.btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnCancelar.Name = "btnCancelar";
-			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.Size = new System.Drawing.Size(91, 29);
-			this.btnCancelar.Style = Sunny.UI.UIStyle.Red;
-			this.btnCancelar.Symbol = 61453;
-			this.btnCancelar.TabIndex = 37;
-			this.btnCancelar.Text = "Sair";
+			this.btnCancelar.Primary = true;
+			this.btnCancelar.Size = new System.Drawing.Size(93, 31);
+			this.btnCancelar.TabIndex = 213;
+			this.btnCancelar.Text = "CANCELAR";
+			this.btnCancelar.UseVisualStyleBackColor = true;
 			this.btnCancelar.Click += new System.EventHandler(this.cliqueSair);
 			// 
 			// btnSalvar
 			// 
-			this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSalvar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSalvar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(205, 172);
-			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnSalvar.Depth = 0;
+			this.btnSalvar.Location = new System.Drawing.Point(223, 174);
+			this.btnSalvar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnSalvar.Name = "btnSalvar";
-			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.Size = new System.Drawing.Size(111, 29);
-			this.btnSalvar.Style = Sunny.UI.UIStyle.Green;
-			this.btnSalvar.TabIndex = 36;
-			this.btnSalvar.Text = "Salvar";
+			this.btnSalvar.Primary = true;
+			this.btnSalvar.Size = new System.Drawing.Size(93, 31);
+			this.btnSalvar.TabIndex = 212;
+			this.btnSalvar.Text = "SALVAR";
+			this.btnSalvar.UseVisualStyleBackColor = true;
 			this.btnSalvar.Click += new System.EventHandler(this.cliqueSalvar);
 			// 
 			// CDTela
@@ -184,13 +213,12 @@ namespace GM.View.Sistema
 			this.Text = "Cadastro/Edição de tela";
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
-		private Sunny.UI.UISymbolButton btnSalvar;
-		private Sunny.UI.UISymbolButton btnCancelar;
-		private System.Windows.Forms.ComboBox cbxNivel;
+		private MaterialSkin.Controls.MaterialRaisedButton btnSalvar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnCancelar;
+		private GM.Componentes.MinComboBox cbxNivel;
 		private System.Windows.Forms.Label labPermissao;
-		private System.Windows.Forms.ComboBox cbxSituacao;
+		private GM.Componentes.MinComboBox cbxSituacao;
 		private System.Windows.Forms.Label labSituacao;
 		private System.Windows.Forms.Label labTela;
 		private GM.Componentes.MinBox txtTela;

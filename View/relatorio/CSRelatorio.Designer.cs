@@ -33,15 +33,15 @@ namespace GM.View.relatorio
 			this.listaRelatorios = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.gpxSelecionado = new System.Windows.Forms.GroupBox();
-			this.gerarGrafico = new Sunny.UI.UISymbolButton();
-			this.gerarWeb = new Sunny.UI.UISymbolButton();
-			this.gerarTabela = new Sunny.UI.UISymbolButton();
 			this.txtObservacao = new GM.Componentes.MinBox();
 			this.txtDescricao = new GM.Componentes.MinBox();
 			this.gpxFerramentas = new System.Windows.Forms.GroupBox();
-			this.btnRemover = new Sunny.UI.UISymbolButton();
-			this.btnEditar = new Sunny.UI.UISymbolButton();
-			this.btnNovo = new Sunny.UI.UISymbolButton();
+			this.btnRemover = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnEditar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnAdicionar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnTabela = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnWeb = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnGrafico = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.gpxSelecionado.SuspendLayout();
 			this.gpxFerramentas.SuspendLayout();
 			this.SuspendLayout();
@@ -70,9 +70,9 @@ namespace GM.View.relatorio
 			// gpxSelecionado
 			// 
 			this.gpxSelecionado.BackColor = System.Drawing.Color.Transparent;
-			this.gpxSelecionado.Controls.Add(this.gerarGrafico);
-			this.gpxSelecionado.Controls.Add(this.gerarWeb);
-			this.gpxSelecionado.Controls.Add(this.gerarTabela);
+			this.gpxSelecionado.Controls.Add(this.btnGrafico);
+			this.gpxSelecionado.Controls.Add(this.btnWeb);
+			this.gpxSelecionado.Controls.Add(this.btnTabela);
 			this.gpxSelecionado.Controls.Add(this.txtObservacao);
 			this.gpxSelecionado.Controls.Add(this.txtDescricao);
 			this.gpxSelecionado.Location = new System.Drawing.Point(338, 129);
@@ -82,73 +82,56 @@ namespace GM.View.relatorio
 			this.gpxSelecionado.TabStop = false;
 			this.gpxSelecionado.Text = "Relatório Selecionado";
 			// 
-			// gerarGrafico
-			// 
-			this.gerarGrafico.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.gerarGrafico.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.gerarGrafico.Location = new System.Drawing.Point(6, 241);
-			this.gerarGrafico.MinimumSize = new System.Drawing.Size(1, 1);
-			this.gerarGrafico.Name = "gerarGrafico";
-			this.gerarGrafico.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.gerarGrafico.Size = new System.Drawing.Size(272, 29);
-			this.gerarGrafico.SymbolSize = 0;
-			this.gerarGrafico.TabIndex = 25;
-			this.gerarGrafico.Text = " Gerar em gráfico";
-			this.gerarGrafico.Click += new System.EventHandler(this.cliqueGerarGrafico);
-			// 
-			// gerarWeb
-			// 
-			this.gerarWeb.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.gerarWeb.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.gerarWeb.Location = new System.Drawing.Point(6, 206);
-			this.gerarWeb.MinimumSize = new System.Drawing.Size(1, 1);
-			this.gerarWeb.Name = "gerarWeb";
-			this.gerarWeb.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.gerarWeb.Size = new System.Drawing.Size(272, 29);
-			this.gerarWeb.SymbolSize = 0;
-			this.gerarWeb.TabIndex = 24;
-			this.gerarWeb.Text = " Gerar em Web";
-			this.gerarWeb.Click += new System.EventHandler(this.cliqueGerarWeb);
-			// 
-			// gerarTabela
-			// 
-			this.gerarTabela.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.gerarTabela.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.gerarTabela.Location = new System.Drawing.Point(6, 171);
-			this.gerarTabela.MinimumSize = new System.Drawing.Size(1, 1);
-			this.gerarTabela.Name = "gerarTabela";
-			this.gerarTabela.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.gerarTabela.Size = new System.Drawing.Size(272, 29);
-			this.gerarTabela.SymbolSize = 0;
-			this.gerarTabela.TabIndex = 23;
-			this.gerarTabela.Text = " Gerar em tabela";
-			this.gerarTabela.Click += new System.EventHandler(this.cliqueGerarTabela);
-			// 
 			// txtObservacao
 			// 
 			this.txtObservacao.BackColor = System.Drawing.Color.White;
+			this.txtObservacao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtObservacao.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtObservacao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtObservacao.CustomBGColor = System.Drawing.Color.White;
 			this.txtObservacao.Font = new System.Drawing.Font("Segoe UI", 8F);
+			this.txtObservacao.ForeColor = System.Drawing.Color.Black;
 			this.txtObservacao.Location = new System.Drawing.Point(6, 52);
+			this.txtObservacao.MaxLength = 32767;
 			this.txtObservacao.Multiline = true;
 			this.txtObservacao.Name = "txtObservacao";
+			this.txtObservacao.ReadOnly = false;
+			this.txtObservacao.SelectionStart = 0;
 			this.txtObservacao.Size = new System.Drawing.Size(272, 113);
+			this.txtObservacao.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtObservacao.TabIndex = 23;
+			this.txtObservacao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtObservacao.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtObservacao.UseSystemPasswordChar = false;
 			// 
 			// txtDescricao
 			// 
 			this.txtDescricao.BackColor = System.Drawing.Color.White;
+			this.txtDescricao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtDescricao.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtDescricao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtDescricao.CustomBGColor = System.Drawing.Color.White;
 			this.txtDescricao.Font = new System.Drawing.Font("Segoe UI", 8F);
+			this.txtDescricao.ForeColor = System.Drawing.Color.Black;
 			this.txtDescricao.Location = new System.Drawing.Point(6, 24);
+			this.txtDescricao.MaxLength = 32767;
+			this.txtDescricao.Multiline = false;
 			this.txtDescricao.Name = "txtDescricao";
-			this.txtDescricao.Size = new System.Drawing.Size(272, 22);
+			this.txtDescricao.ReadOnly = false;
+			this.txtDescricao.SelectionStart = 0;
+			this.txtDescricao.Size = new System.Drawing.Size(272, 25);
+			this.txtDescricao.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtDescricao.TabIndex = 22;
+			this.txtDescricao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtDescricao.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtDescricao.UseSystemPasswordChar = false;
 			// 
 			// gpxFerramentas
 			// 
 			this.gpxFerramentas.BackColor = System.Drawing.Color.Transparent;
 			this.gpxFerramentas.Controls.Add(this.btnRemover);
 			this.gpxFerramentas.Controls.Add(this.btnEditar);
-			this.gpxFerramentas.Controls.Add(this.btnNovo);
+			this.gpxFerramentas.Controls.Add(this.btnAdicionar);
 			this.gpxFerramentas.Location = new System.Drawing.Point(338, 69);
 			this.gpxFerramentas.Name = "gpxFerramentas";
 			this.gpxFerramentas.Size = new System.Drawing.Size(284, 54);
@@ -158,63 +141,82 @@ namespace GM.View.relatorio
 			// 
 			// btnRemover
 			// 
-			this.btnRemover.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnRemover.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnRemover.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnRemover.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnRemover.Location = new System.Drawing.Point(156, 19);
-			this.btnRemover.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnRemover.Depth = 0;
+			this.btnRemover.Location = new System.Drawing.Point(181, 20);
+			this.btnRemover.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnRemover.Name = "btnRemover";
-			this.btnRemover.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnRemover.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnRemover.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnRemover.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.Size = new System.Drawing.Size(122, 29);
-			this.btnRemover.Style = Sunny.UI.UIStyle.Red;
-			this.btnRemover.SymbolSize = 0;
-			this.btnRemover.TabIndex = 22;
-			this.btnRemover.Text = "Remover";
+			this.btnRemover.Primary = true;
+			this.btnRemover.Size = new System.Drawing.Size(97, 28);
+			this.btnRemover.TabIndex = 68;
+			this.btnRemover.Text = "REMOVER";
+			this.btnRemover.UseVisualStyleBackColor = true;
+			this.btnRemover.Visible = false;
 			this.btnRemover.Click += new System.EventHandler(this.cliqueRemover);
 			// 
 			// btnEditar
 			// 
-			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(82, 19);
-			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnEditar.Depth = 0;
+			this.btnEditar.Location = new System.Drawing.Point(106, 20);
+			this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnEditar.Size = new System.Drawing.Size(68, 29);
-			this.btnEditar.SymbolSize = 0;
-			this.btnEditar.TabIndex = 21;
-			this.btnEditar.Text = "Editar";
+			this.btnEditar.Primary = true;
+			this.btnEditar.Size = new System.Drawing.Size(69, 28);
+			this.btnEditar.TabIndex = 67;
+			this.btnEditar.Text = "EDITAR";
+			this.btnEditar.UseVisualStyleBackColor = true;
 			this.btnEditar.Click += new System.EventHandler(this.cliqueEditar);
 			// 
-			// btnNovo
+			// btnAdicionar
 			// 
-			this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnNovo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnNovo.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnNovo.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnNovo.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnNovo.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnNovo.Location = new System.Drawing.Point(6, 19);
-			this.btnNovo.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnNovo.Name = "btnNovo";
-			this.btnNovo.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnNovo.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnNovo.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnNovo.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnNovo.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnNovo.Size = new System.Drawing.Size(70, 29);
-			this.btnNovo.Style = Sunny.UI.UIStyle.Green;
-			this.btnNovo.SymbolSize = 0;
-			this.btnNovo.TabIndex = 20;
-			this.btnNovo.Text = "Novo";
-			this.btnNovo.Click += new System.EventHandler(this.cliqueNovo);
+			this.btnAdicionar.Depth = 0;
+			this.btnAdicionar.Location = new System.Drawing.Point(6, 20);
+			this.btnAdicionar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnAdicionar.Name = "btnAdicionar";
+			this.btnAdicionar.Primary = true;
+			this.btnAdicionar.Size = new System.Drawing.Size(94, 28);
+			this.btnAdicionar.TabIndex = 66;
+			this.btnAdicionar.Text = "ADICIONAR";
+			this.btnAdicionar.UseVisualStyleBackColor = true;
+			this.btnAdicionar.Click += new System.EventHandler(this.cliqueNovo);
+			// 
+			// btnTabela
+			// 
+			this.btnTabela.Depth = 0;
+			this.btnTabela.Location = new System.Drawing.Point(6, 171);
+			this.btnTabela.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnTabela.Name = "btnTabela";
+			this.btnTabela.Primary = true;
+			this.btnTabela.Size = new System.Drawing.Size(272, 28);
+			this.btnTabela.TabIndex = 69;
+			this.btnTabela.Text = "GERAR NA TELA";
+			this.btnTabela.UseVisualStyleBackColor = true;
+			this.btnTabela.Click += new System.EventHandler(this.cliqueGerarTabela);
+			// 
+			// btnWeb
+			// 
+			this.btnWeb.Depth = 0;
+			this.btnWeb.Location = new System.Drawing.Point(6, 205);
+			this.btnWeb.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnWeb.Name = "btnWeb";
+			this.btnWeb.Primary = true;
+			this.btnWeb.Size = new System.Drawing.Size(272, 28);
+			this.btnWeb.TabIndex = 70;
+			this.btnWeb.Text = "GERAR WEB";
+			this.btnWeb.UseVisualStyleBackColor = true;
+			this.btnWeb.Click += new System.EventHandler(this.cliqueGerarWeb);
+			// 
+			// btnGrafico
+			// 
+			this.btnGrafico.Depth = 0;
+			this.btnGrafico.Location = new System.Drawing.Point(6, 239);
+			this.btnGrafico.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnGrafico.Name = "btnGrafico";
+			this.btnGrafico.Primary = true;
+			this.btnGrafico.Size = new System.Drawing.Size(272, 28);
+			this.btnGrafico.TabIndex = 71;
+			this.btnGrafico.Text = "GERAR GRÁFICO";
+			this.btnGrafico.UseVisualStyleBackColor = true;
+			this.btnGrafico.Click += new System.EventHandler(this.cliqueGerarGrafico);
 			// 
 			// CSRelatorio
 			// 
@@ -231,18 +233,17 @@ namespace GM.View.relatorio
 			this.Text = "Consulta de relatórios";
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.gpxSelecionado.ResumeLayout(false);
-			this.gpxSelecionado.PerformLayout();
 			this.gpxFerramentas.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}
-		private Sunny.UI.UISymbolButton gerarTabela;
-		private Sunny.UI.UISymbolButton gerarWeb;
-		private Sunny.UI.UISymbolButton gerarGrafico;
+		private MaterialSkin.Controls.MaterialRaisedButton btnAdicionar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnTabela;
+		private MaterialSkin.Controls.MaterialRaisedButton btnWeb;
+		private MaterialSkin.Controls.MaterialRaisedButton btnGrafico;
 		private GM.Componentes.MinBox txtDescricao;
 		private GM.Componentes.MinBox txtObservacao;
-		private Sunny.UI.UISymbolButton btnRemover;
-		private Sunny.UI.UISymbolButton btnNovo;
-		private Sunny.UI.UISymbolButton btnEditar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnRemover;
+		private MaterialSkin.Controls.MaterialRaisedButton btnEditar;
 		private System.Windows.Forms.ColumnHeader Col01;
 		private System.Windows.Forms.GroupBox gpxFerramentas;
 		private System.Windows.Forms.GroupBox gpxSelecionado;

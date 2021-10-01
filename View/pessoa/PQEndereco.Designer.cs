@@ -34,10 +34,10 @@ namespace GM.View.pessoa
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
 			this.Col03 = new System.Windows.Forms.ColumnHeader();
-			this.btnDeletar = new Sunny.UI.UISymbolButton();
-			this.btnEditar = new Sunny.UI.UISymbolButton();
-			this.btnNovo = new Sunny.UI.UISymbolButton();
-			this.btnSelecionar = new Sunny.UI.UISymbolButton();
+			this.btnSelecionar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnAdicionar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnEditar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnRemover = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.SuspendLayout();
 			// 
 			// listEndereco
@@ -72,75 +72,68 @@ namespace GM.View.pessoa
 			this.Col03.Text = "Cidade";
 			this.Col03.Width = 200;
 			// 
-			// btnDeletar
+			// btnSelecionar
 			// 
-			this.btnDeletar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnDeletar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnDeletar.Location = new System.Drawing.Point(88, 72);
-			this.btnDeletar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnDeletar.Name = "btnDeletar";
-			this.btnDeletar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnDeletar.Size = new System.Drawing.Size(37, 29);
-			this.btnDeletar.Symbol = 61944;
-			this.btnDeletar.TabIndex = 7;
+			this.btnSelecionar.Depth = 0;
+			this.btnSelecionar.Location = new System.Drawing.Point(406, 70);
+			this.btnSelecionar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnSelecionar.Name = "btnSelecionar";
+			this.btnSelecionar.Primary = true;
+			this.btnSelecionar.Size = new System.Drawing.Size(169, 29);
+			this.btnSelecionar.TabIndex = 59;
+			this.btnSelecionar.Text = "SELECIONAR";
+			this.btnSelecionar.UseVisualStyleBackColor = true;
+			this.btnSelecionar.Click += new System.EventHandler(this.selecionarClique);
+			// 
+			// btnAdicionar
+			// 
+			this.btnAdicionar.Depth = 0;
+			this.btnAdicionar.Location = new System.Drawing.Point(12, 70);
+			this.btnAdicionar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnAdicionar.Name = "btnAdicionar";
+			this.btnAdicionar.Primary = true;
+			this.btnAdicionar.Size = new System.Drawing.Size(94, 29);
+			this.btnAdicionar.TabIndex = 60;
+			this.btnAdicionar.Text = "ADICIONAR";
+			this.btnAdicionar.UseVisualStyleBackColor = true;
+			this.btnAdicionar.Click += new System.EventHandler(this.novoClique);
 			// 
 			// btnEditar
 			// 
-			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(50, 72);
-			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnEditar.Depth = 0;
+			this.btnEditar.Location = new System.Drawing.Point(112, 70);
+			this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnEditar.Size = new System.Drawing.Size(37, 29);
-			this.btnEditar.Symbol = 61508;
-			this.btnEditar.TabIndex = 6;
+			this.btnEditar.Primary = true;
+			this.btnEditar.Size = new System.Drawing.Size(94, 29);
+			this.btnEditar.TabIndex = 61;
+			this.btnEditar.Text = "EDITAR";
+			this.btnEditar.UseVisualStyleBackColor = true;
 			this.btnEditar.Click += new System.EventHandler(this.editarClique);
 			// 
-			// btnNovo
+			// btnRemover
 			// 
-			this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnNovo.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnNovo.Location = new System.Drawing.Point(12, 72);
-			this.btnNovo.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnNovo.Name = "btnNovo";
-			this.btnNovo.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnNovo.Size = new System.Drawing.Size(37, 29);
-			this.btnNovo.Symbol = 61543;
-			this.btnNovo.TabIndex = 5;
-			this.btnNovo.Click += new System.EventHandler(this.novoClique);
-			// 
-			// btnSelecionar
-			// 
-			this.btnSelecionar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSelecionar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSelecionar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSelecionar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSelecionar.Location = new System.Drawing.Point(373, 72);
-			this.btnSelecionar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnSelecionar.Name = "btnSelecionar";
-			this.btnSelecionar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSelecionar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSelecionar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSelecionar.Size = new System.Drawing.Size(202, 29);
-			this.btnSelecionar.Style = Sunny.UI.UIStyle.Green;
-			this.btnSelecionar.TabIndex = 36;
-			this.btnSelecionar.Text = "Selecionar";
-			this.btnSelecionar.Click += new System.EventHandler(this.selecionarClique);
+			this.btnRemover.Depth = 0;
+			this.btnRemover.Location = new System.Drawing.Point(212, 70);
+			this.btnRemover.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnRemover.Name = "btnRemover";
+			this.btnRemover.Primary = true;
+			this.btnRemover.Size = new System.Drawing.Size(94, 29);
+			this.btnRemover.TabIndex = 62;
+			this.btnRemover.Text = "REMOVER";
+			this.btnRemover.UseVisualStyleBackColor = true;
+			this.btnRemover.Visible = false;
 			// 
 			// PQEndereco
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(587, 325);
-			this.Controls.Add(this.btnSelecionar);
-			this.Controls.Add(this.btnDeletar);
+			this.Controls.Add(this.btnRemover);
 			this.Controls.Add(this.btnEditar);
-			this.Controls.Add(this.btnNovo);
+			this.Controls.Add(this.btnAdicionar);
 			this.Controls.Add(this.listEndereco);
+			this.Controls.Add(this.btnSelecionar);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
 			this.MaximizeBox = false;
 			this.Name = "PQEndereco";
@@ -149,10 +142,10 @@ namespace GM.View.pessoa
 			this.Load += new System.EventHandler(this.arranque);
 			this.ResumeLayout(false);
 		}
-		private Sunny.UI.UISymbolButton btnSelecionar;
-		private Sunny.UI.UISymbolButton btnNovo;
-		private Sunny.UI.UISymbolButton btnEditar;
-		private Sunny.UI.UISymbolButton btnDeletar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnRemover;
+		private MaterialSkin.Controls.MaterialRaisedButton btnAdicionar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnSelecionar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnEditar;
 		private System.Windows.Forms.ColumnHeader Col03;
 		private System.Windows.Forms.ColumnHeader Col02;
 		private System.Windows.Forms.ColumnHeader Col01;

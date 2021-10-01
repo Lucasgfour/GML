@@ -140,8 +140,7 @@ namespace GM.View.venda
 			// labValor
 			// 
 			this.labValor.Anchor = System.Windows.Forms.AnchorStyles.Left;
-			this.labValor.BackColor = System.Drawing.Color.White;
-			this.labValor.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
+			this.labValor.BackColor = System.Drawing.Color.Transparent;
 			this.labValor.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
 			this.labValor.Font = new System.Drawing.Font("Segoe UI", 11F);
 			this.labValor.Location = new System.Drawing.Point(240, 79);
@@ -154,13 +153,11 @@ namespace GM.View.venda
 			// labUnidade
 			// 
 			this.labUnidade.Anchor = System.Windows.Forms.AnchorStyles.Left;
-			this.labUnidade.BackColor = System.Drawing.Color.White;
-			this.labUnidade.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-			this.labUnidade.FlatStyle = System.Windows.Forms.FlatStyle.Popup;
+			this.labUnidade.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
 			this.labUnidade.Font = new System.Drawing.Font("Segoe UI", 11F);
 			this.labUnidade.Location = new System.Drawing.Point(240, 46);
 			this.labUnidade.Name = "labUnidade";
-			this.labUnidade.Size = new System.Drawing.Size(35, 27);
+			this.labUnidade.Size = new System.Drawing.Size(35, 30);
 			this.labUnidade.TabIndex = 8;
 			this.labUnidade.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
@@ -176,20 +173,48 @@ namespace GM.View.venda
 			// 
 			// txtPreco
 			// 
+			this.txtPreco.BackColor = System.Drawing.Color.Transparent;
+			this.txtPreco.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtPreco.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPreco.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtPreco.CustomBGColor = System.Drawing.Color.White;
 			this.txtPreco.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtPreco.ForeColor = System.Drawing.Color.Black;
 			this.txtPreco.Location = new System.Drawing.Point(87, 79);
+			this.txtPreco.MaxLength = 32767;
+			this.txtPreco.Multiline = false;
 			this.txtPreco.Name = "txtPreco";
-			this.txtPreco.Size = new System.Drawing.Size(148, 27);
+			this.txtPreco.ReadOnly = false;
+			this.txtPreco.SelectionStart = 0;
+			this.txtPreco.Size = new System.Drawing.Size(148, 30);
+			this.txtPreco.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtPreco.TabIndex = 4;
+			this.txtPreco.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPreco.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtPreco.UseSystemPasswordChar = false;
 			this.txtPreco.TextChanged += new System.EventHandler(this.maskMoney);
 			// 
 			// txtQuantidade
 			// 
+			this.txtQuantidade.BackColor = System.Drawing.Color.Transparent;
+			this.txtQuantidade.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtQuantidade.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtQuantidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtQuantidade.CustomBGColor = System.Drawing.Color.White;
 			this.txtQuantidade.Font = new System.Drawing.Font("Segoe UI", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.txtQuantidade.ForeColor = System.Drawing.Color.Black;
 			this.txtQuantidade.Location = new System.Drawing.Point(87, 46);
+			this.txtQuantidade.MaxLength = 32767;
+			this.txtQuantidade.Multiline = false;
 			this.txtQuantidade.Name = "txtQuantidade";
-			this.txtQuantidade.Size = new System.Drawing.Size(148, 27);
+			this.txtQuantidade.ReadOnly = false;
+			this.txtQuantidade.SelectionStart = 0;
+			this.txtQuantidade.Size = new System.Drawing.Size(148, 30);
+			this.txtQuantidade.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtQuantidade.TabIndex = 3;
+			this.txtQuantidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtQuantidade.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtQuantidade.UseSystemPasswordChar = false;
 			this.txtQuantidade.TextChanged += new System.EventHandler(this.maskQuantidade);
 			// 
 			// labPreco
@@ -377,7 +402,6 @@ namespace GM.View.venda
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pressionaBotao);
 			this.pnlProduto.ResumeLayout(false);
-			this.pnlProduto.PerformLayout();
 			this.pnlResumo.ResumeLayout(false);
 			this.ResumeLayout(false);
 		}

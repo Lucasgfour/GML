@@ -37,8 +37,6 @@ namespace GM.View.relatorio
 			this.gpxComando = new System.Windows.Forms.GroupBox();
 			this.txtComando = new GM.Componentes.MinBox();
 			this.gpxParametro = new System.Windows.Forms.GroupBox();
-			this.btnRemover = new Sunny.UI.UISymbolButton();
-			this.btnAdicionar = new Sunny.UI.UISymbolButton();
 			this.cbxTipo = new GM.Componentes.MinComboBox();
 			this.labTipo = new System.Windows.Forms.Label();
 			this.txtParametro = new GM.Componentes.MinBox();
@@ -46,10 +44,12 @@ namespace GM.View.relatorio
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
 			this.labParametro = new System.Windows.Forms.Label();
-			this.btnCancelar = new Sunny.UI.UISymbolButton();
-			this.btnSalvar = new Sunny.UI.UISymbolButton();
 			this.cbxNivel = new GM.Componentes.MinComboBox();
 			this.labNivel = new System.Windows.Forms.Label();
+			this.btnCancelar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnSalvar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnAdicionar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnRemover = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.gpxComando.SuspendLayout();
 			this.gpxParametro.SuspendLayout();
 			this.SuspendLayout();
@@ -57,12 +57,24 @@ namespace GM.View.relatorio
 			// txtDescricao
 			// 
 			this.txtDescricao.BackColor = System.Drawing.Color.White;
+			this.txtDescricao.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtDescricao.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtDescricao.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtDescricao.CustomBGColor = System.Drawing.Color.White;
 			this.txtDescricao.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.txtDescricao.ForeColor = System.Drawing.Color.Black;
 			this.txtDescricao.Location = new System.Drawing.Point(108, 72);
 			this.txtDescricao.MaxLength = 70;
+			this.txtDescricao.Multiline = false;
 			this.txtDescricao.Name = "txtDescricao";
-			this.txtDescricao.Size = new System.Drawing.Size(594, 25);
+			this.txtDescricao.ReadOnly = false;
+			this.txtDescricao.SelectionStart = 0;
+			this.txtDescricao.Size = new System.Drawing.Size(594, 28);
+			this.txtDescricao.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtDescricao.TabIndex = 0;
+			this.txtDescricao.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtDescricao.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtDescricao.UseSystemPasswordChar = false;
 			// 
 			// labDescricao
 			// 
@@ -78,13 +90,24 @@ namespace GM.View.relatorio
 			// txtObservação
 			// 
 			this.txtObservação.BackColor = System.Drawing.Color.White;
+			this.txtObservação.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtObservação.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtObservação.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtObservação.CustomBGColor = System.Drawing.Color.White;
 			this.txtObservação.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.txtObservação.ForeColor = System.Drawing.Color.Black;
 			this.txtObservação.Location = new System.Drawing.Point(108, 103);
 			this.txtObservação.MaxLength = 70;
 			this.txtObservação.Multiline = true;
 			this.txtObservação.Name = "txtObservação";
+			this.txtObservação.ReadOnly = false;
+			this.txtObservação.SelectionStart = 0;
 			this.txtObservação.Size = new System.Drawing.Size(594, 60);
+			this.txtObservação.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtObservação.TabIndex = 1;
+			this.txtObservação.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtObservação.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtObservação.UseSystemPasswordChar = false;
 			// 
 			// labObservacao
 			// 
@@ -111,17 +134,28 @@ namespace GM.View.relatorio
 			// txtComando
 			// 
 			this.txtComando.BackColor = System.Drawing.Color.White;
+			this.txtComando.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtComando.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtComando.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtComando.CustomBGColor = System.Drawing.Color.White;
 			this.txtComando.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.txtComando.ForeColor = System.Drawing.Color.Black;
 			this.txtComando.Location = new System.Drawing.Point(6, 22);
 			this.txtComando.MaxLength = 1000;
 			this.txtComando.Multiline = true;
 			this.txtComando.Name = "txtComando";
+			this.txtComando.ReadOnly = false;
+			this.txtComando.SelectionStart = 0;
 			this.txtComando.Size = new System.Drawing.Size(678, 258);
+			this.txtComando.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtComando.TabIndex = 2;
+			this.txtComando.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtComando.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtComando.UseSystemPasswordChar = false;
 			// 
 			// gpxParametro
 			// 
-			this.gpxParametro.BackColor = System.Drawing.Color.Transparent;
+			this.gpxParametro.BackColor = System.Drawing.Color.White;
 			this.gpxParametro.Controls.Add(this.btnRemover);
 			this.gpxParametro.Controls.Add(this.btnAdicionar);
 			this.gpxParametro.Controls.Add(this.cbxTipo);
@@ -136,57 +170,28 @@ namespace GM.View.relatorio
 			this.gpxParametro.TabStop = false;
 			this.gpxParametro.Text = "Parâmetros";
 			// 
-			// btnRemover
-			// 
-			this.btnRemover.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnRemover.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnRemover.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnRemover.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.btnRemover.Location = new System.Drawing.Point(210, 185);
-			this.btnRemover.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnRemover.Name = "btnRemover";
-			this.btnRemover.Radius = 0;
-			this.btnRemover.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnRemover.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnRemover.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.Size = new System.Drawing.Size(109, 24);
-			this.btnRemover.Style = Sunny.UI.UIStyle.Red;
-			this.btnRemover.SymbolSize = 0;
-			this.btnRemover.TabIndex = 6;
-			this.btnRemover.Text = "Remover";
-			this.btnRemover.Click += new System.EventHandler(this.cliqueRemover);
-			// 
-			// btnAdicionar
-			// 
-			this.btnAdicionar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAdicionar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnAdicionar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnAdicionar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnAdicionar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnAdicionar.Font = new System.Drawing.Font("Segoe UI", 10F);
-			this.btnAdicionar.Location = new System.Drawing.Point(376, 86);
-			this.btnAdicionar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnAdicionar.Name = "btnAdicionar";
-			this.btnAdicionar.Radius = 0;
-			this.btnAdicionar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnAdicionar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnAdicionar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnAdicionar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnAdicionar.Size = new System.Drawing.Size(84, 24);
-			this.btnAdicionar.Style = Sunny.UI.UIStyle.Green;
-			this.btnAdicionar.SymbolSize = 0;
-			this.btnAdicionar.TabIndex = 5;
-			this.btnAdicionar.Text = "Adicionar";
-			this.btnAdicionar.Click += new System.EventHandler(this.cliqueAdicionar);
-			// 
 			// cbxTipo
 			// 
+			this.cbxTipo.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxTipo.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxTipo.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxTipo.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxTipo.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxTipo.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxTipo.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxTipo.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxTipo.ColorH = System.Drawing.Color.White;
+			this.cbxTipo.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxTipo.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxTipo.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxTipo.DropDownHeight = 100;
 			this.cbxTipo.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbxTipo.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.cbxTipo.ForeColor = System.Drawing.Color.Black;
 			this.cbxTipo.FormattingEnabled = true;
+			this.cbxTipo.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxTipo.IntegralHeight = false;
+			this.cbxTipo.ItemHeight = 20;
 			this.cbxTipo.Items.AddRange(new object[] {
 									"TEXTO",
 									"NÚMERO INTEIRO",
@@ -194,7 +199,8 @@ namespace GM.View.relatorio
 									"DATA"});
 			this.cbxTipo.Location = new System.Drawing.Point(306, 55);
 			this.cbxTipo.Name = "cbxTipo";
-			this.cbxTipo.Size = new System.Drawing.Size(154, 25);
+			this.cbxTipo.Size = new System.Drawing.Size(154, 26);
+			this.cbxTipo.StartIndex = 0;
 			this.cbxTipo.TabIndex = 4;
 			this.cbxTipo.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pressionarEnterParametro);
 			// 
@@ -211,12 +217,24 @@ namespace GM.View.relatorio
 			// txtParametro
 			// 
 			this.txtParametro.BackColor = System.Drawing.Color.White;
+			this.txtParametro.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtParametro.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtParametro.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtParametro.CustomBGColor = System.Drawing.Color.White;
 			this.txtParametro.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.txtParametro.ForeColor = System.Drawing.Color.Black;
 			this.txtParametro.Location = new System.Drawing.Point(306, 24);
 			this.txtParametro.MaxLength = 70;
+			this.txtParametro.Multiline = false;
 			this.txtParametro.Name = "txtParametro";
-			this.txtParametro.Size = new System.Drawing.Size(154, 25);
+			this.txtParametro.ReadOnly = false;
+			this.txtParametro.SelectionStart = 0;
+			this.txtParametro.Size = new System.Drawing.Size(154, 28);
+			this.txtParametro.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtParametro.TabIndex = 3;
+			this.txtParametro.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtParametro.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtParametro.UseSystemPasswordChar = false;
 			this.txtParametro.KeyDown += new System.Windows.Forms.KeyEventHandler(this.pressionarEnterParametro);
 			// 
 			// listaParametro
@@ -254,56 +272,28 @@ namespace GM.View.relatorio
 			this.labParametro.Text = "Parâmetro :";
 			this.labParametro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
-			// btnCancelar
-			// 
-			this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCancelar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnCancelar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(484, 647);
-			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnCancelar.Name = "btnCancelar";
-			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.Size = new System.Drawing.Size(101, 29);
-			this.btnCancelar.Style = Sunny.UI.UIStyle.Red;
-			this.btnCancelar.Symbol = 61453;
-			this.btnCancelar.TabIndex = 10;
-			this.btnCancelar.Text = "Sair";
-			this.btnCancelar.Click += new System.EventHandler(this.cliqueSair);
-			// 
-			// btnSalvar
-			// 
-			this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSalvar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSalvar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(591, 647);
-			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnSalvar.Name = "btnSalvar";
-			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.Size = new System.Drawing.Size(111, 29);
-			this.btnSalvar.Style = Sunny.UI.UIStyle.Green;
-			this.btnSalvar.TabIndex = 9;
-			this.btnSalvar.Text = "Salvar";
-			this.btnSalvar.Click += new System.EventHandler(this.cliqueSalvar);
-			// 
 			// cbxNivel
 			// 
+			this.cbxNivel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxNivel.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxNivel.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxNivel.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxNivel.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxNivel.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxNivel.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxNivel.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxNivel.ColorH = System.Drawing.Color.White;
+			this.cbxNivel.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxNivel.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxNivel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxNivel.DropDownHeight = 100;
 			this.cbxNivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbxNivel.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.cbxNivel.ForeColor = System.Drawing.Color.Black;
 			this.cbxNivel.FormattingEnabled = true;
+			this.cbxNivel.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxNivel.IntegralHeight = false;
+			this.cbxNivel.ItemHeight = 20;
 			this.cbxNivel.Items.AddRange(new object[] {
 									"Nível 0",
 									"Nível 1",
@@ -318,7 +308,8 @@ namespace GM.View.relatorio
 									"Nível 10"});
 			this.cbxNivel.Location = new System.Drawing.Point(517, 516);
 			this.cbxNivel.Name = "cbxNivel";
-			this.cbxNivel.Size = new System.Drawing.Size(154, 25);
+			this.cbxNivel.Size = new System.Drawing.Size(154, 26);
+			this.cbxNivel.StartIndex = 0;
 			this.cbxNivel.TabIndex = 8;
 			// 
 			// labNivel
@@ -332,14 +323,66 @@ namespace GM.View.relatorio
 			this.labNivel.Text = "Nível de usuário necessário para gerar o relatório :";
 			this.labNivel.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
 			// 
+			// btnCancelar
+			// 
+			this.btnCancelar.Depth = 0;
+			this.btnCancelar.Location = new System.Drawing.Point(510, 644);
+			this.btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnCancelar.Name = "btnCancelar";
+			this.btnCancelar.Primary = true;
+			this.btnCancelar.Size = new System.Drawing.Size(93, 31);
+			this.btnCancelar.TabIndex = 211;
+			this.btnCancelar.Text = "CANCELAR";
+			this.btnCancelar.UseVisualStyleBackColor = true;
+			this.btnCancelar.Click += new System.EventHandler(this.cliqueSair);
+			// 
+			// btnSalvar
+			// 
+			this.btnSalvar.Depth = 0;
+			this.btnSalvar.Location = new System.Drawing.Point(609, 644);
+			this.btnSalvar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnSalvar.Name = "btnSalvar";
+			this.btnSalvar.Primary = true;
+			this.btnSalvar.Size = new System.Drawing.Size(93, 31);
+			this.btnSalvar.TabIndex = 210;
+			this.btnSalvar.Text = "SALVAR";
+			this.btnSalvar.UseVisualStyleBackColor = true;
+			this.btnSalvar.Click += new System.EventHandler(this.cliqueSalvar);
+			// 
+			// btnAdicionar
+			// 
+			this.btnAdicionar.Depth = 0;
+			this.btnAdicionar.Location = new System.Drawing.Point(355, 87);
+			this.btnAdicionar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnAdicionar.Name = "btnAdicionar";
+			this.btnAdicionar.Primary = true;
+			this.btnAdicionar.Size = new System.Drawing.Size(105, 28);
+			this.btnAdicionar.TabIndex = 212;
+			this.btnAdicionar.Text = "ADICIONAR";
+			this.btnAdicionar.UseVisualStyleBackColor = true;
+			this.btnAdicionar.Click += new System.EventHandler(this.cliqueAdicionar);
+			// 
+			// btnRemover
+			// 
+			this.btnRemover.Depth = 0;
+			this.btnRemover.Location = new System.Drawing.Point(210, 181);
+			this.btnRemover.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnRemover.Name = "btnRemover";
+			this.btnRemover.Primary = true;
+			this.btnRemover.Size = new System.Drawing.Size(105, 28);
+			this.btnRemover.TabIndex = 213;
+			this.btnRemover.Text = "REMOVER";
+			this.btnRemover.UseVisualStyleBackColor = true;
+			this.btnRemover.Click += new System.EventHandler(this.cliqueRemover);
+			// 
 			// CDRelatorio
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
 			this.ClientSize = new System.Drawing.Size(714, 687);
-			this.Controls.Add(this.cbxNivel);
-			this.Controls.Add(this.labNivel);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnSalvar);
+			this.Controls.Add(this.cbxNivel);
+			this.Controls.Add(this.labNivel);
 			this.Controls.Add(this.gpxParametro);
 			this.Controls.Add(this.gpxComando);
 			this.Controls.Add(this.txtObservação);
@@ -354,19 +397,16 @@ namespace GM.View.relatorio
 			this.Text = "Cadastro de Relatório";
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.gpxComando.ResumeLayout(false);
-			this.gpxComando.PerformLayout();
 			this.gpxParametro.ResumeLayout(false);
-			this.gpxParametro.PerformLayout();
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
 		private System.Windows.Forms.Label labNivel;
-		private System.Windows.Forms.ComboBox cbxNivel;
-		private Sunny.UI.UISymbolButton btnSalvar;
-		private Sunny.UI.UISymbolButton btnCancelar;
-		private Sunny.UI.UISymbolButton btnAdicionar;
-		private Sunny.UI.UISymbolButton btnRemover;
-		private System.Windows.Forms.ComboBox cbxTipo;
+		private GM.Componentes.MinComboBox cbxNivel;
+		private MaterialSkin.Controls.MaterialRaisedButton btnSalvar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnCancelar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnAdicionar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnRemover;
+		private GM.Componentes.MinComboBox cbxTipo;
 		private System.Windows.Forms.Label labParametro;
 		private System.Windows.Forms.ColumnHeader Col02;
 		private System.Windows.Forms.ColumnHeader Col01;

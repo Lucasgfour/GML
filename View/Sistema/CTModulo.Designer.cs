@@ -33,9 +33,9 @@ namespace GM.View.Sistema
 			this.listaTela = new System.Windows.Forms.ListView();
 			this.Col01 = new System.Windows.Forms.ColumnHeader();
 			this.Col02 = new System.Windows.Forms.ColumnHeader();
-			this.btnRemover = new Sunny.UI.UISymbolButton();
-			this.btnEditar = new Sunny.UI.UISymbolButton();
-			this.btnNovo = new Sunny.UI.UISymbolButton();
+			this.btnRemover = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnEditar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnAdicionar = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.SuspendLayout();
 			// 
 			// listaTela
@@ -46,10 +46,10 @@ namespace GM.View.Sistema
 			this.listaTela.FullRowSelect = true;
 			this.listaTela.GridLines = true;
 			this.listaTela.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.listaTela.Location = new System.Drawing.Point(12, 111);
+			this.listaTela.Location = new System.Drawing.Point(12, 104);
 			this.listaTela.MultiSelect = false;
 			this.listaTela.Name = "listaTela";
-			this.listaTela.Size = new System.Drawing.Size(273, 367);
+			this.listaTela.Size = new System.Drawing.Size(273, 374);
 			this.listaTela.TabIndex = 0;
 			this.listaTela.UseCompatibleStateImageBehavior = false;
 			this.listaTela.View = System.Windows.Forms.View.Details;
@@ -67,63 +67,43 @@ namespace GM.View.Sistema
 			// 
 			// btnRemover
 			// 
-			this.btnRemover.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnRemover.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnRemover.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnRemover.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnRemover.Location = new System.Drawing.Point(162, 76);
-			this.btnRemover.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnRemover.Depth = 0;
+			this.btnRemover.Location = new System.Drawing.Point(187, 70);
+			this.btnRemover.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnRemover.Name = "btnRemover";
-			this.btnRemover.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnRemover.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnRemover.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnRemover.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnRemover.Size = new System.Drawing.Size(123, 29);
-			this.btnRemover.Style = Sunny.UI.UIStyle.Red;
-			this.btnRemover.SymbolSize = 0;
-			this.btnRemover.TabIndex = 25;
-			this.btnRemover.Text = "Remover";
+			this.btnRemover.Primary = true;
+			this.btnRemover.Size = new System.Drawing.Size(98, 28);
+			this.btnRemover.TabIndex = 71;
+			this.btnRemover.Text = "REMOVER";
+			this.btnRemover.UseVisualStyleBackColor = true;
+			this.btnRemover.Visible = false;
 			this.btnRemover.Click += new System.EventHandler(this.cliqueRemover);
 			// 
 			// btnEditar
 			// 
-			this.btnEditar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnEditar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnEditar.Location = new System.Drawing.Point(88, 76);
-			this.btnEditar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnEditar.Depth = 0;
+			this.btnEditar.Location = new System.Drawing.Point(112, 70);
+			this.btnEditar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnEditar.Name = "btnEditar";
-			this.btnEditar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnEditar.Size = new System.Drawing.Size(68, 29);
-			this.btnEditar.SymbolSize = 0;
-			this.btnEditar.TabIndex = 24;
-			this.btnEditar.Text = "Editar";
+			this.btnEditar.Primary = true;
+			this.btnEditar.Size = new System.Drawing.Size(69, 28);
+			this.btnEditar.TabIndex = 70;
+			this.btnEditar.Text = "EDITAR";
+			this.btnEditar.UseVisualStyleBackColor = true;
 			this.btnEditar.Click += new System.EventHandler(this.cliqueEditar);
 			// 
-			// btnNovo
+			// btnAdicionar
 			// 
-			this.btnNovo.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnNovo.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnNovo.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnNovo.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnNovo.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnNovo.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnNovo.Location = new System.Drawing.Point(12, 76);
-			this.btnNovo.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnNovo.Name = "btnNovo";
-			this.btnNovo.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnNovo.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnNovo.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnNovo.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnNovo.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnNovo.Size = new System.Drawing.Size(70, 29);
-			this.btnNovo.Style = Sunny.UI.UIStyle.Green;
-			this.btnNovo.SymbolSize = 0;
-			this.btnNovo.TabIndex = 23;
-			this.btnNovo.Text = "Novo";
-			this.btnNovo.Click += new System.EventHandler(this.cliqueNovo);
+			this.btnAdicionar.Depth = 0;
+			this.btnAdicionar.Location = new System.Drawing.Point(12, 70);
+			this.btnAdicionar.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnAdicionar.Name = "btnAdicionar";
+			this.btnAdicionar.Primary = true;
+			this.btnAdicionar.Size = new System.Drawing.Size(94, 28);
+			this.btnAdicionar.TabIndex = 69;
+			this.btnAdicionar.Text = "ADICIONAR";
+			this.btnAdicionar.UseVisualStyleBackColor = true;
+			this.btnAdicionar.Click += new System.EventHandler(this.cliqueNovo);
 			// 
 			// CTModulo
 			// 
@@ -131,7 +111,7 @@ namespace GM.View.Sistema
 			this.ClientSize = new System.Drawing.Size(297, 490);
 			this.Controls.Add(this.btnRemover);
 			this.Controls.Add(this.btnEditar);
-			this.Controls.Add(this.btnNovo);
+			this.Controls.Add(this.btnAdicionar);
 			this.Controls.Add(this.listaTela);
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
@@ -142,9 +122,9 @@ namespace GM.View.Sistema
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
 		}
-		private Sunny.UI.UISymbolButton btnNovo;
-		private Sunny.UI.UISymbolButton btnEditar;
-		private Sunny.UI.UISymbolButton btnRemover;
+		private MaterialSkin.Controls.MaterialRaisedButton btnAdicionar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnEditar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnRemover;
 		private System.Windows.Forms.ColumnHeader Col02;
 		private System.Windows.Forms.ColumnHeader Col01;
 		private System.Windows.Forms.ListView listaTela;

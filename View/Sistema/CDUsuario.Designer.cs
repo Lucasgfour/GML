@@ -32,8 +32,6 @@ namespace GM.View.Sistema
 			System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(CDUsuario));
 			this.txtUsuario = new GM.Componentes.MinBox();
 			this.labUsuario = new System.Windows.Forms.Label();
-			this.labSenha = new System.Windows.Forms.Label();
-			this.labSenha2 = new System.Windows.Forms.Label();
 			this.txtNome = new GM.Componentes.MinBox();
 			this.labNome = new System.Windows.Forms.Label();
 			this.cbxNivel = new GM.Componentes.MinComboBox();
@@ -41,21 +39,32 @@ namespace GM.View.Sistema
 			this.chkVendedor = new System.Windows.Forms.CheckBox();
 			this.labSede = new System.Windows.Forms.Label();
 			this.cbxSede = new GM.Componentes.MinComboBox();
-			this.labPin = new System.Windows.Forms.Label();
-			this.labPin2 = new System.Windows.Forms.Label();
-			this.btnCancelar = new Sunny.UI.UISymbolButton();
-			this.btnSalvar = new Sunny.UI.UISymbolButton();
+			this.labPin1 = new System.Windows.Forms.Label();
+			this.btnCancelar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnSalvar = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.SuspendLayout();
 			// 
 			// txtUsuario
 			// 
 			this.txtUsuario.BackColor = System.Drawing.Color.White;
+			this.txtUsuario.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtUsuario.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtUsuario.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtUsuario.CustomBGColor = System.Drawing.Color.White;
 			this.txtUsuario.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.txtUsuario.ForeColor = System.Drawing.Color.Black;
 			this.txtUsuario.Location = new System.Drawing.Point(108, 72);
 			this.txtUsuario.MaxLength = 20;
+			this.txtUsuario.Multiline = false;
 			this.txtUsuario.Name = "txtUsuario";
-			this.txtUsuario.Size = new System.Drawing.Size(141, 25);
+			this.txtUsuario.ReadOnly = false;
+			this.txtUsuario.SelectionStart = 0;
+			this.txtUsuario.Size = new System.Drawing.Size(141, 28);
+			this.txtUsuario.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtUsuario.TabIndex = 20;
+			this.txtUsuario.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtUsuario.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtUsuario.UseSystemPasswordChar = false;
 			// 
 			// labUsuario
 			// 
@@ -68,43 +77,33 @@ namespace GM.View.Sistema
 			this.labUsuario.Text = "Usuário :";
 			this.labUsuario.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
-			// labSenha
-			// 
-			this.labSenha.BackColor = System.Drawing.Color.Transparent;
-			this.labSenha.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSenha.Location = new System.Drawing.Point(12, 103);
-			this.labSenha.Name = "labSenha";
-			this.labSenha.Size = new System.Drawing.Size(90, 25);
-			this.labSenha.TabIndex = 23;
-			this.labSenha.Text = "Senha :";
-			this.labSenha.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// labSenha2
-			// 
-			this.labSenha2.BackColor = System.Drawing.Color.Transparent;
-			this.labSenha2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSenha2.Location = new System.Drawing.Point(108, 103);
-			this.labSenha2.Name = "labSenha2";
-			this.labSenha2.Size = new System.Drawing.Size(211, 25);
-			this.labSenha2.TabIndex = 24;
-			this.labSenha2.Text = "Por padrão a senha é chave123";
-			this.labSenha2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
-			// 
 			// txtNome
 			// 
 			this.txtNome.BackColor = System.Drawing.Color.White;
+			this.txtNome.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.txtNome.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtNome.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
+			this.txtNome.CustomBGColor = System.Drawing.Color.White;
 			this.txtNome.Font = new System.Drawing.Font("Segoe UI", 9.75F);
-			this.txtNome.Location = new System.Drawing.Point(108, 131);
+			this.txtNome.ForeColor = System.Drawing.Color.Black;
+			this.txtNome.Location = new System.Drawing.Point(108, 106);
 			this.txtNome.MaxLength = 40;
+			this.txtNome.Multiline = false;
 			this.txtNome.Name = "txtNome";
-			this.txtNome.Size = new System.Drawing.Size(338, 25);
+			this.txtNome.ReadOnly = false;
+			this.txtNome.SelectionStart = 0;
+			this.txtNome.Size = new System.Drawing.Size(338, 28);
+			this.txtNome.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtNome.TabIndex = 25;
+			this.txtNome.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtNome.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
+			this.txtNome.UseSystemPasswordChar = false;
 			// 
 			// labNome
 			// 
 			this.labNome.BackColor = System.Drawing.Color.Transparent;
 			this.labNome.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labNome.Location = new System.Drawing.Point(12, 131);
+			this.labNome.Location = new System.Drawing.Point(12, 106);
 			this.labNome.Name = "labNome";
 			this.labNome.Size = new System.Drawing.Size(90, 25);
 			this.labNome.TabIndex = 26;
@@ -113,9 +112,26 @@ namespace GM.View.Sistema
 			// 
 			// cbxNivel
 			// 
+			this.cbxNivel.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxNivel.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxNivel.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxNivel.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxNivel.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxNivel.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxNivel.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxNivel.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxNivel.ColorH = System.Drawing.Color.White;
+			this.cbxNivel.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxNivel.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxNivel.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxNivel.DropDownHeight = 100;
 			this.cbxNivel.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbxNivel.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.cbxNivel.ForeColor = System.Drawing.Color.Black;
 			this.cbxNivel.FormattingEnabled = true;
+			this.cbxNivel.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxNivel.IntegralHeight = false;
+			this.cbxNivel.ItemHeight = 20;
 			this.cbxNivel.Items.AddRange(new object[] {
 									"Nível 0",
 									"Nível 1",
@@ -128,16 +144,17 @@ namespace GM.View.Sistema
 									"Nível 8",
 									"Nível 9",
 									"Nível 10"});
-			this.cbxNivel.Location = new System.Drawing.Point(108, 162);
+			this.cbxNivel.Location = new System.Drawing.Point(108, 140);
 			this.cbxNivel.Name = "cbxNivel";
-			this.cbxNivel.Size = new System.Drawing.Size(154, 25);
+			this.cbxNivel.Size = new System.Drawing.Size(154, 26);
+			this.cbxNivel.StartIndex = 0;
 			this.cbxNivel.TabIndex = 27;
 			// 
 			// labPermissao
 			// 
 			this.labPermissao.BackColor = System.Drawing.Color.Transparent;
 			this.labPermissao.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labPermissao.Location = new System.Drawing.Point(12, 162);
+			this.labPermissao.Location = new System.Drawing.Point(12, 140);
 			this.labPermissao.Name = "labPermissao";
 			this.labPermissao.Size = new System.Drawing.Size(90, 25);
 			this.labPermissao.TabIndex = 28;
@@ -147,7 +164,7 @@ namespace GM.View.Sistema
 			// chkVendedor
 			// 
 			this.chkVendedor.BackColor = System.Drawing.Color.Transparent;
-			this.chkVendedor.Location = new System.Drawing.Point(279, 162);
+			this.chkVendedor.Location = new System.Drawing.Point(279, 140);
 			this.chkVendedor.Name = "chkVendedor";
 			this.chkVendedor.Size = new System.Drawing.Size(167, 25);
 			this.chkVendedor.TabIndex = 29;
@@ -158,7 +175,7 @@ namespace GM.View.Sistema
 			// 
 			this.labSede.BackColor = System.Drawing.Color.Transparent;
 			this.labSede.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labSede.Location = new System.Drawing.Point(12, 193);
+			this.labSede.Location = new System.Drawing.Point(12, 172);
 			this.labSede.Name = "labSede";
 			this.labSede.Size = new System.Drawing.Size(90, 25);
 			this.labSede.TabIndex = 31;
@@ -167,9 +184,26 @@ namespace GM.View.Sistema
 			// 
 			// cbxSede
 			// 
+			this.cbxSede.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(255)))), ((int)(((byte)(255)))), ((int)(((byte)(255)))));
+			this.cbxSede.ColorA = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxSede.ColorB = System.Drawing.Color.FromArgb(((int)(((byte)(55)))), ((int)(((byte)(71)))), ((int)(((byte)(79)))));
+			this.cbxSede.ColorC = System.Drawing.Color.FromArgb(((int)(((byte)(242)))), ((int)(((byte)(241)))), ((int)(((byte)(240)))));
+			this.cbxSede.ColorD = System.Drawing.Color.FromArgb(((int)(((byte)(253)))), ((int)(((byte)(252)))), ((int)(((byte)(252)))));
+			this.cbxSede.ColorE = System.Drawing.Color.WhiteSmoke;
+			this.cbxSede.ColorF = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxSede.ColorG = System.Drawing.Color.FromArgb(((int)(((byte)(180)))), ((int)(((byte)(180)))), ((int)(((byte)(180)))));
+			this.cbxSede.ColorH = System.Drawing.Color.White;
+			this.cbxSede.ColorI = System.Drawing.Color.WhiteSmoke;
+			this.cbxSede.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.cbxSede.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
+			this.cbxSede.DropDownHeight = 100;
 			this.cbxSede.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbxSede.Font = new System.Drawing.Font("Segoe UI", 9.75F);
+			this.cbxSede.ForeColor = System.Drawing.Color.Black;
 			this.cbxSede.FormattingEnabled = true;
+			this.cbxSede.HoverSelectionColor = System.Drawing.Color.Empty;
+			this.cbxSede.IntegralHeight = false;
+			this.cbxSede.ItemHeight = 20;
 			this.cbxSede.Items.AddRange(new object[] {
 									"Nível 0",
 									"Nível 1",
@@ -182,86 +216,56 @@ namespace GM.View.Sistema
 									"Nível 8",
 									"Nível 9",
 									"Nível 10"});
-			this.cbxSede.Location = new System.Drawing.Point(108, 193);
+			this.cbxSede.Location = new System.Drawing.Point(108, 172);
 			this.cbxSede.Name = "cbxSede";
-			this.cbxSede.Size = new System.Drawing.Size(154, 25);
+			this.cbxSede.Size = new System.Drawing.Size(154, 26);
+			this.cbxSede.StartIndex = 0;
 			this.cbxSede.TabIndex = 30;
 			// 
-			// labPin
+			// labPin1
 			// 
-			this.labPin.BackColor = System.Drawing.Color.Transparent;
-			this.labPin.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labPin.Location = new System.Drawing.Point(12, 221);
-			this.labPin.Name = "labPin";
-			this.labPin.Size = new System.Drawing.Size(90, 25);
-			this.labPin.TabIndex = 32;
-			this.labPin.Text = "PIN :";
-			this.labPin.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// labPin2
-			// 
-			this.labPin2.BackColor = System.Drawing.Color.Transparent;
-			this.labPin2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labPin2.Location = new System.Drawing.Point(108, 221);
-			this.labPin2.Name = "labPin2";
-			this.labPin2.Size = new System.Drawing.Size(154, 25);
-			this.labPin2.TabIndex = 33;
-			this.labPin2.Text = "Por padrão o pin é 1234";
-			this.labPin2.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+			this.labPin1.BackColor = System.Drawing.Color.FromArgb(((int)(((byte)(245)))), ((int)(((byte)(247)))), ((int)(((byte)(185)))));
+			this.labPin1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labPin1.Location = new System.Drawing.Point(12, 204);
+			this.labPin1.Name = "labPin1";
+			this.labPin1.Padding = new System.Windows.Forms.Padding(1);
+			this.labPin1.Size = new System.Drawing.Size(237, 36);
+			this.labPin1.TabIndex = 33;
+			this.labPin1.Text = "Por padrão a senha é \"chave123\" e o pin é \"1234\"";
 			// 
 			// btnCancelar
 			// 
-			this.btnCancelar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnCancelar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnCancelar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnCancelar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnCancelar.Location = new System.Drawing.Point(228, 255);
-			this.btnCancelar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnCancelar.Depth = 0;
+			this.btnCancelar.Location = new System.Drawing.Point(255, 204);
+			this.btnCancelar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnCancelar.Name = "btnCancelar";
-			this.btnCancelar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnCancelar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(230)))), ((int)(((byte)(80)))), ((int)(((byte)(80)))));
-			this.btnCancelar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(232)))), ((int)(((byte)(127)))), ((int)(((byte)(128)))));
-			this.btnCancelar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(202)))), ((int)(((byte)(87)))), ((int)(((byte)(89)))));
-			this.btnCancelar.Size = new System.Drawing.Size(101, 29);
-			this.btnCancelar.Style = Sunny.UI.UIStyle.Red;
-			this.btnCancelar.Symbol = 61453;
-			this.btnCancelar.TabIndex = 35;
-			this.btnCancelar.Text = "Sair";
+			this.btnCancelar.Primary = true;
+			this.btnCancelar.Size = new System.Drawing.Size(93, 36);
+			this.btnCancelar.TabIndex = 215;
+			this.btnCancelar.Text = "CANCELAR";
+			this.btnCancelar.UseVisualStyleBackColor = true;
 			this.btnCancelar.Click += new System.EventHandler(this.cliqueSair);
 			// 
 			// btnSalvar
 			// 
-			this.btnSalvar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnSalvar.FillColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSalvar.FillHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSalvar.FillPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.FillSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.Font = new System.Drawing.Font("Microsoft YaHei", 12F);
-			this.btnSalvar.Location = new System.Drawing.Point(335, 255);
-			this.btnSalvar.MinimumSize = new System.Drawing.Size(1, 1);
+			this.btnSalvar.Depth = 0;
+			this.btnSalvar.Location = new System.Drawing.Point(353, 204);
+			this.btnSalvar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnSalvar.Name = "btnSalvar";
-			this.btnSalvar.RadiusSides = Sunny.UI.UICornerRadiusSides.None;
-			this.btnSalvar.RectColor = System.Drawing.Color.FromArgb(((int)(((byte)(110)))), ((int)(((byte)(190)))), ((int)(((byte)(40)))));
-			this.btnSalvar.RectHoverColor = System.Drawing.Color.FromArgb(((int)(((byte)(136)))), ((int)(((byte)(202)))), ((int)(((byte)(81)))));
-			this.btnSalvar.RectPressColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.RectSelectedColor = System.Drawing.Color.FromArgb(((int)(((byte)(100)))), ((int)(((byte)(168)))), ((int)(((byte)(35)))));
-			this.btnSalvar.Size = new System.Drawing.Size(111, 29);
-			this.btnSalvar.Style = Sunny.UI.UIStyle.Green;
-			this.btnSalvar.TabIndex = 34;
-			this.btnSalvar.Text = "Salvar";
+			this.btnSalvar.Primary = true;
+			this.btnSalvar.Size = new System.Drawing.Size(93, 36);
+			this.btnSalvar.TabIndex = 214;
+			this.btnSalvar.Text = "SALVAR";
+			this.btnSalvar.UseVisualStyleBackColor = true;
 			this.btnSalvar.Click += new System.EventHandler(this.cliqueSalvar);
 			// 
 			// CDUsuario
 			// 
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.None;
-			this.ClientSize = new System.Drawing.Size(458, 296);
+			this.ClientSize = new System.Drawing.Size(458, 250);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnSalvar);
-			this.Controls.Add(this.labPin2);
-			this.Controls.Add(this.labPin);
+			this.Controls.Add(this.labPin1);
 			this.Controls.Add(this.labSede);
 			this.Controls.Add(this.cbxSede);
 			this.Controls.Add(this.chkVendedor);
@@ -269,8 +273,6 @@ namespace GM.View.Sistema
 			this.Controls.Add(this.cbxNivel);
 			this.Controls.Add(this.txtNome);
 			this.Controls.Add(this.labNome);
-			this.Controls.Add(this.labSenha2);
-			this.Controls.Add(this.labSenha);
 			this.Controls.Add(this.txtUsuario);
 			this.Controls.Add(this.labUsuario);
 			this.Font = new System.Drawing.Font("Segoe UI", 9.75F);
@@ -281,21 +283,17 @@ namespace GM.View.Sistema
 			this.Text = "Cadastro/edição de usuário";
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
-			this.PerformLayout();
 		}
-		private Sunny.UI.UISymbolButton btnSalvar;
-		private Sunny.UI.UISymbolButton btnCancelar;
-		private System.Windows.Forms.Label labPin2;
-		private System.Windows.Forms.Label labPin;
-		private System.Windows.Forms.ComboBox cbxSede;
+		private MaterialSkin.Controls.MaterialRaisedButton btnSalvar;
+		private MaterialSkin.Controls.MaterialRaisedButton btnCancelar;
+		private System.Windows.Forms.Label labPin1;
+		private GM.Componentes.MinComboBox cbxSede;
 		private System.Windows.Forms.Label labSede;
 		private System.Windows.Forms.CheckBox chkVendedor;
 		private System.Windows.Forms.Label labPermissao;
-		private System.Windows.Forms.ComboBox cbxNivel;
+		private GM.Componentes.MinComboBox cbxNivel;
 		private System.Windows.Forms.Label labNome;
 		private GM.Componentes.MinBox txtNome;
-		private System.Windows.Forms.Label labSenha2;
-		private System.Windows.Forms.Label labSenha;
 		private System.Windows.Forms.Label labUsuario;
 		private GM.Componentes.MinBox txtUsuario;
 	}

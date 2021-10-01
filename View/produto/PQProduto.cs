@@ -81,5 +81,6 @@ namespace GM.View.produto {
 		void duploClique(object sender, MouseEventArgs e) {
 			selecionar();
 		}
+		
 	}
 }
