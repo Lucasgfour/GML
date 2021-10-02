@@ -263,7 +263,7 @@ namespace GM.View.venda
 			// 
 			this.Col02.DisplayIndex = 2;
 			this.Col02.Text = "Produto";
-			this.Col02.Width = 250;
+			this.Col02.Width = 215;
 			// 
 			// Col01
 			// 

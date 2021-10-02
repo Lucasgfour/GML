@@ -40,9 +40,9 @@ namespace GM.View.pessoa
 			this.labPadrao = new ReaLTaiizor.Controls.DungeonLabel();
 			this.txtCidade = new GM.Componentes.MinBox();
 			this.txtNomeCidade = new GM.Componentes.MinBox();
-			this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.btnSalvar = new MaterialSkin.Controls.MaterialRaisedButton();
 			this.btnCancelar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnPesquisar = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// txtRua
@@ -74,7 +74,7 @@ namespace GM.View.pessoa
 			this.labRua.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
 			this.labRua.Location = new System.Drawing.Point(13, 108);
 			this.labRua.Name = "labRua";
-			this.labRua.Size = new System.Drawing.Size(73, 20);
+			this.labRua.Size = new System.Drawing.Size(73, 26);
 			this.labRua.TabIndex = 31;
 			this.labRua.Text = "Rua :";
 			this.labRua.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -142,7 +142,7 @@ namespace GM.View.pessoa
 			this.labBairro.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
 			this.labBairro.Location = new System.Drawing.Point(13, 140);
 			this.labBairro.Name = "labBairro";
-			this.labBairro.Size = new System.Drawing.Size(73, 20);
+			this.labBairro.Size = new System.Drawing.Size(73, 26);
 			this.labBairro.TabIndex = 35;
 			this.labBairro.Text = "Bairro :";
 			this.labBairro.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -154,7 +154,7 @@ namespace GM.View.pessoa
 			this.labCidade.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
 			this.labCidade.Location = new System.Drawing.Point(13, 172);
 			this.labCidade.Name = "labCidade";
-			this.labCidade.Size = new System.Drawing.Size(73, 20);
+			this.labCidade.Size = new System.Drawing.Size(73, 26);
 			this.labCidade.TabIndex = 36;
 			this.labCidade.Text = "Cidade :";
 			this.labCidade.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -166,7 +166,7 @@ namespace GM.View.pessoa
 			this.labPadrao.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(76)))), ((int)(((byte)(76)))), ((int)(((byte)(77)))));
 			this.labPadrao.Location = new System.Drawing.Point(181, 76);
 			this.labPadrao.Name = "labPadrao";
-			this.labPadrao.Size = new System.Drawing.Size(188, 20);
+			this.labPadrao.Size = new System.Drawing.Size(162, 26);
 			this.labPadrao.TabIndex = 37;
 			this.labPadrao.Text = "Recomendado : Padrão";
 			this.labPadrao.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -204,32 +204,19 @@ namespace GM.View.pessoa
 			this.txtNomeCidade.CustomBGColor = System.Drawing.Color.White;
 			this.txtNomeCidade.Font = new System.Drawing.Font("Calibri", 9.75F);
 			this.txtNomeCidade.ForeColor = System.Drawing.Color.Black;
-			this.txtNomeCidade.Location = new System.Drawing.Point(259, 172);
+			this.txtNomeCidade.Location = new System.Drawing.Point(217, 172);
 			this.txtNomeCidade.MaxLength = 70;
 			this.txtNomeCidade.Multiline = false;
 			this.txtNomeCidade.Name = "txtNomeCidade";
 			this.txtNomeCidade.ReadOnly = true;
 			this.txtNomeCidade.SelectionStart = 0;
-			this.txtNomeCidade.Size = new System.Drawing.Size(156, 26);
+			this.txtNomeCidade.Size = new System.Drawing.Size(198, 26);
 			this.txtNomeCidade.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtNomeCidade.TabIndex = 39;
 			this.txtNomeCidade.TabStop = false;
 			this.txtNomeCidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtNomeCidade.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtNomeCidade.UseSystemPasswordChar = false;
-			// 
-			// btnBuscar
-			// 
-			this.btnBuscar.Depth = 0;
-			this.btnBuscar.Location = new System.Drawing.Point(181, 172);
-			this.btnBuscar.MouseState = MaterialSkin.MouseState.HOVER;
-			this.btnBuscar.Name = "btnBuscar";
-			this.btnBuscar.Primary = true;
-			this.btnBuscar.Size = new System.Drawing.Size(72, 26);
-			this.btnBuscar.TabIndex = 57;
-			this.btnBuscar.Text = "buscar";
-			this.btnBuscar.UseVisualStyleBackColor = true;
-			this.btnBuscar.Click += new System.EventHandler(this.pesquisarClique);
 			// 
 			// btnSalvar
 			// 
@@ -257,14 +244,32 @@ namespace GM.View.pessoa
 			this.btnCancelar.UseVisualStyleBackColor = true;
 			this.btnCancelar.Click += new System.EventHandler(this.cancelarClique);
 			// 
+			// btnPesquisar
+			// 
+			this.btnPesquisar.BackColor = System.Drawing.Color.Transparent;
+			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnPesquisar.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnPesquisar.FlatAppearance.BorderSize = 0;
+			this.btnPesquisar.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnPesquisar.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnPesquisar.ForeColor = System.Drawing.Color.White;
+			this.btnPesquisar.Image = ((System.Drawing.Image)(resources.GetObject("btnPesquisar.Image")));
+			this.btnPesquisar.Location = new System.Drawing.Point(177, 172);
+			this.btnPesquisar.Name = "btnPesquisar";
+			this.btnPesquisar.Size = new System.Drawing.Size(38, 26);
+			this.btnPesquisar.TabIndex = 60;
+			this.btnPesquisar.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnPesquisar.UseVisualStyleBackColor = false;
+			this.btnPesquisar.Click += new System.EventHandler(this.buscaCidade);
+			// 
 			// CDEndereco
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(427, 254);
+			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.btnCancelar);
 			this.Controls.Add(this.btnSalvar);
-			this.Controls.Add(this.btnBuscar);
 			this.Controls.Add(this.txtNomeCidade);
 			this.Controls.Add(this.txtCidade);
 			this.Controls.Add(this.labPadrao);
@@ -284,9 +289,9 @@ namespace GM.View.pessoa
 			this.Load += new System.EventHandler(this.ArranqueFormulario);
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Button btnPesquisar;
 		private MaterialSkin.Controls.MaterialRaisedButton btnCancelar;
 		private MaterialSkin.Controls.MaterialRaisedButton btnSalvar;
-		private MaterialSkin.Controls.MaterialRaisedButton btnBuscar;
 		private GM.Componentes.MinBox txtNomeCidade;
 		private GM.Componentes.MinBox txtCidade;
 		private ReaLTaiizor.Controls.DungeonLabel labPadrao;

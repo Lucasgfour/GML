@@ -45,9 +45,9 @@ namespace GM.View.contas
 			this.cbxOrdenacao = new GM.Componentes.MinComboBox();
 			this.labOrdenacao = new System.Windows.Forms.Label();
 			this.cbxLoja = new GM.Componentes.MinComboBox();
-			this.btnPesquisar = new Sunny.UI.UISymbolButton();
 			this.chkSaldo = new System.Windows.Forms.CheckBox();
 			this.labLoja = new System.Windows.Forms.Label();
+			this.btnCliente = new System.Windows.Forms.Button();
 			Col04 = new System.Windows.Forms.ColumnHeader();
 			this.SuspendLayout();
 			// 
@@ -71,9 +71,9 @@ namespace GM.View.contas
 			this.listaContas.FullRowSelect = true;
 			this.listaContas.GridLines = true;
 			this.listaContas.HeaderStyle = System.Windows.Forms.ColumnHeaderStyle.Nonclickable;
-			this.listaContas.Location = new System.Drawing.Point(12, 139);
+			this.listaContas.Location = new System.Drawing.Point(12, 103);
 			this.listaContas.Name = "listaContas";
-			this.listaContas.Size = new System.Drawing.Size(816, 393);
+			this.listaContas.Size = new System.Drawing.Size(816, 429);
 			this.listaContas.TabIndex = 0;
 			this.listaContas.UseCompatibleStateImageBehavior = false;
 			this.listaContas.View = System.Windows.Forms.View.Details;
@@ -114,10 +114,10 @@ namespace GM.View.contas
 			// labAte
 			// 
 			this.labAte.BackColor = System.Drawing.Color.Transparent;
-			this.labAte.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labAte.Location = new System.Drawing.Point(202, 106);
+			this.labAte.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labAte.Location = new System.Drawing.Point(661, 71);
 			this.labAte.Name = "labAte";
-			this.labAte.Size = new System.Drawing.Size(31, 29);
+			this.labAte.Size = new System.Drawing.Size(31, 27);
 			this.labAte.TabIndex = 42;
 			this.labAte.Text = "até";
 			this.labAte.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -125,8 +125,8 @@ namespace GM.View.contas
 			// labEmissao
 			// 
 			this.labEmissao.BackColor = System.Drawing.Color.Transparent;
-			this.labEmissao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labEmissao.Location = new System.Drawing.Point(13, 107);
+			this.labEmissao.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labEmissao.Location = new System.Drawing.Point(492, 71);
 			this.labEmissao.Name = "labEmissao";
 			this.labEmissao.Size = new System.Drawing.Size(78, 26);
 			this.labEmissao.TabIndex = 41;
@@ -140,15 +140,15 @@ namespace GM.View.contas
 			this.txtDtFinal.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtDtFinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtDtFinal.CustomBGColor = System.Drawing.Color.White;
-			this.txtDtFinal.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtDtFinal.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtDtFinal.ForeColor = System.Drawing.Color.Black;
-			this.txtDtFinal.Location = new System.Drawing.Point(239, 105);
+			this.txtDtFinal.Location = new System.Drawing.Point(694, 71);
 			this.txtDtFinal.MaxLength = 32767;
 			this.txtDtFinal.Multiline = false;
 			this.txtDtFinal.Name = "txtDtFinal";
 			this.txtDtFinal.ReadOnly = false;
 			this.txtDtFinal.SelectionStart = 0;
-			this.txtDtFinal.Size = new System.Drawing.Size(99, 28);
+			this.txtDtFinal.Size = new System.Drawing.Size(88, 26);
 			this.txtDtFinal.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtDtFinal.TabIndex = 40;
 			this.txtDtFinal.Text = "00/00/0000";
@@ -163,15 +163,15 @@ namespace GM.View.contas
 			this.txtDtInicio.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtDtInicio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtDtInicio.CustomBGColor = System.Drawing.Color.White;
-			this.txtDtInicio.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtDtInicio.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtDtInicio.ForeColor = System.Drawing.Color.Black;
-			this.txtDtInicio.Location = new System.Drawing.Point(97, 106);
+			this.txtDtInicio.Location = new System.Drawing.Point(573, 71);
 			this.txtDtInicio.MaxLength = 32767;
 			this.txtDtInicio.Multiline = false;
 			this.txtDtInicio.Name = "txtDtInicio";
 			this.txtDtInicio.ReadOnly = false;
 			this.txtDtInicio.SelectionStart = 0;
-			this.txtDtInicio.Size = new System.Drawing.Size(99, 28);
+			this.txtDtInicio.Size = new System.Drawing.Size(88, 26);
 			this.txtDtInicio.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtDtInicio.TabIndex = 39;
 			this.txtDtInicio.Text = "00/00/0000";
@@ -195,7 +195,7 @@ namespace GM.View.contas
 			this.cbxOrdenacao.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
 			this.cbxOrdenacao.DropDownHeight = 100;
 			this.cbxOrdenacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbxOrdenacao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cbxOrdenacao.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cbxOrdenacao.ForeColor = System.Drawing.Color.Black;
 			this.cbxOrdenacao.FormattingEnabled = true;
 			this.cbxOrdenacao.HoverSelectionColor = System.Drawing.Color.Empty;
@@ -207,7 +207,7 @@ namespace GM.View.contas
 									"Numero",
 									"Fornecedor",
 									"Referencia"});
-			this.cbxOrdenacao.Location = new System.Drawing.Point(300, 76);
+			this.cbxOrdenacao.Location = new System.Drawing.Point(294, 71);
 			this.cbxOrdenacao.Name = "cbxOrdenacao";
 			this.cbxOrdenacao.Size = new System.Drawing.Size(109, 26);
 			this.cbxOrdenacao.StartIndex = 0;
@@ -216,10 +216,10 @@ namespace GM.View.contas
 			// labOrdenacao
 			// 
 			this.labOrdenacao.BackColor = System.Drawing.Color.Transparent;
-			this.labOrdenacao.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labOrdenacao.Location = new System.Drawing.Point(219, 74);
+			this.labOrdenacao.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labOrdenacao.Location = new System.Drawing.Point(210, 71);
 			this.labOrdenacao.Name = "labOrdenacao";
-			this.labOrdenacao.Size = new System.Drawing.Size(75, 26);
+			this.labOrdenacao.Size = new System.Drawing.Size(82, 26);
 			this.labOrdenacao.TabIndex = 38;
 			this.labOrdenacao.Text = "Ordernação :";
 			this.labOrdenacao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -240,39 +240,25 @@ namespace GM.View.contas
 			this.cbxLoja.DrawMode = System.Windows.Forms.DrawMode.OwnerDrawFixed;
 			this.cbxLoja.DropDownHeight = 100;
 			this.cbxLoja.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-			this.cbxLoja.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.cbxLoja.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cbxLoja.ForeColor = System.Drawing.Color.Black;
 			this.cbxLoja.FormattingEnabled = true;
 			this.cbxLoja.HoverSelectionColor = System.Drawing.Color.Empty;
 			this.cbxLoja.IntegralHeight = false;
 			this.cbxLoja.ItemHeight = 20;
-			this.cbxLoja.Location = new System.Drawing.Point(61, 74);
+			this.cbxLoja.Location = new System.Drawing.Point(52, 71);
 			this.cbxLoja.Name = "cbxLoja";
 			this.cbxLoja.Size = new System.Drawing.Size(152, 26);
 			this.cbxLoja.StartIndex = 0;
 			this.cbxLoja.TabIndex = 34;
 			// 
-			// btnPesquisar
-			// 
-			this.btnPesquisar.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnPesquisar.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnPesquisar.Location = new System.Drawing.Point(344, 105);
-			this.btnPesquisar.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnPesquisar.Name = "btnPesquisar";
-			this.btnPesquisar.Radius = 0;
-			this.btnPesquisar.Size = new System.Drawing.Size(157, 28);
-			this.btnPesquisar.Symbol = 61442;
-			this.btnPesquisar.TabIndex = 43;
-			this.btnPesquisar.Text = "PESQUISAR";
-			this.btnPesquisar.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			// 
 			// chkSaldo
 			// 
 			this.chkSaldo.BackColor = System.Drawing.Color.Transparent;
-			this.chkSaldo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.chkSaldo.Location = new System.Drawing.Point(415, 76);
+			this.chkSaldo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.chkSaldo.Location = new System.Drawing.Point(409, 71);
 			this.chkSaldo.Name = "chkSaldo";
-			this.chkSaldo.Size = new System.Drawing.Size(86, 26);
+			this.chkSaldo.Size = new System.Drawing.Size(85, 26);
 			this.chkSaldo.TabIndex = 36;
 			this.chkSaldo.Text = "Sem Saldo";
 			this.chkSaldo.UseVisualStyleBackColor = false;
@@ -280,19 +266,38 @@ namespace GM.View.contas
 			// labLoja
 			// 
 			this.labLoja.BackColor = System.Drawing.Color.Transparent;
-			this.labLoja.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labLoja.Location = new System.Drawing.Point(12, 74);
+			this.labLoja.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labLoja.Location = new System.Drawing.Point(10, 71);
 			this.labLoja.Name = "labLoja";
-			this.labLoja.Size = new System.Drawing.Size(43, 23);
+			this.labLoja.Size = new System.Drawing.Size(43, 26);
 			this.labLoja.TabIndex = 35;
 			this.labLoja.Text = "Loja : ";
 			this.labLoja.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
+			// 
+			// btnCliente
+			// 
+			this.btnCliente.BackColor = System.Drawing.Color.Transparent;
+			this.btnCliente.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnCliente.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnCliente.FlatAppearance.BorderSize = 0;
+			this.btnCliente.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnCliente.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnCliente.ForeColor = System.Drawing.Color.White;
+			this.btnCliente.Image = ((System.Drawing.Image)(resources.GetObject("btnCliente.Image")));
+			this.btnCliente.Location = new System.Drawing.Point(788, 71);
+			this.btnCliente.Name = "btnCliente";
+			this.btnCliente.Size = new System.Drawing.Size(38, 26);
+			this.btnCliente.TabIndex = 43;
+			this.btnCliente.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnCliente.UseVisualStyleBackColor = false;
+			this.btnCliente.Click += new System.EventHandler(this.cliquePesquisar);
 			// 
 			// CSPagar
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(840, 547);
+			this.Controls.Add(this.btnCliente);
 			this.Controls.Add(this.labAte);
 			this.Controls.Add(this.labEmissao);
 			this.Controls.Add(this.txtDtFinal);
@@ -300,11 +305,11 @@ namespace GM.View.contas
 			this.Controls.Add(this.cbxOrdenacao);
 			this.Controls.Add(this.labOrdenacao);
 			this.Controls.Add(this.cbxLoja);
-			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.chkSaldo);
 			this.Controls.Add(this.labLoja);
 			this.Controls.Add(this.listaContas);
 			this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+			this.KeyPreview = true;
 			this.MaximizeBox = false;
 			this.Name = "CSPagar";
 			this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
@@ -312,7 +317,7 @@ namespace GM.View.contas
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
 		}
-		private Sunny.UI.UISymbolButton btnPesquisar;
+		private System.Windows.Forms.Button btnCliente;
 		private GM.Componentes.MinBox txtDtInicio;
 		private GM.Componentes.MinBox txtDtFinal;
 		private System.Windows.Forms.Label labEmissao;

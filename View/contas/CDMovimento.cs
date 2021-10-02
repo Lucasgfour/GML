@@ -154,5 +154,11 @@ namespace GM.View.contas {
 		void cliqueSair(object sender, EventArgs e) {
 			this.DialogResult = DialogResult.Cancel;
 		}
+		
+		void detectaTecla(object sender, KeyEventArgs e) {
+			if(e.KeyCode == Keys.Enter) {
+				btnSalvar.PerformClick();
+			}
+		}
 	}
 }

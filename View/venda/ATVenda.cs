@@ -55,23 +55,39 @@ namespace GM.View.venda {
 				
 				listaProdutos.Items.Clear();
 				
-				Comando schProdutos = new Comando("SELECT quantidade AS Quantidade, descricao AS Nome, A.valor AS Preço, (quantidade * A.valor) AS Total  FROM venda_produto AS A INNER JOIN produto AS B ON B.codigo = A.produto AND A.pedido = @pedido");
+				Comando schProdutos = new Comando("SELECT quantidade AS Quantidade, descricao AS Nome, A.valor AS Preço, (quantidade * A.valor) AS Total, saldoEstoque(B.codigo)  FROM venda_produto AS A INNER JOIN produto AS B ON B.codigo = A.produto AND A.pedido = @pedido");
 				schProdutos.addParametro("@pedido", venda.codigo);
 				Resultado resProdutos = schProdutos.consultarToDataTable();
 				if(!resProdutos.condicao) {
 					MessageBox.Show("Não foi possível localizar os produtos do pedido, motivo : " + resProdutos.mensagem, "Erro", MessageBoxButtons.OK, MessageBoxIcon.Error);
 				} else {
 					itens = resProdutos.converter<DataTable>();
+					String mensagem = "";
 					foreach (DataRow linha in itens.Rows) {
+						float estoque = float.Parse(linha[4].ToString());
+						float quantidade = float.Parse(linha[0].ToString());
 						ListViewItem itm = new ListViewItem();
-						itm.Text =  float.Parse(linha[0].ToString()).ToString("n3");
+						itm.Text = quantidade.ToString("n3");
 						itm.SubItems.Add(linha[1].ToString());
 						itm.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(linha[2].ToString())));
 						itm.SubItems.Add("R$ " + String.Format("{0:N}", float.Parse(linha[3].ToString())));
+						itm.SubItems.Add(estoque.ToString("n3"));
 						total +=  (float.Parse(linha[0].ToString()) * float.Parse(linha[2].ToString()));
+						
+						if(estoque < quantidade) {
+							itm.BackColor = Color.LightSalmon;
+							btnEntrada.Visible = false;
+							mensagem = mensagem + "Produto " + linha[1].ToString() + " com estoque insuficiente !!" + Environment.NewLine;
+						} else if(estoque == quantidade) {
+							itm.BackColor = Color.Yellow;
+						}
+						
 						listaProdutos.Items.Add(itm);
 					}
 					
+					if(!mensagem.Equals("")) {
+						MessageBox.Show(mensagem, "Atenção", MessageBoxButtons.OK, MessageBoxIcon.Error);
+					}
 				}
 				
 				txtTotal.Text = "R$ " + String.Format("{0:N}", total);

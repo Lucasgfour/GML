@@ -34,9 +34,6 @@ namespace GM.View.contas
 			this.labFornecedor = new System.Windows.Forms.Label();
 			this.txtCodigo = new GM.Componentes.MinBox();
 			this.labCodigo = new System.Windows.Forms.Label();
-			this.btnAbrir = new Sunny.UI.UISymbolButton();
-			this.btnNovaMovimento = new Sunny.UI.UISymbolButton();
-			this.btnAbrirReferencia = new Sunny.UI.UISymbolButton();
 			this.txtReferencia = new GM.Componentes.MinBox();
 			this.labReferencia = new System.Windows.Forms.Label();
 			this.txtVencimento = new GM.Componentes.MinBox();
@@ -57,6 +54,9 @@ namespace GM.View.contas
 			this.txtSaldo = new GM.Componentes.MinBox();
 			this.txtSituação = new GM.Componentes.MinBox();
 			this.labSituacao = new System.Windows.Forms.Label();
+			this.btnEntrada = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnReferencia = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.btnAbrir = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// txtFornecedor
@@ -124,56 +124,6 @@ namespace GM.View.contas
 			this.labCodigo.TabIndex = 13;
 			this.labCodigo.Text = "Código :";
 			this.labCodigo.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
-			// 
-			// btnAbrir
-			// 
-			this.btnAbrir.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAbrir.Font = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnAbrir.Location = new System.Drawing.Point(160, 70);
-			this.btnAbrir.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnAbrir.Name = "btnAbrir";
-			this.btnAbrir.Radius = 0;
-			this.btnAbrir.Size = new System.Drawing.Size(47, 28);
-			this.btnAbrir.Symbol = 61816;
-			this.btnAbrir.TabIndex = 31;
-			this.btnAbrir.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnAbrir.Click += new System.EventHandler(this.cliquePesquisar);
-			// 
-			// btnNovaMovimento
-			// 
-			this.btnNovaMovimento.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnNovaMovimento.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnNovaMovimento.Location = new System.Drawing.Point(345, 309);
-			this.btnNovaMovimento.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnNovaMovimento.Name = "btnNovaMovimento";
-			this.btnNovaMovimento.Radius = 0;
-			this.btnNovaMovimento.RectColor = System.Drawing.Color.Gray;
-			this.btnNovaMovimento.Size = new System.Drawing.Size(217, 26);
-			this.btnNovaMovimento.Style = Sunny.UI.UIStyle.Custom;
-			this.btnNovaMovimento.Symbol = 61543;
-			this.btnNovaMovimento.SymbolSize = 0;
-			this.btnNovaMovimento.TabIndex = 32;
-			this.btnNovaMovimento.Text = "NOVA MOVIMENTAÇÃO";
-			this.btnNovaMovimento.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnNovaMovimento.Click += new System.EventHandler(this.cliqueNovoMovimentacao);
-			// 
-			// btnAbrirReferencia
-			// 
-			this.btnAbrirReferencia.Cursor = System.Windows.Forms.Cursors.Hand;
-			this.btnAbrirReferencia.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.btnAbrirReferencia.Location = new System.Drawing.Point(345, 341);
-			this.btnAbrirReferencia.MinimumSize = new System.Drawing.Size(1, 1);
-			this.btnAbrirReferencia.Name = "btnAbrirReferencia";
-			this.btnAbrirReferencia.Radius = 0;
-			this.btnAbrirReferencia.RectColor = System.Drawing.Color.Gray;
-			this.btnAbrirReferencia.Size = new System.Drawing.Size(217, 25);
-			this.btnAbrirReferencia.Style = Sunny.UI.UIStyle.Custom;
-			this.btnAbrirReferencia.Symbol = 61543;
-			this.btnAbrirReferencia.SymbolSize = 0;
-			this.btnAbrirReferencia.TabIndex = 33;
-			this.btnAbrirReferencia.Text = "ABRIR REFERÊNCIA";
-			this.btnAbrirReferencia.TipsFont = new System.Drawing.Font("Microsoft Sans Serif", 10F);
-			this.btnAbrirReferencia.Click += new System.EventHandler(this.cliqueAbrirReferencia);
 			// 
 			// txtReferencia
 			// 
@@ -425,11 +375,58 @@ namespace GM.View.contas
 			this.labSituacao.Text = "Situação :";
 			this.labSituacao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
 			// 
+			// btnEntrada
+			// 
+			this.btnEntrada.Depth = 0;
+			this.btnEntrada.Location = new System.Drawing.Point(345, 309);
+			this.btnEntrada.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnEntrada.Name = "btnEntrada";
+			this.btnEntrada.Primary = true;
+			this.btnEntrada.Size = new System.Drawing.Size(217, 38);
+			this.btnEntrada.TabIndex = 61;
+			this.btnEntrada.Text = "NOVA MOVIMENTAÇÃO";
+			this.btnEntrada.UseVisualStyleBackColor = true;
+			this.btnEntrada.Click += new System.EventHandler(this.cliqueNovoMovimentacao);
+			// 
+			// btnReferencia
+			// 
+			this.btnReferencia.Depth = 0;
+			this.btnReferencia.Location = new System.Drawing.Point(345, 353);
+			this.btnReferencia.MouseState = MaterialSkin.MouseState.HOVER;
+			this.btnReferencia.Name = "btnReferencia";
+			this.btnReferencia.Primary = true;
+			this.btnReferencia.Size = new System.Drawing.Size(217, 28);
+			this.btnReferencia.TabIndex = 62;
+			this.btnReferencia.Text = "ABRIR REFERÊNCIA";
+			this.btnReferencia.UseVisualStyleBackColor = true;
+			this.btnReferencia.Click += new System.EventHandler(this.cliqueAbrirReferencia);
+			// 
+			// btnAbrir
+			// 
+			this.btnAbrir.BackColor = System.Drawing.Color.Transparent;
+			this.btnAbrir.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.btnAbrir.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.btnAbrir.FlatAppearance.BorderSize = 0;
+			this.btnAbrir.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.btnAbrir.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.btnAbrir.ForeColor = System.Drawing.Color.White;
+			this.btnAbrir.Image = ((System.Drawing.Image)(resources.GetObject("btnAbrir.Image")));
+			this.btnAbrir.Location = new System.Drawing.Point(160, 70);
+			this.btnAbrir.Name = "btnAbrir";
+			this.btnAbrir.Size = new System.Drawing.Size(38, 28);
+			this.btnAbrir.TabIndex = 63;
+			this.btnAbrir.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.btnAbrir.UseVisualStyleBackColor = false;
+			this.btnAbrir.Click += new System.EventHandler(this.cliquePesquisar);
+			// 
 			// CSConta
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(574, 461);
+			this.Controls.Add(this.btnAbrir);
+			this.Controls.Add(this.btnReferencia);
+			this.Controls.Add(this.btnEntrada);
 			this.Controls.Add(this.txtSituação);
 			this.Controls.Add(this.labSituacao);
 			this.Controls.Add(this.txtSaldo);
@@ -443,9 +440,6 @@ namespace GM.View.contas
 			this.Controls.Add(this.labVencimento);
 			this.Controls.Add(this.txtReferencia);
 			this.Controls.Add(this.labReferencia);
-			this.Controls.Add(this.btnAbrirReferencia);
-			this.Controls.Add(this.btnNovaMovimento);
-			this.Controls.Add(this.btnAbrir);
 			this.Controls.Add(this.txtCodigo);
 			this.Controls.Add(this.labCodigo);
 			this.Controls.Add(this.txtFornecedor);
@@ -460,6 +454,9 @@ namespace GM.View.contas
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
 		}
+		private System.Windows.Forms.Button btnAbrir;
+		private MaterialSkin.Controls.MaterialRaisedButton btnReferencia;
+		private MaterialSkin.Controls.MaterialRaisedButton btnEntrada;
 		private System.Windows.Forms.Label labSituacao;
 		private GM.Componentes.MinBox txtSituação;
 		private GM.Componentes.MinBox txtSaldo;
@@ -480,9 +477,6 @@ namespace GM.View.contas
 		private GM.Componentes.MinBox txtVencimento;
 		private System.Windows.Forms.Label labReferencia;
 		private GM.Componentes.MinBox txtReferencia;
-		private Sunny.UI.UISymbolButton btnAbrirReferencia;
-		private Sunny.UI.UISymbolButton btnNovaMovimento;
-		private Sunny.UI.UISymbolButton btnAbrir;
 		private System.Windows.Forms.Label labCodigo;
 		private GM.Componentes.MinBox txtCodigo;
 		private System.Windows.Forms.Label labFornecedor;

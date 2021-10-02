@@ -95,6 +95,8 @@ namespace GM.View.contas {
 						
 						listaContas.Items.Add(itm);
 					}
+				} else {
+					//MessageBox.Show(resDados.mensagem);
 				}
 			}
 			

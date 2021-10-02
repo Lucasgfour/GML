@@ -48,7 +48,7 @@ namespace GM.View.estoque
 			this.txtSaldo = new GM.Componentes.MinBox();
 			this.labSaldo = new System.Windows.Forms.Label();
 			this.btnPesquisar = new MaterialSkin.Controls.MaterialRaisedButton();
-			this.btnBuscar = new MaterialSkin.Controls.MaterialRaisedButton();
+			this.button1 = new System.Windows.Forms.Button();
 			this.SuspendLayout();
 			// 
 			// listaMovimento
@@ -58,13 +58,14 @@ namespace GM.View.estoque
 									this.Col02,
 									this.Col03,
 									this.Col04});
+			this.listaMovimento.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.listaMovimento.FullRowSelect = true;
 			this.listaMovimento.GridLines = true;
-			this.listaMovimento.Location = new System.Drawing.Point(12, 171);
+			this.listaMovimento.Location = new System.Drawing.Point(12, 167);
 			this.listaMovimento.MultiSelect = false;
 			this.listaMovimento.Name = "listaMovimento";
-			this.listaMovimento.Size = new System.Drawing.Size(397, 384);
-			this.listaMovimento.TabIndex = 0;
+			this.listaMovimento.Size = new System.Drawing.Size(397, 388);
+			this.listaMovimento.TabIndex = 6;
 			this.listaMovimento.UseCompatibleStateImageBehavior = false;
 			this.listaMovimento.View = System.Windows.Forms.View.Details;
 			this.listaMovimento.MouseDoubleClick += new System.Windows.Forms.MouseEventHandler(this.duploCliqueLista);
@@ -98,7 +99,7 @@ namespace GM.View.estoque
 			this.txtCodigo.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtCodigo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtCodigo.CustomBGColor = System.Drawing.Color.White;
-			this.txtCodigo.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtCodigo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtCodigo.ForeColor = System.Drawing.Color.Black;
 			this.txtCodigo.Location = new System.Drawing.Point(77, 71);
 			this.txtCodigo.MaxLength = 50;
@@ -106,9 +107,9 @@ namespace GM.View.estoque
 			this.txtCodigo.Name = "txtCodigo";
 			this.txtCodigo.ReadOnly = false;
 			this.txtCodigo.SelectionStart = 0;
-			this.txtCodigo.Size = new System.Drawing.Size(45, 28);
+			this.txtCodigo.Size = new System.Drawing.Size(45, 26);
 			this.txtCodigo.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-			this.txtCodigo.TabIndex = 8;
+			this.txtCodigo.TabIndex = 1;
 			this.txtCodigo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtCodigo.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtCodigo.UseSystemPasswordChar = false;
@@ -117,6 +118,7 @@ namespace GM.View.estoque
 			// labProduto
 			// 
 			this.labProduto.BackColor = System.Drawing.Color.Transparent;
+			this.labProduto.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labProduto.Location = new System.Drawing.Point(12, 71);
 			this.labProduto.Name = "labProduto";
 			this.labProduto.Size = new System.Drawing.Size(59, 28);
@@ -131,17 +133,18 @@ namespace GM.View.estoque
 			this.txtProduto.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtProduto.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtProduto.CustomBGColor = System.Drawing.Color.White;
-			this.txtProduto.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtProduto.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtProduto.ForeColor = System.Drawing.Color.Black;
-			this.txtProduto.Location = new System.Drawing.Point(225, 71);
+			this.txtProduto.Location = new System.Drawing.Point(164, 71);
 			this.txtProduto.MaxLength = 50;
 			this.txtProduto.Multiline = false;
 			this.txtProduto.Name = "txtProduto";
 			this.txtProduto.ReadOnly = true;
 			this.txtProduto.SelectionStart = 0;
-			this.txtProduto.Size = new System.Drawing.Size(184, 28);
+			this.txtProduto.Size = new System.Drawing.Size(245, 26);
 			this.txtProduto.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtProduto.TabIndex = 10;
+			this.txtProduto.TabStop = false;
 			this.txtProduto.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtProduto.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtProduto.UseSystemPasswordChar = false;
@@ -153,17 +156,18 @@ namespace GM.View.estoque
 			this.txtUnidade.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtUnidade.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtUnidade.CustomBGColor = System.Drawing.Color.White;
-			this.txtUnidade.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtUnidade.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtUnidade.ForeColor = System.Drawing.Color.Black;
-			this.txtUnidade.Location = new System.Drawing.Point(189, 105);
+			this.txtUnidade.Location = new System.Drawing.Point(189, 103);
 			this.txtUnidade.MaxLength = 50;
 			this.txtUnidade.Multiline = false;
 			this.txtUnidade.Name = "txtUnidade";
 			this.txtUnidade.ReadOnly = true;
 			this.txtUnidade.SelectionStart = 0;
-			this.txtUnidade.Size = new System.Drawing.Size(38, 28);
+			this.txtUnidade.Size = new System.Drawing.Size(38, 26);
 			this.txtUnidade.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtUnidade.TabIndex = 34;
+			this.txtUnidade.TabStop = false;
 			this.txtUnidade.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtUnidade.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtUnidade.UseSystemPasswordChar = false;
@@ -171,9 +175,10 @@ namespace GM.View.estoque
 			// labSituacao
 			// 
 			this.labSituacao.BackColor = System.Drawing.Color.Transparent;
+			this.labSituacao.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.labSituacao.Location = new System.Drawing.Point(233, 105);
 			this.labSituacao.Name = "labSituacao";
-			this.labSituacao.Size = new System.Drawing.Size(60, 28);
+			this.labSituacao.Size = new System.Drawing.Size(60, 24);
 			this.labSituacao.TabIndex = 35;
 			this.labSituacao.Text = "Situação:";
 			this.labSituacao.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -195,7 +200,7 @@ namespace GM.View.estoque
 			this.cbxSituacao.DropDownHeight = 100;
 			this.cbxSituacao.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
 			this.cbxSituacao.Enabled = false;
-			this.cbxSituacao.Font = new System.Drawing.Font("Segoe UI", 10F);
+			this.cbxSituacao.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.cbxSituacao.ForeColor = System.Drawing.Color.Black;
 			this.cbxSituacao.FormattingEnabled = true;
 			this.cbxSituacao.HoverSelectionColor = System.Drawing.Color.Empty;
@@ -204,19 +209,20 @@ namespace GM.View.estoque
 			this.cbxSituacao.Items.AddRange(new object[] {
 									"SUSPENSO",
 									"ATIVO"});
-			this.cbxSituacao.Location = new System.Drawing.Point(299, 105);
+			this.cbxSituacao.Location = new System.Drawing.Point(299, 103);
 			this.cbxSituacao.Name = "cbxSituacao";
 			this.cbxSituacao.Size = new System.Drawing.Size(110, 26);
 			this.cbxSituacao.StartIndex = 0;
 			this.cbxSituacao.TabIndex = 36;
+			this.cbxSituacao.TabStop = false;
 			// 
 			// labAte
 			// 
 			this.labAte.BackColor = System.Drawing.Color.Transparent;
-			this.labAte.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labAte.Location = new System.Drawing.Point(178, 137);
+			this.labAte.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labAte.Location = new System.Drawing.Point(158, 135);
 			this.labAte.Name = "labAte";
-			this.labAte.Size = new System.Drawing.Size(28, 28);
+			this.labAte.Size = new System.Drawing.Size(28, 26);
 			this.labAte.TabIndex = 40;
 			this.labAte.Text = "até";
 			this.labAte.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -224,8 +230,8 @@ namespace GM.View.estoque
 			// labPeriodo
 			// 
 			this.labPeriodo.BackColor = System.Drawing.Color.Transparent;
-			this.labPeriodo.Font = new System.Drawing.Font("Segoe UI", 9F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-			this.labPeriodo.Location = new System.Drawing.Point(12, 137);
+			this.labPeriodo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labPeriodo.Location = new System.Drawing.Point(12, 135);
 			this.labPeriodo.Name = "labPeriodo";
 			this.labPeriodo.Size = new System.Drawing.Size(59, 23);
 			this.labPeriodo.TabIndex = 39;
@@ -239,17 +245,17 @@ namespace GM.View.estoque
 			this.txtDtFinal.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtDtFinal.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtDtFinal.CustomBGColor = System.Drawing.Color.White;
-			this.txtDtFinal.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtDtFinal.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtDtFinal.ForeColor = System.Drawing.Color.Black;
-			this.txtDtFinal.Location = new System.Drawing.Point(206, 137);
-			this.txtDtFinal.MaxLength = 32767;
+			this.txtDtFinal.Location = new System.Drawing.Point(188, 135);
+			this.txtDtFinal.MaxLength = 10;
 			this.txtDtFinal.Multiline = false;
 			this.txtDtFinal.Name = "txtDtFinal";
 			this.txtDtFinal.ReadOnly = false;
 			this.txtDtFinal.SelectionStart = 0;
-			this.txtDtFinal.Size = new System.Drawing.Size(100, 28);
+			this.txtDtFinal.Size = new System.Drawing.Size(80, 26);
 			this.txtDtFinal.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-			this.txtDtFinal.TabIndex = 38;
+			this.txtDtFinal.TabIndex = 4;
 			this.txtDtFinal.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtDtFinal.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtDtFinal.UseSystemPasswordChar = false;
@@ -263,17 +269,17 @@ namespace GM.View.estoque
 			this.txtDtInicio.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtDtInicio.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtDtInicio.CustomBGColor = System.Drawing.Color.White;
-			this.txtDtInicio.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtDtInicio.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtDtInicio.ForeColor = System.Drawing.Color.Black;
-			this.txtDtInicio.Location = new System.Drawing.Point(77, 137);
-			this.txtDtInicio.MaxLength = 32767;
+			this.txtDtInicio.Location = new System.Drawing.Point(77, 135);
+			this.txtDtInicio.MaxLength = 10;
 			this.txtDtInicio.Multiline = false;
 			this.txtDtInicio.Name = "txtDtInicio";
 			this.txtDtInicio.ReadOnly = false;
 			this.txtDtInicio.SelectionStart = 0;
-			this.txtDtInicio.Size = new System.Drawing.Size(100, 28);
+			this.txtDtInicio.Size = new System.Drawing.Size(80, 26);
 			this.txtDtInicio.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
-			this.txtDtInicio.TabIndex = 37;
+			this.txtDtInicio.TabIndex = 3;
 			this.txtDtInicio.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtDtInicio.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtDtInicio.UseSystemPasswordChar = false;
@@ -287,17 +293,18 @@ namespace GM.View.estoque
 			this.txtSaldo.CharacterCas = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtSaldo.CharacterCasing = System.Windows.Forms.CharacterCasing.Normal;
 			this.txtSaldo.CustomBGColor = System.Drawing.Color.White;
-			this.txtSaldo.Font = new System.Drawing.Font("Tahoma", 11F);
+			this.txtSaldo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
 			this.txtSaldo.ForeColor = System.Drawing.Color.Black;
-			this.txtSaldo.Location = new System.Drawing.Point(77, 105);
+			this.txtSaldo.Location = new System.Drawing.Point(77, 103);
 			this.txtSaldo.MaxLength = 50;
 			this.txtSaldo.Multiline = false;
 			this.txtSaldo.Name = "txtSaldo";
 			this.txtSaldo.ReadOnly = true;
 			this.txtSaldo.SelectionStart = 0;
-			this.txtSaldo.Size = new System.Drawing.Size(106, 28);
+			this.txtSaldo.Size = new System.Drawing.Size(106, 26);
 			this.txtSaldo.SmoothingType = System.Drawing.Drawing2D.SmoothingMode.AntiAlias;
 			this.txtSaldo.TabIndex = 42;
+			this.txtSaldo.TabStop = false;
 			this.txtSaldo.TextAlign = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtSaldo.TextAlignment = System.Windows.Forms.HorizontalAlignment.Left;
 			this.txtSaldo.UseSystemPasswordChar = false;
@@ -305,7 +312,8 @@ namespace GM.View.estoque
 			// labSaldo
 			// 
 			this.labSaldo.BackColor = System.Drawing.Color.Transparent;
-			this.labSaldo.Location = new System.Drawing.Point(12, 105);
+			this.labSaldo.Font = new System.Drawing.Font("Calibri", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.labSaldo.Location = new System.Drawing.Point(12, 103);
 			this.labSaldo.Name = "labSaldo";
 			this.labSaldo.Size = new System.Drawing.Size(59, 23);
 			this.labSaldo.TabIndex = 41;
@@ -315,35 +323,40 @@ namespace GM.View.estoque
 			// btnPesquisar
 			// 
 			this.btnPesquisar.Depth = 0;
-			this.btnPesquisar.Location = new System.Drawing.Point(312, 137);
+			this.btnPesquisar.Location = new System.Drawing.Point(274, 135);
 			this.btnPesquisar.MouseState = MaterialSkin.MouseState.HOVER;
 			this.btnPesquisar.Name = "btnPesquisar";
 			this.btnPesquisar.Primary = true;
-			this.btnPesquisar.Size = new System.Drawing.Size(97, 28);
-			this.btnPesquisar.TabIndex = 55;
-			this.btnPesquisar.Text = "PESQUISAR";
+			this.btnPesquisar.Size = new System.Drawing.Size(135, 26);
+			this.btnPesquisar.TabIndex = 5;
+			this.btnPesquisar.Text = "CONSULTAR";
 			this.btnPesquisar.UseVisualStyleBackColor = true;
 			this.btnPesquisar.Click += new System.EventHandler(this.pesquisarClique);
 			// 
-			// btnBuscar
+			// button1
 			// 
-			this.btnBuscar.Depth = 0;
-			this.btnBuscar.Location = new System.Drawing.Point(128, 71);
-			this.btnBuscar.MouseState = MaterialSkin.MouseState.HOVER;
-			this.btnBuscar.Name = "btnBuscar";
-			this.btnBuscar.Primary = true;
-			this.btnBuscar.Size = new System.Drawing.Size(91, 28);
-			this.btnBuscar.TabIndex = 56;
-			this.btnBuscar.Text = "buscar";
-			this.btnBuscar.UseVisualStyleBackColor = true;
-			this.btnBuscar.Click += new System.EventHandler(this.cliqueProcurarProduto);
+			this.button1.BackColor = System.Drawing.Color.Transparent;
+			this.button1.Cursor = System.Windows.Forms.Cursors.Hand;
+			this.button1.FlatAppearance.BorderColor = System.Drawing.Color.FromArgb(((int)(((byte)(224)))), ((int)(((byte)(224)))), ((int)(((byte)(224)))));
+			this.button1.FlatAppearance.BorderSize = 0;
+			this.button1.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+			this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 9F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+			this.button1.ForeColor = System.Drawing.Color.White;
+			this.button1.Image = ((System.Drawing.Image)(resources.GetObject("button1.Image")));
+			this.button1.Location = new System.Drawing.Point(124, 71);
+			this.button1.Name = "button1";
+			this.button1.Size = new System.Drawing.Size(38, 26);
+			this.button1.TabIndex = 2;
+			this.button1.TextAlign = System.Drawing.ContentAlignment.BottomCenter;
+			this.button1.UseVisualStyleBackColor = false;
+			this.button1.Click += new System.EventHandler(this.cliqueProcurarProduto);
 			// 
 			// CSEstoque
 			// 
 			this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 15F);
 			this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
 			this.ClientSize = new System.Drawing.Size(421, 567);
-			this.Controls.Add(this.btnBuscar);
+			this.Controls.Add(this.button1);
 			this.Controls.Add(this.btnPesquisar);
 			this.Controls.Add(this.txtSaldo);
 			this.Controls.Add(this.labSaldo);
@@ -367,7 +380,7 @@ namespace GM.View.estoque
 			this.Load += new System.EventHandler(this.arranqueFormulario);
 			this.ResumeLayout(false);
 		}
-		private MaterialSkin.Controls.MaterialRaisedButton btnBuscar;
+		private System.Windows.Forms.Button button1;
 		private MaterialSkin.Controls.MaterialRaisedButton btnPesquisar;
 		private System.Windows.Forms.Label labSaldo;
 		private GM.Componentes.MinBox txtSaldo;
